@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1B1F4D49-C11C-4DEB-979F-EFAD361A94C7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyBusinessLayer</RootNamespace>
+    <AssemblyName>MyBusinessLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsAbsences.cs" />
+    <Compile Include="clsBrother.cs" />
+    <Compile Include="clsClsases.cs" />
+    <Compile Include="clsEmployee.cs" />
+    <Compile Include="clsEmployeesAccounts.cs" />
+    <Compile Include="clsEvaluations.cs" />
+    <Compile Include="clsGeneric.cs" />
+    <Compile Include="clsChild.cs" />
+    <Compile Include="clsLevels.cs" />
+    <Compile Include="clsMainMenue.cs" />
+    <Compile Include="clsMessageArchive.cs" />
+    <Compile Include="clsNotes.cs" />
+    <Compile Include="clsPerant.cs" />
+    <Compile Include="clsPersonCanTake.cs" />
+    <Compile Include="clsRegister.cs" />
+    <Compile Include="clsSettings.cs" />
+    <Compile Include="clsSubscriptions.cs" />
+    <Compile Include="clsTreasury.cs" />
+    <Compile Include="clsUser.cs" />
+    <Compile Include="clsWorker.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess_Layer\MyDataAccessLayer.csproj">
+      <Project>{8b703d7a-7d86-4b8c-85f9-2512f3e80c4f}</Project>
+      <Name>MyDataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

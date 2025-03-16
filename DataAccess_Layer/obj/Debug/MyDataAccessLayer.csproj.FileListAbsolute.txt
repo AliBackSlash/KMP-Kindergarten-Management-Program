@@ -1,0 +1,30 @@
+C:\Users\ALI\Source\Repos\MyDataAccessLayer\bin\Debug\MyDataAccessLayer.dll
+C:\Users\ALI\Source\Repos\MyDataAccessLayer\bin\Debug\MyDataAccessLayer.pdb
+C:\Users\ALI\Source\Repos\MyDataAccessLayer\obj\Debug\MyDataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\ALI\Source\Repos\MyDataAccessLayer\obj\Debug\MyDataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ALI\Source\Repos\MyDataAccessLayer\obj\Debug\MyDataAccessLayer.dll
+C:\Users\ALI\Source\Repos\MyDataAccessLayer\obj\Debug\MyDataAccessLayer.pdb
+E:\Progect's File\MKS part1\MyDataAccessLayer\bin\Debug\MyDataAccessLayer.dll
+E:\Progect's File\MKS part1\MyDataAccessLayer\bin\Debug\MyDataAccessLayer.pdb
+E:\Progect's File\MKS part1\MyDataAccessLayer\obj\Debug\MyDataAccessLayer.csproj.AssemblyReference.cache
+E:\Progect's File\MKS part1\MyDataAccessLayer\obj\Debug\MyDataAccessLayer.csproj.CoreCompileInputs.cache
+E:\Progect's File\MKS part1\MyDataAccessLayer\obj\Debug\MyDataAccessLayer.dll
+E:\Progect's File\MKS part1\MyDataAccessLayer\obj\Debug\MyDataAccessLayer.pdb
+C:\Users\ALI\Source\Repos\KMP\MyDataAccessLayer\bin\Debug\MyDataAccessLayer.dll
+C:\Users\ALI\Source\Repos\KMP\MyDataAccessLayer\bin\Debug\MyDataAccessLayer.pdb
+C:\Users\ALI\Source\Repos\KMP\MyDataAccessLayer\obj\Debug\MyDataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\ALI\Source\Repos\KMP\MyDataAccessLayer\obj\Debug\MyDataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ALI\Source\Repos\KMP\MyDataAccessLayer\obj\Debug\MyDataAccessLayer.dll
+C:\Users\ALI\Source\Repos\KMP\MyDataAccessLayer\obj\Debug\MyDataAccessLayer.pdb
+C:\Users\ALI\Source\Repos\KMP\DataAccess_Layer\bin\Debug\MyDataAccessLayer.dll
+C:\Users\ALI\Source\Repos\KMP\DataAccess_Layer\bin\Debug\MyDataAccessLayer.pdb
+C:\Users\ALI\Source\Repos\KMP\DataAccess_Layer\obj\Debug\MyDataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\ALI\Source\Repos\KMP\DataAccess_Layer\obj\Debug\MyDataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ALI\Source\Repos\KMP\DataAccess_Layer\obj\Debug\MyDataAccessLayer.dll
+C:\Users\ALI\Source\Repos\KMP\DataAccess_Layer\obj\Debug\MyDataAccessLayer.pdb
+D:\Projects\KMP project\After\KMP\DataAccess_Layer\bin\Debug\MyDataAccessLayer.dll
+D:\Projects\KMP project\After\KMP\DataAccess_Layer\bin\Debug\MyDataAccessLayer.pdb
+D:\Projects\KMP project\After\KMP\DataAccess_Layer\obj\Debug\MyDataAccessLayer.csproj.AssemblyReference.cache
+D:\Projects\KMP project\After\KMP\DataAccess_Layer\obj\Debug\MyDataAccessLayer.csproj.CoreCompileInputs.cache
+D:\Projects\KMP project\After\KMP\DataAccess_Layer\obj\Debug\MyDataAccessLayer.dll
+D:\Projects\KMP project\After\KMP\DataAccess_Layer\obj\Debug\MyDataAccessLayer.pdb

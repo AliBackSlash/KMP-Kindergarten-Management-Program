@@ -1,0 +1,45 @@
+C:\Users\ALI\Source\Repos\MyBusinessLayer\bin\Debug\MyBusinessLayer.dll
+C:\Users\ALI\Source\Repos\MyBusinessLayer\bin\Debug\MyBusinessLayer.pdb
+C:\Users\ALI\Source\Repos\MyBusinessLayer\bin\Debug\MyDataAccessLayer.dll
+C:\Users\ALI\Source\Repos\MyBusinessLayer\bin\Debug\MyDataAccessLayer.pdb
+C:\Users\ALI\Source\Repos\MyBusinessLayer\obj\Debug\MyBusinessLayer.csproj.AssemblyReference.cache
+C:\Users\ALI\Source\Repos\MyBusinessLayer\obj\Debug\MyBusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ALI\Source\Repos\MyBusinessLayer\obj\Debug\MyBusinessLayer.csproj.CopyComplete
+C:\Users\ALI\Source\Repos\MyBusinessLayer\obj\Debug\MyBusinessLayer.dll
+C:\Users\ALI\Source\Repos\MyBusinessLayer\obj\Debug\MyBusinessLayer.pdb
+E:\Progect's File\MKS part1\MyBusinessLayer\bin\Debug\MyBusinessLayer.dll
+E:\Progect's File\MKS part1\MyBusinessLayer\bin\Debug\MyBusinessLayer.pdb
+E:\Progect's File\MKS part1\MyBusinessLayer\bin\Debug\MyDataAccessLayer.dll
+E:\Progect's File\MKS part1\MyBusinessLayer\bin\Debug\MyDataAccessLayer.pdb
+E:\Progect's File\MKS part1\MyBusinessLayer\obj\Debug\MyBusinessLayer.csproj.AssemblyReference.cache
+E:\Progect's File\MKS part1\MyBusinessLayer\obj\Debug\MyBusinessLayer.csproj.CoreCompileInputs.cache
+E:\Progect's File\MKS part1\MyBusinessLayer\obj\Debug\MyBusinessLayer.csproj.CopyComplete
+E:\Progect's File\MKS part1\MyBusinessLayer\obj\Debug\MyBusinessLayer.dll
+E:\Progect's File\MKS part1\MyBusinessLayer\obj\Debug\MyBusinessLayer.pdb
+C:\Users\ALI\Source\Repos\KMP\MyBusinessLayer\bin\Debug\MyBusinessLayer.dll
+C:\Users\ALI\Source\Repos\KMP\MyBusinessLayer\bin\Debug\MyBusinessLayer.pdb
+C:\Users\ALI\Source\Repos\KMP\MyBusinessLayer\bin\Debug\MyDataAccessLayer.dll
+C:\Users\ALI\Source\Repos\KMP\MyBusinessLayer\bin\Debug\MyDataAccessLayer.pdb
+C:\Users\ALI\Source\Repos\KMP\MyBusinessLayer\obj\Debug\MyBusinessLayer.csproj.AssemblyReference.cache
+C:\Users\ALI\Source\Repos\KMP\MyBusinessLayer\obj\Debug\MyBusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ALI\Source\Repos\KMP\MyBusinessLayer\obj\Debug\MyBusinessLayer.dll
+C:\Users\ALI\Source\Repos\KMP\MyBusinessLayer\obj\Debug\MyBusinessLayer.pdb
+C:\Users\ALI\Source\Repos\KMP\MyBusinessLayer\obj\Debug\MyBusine.7BB17094.Up2Date
+C:\Users\ALI\Source\Repos\KMP\Business_Layer\bin\Debug\MyBusinessLayer.dll
+C:\Users\ALI\Source\Repos\KMP\Business_Layer\bin\Debug\MyBusinessLayer.pdb
+C:\Users\ALI\Source\Repos\KMP\Business_Layer\bin\Debug\MyDataAccessLayer.dll
+C:\Users\ALI\Source\Repos\KMP\Business_Layer\bin\Debug\MyDataAccessLayer.pdb
+C:\Users\ALI\Source\Repos\KMP\Business_Layer\obj\Debug\MyBusinessLayer.csproj.AssemblyReference.cache
+C:\Users\ALI\Source\Repos\KMP\Business_Layer\obj\Debug\MyBusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ALI\Source\Repos\KMP\Business_Layer\obj\Debug\MyBusine.7BB17094.Up2Date
+C:\Users\ALI\Source\Repos\KMP\Business_Layer\obj\Debug\MyBusinessLayer.dll
+C:\Users\ALI\Source\Repos\KMP\Business_Layer\obj\Debug\MyBusinessLayer.pdb
+D:\Projects\KMP project\After\KMP\Business_Layer\bin\Debug\MyBusinessLayer.dll
+D:\Projects\KMP project\After\KMP\Business_Layer\bin\Debug\MyBusinessLayer.pdb
+D:\Projects\KMP project\After\KMP\Business_Layer\bin\Debug\MyDataAccessLayer.dll
+D:\Projects\KMP project\After\KMP\Business_Layer\bin\Debug\MyDataAccessLayer.pdb
+D:\Projects\KMP project\After\KMP\Business_Layer\obj\Debug\MyBusinessLayer.csproj.AssemblyReference.cache
+D:\Projects\KMP project\After\KMP\Business_Layer\obj\Debug\MyBusinessLayer.csproj.CoreCompileInputs.cache
+D:\Projects\KMP project\After\KMP\Business_Layer\obj\Debug\MyBusine.7BB17094.Up2Date
+D:\Projects\KMP project\After\KMP\Business_Layer\obj\Debug\MyBusinessLayer.dll
+D:\Projects\KMP project\After\KMP\Business_Layer\obj\Debug\MyBusinessLayer.pdb
