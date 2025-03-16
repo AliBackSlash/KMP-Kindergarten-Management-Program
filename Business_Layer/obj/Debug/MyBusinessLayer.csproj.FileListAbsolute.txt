@@ -43,3 +43,12 @@ D:\Projects\KMP project\After\KMP\Business_Layer\obj\Debug\MyBusinessLayer.cspro
 D:\Projects\KMP project\After\KMP\Business_Layer\obj\Debug\MyBusine.7BB17094.Up2Date
 D:\Projects\KMP project\After\KMP\Business_Layer\obj\Debug\MyBusinessLayer.dll
 D:\Projects\KMP project\After\KMP\Business_Layer\obj\Debug\MyBusinessLayer.pdb
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyBusinessLayer.dll
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyBusinessLayer.pdb
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyDataAccessLayer.dll
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyDataAccessLayer.pdb
+D:\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.csproj.AssemblyReference.cache
+D:\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.csproj.CoreCompileInputs.cache
+D:\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusine.7BB17094.Up2Date
+D:\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.dll
+D:\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.pdb

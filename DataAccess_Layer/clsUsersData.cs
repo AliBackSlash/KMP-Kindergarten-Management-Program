@@ -14,11 +14,9 @@ namespace MyDataAccessLayer
         public static bool Find(ref int ID, ref string Name, string UserName, string Password
      , ref string SecondPassword, ref int Pirrimsion, ref string JopName, ref string Image, ref bool Gendor)
         {
-            bool found = false;
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                string query = "SELECT * FROM UsersData where UserName = @UserName and Password = @Password";
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlCommand command = new SqlCommand("Exec SP_FindUserByUserNameAndPassword  @UserName , @Password", connection))
                 {
                     command.Parameters.AddWithValue("@UserName", UserName);
                     command.Parameters.AddWithValue("@Password", Password);
@@ -37,22 +35,20 @@ namespace MyDataAccessLayer
                             Image = reader["Image"]?.ToString();
                             JopName = reader["JopName"]?.ToString();
                             Gendor = (bool)reader["Gendor"];
-                            found = true;
+                            return true;
                         }
                     }
                 }
             }
-            return found;
+            return false;
         }
 
         public static bool FindFromComboBox(ref int ID, ref string Name, ref string UserName, ref string Password
             , ref string SecondPassword, ref int Pirrimsion, ref string JopName, ref string Image, ref bool Gendor)
         {
-            bool found = false;
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                string query = "SELECT * FROM UsersData where cast(Code as nvarchar) + '-' +Name = @Name;";
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlCommand command = new SqlCommand("Exec SP_FindFromComboBox  @Name", connection))
                 {
                     command.Parameters.AddWithValue("@Name", Name);
 
@@ -70,12 +66,12 @@ namespace MyDataAccessLayer
                             Image = reader["Image"]?.ToString();
                             JopName = reader["JopName"]?.ToString();
                             Gendor = (bool)reader["Gendor"];
-                            found = true;
+                            return true;
                         }
                     }
                 }
             }
-            return found;
+            return false;
         }
 
         public static bool Find(int Code, ref string Name, ref string UserName, ref string Password
@@ -84,8 +80,8 @@ namespace MyDataAccessLayer
             bool found = false;
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                string query = "SELECT * FROM UsersData where Code = @Code;";
-                using (SqlCommand command = new SqlCommand(query, connection))
+           
+                using (SqlCommand command = new SqlCommand("Exec SP_FindUserByCode  @Code", connection))
                 {
                     command.Parameters.AddWithValue("@Code", Code);
 
@@ -113,12 +109,10 @@ namespace MyDataAccessLayer
         public static bool AddUser(string Name, string UserName, string Password
             , string Temp, int Pirrimsion, string Image, bool Gendor, string JopName)
         {
-            bool found = false;
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                string query = "Insert into UsersData (Name,UserName,Password,Temp,Pirrimsion,Image,Gendor,JopName)" +
-                    " values (@Name,@UserName,@Password,@Temp,@Pirrimsion,@Image,@Gendor,@JopName)";
-                using (SqlCommand command = new SqlCommand(query, connection))
+              
+                using (SqlCommand command = new SqlCommand("exec SP_AddNewUser  @Name ,@UserName ,@Password ,@Temp ,@Pirrimsion ,@Image ,@Gendor ,@JopName", connection))
                 {
                     command.Parameters.AddWithValue("@Name", Name);
                     command.Parameters.AddWithValue("@UserName", UserName);
@@ -130,22 +124,18 @@ namespace MyDataAccessLayer
                     command.Parameters.AddWithValue("@Gendor", Gendor);
 
                     connection.Open();
-                    found = command.ExecuteNonQuery() != 0;
+                    return command.ExecuteNonQuery() != 0;
                 }
             }
-            return found;
         }
 
         public static bool UpdateUser(int Code, string Name, string UserName, string Password
             , string Temp, int Pirrimsion, string Image, bool Gendor, string JopName)
         {
-            bool found = false;
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                string query = "Update UsersData " +
-                    " set Name=@Name, UserName=@UserName, Password=@Password, Temp=@Temp, Pirrimsion=@Pirrimsion, Image=@Image, Gendor=@Gendor, JopName=@JopName " +
-                    "where Code=@Code";
-                using (SqlCommand command = new SqlCommand(query, connection))
+                
+                using (SqlCommand command = new SqlCommand("exec SP_UpdateUser @Code, @Name ,@UserName ,@Password ,@Temp ,@Pirrimsion ,@Image ,@Gendor ,@JopName", connection))
                 {
                     command.Parameters.AddWithValue("@Code", Code);
                     command.Parameters.AddWithValue("@Name", Name);
@@ -158,46 +148,40 @@ namespace MyDataAccessLayer
                     command.Parameters.AddWithValue("@Gendor", Gendor);
 
                     connection.Open();
-                    found = command.ExecuteNonQuery() != 0;
+                    return command.ExecuteNonQuery() != 0;
                 }
             }
-            return found;
         }
 
         public static bool IsUserNameExists(string UserName)
         {
-            bool found = false;
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                string query = "select 1 from UsersData where UserName = @UserName";
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlCommand command = new SqlCommand("Exec SP_IsUserNameExists @UserName", connection))
                 {
                     command.Parameters.AddWithValue("@UserName", UserName);
 
                     connection.Open();
-                    found = command.ExecuteScalar() != null;
+                    return command.ExecuteScalar() != null;
                 }
             }
-            return found;
         }
 
         public static bool IsUserNameAndPasswordExistsForThisID(string UserName, string Password, int ID)
         {
-            bool found = false;
+           
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                string query = "select 1 from UsersData where UserName = @UserName and Password = @Password and Code = @ID";
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlCommand command = new SqlCommand("Exec SP_IsUserNameAndPasswordExistsForThisID @UserName ,@Password ,@ID ", connection))
                 {
                     command.Parameters.AddWithValue("@UserName", UserName);
                     command.Parameters.AddWithValue("@Password", Password);
                     command.Parameters.AddWithValue("@ID", ID);
 
                     connection.Open();
-                    found = command.ExecuteScalar() != null;
+                    return command.ExecuteScalar() != null;
                 }
             }
-            return found;
         }
 
         public static DataTable GetUserInfo()
@@ -205,8 +189,7 @@ namespace MyDataAccessLayer
             DataTable table = new DataTable();
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                string query = "SELECT Gendor, Code, Name, JopName FROM UsersData where JopName<>'Founder'";
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlCommand command = new SqlCommand("Exec SP_GetUserInfo", connection))
                 {
                     connection.Open();
                     using (SqlDataReader reader = command.ExecuteReader())
@@ -226,9 +209,10 @@ namespace MyDataAccessLayer
             DataTable table = new DataTable();
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                string query = $"SELECT Gendor, Code, Name, JopName FROM UsersData where Name like '{Name}%' and JopName<>'Founder'";
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlCommand command = new SqlCommand("Exec SP_GetUserInfoWithFilter @Name", connection))
                 {
+                    command.Parameters.AddWithValue("@Name", Name);
+
                     connection.Open();
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
@@ -246,8 +230,7 @@ namespace MyDataAccessLayer
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                string query = "delete from UsersData where Code=@ID";
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlCommand command = new SqlCommand("Exec SP_DeleteUser @ID", connection))
                 {
                     command.Parameters.AddWithValue("@ID", ID);
 
