@@ -1,4 +1,4 @@
-# KMP-Kindergarten-Management-Program
+# KMP-Kindergarten-Management-Program (self Practice)
 🌟 Kindergarten Management Program (KMP) KMP is a comprehensive system designed to streamline the management of educational kindergartens. It provides advanced solutions to efficiently organize daily operations, helping administrators track and manage all aspects related to children, staff, subscriptions, financial records, and more.
 
 ✨ Key Features: 
