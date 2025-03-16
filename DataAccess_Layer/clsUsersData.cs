@@ -12,7 +12,7 @@ namespace MyDataAccessLayer
     public  class clsUsersData
     {
         public static bool Find(ref int ID, ref string Name, string UserName, string Password
-     , ref string SecondPassword, ref int Pirrimsion, ref string JopName, ref string Image, ref bool Gendor)
+ , ref string SecondPassword, ref int Pirrimsion, ref string JopName, ref string Image, ref bool Gendor)
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
@@ -21,22 +21,29 @@ namespace MyDataAccessLayer
                     command.Parameters.AddWithValue("@UserName", UserName);
                     command.Parameters.AddWithValue("@Password", Password);
 
-                    connection.Open();
-                    using (SqlDataReader reader = command.ExecuteReader())
+                    try
                     {
-                        if (reader.Read())
+                        connection.Open();
+                        using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            ID = (int)reader["Code"];
-                            Name = (string)reader["Name"];
-                            UserName = (string)reader["UserName"];
-                            Password = (string)reader["Password"];
-                            SecondPassword = (string)reader["Temp"];
-                            Pirrimsion = (int)reader["Pirrimsion"];
-                            Image = reader["Image"]?.ToString();
-                            JopName = reader["JopName"]?.ToString();
-                            Gendor = (bool)reader["Gendor"];
-                            return true;
+                            if (reader.Read())
+                            {
+                                ID = (int)reader["Code"];
+                                Name = (string)reader["Name"];
+                                UserName = (string)reader["UserName"];
+                                Password = (string)reader["Password"];
+                                SecondPassword = (string)reader["Temp"];
+                                Pirrimsion = (int)reader["Pirrimsion"];
+                                Image = reader["Image"]?.ToString();
+                                JopName = reader["JopName"]?.ToString();
+                                Gendor = (bool)reader["Gendor"];
+                                return true;
+                            }
                         }
+                    }
+                    catch
+                    {
+                        return false;
                     }
                 }
             }
@@ -52,22 +59,29 @@ namespace MyDataAccessLayer
                 {
                     command.Parameters.AddWithValue("@Name", Name);
 
-                    connection.Open();
-                    using (SqlDataReader reader = command.ExecuteReader())
+                    try
                     {
-                        if (reader.Read())
+                        connection.Open();
+                        using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            ID = (int)reader["Code"];
-                            Name = (string)reader["Name"];
-                            UserName = (string)reader["UserName"];
-                            Password = (string)reader["Password"];
-                            SecondPassword = (string)reader["Temp"];
-                            Pirrimsion = (int)reader["Pirrimsion"];
-                            Image = reader["Image"]?.ToString();
-                            JopName = reader["JopName"]?.ToString();
-                            Gendor = (bool)reader["Gendor"];
-                            return true;
+                            if (reader.Read())
+                            {
+                                ID = (int)reader["Code"];
+                                Name = (string)reader["Name"];
+                                UserName = (string)reader["UserName"];
+                                Password = (string)reader["Password"];
+                                SecondPassword = (string)reader["Temp"];
+                                Pirrimsion = (int)reader["Pirrimsion"];
+                                Image = reader["Image"]?.ToString();
+                                JopName = reader["JopName"]?.ToString();
+                                Gendor = (bool)reader["Gendor"];
+                                return true;
+                            }
                         }
+                    }
+                    catch
+                    {
+                        return false;
                     }
                 }
             }
@@ -80,26 +94,32 @@ namespace MyDataAccessLayer
             bool found = false;
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-           
                 using (SqlCommand command = new SqlCommand("Exec SP_FindUserByCode  @Code", connection))
                 {
                     command.Parameters.AddWithValue("@Code", Code);
 
-                    connection.Open();
-                    using (SqlDataReader reader = command.ExecuteReader())
+                    try
                     {
-                        if (reader.Read())
+                        connection.Open();
+                        using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            Name = (string)reader["Name"];
-                            UserName = (string)reader["UserName"];
-                            Password = (string)reader["Password"];
-                            SecondPassword = (string)reader["Temp"];
-                            Pirrimsion = (int)reader["Pirrimsion"];
-                            Image = reader["Image"]?.ToString();
-                            JopName = reader["JopName"]?.ToString();
-                            Gendor = (bool)reader["Gendor"];
-                            found = true;
+                            if (reader.Read())
+                            {
+                                Name = (string)reader["Name"];
+                                UserName = (string)reader["UserName"];
+                                Password = (string)reader["Password"];
+                                SecondPassword = (string)reader["Temp"];
+                                Pirrimsion = (int)reader["Pirrimsion"];
+                                Image = reader["Image"]?.ToString();
+                                JopName = reader["JopName"]?.ToString();
+                                Gendor = (bool)reader["Gendor"];
+                                found = true;
+                            }
                         }
+                    }
+                    catch
+                    {
+                        return false;
                     }
                 }
             }
@@ -111,7 +131,6 @@ namespace MyDataAccessLayer
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-              
                 using (SqlCommand command = new SqlCommand("exec SP_AddNewUser  @Name ,@UserName ,@Password ,@Temp ,@Pirrimsion ,@Image ,@Gendor ,@JopName", connection))
                 {
                     command.Parameters.AddWithValue("@Name", Name);
@@ -123,8 +142,15 @@ namespace MyDataAccessLayer
                     command.Parameters.AddWithValue("@JopName", JopName);
                     command.Parameters.AddWithValue("@Gendor", Gendor);
 
-                    connection.Open();
-                    return command.ExecuteNonQuery() != 0;
+                    try
+                    {
+                        connection.Open();
+                        return command.ExecuteNonQuery() != 0;
+                    }
+                    catch
+                    {
+                        return false;
+                    }
                 }
             }
         }
@@ -134,7 +160,6 @@ namespace MyDataAccessLayer
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                
                 using (SqlCommand command = new SqlCommand("exec SP_UpdateUser @Code, @Name ,@UserName ,@Password ,@Temp ,@Pirrimsion ,@Image ,@Gendor ,@JopName", connection))
                 {
                     command.Parameters.AddWithValue("@Code", Code);
@@ -147,8 +172,15 @@ namespace MyDataAccessLayer
                     command.Parameters.AddWithValue("@JopName", JopName);
                     command.Parameters.AddWithValue("@Gendor", Gendor);
 
-                    connection.Open();
-                    return command.ExecuteNonQuery() != 0;
+                    try
+                    {
+                        connection.Open();
+                        return command.ExecuteNonQuery() != 0;
+                    }
+                    catch
+                    {
+                        return false;
+                    }
                 }
             }
         }
@@ -161,15 +193,21 @@ namespace MyDataAccessLayer
                 {
                     command.Parameters.AddWithValue("@UserName", UserName);
 
-                    connection.Open();
-                    return command.ExecuteScalar() != null;
+                    try
+                    {
+                        connection.Open();
+                        return command.ExecuteScalar() != null;
+                    }
+                    catch
+                    {
+                        return false;
+                    }
                 }
             }
         }
 
         public static bool IsUserNameAndPasswordExistsForThisID(string UserName, string Password, int ID)
         {
-           
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
                 using (SqlCommand command = new SqlCommand("Exec SP_IsUserNameAndPasswordExistsForThisID @UserName ,@Password ,@ID ", connection))
@@ -178,8 +216,15 @@ namespace MyDataAccessLayer
                     command.Parameters.AddWithValue("@Password", Password);
                     command.Parameters.AddWithValue("@ID", ID);
 
-                    connection.Open();
-                    return command.ExecuteScalar() != null;
+                    try
+                    {
+                        connection.Open();
+                        return command.ExecuteScalar() != null;
+                    }
+                    catch
+                    {
+                        return false;
+                    }
                 }
             }
         }
@@ -191,13 +236,20 @@ namespace MyDataAccessLayer
             {
                 using (SqlCommand command = new SqlCommand("Exec SP_GetUserInfo", connection))
                 {
-                    connection.Open();
-                    using (SqlDataReader reader = command.ExecuteReader())
+                    try
                     {
-                        if (reader.HasRows)
+                        connection.Open();
+                        using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            table.Load(reader);
+                            if (reader.HasRows)
+                            {
+                                table.Load(reader);
+                            }
                         }
+                    }
+                    catch
+                    {
+                        return table;
                     }
                 }
             }
@@ -213,13 +265,20 @@ namespace MyDataAccessLayer
                 {
                     command.Parameters.AddWithValue("@Name", Name);
 
-                    connection.Open();
-                    using (SqlDataReader reader = command.ExecuteReader())
+                    try
                     {
-                        if (reader.HasRows)
+                        connection.Open();
+                        using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            table.Load(reader);
+                            if (reader.HasRows)
+                            {
+                                table.Load(reader);
+                            }
                         }
+                    }
+                    catch
+                    {
+                        return table;
                     }
                 }
             }
@@ -234,8 +293,15 @@ namespace MyDataAccessLayer
                 {
                     command.Parameters.AddWithValue("@ID", ID);
 
-                    connection.Open();
-                    return command.ExecuteNonQuery() != 0;
+                    try
+                    {
+                        connection.Open();
+                        return command.ExecuteNonQuery() != 0;
+                    }
+                    catch
+                    {
+                        return false;
+                    }
                 }
             }
         }
