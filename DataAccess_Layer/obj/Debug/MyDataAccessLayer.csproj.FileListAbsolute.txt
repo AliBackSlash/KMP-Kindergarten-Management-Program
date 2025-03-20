@@ -34,3 +34,9 @@ D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAccessLa
 D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAccessLayer.csproj.CoreCompileInputs.cache
 D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAccessLayer.dll
 D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAccessLayer.pdb
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\MyDataAccessLayer.dll
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\MyDataAccessLayer.pdb
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAccessLayer.csproj.AssemblyReference.cache
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAccessLayer.csproj.CoreCompileInputs.cache
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAccessLayer.dll
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAccessLayer.pdb

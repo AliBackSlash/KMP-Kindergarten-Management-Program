@@ -825,8 +825,7 @@ namespace K_M_S_PROGRAM.Resources
         private bool FillKidsAbsence()
         {
            
-            DataTable KidsAbsence = clsGeneric.ReturnGroupOfDataIWant($"select top 1 AbsenceHistory.Name,count(AbsenceHistory.ID) as times  from AbsenceHistory where AbsenceHistory.DateMonthForAbsnce = '{DateTime.Now.ToString("MM-yyyy")}'" +
-                $" group by AbsenceHistory.Name  having COUNT(AbsenceHistory.id)>={clsGlobal.Settings.DaysKindsAbsence}");
+            DataTable KidsAbsence = clsGeneric.ReturnGroupOfDataIWant($"select top 1 K.Name,count(A.ID) as times  from AbsenceHistory A inner join KidsPersonalInfo K on A.ID = K.Code where A.DateMonthForAbsnce = {DateTime.Now.ToString("MM-yyyy")} group by K.Name  having COUNT(A.id)>={clsGlobal.Settings.DaysKindsAbsence}");
 
             if (KidsAbsence.Rows.Count > 0)
                 return true;

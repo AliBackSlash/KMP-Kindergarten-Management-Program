@@ -129,10 +129,6 @@ namespace MyBusinessLayer
         {
             return clsWorkerDate.DeleteWorker(ID);
         }
-        public static DataTable GetOneWorkerWithInfo(string Name)
-        {
-            return clsWorkerDate.GetOneWorkerWithInfo(Name);
-        }
-
+       
     }
 }

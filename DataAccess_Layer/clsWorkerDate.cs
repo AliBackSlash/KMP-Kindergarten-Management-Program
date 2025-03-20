@@ -17,12 +17,8 @@ namespace MyDataAccessLayer
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                string query = @"INSERT INTO WorkerInfo
-                        (Code ,Name ,Phone ,PersonalCardNumber,Gendor,Image,Salary ,Period)
-                      VALUES
-                        (@Code,@Name,@Phone,@PersonalCardNumber,@Gendor,@Image,@Salary,@Period)";
-
-                using (SqlCommand command = new SqlCommand(query, connection))
+              
+                using (SqlCommand command = new SqlCommand("exec SP_AddWorker @Code  ,@Name ,@Phone ,@PersonalCardNumber ,@Gendor ,@Image ,@Salary ,@Period ", connection))
                 {
                     command.Parameters.AddWithValue("@Code", Code);
                     command.Parameters.AddWithValue("@Name", name);
@@ -50,18 +46,8 @@ namespace MyDataAccessLayer
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                string query = @"UPDATE WorkerInfo
-                      SET Code = @Code
-                         ,Name = @Name
-                         ,Phone = @Phone
-                         ,PersonalCardNumber = @PersonalCardNumber
-                         ,Gendor = @Gendor
-                         ,Image = @Image
-                         ,Salary = @Salary
-                         ,Period = @Period
-                      WHERE Code = @Code";
-
-                using (SqlCommand command = new SqlCommand(query, connection))
+              
+                using (SqlCommand command = new SqlCommand("exec SP_UpdateWorker @Code  ,@Name ,@Phone ,@PersonalCardNumber ,@Gendor ,@Image ,@Salary ,@Period ", connection))
                 {
                     command.Parameters.AddWithValue("@Code", Code);
                     command.Parameters.AddWithValue("@Name", Name);
@@ -86,13 +72,12 @@ namespace MyDataAccessLayer
         }
 
         public static bool FindByCode(int ID, ref string name, ref string Phone, ref string CardNumber, ref bool Gender, ref string Image, ref float Salary, ref bool Period)
-        {
-            string query = "Select * from WorkerInfo where Code = @ID";
+        {          
             bool find = false;
 
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlCommand command = new SqlCommand("exec SP_FindWorkerByCode @ID", connection))
                 {
                     command.Parameters.AddWithValue("@ID", ID);
 
@@ -125,12 +110,11 @@ namespace MyDataAccessLayer
 
         public static bool FindByName(ref string Name, ref int ID, ref string Phone, ref string CardNumber, ref bool Gender, ref string Image, ref float Salary, ref bool Period)
         {
-            string query = "Select * from WorkerInfo where cast(Code as varchar) +'-'+Name = @Name";
             bool find = false;
 
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlCommand command = new SqlCommand("exec SP_FindWorkerByName @Name ", connection))
                 {
                     command.Parameters.AddWithValue("@Name", Name);
 
@@ -166,9 +150,8 @@ namespace MyDataAccessLayer
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                string query = "delete FROM WorkerInfo where Code = @ID";
 
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlCommand command = new SqlCommand("delete FROM WorkerInfo where Code = @ID", connection))
                 {
                     command.Parameters.AddWithValue("@ID", ID);
 
@@ -191,17 +174,8 @@ namespace MyDataAccessLayer
 
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                string query = @"SELECT Gendor, Code, Name,case 
-                       when Period = 1 then 'صباحي'
-                       else 'مسائي'
-                       end
-                       as  Period,case 
-                       when Gendor = 1 then 'عامل'
-                       else 'عاملة'
-                       end
-                       as GendorName,Phone FROM WorkerInfo";
-
-                using (SqlCommand command = new SqlCommand(query, connection))
+              
+                using (SqlCommand command = new SqlCommand("exec SP_GetWorkerListInfo", connection))
                 {
                     try
                     {
@@ -229,17 +203,8 @@ namespace MyDataAccessLayer
 
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                string query = $@"SELECT Gendor, Code, Name,case 
-                        when Period = 1 then 'صباحي'
-                        else 'مسائي'
-                        end
-                        as  Period,case 
-                        when Gendor = 1 then 'عامل'
-                        else 'عاملة'
-                        end
-                        as GendorName,Phone FROM WorkerInfo Where Name like @Name+'%'";
-
-                using (SqlCommand command = new SqlCommand(query, connection))
+               
+                using (SqlCommand command = new SqlCommand("exec SP_GetWorkerListInfoWithFilter @Name", connection))
                 {
                     command.Parameters.AddWithValue("@Name", Name);
 
@@ -256,7 +221,6 @@ namespace MyDataAccessLayer
                     }
                     catch (Exception)
                     {
-                        throw;
                     }
                 }
             }
@@ -269,9 +233,8 @@ namespace MyDataAccessLayer
 
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                string query = "SELECT * FROM WorkerInfo";
 
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlCommand command = new SqlCommand("exec SP_GetWorkerInfo", connection))
                 {
                     try
                     {
@@ -293,36 +256,6 @@ namespace MyDataAccessLayer
             return data;
         }
 
-        public static DataTable GetOneWorkerWithInfo(string Name)
-        {
-            DataTable data = new DataTable();
-
-            using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
-            {
-                string query = "SELECT * FROM WorkerInfo where Name = @Name";
-
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@Name", Name);
-
-                    try
-                    {
-                        connection.Open();
-                        using (SqlDataReader reader = command.ExecuteReader())
-                        {
-                            if (reader.HasRows)
-                            {
-                                data.Load(reader);
-                            }
-                        }
-                    }
-                    catch (Exception)
-                    {
-                        throw;
-                    }
-                }
-            }
-            return data;
-        }
+      
     }
 }

@@ -52,3 +52,12 @@ D:\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.
 D:\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusine.7BB17094.Up2Date
 D:\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.dll
 D:\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.pdb
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyBusinessLayer.dll
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyBusinessLayer.pdb
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyDataAccessLayer.dll
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyDataAccessLayer.pdb
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.csproj.AssemblyReference.cache
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.csproj.CoreCompileInputs.cache
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusine.7BB17094.Up2Date
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.dll
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.pdb

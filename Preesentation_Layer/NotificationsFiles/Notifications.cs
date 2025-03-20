@@ -85,19 +85,19 @@ namespace K_M_S_PROGRAM.Resources
             bool Entered = false;
             if(Convert.ToByte(DateTime.Now.Day) >= clsGlobal.Settings.DaysLateToPay)
             {
-                DataTable SubLate = clsGeneric.ReturnGroupOfDataIWant(@"select Name,Amount,Month(Date) as Month , Year(Date) as Year ,Code,OtherInfo.MessageNumber 
-                                                                       from SubscraitionPayment inner join  OtherInfo on OtherInfo.ChildID = SubscraitionPayment.Code");
+                DataTable SubLate = clsGeneric.ReturnGroupOfDataIWant(@"select K.Name,K.SubscirptionID,Month(Date) as Month , Year(Date) as Year ,S.Code,O.MessageNumber 
+                                                                       from SubscraitionPayment S inner join KidsPersonalInfo K on K.Code = S.Code inner join  OtherInfo O on O.ChildID = S.Code");
                 foreach (DataRow row in SubLate.Rows)
                 {
-                    dgvChildSub.Rows.Add(row["Code"],row["Name"],row["Month"],row["Year"], row["Amount"], row["MessageNumber"]);
+                    dgvChildSub.Rows.Add(row["Code"],row["Name"],row["Month"],row["Year"], row["SubscirptionID"], row["MessageNumber"]);
                 }
                 Entered = true;
             }
             //To get Late sub from last Month
             if (Entered == false)
             {
-                DataTable SubLate = clsGeneric.ReturnGroupOfDataIWant(@"select Name,Amount,Month(Date) as Month , Year(Date) as Year ,Code, OtherInfo.MessageNumber 
-                                                                        from SubscraitionPayment inner join  OtherInfo on OtherInfo.ChildID = SubscraitionPayment.Code where Month(Date) <> Month(GetDate())");
+                DataTable SubLate = clsGeneric.ReturnGroupOfDataIWant(@"select K.Name,K.SubscirptionID,Month(Date) as Month , Year(Date) as Year ,S.Code,O.MessageNumber 
+                                                                        from SubscraitionPayment S inner join KidsPersonalInfo K on K.Code = S.Code inner join  OtherInfo O on O.ChildID = S.Code where Month(Date) <> Month(GetDate())");
                 foreach (DataRow row in SubLate.Rows)
                 {
                     dgvChildSub.Rows.Add(row["Code"], row["Name"], row["Month"], row["Year"], row["Amount"], row["MessageNumber"]);
