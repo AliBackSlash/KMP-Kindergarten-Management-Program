@@ -308,7 +308,7 @@
             this.طباعةالباركودToolStripMenuItem});
             this.cnTask.Name = "cnTask";
             this.cnTask.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cnTask.Size = new System.Drawing.Size(181, 242);
+            this.cnTask.Size = new System.Drawing.Size(171, 220);
             this.cnTask.Opening += new System.ComponentModel.CancelEventHandler(this.cnTask_Opening);
             // 
             // toolStripMenuItem2
@@ -319,14 +319,14 @@
             this.تعديلبياناتالطفلToolStripMenuItem});
             this.toolStripMenuItem2.Image = global::K_M_S_PROGRAM.Properties.Resources.children;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 24);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(170, 24);
             this.toolStripMenuItem2.Text = "بيانات الطفل";
             // 
             // إظهاربياناتالطفلToolStripMenuItem
             // 
             this.إظهاربياناتالطفلToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.Vision_Test_32;
             this.إظهاربياناتالطفلToolStripMenuItem.Name = "إظهاربياناتالطفلToolStripMenuItem";
-            this.إظهاربياناتالطفلToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.إظهاربياناتالطفلToolStripMenuItem.Size = new System.Drawing.Size(174, 24);
             this.إظهاربياناتالطفلToolStripMenuItem.Text = "إظهار بيانات الطفل";
             this.إظهاربياناتالطفلToolStripMenuItem.Click += new System.EventHandler(this.إظهاربياناتالطفلToolStripMenuItem_Click);
             // 
@@ -334,7 +334,7 @@
             // 
             this.إضافةطفلجديدToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.add_employee;
             this.إضافةطفلجديدToolStripMenuItem.Name = "إضافةطفلجديدToolStripMenuItem";
-            this.إضافةطفلجديدToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.إضافةطفلجديدToolStripMenuItem.Size = new System.Drawing.Size(174, 24);
             this.إضافةطفلجديدToolStripMenuItem.Text = "إضافة طفل جديد";
             this.إضافةطفلجديدToolStripMenuItem.Click += new System.EventHandler(this.إضافةطفلجديدToolStripMenuItem_Click);
             // 
@@ -342,7 +342,7 @@
             // 
             this.تعديلبياناتالطفلToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.edit;
             this.تعديلبياناتالطفلToolStripMenuItem.Name = "تعديلبياناتالطفلToolStripMenuItem";
-            this.تعديلبياناتالطفلToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.تعديلبياناتالطفلToolStripMenuItem.Size = new System.Drawing.Size(174, 24);
             this.تعديلبياناتالطفلToolStripMenuItem.Text = "تعديل بيانات الطفل";
             this.تعديلبياناتالطفلToolStripMenuItem.Click += new System.EventHandler(this.تعديلبياناتالطفلToolStripMenuItem_Click);
             // 
@@ -350,7 +350,7 @@
             // 
             this.كتابةملاحظةToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.notepad;
             this.كتابةملاحظةToolStripMenuItem.Name = "كتابةملاحظةToolStripMenuItem";
-            this.كتابةملاحظةToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.كتابةملاحظةToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
             this.كتابةملاحظةToolStripMenuItem.Text = "كتابة ملاحظة";
             this.كتابةملاحظةToolStripMenuItem.Click += new System.EventHandler(this.كتابةملاحظةToolStripMenuItem_Click);
             // 
@@ -361,7 +361,7 @@
             this.sMSToolStripMenuItem});
             this.إرسالرسالةToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.discussion;
             this.إرسالرسالةToolStripMenuItem.Name = "إرسالرسالةToolStripMenuItem";
-            this.إرسالرسالةToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.إرسالرسالةToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
             this.إرسالرسالةToolStripMenuItem.Text = "إرسال رسالة عبر";
             // 
             // واتسابToolStripMenuItem
@@ -384,7 +384,7 @@
             // 
             this.نقلاليالأرشيفToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.inbox;
             this.نقلاليالأرشيفToolStripMenuItem.Name = "نقلاليالأرشيفToolStripMenuItem";
-            this.نقلاليالأرشيفToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.نقلاليالأرشيفToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
             this.نقلاليالأرشيفToolStripMenuItem.Text = "نقل الي الأرشيف";
             this.نقلاليالأرشيفToolStripMenuItem.Click += new System.EventHandler(this.نقلاليالأرشيفToolStripMenuItem_Click);
             // 
@@ -392,7 +392,7 @@
             // 
             this.حذفToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.Delete;
             this.حذفToolStripMenuItem.Name = "حذفToolStripMenuItem";
-            this.حذفToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.حذفToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
             this.حذفToolStripMenuItem.Text = "حذف";
             this.حذفToolStripMenuItem.Click += new System.EventHandler(this.btDelete_Click);
             // 
@@ -403,7 +403,7 @@
             this.إضافةأخToolStripMenuItem1});
             this.إضافةأخToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.kids;
             this.إضافةأخToolStripMenuItem.Name = "إضافةأخToolStripMenuItem";
-            this.إضافةأخToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.إضافةأخToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
             this.إضافةأخToolStripMenuItem.Text = "بيانات الإخوة";
             // 
             // قائمةالإخوةToolStripMenuItem
@@ -429,7 +429,7 @@
             this.تعديلبياناتالاباءToolStripMenuItem});
             this.إضافةبياناتالأبوينToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.Treetog_Junior_User_group_72;
             this.إضافةبياناتالأبوينToolStripMenuItem.Name = "إضافةبياناتالأبوينToolStripMenuItem";
-            this.إضافةبياناتالأبوينToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.إضافةبياناتالأبوينToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
             this.إضافةبياناتالأبوينToolStripMenuItem.Text = "بيانات الأبوين";
             // 
             // إضافةبياناتالأبوينToolStripMenuItem1
@@ -455,7 +455,7 @@
             this.تعديلبياناتالمستلمToolStripMenuItem});
             this.إضافةمستلمToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.man1;
             this.إضافةمستلمToolStripMenuItem.Name = "إضافةمستلمToolStripMenuItem";
-            this.إضافةمستلمToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.إضافةمستلمToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
             this.إضافةمستلمToolStripMenuItem.Text = "بيانات مستلم";
             // 
             // إضافةمستلمToolStripMenuItem1
@@ -478,7 +478,7 @@
             // 
             this.طباعةالباركودToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.printer;
             this.طباعةالباركودToolStripMenuItem.Name = "طباعةالباركودToolStripMenuItem";
-            this.طباعةالباركودToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.طباعةالباركودToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
             this.طباعةالباركودToolStripMenuItem.Text = "طباعة الباركود";
             this.طباعةالباركودToolStripMenuItem.Click += new System.EventHandler(this.طباعةالباركودToolStripMenuItem_Click);
             // 

@@ -23,31 +23,25 @@ namespace K_M_S_PROGRAM.Resources
             lbTotalAmount.Text = clsMainMenue.TreasuryAmmount().ToString();
             lbCurrentTotalAmount.Text = clsMainMenue.CurrentTreasuryAmmount().ToString();
 
-            int NumOfStudebts = clsGeneric.ReturnLastValueIWantINT("select count(1) from KidsPersonalInfo");
-            int NumOfTeachers = clsGeneric.ReturnLastValueIWantINT("select count(1) from TeachersInfo");
+            int NumOfStudebts = clsChild.NumberOfKids();
+            int NumOfTeachers = clsEmployee.NumberOfTeachers();
 
 
 
-            string KidsCame =  clsGeneric.ReturnLastValueIWant("select count(ID) from EnterAndLeaveHistory where EnterAndLeaveHistory.Kind='C'" +
-                $" and EnterAndLeaveHistory.Date= cast('{DateTime.Now.ToString("MM-dd-yyyy")}' as date)");
+            string KidsCame =  clsGeneric.GetNumberOfAttendedMember('C').ToString();
             lbKidsCame.Text = KidsCame != "" ? KidsCame : "0";
 
 
             lbKidsNotCame.Text = (NumOfStudebts - Convert.ToInt16(KidsCame)).ToString();
 
-            string TeacherCame = clsGeneric.ReturnLastValueIWant("select count(ID) from EnterAndLeaveHistory where EnterAndLeaveHistory.Kind='T'" +
-                $" and EnterAndLeaveHistory.Date=cast('{DateTime.Now.ToString("MM-dd-yyyy")}' as date)");
+            string TeacherCame = clsGeneric.GetNumberOfAttendedMember('T').ToString();
             lbTeacherCame.Text = TeacherCame != "" ? TeacherCame : "0";
 
             lbTeacherNotCame.Text = (NumOfTeachers - Convert.ToInt16(TeacherCame)).ToString();
 
+            lbNumOfLevel.Text = clsLevels.NumberOfLevels().ToString();
 
-
-
-
-            lbNumOfLevel.Text = clsGeneric.ReturnLastValueIWant("Select Count(Code)from Levels");
-
-            lbNumOfClass.Text = clsGeneric.ReturnLastValueIWant("Select Count(Code)from Clases");
+            lbNumOfClass.Text = clsClsases.NumberOfClases().ToString();
 
             
 
@@ -61,7 +55,7 @@ namespace K_M_S_PROGRAM.Resources
             try
             {
                 SeriesCollection seriesCollection = new SeriesCollection
-    {
+        {
         new PieSeries
         {
             Title = "الطلاب",
@@ -83,7 +77,7 @@ namespace K_M_S_PROGRAM.Resources
             DataLabels = true,
             LabelPoint = point => $"{point.SeriesView.Title}: {point.Y}" // عرض العنوان والقيمة
         }
-    };
+        };
                 pieChart1.Series = seriesCollection;
             }
             catch (Exception ex)
@@ -254,15 +248,6 @@ namespace K_M_S_PROGRAM.Resources
             Chart4Info();
         }
 
-        private void chart3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void sButton1_Click(object sender, EventArgs e)
-        {
-           
-        }
 
         private void timer1_Tick(object sender, EventArgs e)
         {

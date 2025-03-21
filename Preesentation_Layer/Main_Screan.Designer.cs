@@ -1635,7 +1635,7 @@
             this.btNoteyfay.HoverImage = null;
             this.btNoteyfay.HoverTextColor = System.Drawing.Color.Red;
             this.btNoteyfay.ImageAlignment = SATAUiFramework.Controls.SATAButton.imgAlignment.Left;
-            this.btNoteyfay.Location = new System.Drawing.Point(52, 13);
+            this.btNoteyfay.Location = new System.Drawing.Point(49, 13);
             this.btNoteyfay.Name = "btNoteyfay";
             this.btNoteyfay.Size = new System.Drawing.Size(10, 10);
             this.btNoteyfay.TabIndex = 0;

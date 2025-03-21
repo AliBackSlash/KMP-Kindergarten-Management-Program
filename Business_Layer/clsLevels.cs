@@ -48,5 +48,9 @@ namespace MyBusinessLayer
             return clsLevelsData.GetLevelName(ID);
         }
 
+        public static int NumberOfLevels()
+        {
+            return clsLevelsData.NumberOfLevels();
+        }
     }
 }

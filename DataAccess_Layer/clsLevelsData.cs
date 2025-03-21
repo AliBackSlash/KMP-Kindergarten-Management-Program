@@ -167,6 +167,27 @@ namespace MyDataAccessLayer
             }
             return Name;
         }
+        public static int NumberOfLevels()
+        {
 
+            using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
+            {
+                using (SqlCommand command = new SqlCommand("exec SP_NumberOfLevels", connection))
+                {
+                    try
+                    {
+                        connection.Open();
+                        return (int)command.ExecuteScalar();
+
+                    }
+                    catch (Exception)
+                    {
+                        return 0;
+                    }
+                }
+            }
+
+
+        }
     }
 }

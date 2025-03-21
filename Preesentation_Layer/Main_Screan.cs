@@ -23,7 +23,7 @@ namespace K_M_S_PROGRAM.Resources
             ImagePath = login.ImagePath;
             clsGlobal.main_Screan = this;
             clsGlobal.CurrentUser = login;
-
+            
 
         }
 
@@ -236,7 +236,7 @@ namespace K_M_S_PROGRAM.Resources
             CloseAllLists();
                 //btStoreList.Image = Properties.Resources.down;
                 pnEvaluation.Height = 80;
-                btNoteyfay.Visible = false;
+               
             }
             else
             {
@@ -788,6 +788,7 @@ namespace K_M_S_PROGRAM.Resources
 
         private void btNotifications_Click_1(object sender, EventArgs e)
         {
+            btNoteyfay.Visible = false;
             if (notifications.Visible)
                 notifications.Notifications_Load(null, null);
             ShowSubForm(notifications);

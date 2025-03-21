@@ -47,6 +47,7 @@
             this.lbVevationMessage = new System.Windows.Forms.Label();
             this.lbTitle = new System.Windows.Forms.Label();
             this.picTirnPhoto = new SATAUiFramework.Controls.SATAPictureBox();
+            this.progNumberOfComes = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.tableLayoutPanel1.SuspendLayout();
             this.sataPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sataPictureBox2)).BeginInit();
@@ -283,11 +284,12 @@
             borderRadius2.TopRight = 10;
             this.sataPanel1.BorderRadius = borderRadius2;
             this.sataPanel1.BorderThickness = 4;
+            this.sataPanel1.Controls.Add(this.picTirnPhoto);
             this.sataPanel1.Controls.Add(this.btEntered);
             this.sataPanel1.Controls.Add(this.txSearsh);
             this.sataPanel1.Controls.Add(this.lbVevationMessage);
             this.sataPanel1.Controls.Add(this.lbTitle);
-            this.sataPanel1.Controls.Add(this.picTirnPhoto);
+            this.sataPanel1.Controls.Add(this.progNumberOfComes);
             this.sataPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sataPanel1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.sataPanel1.Location = new System.Drawing.Point(3, 91);
@@ -376,9 +378,9 @@
             this.lbTitle.BackColor = System.Drawing.Color.Transparent;
             this.lbTitle.Font = new System.Drawing.Font("Simplified Arabic", 28F, System.Drawing.FontStyle.Bold);
             this.lbTitle.ForeColor = System.Drawing.Color.Black;
-            this.lbTitle.Location = new System.Drawing.Point(303, 212);
+            this.lbTitle.Location = new System.Drawing.Point(303, 231);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(443, 80);
+            this.lbTitle.Size = new System.Drawing.Size(443, 61);
             this.lbTitle.TabIndex = 25;
             this.lbTitle.Text = "تسجيل حضور الطلاب ";
             this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -399,6 +401,19 @@
             this.picTirnPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picTirnPhoto.TabIndex = 24;
             this.picTirnPhoto.TabStop = false;
+            // 
+            // progNumberOfComes
+            // 
+            this.progNumberOfComes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.progNumberOfComes.BackColor = System.Drawing.Color.Transparent;
+            this.progNumberOfComes.Location = new System.Drawing.Point(455, 89);
+            this.progNumberOfComes.Name = "progNumberOfComes";
+            this.progNumberOfComes.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.progNumberOfComes.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.progNumberOfComes.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.progNumberOfComes.ShadowDecoration.Parent = this.progNumberOfComes;
+            this.progNumberOfComes.Size = new System.Drawing.Size(138, 138);
+            this.progNumberOfComes.TabIndex = 58;
             // 
             // Add_Absence
             // 
@@ -445,5 +460,6 @@
         private Guna.UI2.WinForms.Guna2Button btWorker;
         private Guna.UI2.WinForms.Guna2Button btTeacher;
         private Guna.UI2.WinForms.Guna2Button btKids;
+        private Guna.UI2.WinForms.Guna2CircleProgressBar progNumberOfComes;
     }
 }

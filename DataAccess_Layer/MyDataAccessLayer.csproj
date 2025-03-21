@@ -45,7 +45,7 @@
     <Compile Include="claPerantData.cs" />
     <Compile Include="clsAbsenceData.cs" />
     <Compile Include="clsBrothersData.cs" />
-    <Compile Include="clsClassesData.cs" />
+    <Compile Include="clsClasesData.cs" />
     <Compile Include="clsEmployeesAccountsData.cs" />
     <Compile Include="clsEmployeeData.cs" />
     <Compile Include="clsEvaluationsData.cs" />

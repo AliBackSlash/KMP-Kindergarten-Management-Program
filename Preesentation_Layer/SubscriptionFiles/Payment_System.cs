@@ -59,13 +59,16 @@ namespace K_M_S_PROGRAM.Resources
 
         }
 
-        //make debuge to see the paid amount why is not changaed
+        bool IgnoreRemender = false;
         private bool SaveHistory(DataRow row, float paid)
         {
             Amount = Convert.ToInt16(row["Amount"]);
-            Remender = Amount-paid ;
+            if (IgnoreRemender)
+                Remender = 0;
+            else
+                Remender = Amount - paid;
             Paid = paid;
-
+            IgnoreRemender = false;
             return clsSubscriptions.AddToPaymentHistory( Paid, DateTime.Now, Remender, row["Code"].ToString(), CurrentRowDate.ToString("MM-yyyy"),clsGlobal.CurrentUser.Code);
         }
         PrintPreviewDialog printPreviewDialog = new PrintPreviewDialog();
@@ -162,6 +165,12 @@ namespace K_M_S_PROGRAM.Resources
             dgvPaymentSubscriotins.Rows.Clear();
             ShowPayMentInfo(txSearsh.Text);
             
+        }
+
+        private void PayWithIgnoreTheRemender_Click(object sender, EventArgs e)
+        {
+            IgnoreRemender = true;
+            دفعالإشتراكToolStripMenuItem_Click(null,null);
         }
     }
 }

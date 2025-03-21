@@ -10,6 +10,13 @@ namespace MyBusinessLayer
 {
     public class clsGeneric
     {
+        //
+        public static int GetNumberOfAttendedMember(char Kind)
+        {
+            return clsGenericData.GetNumberOfAttendedMember(Kind);
+        }
+
+        //
         public static DataTable FillComboBoxWithNames(string query)
         {
             return clsGenericData.FillComboBoxWithNames(query);

@@ -484,5 +484,28 @@ namespace MyDataAccessLayer
             return table;
         }
 
+        public static int NumberOfKids()
+        {
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
+            {
+                using (SqlCommand command = new SqlCommand("exec SP_GetNumberOfKids", connection))
+                {
+                    try
+                    {
+                        connection.Open();
+                        return (int)command.ExecuteScalar();
+                        
+                    }
+                    catch (Exception)
+                    {
+                        return 0;
+                    }
+                }
+            }
+
+            
+        }
+
     }
 }

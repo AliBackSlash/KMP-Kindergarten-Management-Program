@@ -9,7 +9,7 @@ using System.Diagnostics;
 
 namespace MyDataAccessLayer
 {
-    public class clsClassesData
+    public class clsClasesData
     {
         //done
         public static DataTable GetClassesMenue()
@@ -149,6 +149,28 @@ namespace MyDataAccessLayer
                 }
             }
             return Name;
+        }
+        public static int NumberOfClases()
+        {
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
+            {
+                using (SqlCommand command = new SqlCommand("exec SP_NumberOfClases", connection))
+                {
+                    try
+                    {
+                        connection.Open();
+                        return (int)command.ExecuteScalar();
+
+                    }
+                    catch (Exception)
+                    {
+                        return 0;
+                    }
+                }
+            }
+
+
         }
 
     }

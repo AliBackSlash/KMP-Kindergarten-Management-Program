@@ -289,6 +289,28 @@ namespace MyDataAccessLayer
 
             return find;
         }
+        public static int NumberOfTeachers()
+        {
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
+            {
+                using (SqlCommand command = new SqlCommand("exec SP_NumberOfTeachers", connection))
+                {
+                    try
+                    {
+                        connection.Open();
+                        return (int)command.ExecuteScalar();
+
+                    }
+                    catch (Exception)
+                    {
+                        return 0;
+                    }
+                }
+            }
+
+
+        }
     }
        
     

@@ -23,8 +23,21 @@ namespace K_M_S_PROGRAM.Resources
         enum enWhoEnter { Employee, worker, child }
         enWhoEnter whoEnter = enWhoEnter.child;
         string Period = "";
-       
 
+        //int NumOfStudebts = clsGeneric.ReturnLastValueIWantINT("select count(1) from KidsPersonalInfo");
+        //int NumOfTeachers = clsGeneric.ReturnLastValueIWantINT("select count(1) from TeachersInfo");
+        //int NumOfWorkers = clsGeneric.ReturnLastValueIWantINT("select count(1) from WorkersInfo");
+
+
+
+        //int KidsCame = clsGeneric.ReturnLastValueIWantINT("select count(ID) from EnterAndLeaveHistory where EnterAndLeaveHistory.Kind='C'" +
+        //    $" and EnterAndLeaveHistory.Date= cast('{DateTime.Now.ToString("MM-dd-yyyy")}' as date)");
+        
+        //int TeachersCame = clsGeneric.ReturnLastValueIWantINT("select count(ID) from EnterAndLeaveHistory where EnterAndLeaveHistory.Kind='T'" +
+        //    $" and EnterAndLeaveHistory.Date=cast('{DateTime.Now.ToString("MM-dd-yyyy")}' as date)"); 
+        
+        //int WorkersCame = clsGeneric.ReturnLastValueIWantINT("select count(ID) from EnterAndLeaveHistory where EnterAndLeaveHistory.Kind='T'" +
+        //    $" and EnterAndLeaveHistory.Date=cast('{DateTime.Now.ToString("MM-dd-yyyy")}' as date)");
         private void btEmployees_Click(object sender, EventArgs e)
         {
             Period = rdAM.Checked ? "حضور" : "إنصراف";

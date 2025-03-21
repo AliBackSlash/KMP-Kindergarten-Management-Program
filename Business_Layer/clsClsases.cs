@@ -12,45 +12,46 @@ namespace MyBusinessLayer
     {
         public static DataTable GetClassesInfo()
         {
-            return clsClassesData.GetClassesMenue();
+            return clsClasesData.GetClassesMenue();
         }
 
         public static bool DeleteAllClasses()
         {
 
-            return clsClassesData.DeleteAllClasses();
+            return clsClasesData.DeleteAllClasses();
         }
 
         public static bool DeleteClasseWithID(int ID)
         {
 
-            return clsClassesData.DeleteClasseWithID(ID);
+            return clsClasesData.DeleteClasseWithID(ID);
         }
 
         public static bool AddClass(string ClaseName)
         {
 
-            return clsClassesData.AddClass(ClaseName);
+            return clsClasesData.AddClass(ClaseName);
         }
 
         public static bool UpdateClass(byte Code, string ClaseName)
         {
 
-            return clsClassesData.UpdateClass(Code, ClaseName);
+            return clsClasesData.UpdateClass(Code, ClaseName);
         }
 
 
         public static short GetClassID(string Name)
         {
-            return clsClassesData.GetClassID(Name);
+            return clsClasesData.GetClassID(Name);
         }
 
         public static string GetClassName(short ID)
         {
-            return clsClassesData.GetClassName(ID);
+            return clsClasesData.GetClassName(ID);
         }
-
-
-
-    }
+        public static int NumberOfClases()
+        {
+            return clsClasesData.NumberOfClases();
+        }
+        }
 }

@@ -199,6 +199,10 @@ namespace MyBusinessLayer
         {
             return clsEmployeeData.DeleteTeacher(ID);
         }
-       
+        public static int NumberOfTeachers()
+        {
+            return clsEmployeeData.NumberOfTeachers();
+        }
+
     }
 }

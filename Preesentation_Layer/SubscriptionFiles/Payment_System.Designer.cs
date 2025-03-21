@@ -61,6 +61,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.sEllipse1 = new Sipaa.Framework.SEllipse();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPaymentSubscriotins)).BeginInit();
             this.cnTask.SuspendLayout();
@@ -227,16 +228,17 @@
             this.toolStripMenuItem2,
             this.كتابةملاحظةToolStripMenuItem,
             this.إرسالرسالةToolStripMenuItem,
+            this.toolStripMenuItem1,
             this.دفعالإشتراكToolStripMenuItem});
             this.cnTask.Name = "cnTask";
             this.cnTask.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cnTask.Size = new System.Drawing.Size(175, 100);
+            this.cnTask.Size = new System.Drawing.Size(185, 146);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Image = global::K_M_S_PROGRAM.Properties.Resources.Vision_Test_32;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(174, 24);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(184, 24);
             this.toolStripMenuItem2.Text = "إظهار بيانات الطفل";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.إظهارإلبياناتtoolStripMenuItem2_Click);
             // 
@@ -244,7 +246,7 @@
             // 
             this.كتابةملاحظةToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.notepad;
             this.كتابةملاحظةToolStripMenuItem.Name = "كتابةملاحظةToolStripMenuItem";
-            this.كتابةملاحظةToolStripMenuItem.Size = new System.Drawing.Size(174, 24);
+            this.كتابةملاحظةToolStripMenuItem.Size = new System.Drawing.Size(184, 24);
             this.كتابةملاحظةToolStripMenuItem.Text = "كتابة ملاحظة";
             this.كتابةملاحظةToolStripMenuItem.Click += new System.EventHandler(this.كتابةملاحظةToolStripMenuItem_Click);
             // 
@@ -256,35 +258,35 @@
             this.emailToolStripMenuItem});
             this.إرسالرسالةToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.discussion;
             this.إرسالرسالةToolStripMenuItem.Name = "إرسالرسالةToolStripMenuItem";
-            this.إرسالرسالةToolStripMenuItem.Size = new System.Drawing.Size(174, 24);
+            this.إرسالرسالةToolStripMenuItem.Size = new System.Drawing.Size(184, 24);
             this.إرسالرسالةToolStripMenuItem.Text = "إرسال رسالة عبر";
             // 
             // واتسابToolStripMenuItem
             // 
             this.واتسابToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.logo;
             this.واتسابToolStripMenuItem.Name = "واتسابToolStripMenuItem";
-            this.واتسابToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
+            this.واتسابToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.واتسابToolStripMenuItem.Text = "Whats App";
             // 
             // sMSToolStripMenuItem
             // 
             this.sMSToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.sms;
             this.sMSToolStripMenuItem.Name = "sMSToolStripMenuItem";
-            this.sMSToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
+            this.sMSToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.sMSToolStripMenuItem.Text = "SMS";
             // 
             // emailToolStripMenuItem
             // 
             this.emailToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.gmail;
             this.emailToolStripMenuItem.Name = "emailToolStripMenuItem";
-            this.emailToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
+            this.emailToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.emailToolStripMenuItem.Text = "Email";
             // 
             // دفعالإشتراكToolStripMenuItem
             // 
             this.دفعالإشتراكToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.pound;
             this.دفعالإشتراكToolStripMenuItem.Name = "دفعالإشتراكToolStripMenuItem";
-            this.دفعالإشتراكToolStripMenuItem.Size = new System.Drawing.Size(174, 24);
+            this.دفعالإشتراكToolStripMenuItem.Size = new System.Drawing.Size(184, 24);
             this.دفعالإشتراكToolStripMenuItem.Text = "دفع الإشتراك";
             this.دفعالإشتراكToolStripMenuItem.Click += new System.EventHandler(this.دفعالإشتراكToolStripMenuItem_Click);
             // 
@@ -386,6 +388,14 @@
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Image = global::K_M_S_PROGRAM.Properties.Resources.v3;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(184, 24);
+            this.toolStripMenuItem1.Text = "دفع مع تجاهل الباقي";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.PayWithIgnoreTheRemender_Click);
+            // 
             // Payment_Subsciptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -438,5 +448,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Name;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private Guna.UI2.WinForms.Guna2TextBox txSearsh;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }

@@ -125,17 +125,16 @@ namespace K_M_S_PROGRAM.Resources
 
         private void btDelete_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("هل انت متأكد من ازالة هذا الطفل ", "تأكيد",MessageBoxButtons.OKCancel) == DialogResult.OK)
+            
+            if (MessageBox.Show("هل انت متأكد من ازالة هذا الطفل\nعند اختارك موافق سيتم حذف الطفل بكل مشتقاته ", "تأكيد",MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-
-
 
                 if (clsChild.DeleteChildWhithAllInfo((int)dgvKidsMenue.CurrentRow.Cells["Code"].Value, dgvKidsMenue.CurrentRow.Cells["PerantID"].Value?.ToString()))
                     clsUtil.Show("تم إزالة الطفل بنجاح");
                 else
+                    clsUtil.Show(" لم تتم إزالة الطفل ",false);
 
-
-                    table = clsChild.GetKidsMenue();
+                table = clsChild.GetKidsMenue();
                 dgvKidsMenue.Rows.Clear();
                 ShowKidsInfo();
             }

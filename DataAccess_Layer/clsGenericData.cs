@@ -10,6 +10,30 @@ namespace MyDataAccessLayer
 {
     public class clsGenericData
     {
+        //
+        public static int GetNumberOfAttendedMember(char Kind)
+        {
+
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))   
+            using (SqlCommand command = new SqlCommand("Exec SP_GetNumberOfAttendedMember @Kind ,@Date", connection))
+            {
+                command.Parameters.AddWithValue("@Kind", Kind);
+                command.Parameters.AddWithValue("@Date", DateTime.Now);
+                try
+                {
+                    connection.Open();
+                    return (int)command.ExecuteScalar();
+                }
+                catch (Exception)
+                {
+                    return -1;
+                }
+               
+            }  
+
+        }
+        //
         public static DataTable FillComboBoxWithNames(string query)
         {
 

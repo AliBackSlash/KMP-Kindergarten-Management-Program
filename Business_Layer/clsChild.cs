@@ -1,6 +1,7 @@
 ﻿using MyDataAccessLayer;
 using System;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace MyBusinessLayer
 {
@@ -215,6 +216,12 @@ namespace MyBusinessLayer
         public static DataTable GetArchiveMenue(string Name)
         {
             return clsChildData.GetUnActiveMenue(Name);
+        }
+
+        public static int NumberOfKids()
+        {
+            return clsChildData.NumberOfKids();
+
         }
 
     }
