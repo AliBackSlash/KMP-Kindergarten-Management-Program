@@ -7,33 +7,28 @@ namespace MyDataAccessLayer
 {
     public class clsSubscriptionsData
     {
-        public static bool UpdateRemnderForChild(string Code, string Month, float Amount, int UserID)
+        public static bool UpdateRemnderForChild(string Code, DateTime Month, float Amount, int UserID)
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                using (SqlCommand command = new SqlCommand("exec SP_UpdateRemnderForChild @Month ,@Code", connection))
+                using (SqlCommand command = new SqlCommand("exec SP_UpdateRemnderForChild @Month ,@Code,@Amount,@UserID", connection))
                 {
                     command.Parameters.AddWithValue("@Code", Code);
                     command.Parameters.AddWithValue("@Month", Month);
+                    command.Parameters.AddWithValue("@UserID", UserID);
+                    command.Parameters.AddWithValue("@Amount", Amount);
 
-                    bool Saccess = false;
                     try
                     {
                         connection.Open();
-                        if (command.ExecuteNonQuery() != 0)
-                        {
-                            Saccess = true;
-                            if (Month == DateTime.Now.ToString("MM-yyyy"))
-                                clsTreasuryData.AddToTreasuryMonthlyData(Amount, 'B', true, UserID, Convert.ToInt32(Code));
-                            else
-                                clsTreasuryData.AddToTreasuryYearlyData(Amount,'B', true, UserID, Convert.ToInt32(Code));
-                        }
+                        // يتم حفظ سجل الخزينة من داخل ال stored procedure
+                        return command.ExecuteNonQuery() != 0;
+                        
                     }
                     catch (Exception)
                     {
-                        Saccess = false;
+                        return false;
                     }
-                    return Saccess;
                 }
             }
         }
@@ -164,12 +159,12 @@ namespace MyDataAccessLayer
         }
 
         public static bool AddToPaymentHistory(float Amount,
-            DateTime DateOfPayment, float Remander, string Code, string Month, int UserID)
+            DateTime DateOfPayment, float Remander, string Code, DateTime Month, int UserID)
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
                
-                using (SqlCommand command = new SqlCommand("Exec SP_AddToPaymentHistory @Amount  , @DateOfPayment , @Remander , @Code , @Month", connection))
+                using (SqlCommand command = new SqlCommand("Exec SP_AddToPaymentHistory @Amount  , @DateOfPayment , @Remander , @Code , @Month,@UserID", connection))
                 {
 
                     command.Parameters.AddWithValue("@Amount", Amount);
@@ -177,22 +172,20 @@ namespace MyDataAccessLayer
                     command.Parameters.AddWithValue("@Remander", Remander);
                     command.Parameters.AddWithValue("@Code", Code);
                     command.Parameters.AddWithValue("@Month", Month);
+                    command.Parameters.AddWithValue("@UserID", UserID);
 
-                    bool Saccess = false;
                     try
                     {
+                        // يتم حفظ سجل الخزينة من داخل ال stored procedure
+
                         connection.Open();
-                        if (command.ExecuteNonQuery() != 0)
-                        {
-                            Saccess = true;
-                            clsTreasuryData.AddToTreasuryMonthlyData(Convert.ToSingle(Amount), 'K', true, UserID, Convert.ToInt32(Code));
-                        }
+                        return command.ExecuteNonQuery() != 0;
+                        
                     }
                     catch (Exception)
                     {
-                        Saccess = false;
+                        return false;
                     }
-                    return Saccess;
                 }
             }
         }

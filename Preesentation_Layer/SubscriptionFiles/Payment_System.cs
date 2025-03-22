@@ -69,7 +69,7 @@ namespace K_M_S_PROGRAM.Resources
                 Remender = Amount - paid;
             Paid = paid;
             IgnoreRemender = false;
-            return clsSubscriptions.AddToPaymentHistory( Paid, DateTime.Now, Remender, row["Code"].ToString(), CurrentRowDate.ToString("MM-yyyy"),clsGlobal.CurrentUser.Code);
+            return clsSubscriptions.AddToPaymentHistory( Paid, DateTime.Now, Remender, row["Code"].ToString(), CurrentRowDate,clsGlobal.CurrentUser.Code);
         }
         PrintPreviewDialog printPreviewDialog = new PrintPreviewDialog();
 

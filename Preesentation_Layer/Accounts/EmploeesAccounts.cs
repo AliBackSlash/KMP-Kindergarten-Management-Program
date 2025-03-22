@@ -51,7 +51,7 @@ namespace K_M_S_PROGRAM.Resources
             
 
             return clsEmployeesAccounts.AddEmployeesAccountstoHistory(Code, DateTime.Now, add,dis, salary,
-                DateTime.Now.ToString("MM-yyyy"), SalaryMonth, Kind,clsGlobal.CurrentUser.Code);
+                SalaryMonth, Kind,clsGlobal.CurrentUser.Code);
         }
        
         private void SaveEmpToHistory()

@@ -43,9 +43,9 @@ namespace MyBusinessLayer
         }
 
 
-        public static bool AddEmployeesAccountstoHistory(int ID, DateTime Date, float Add, float Dis, float Amount, string Month, DateTime SalaryMonth, char Kind, int UserID)
+        public static bool AddEmployeesAccountstoHistory(int ID, DateTime Date, float Add, float Dis, float Amount, DateTime SalaryMonth, char Kind, int UserID)
         {
-            return clsEmployeesAccountsData.AddEmployeesAccountstHistory(ID, Date, Add, Dis, Amount, Month, SalaryMonth, Kind,UserID);
+            return clsEmployeesAccountsData.AddEmployeesAccountstHistory(ID, Date, Add, Dis, Amount, SalaryMonth, Kind,UserID);
         }
 
         public static DataTable GetEmployeesAccountHistory(char Kind)

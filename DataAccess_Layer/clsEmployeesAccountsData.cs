@@ -126,11 +126,10 @@ namespace MyDataAccessLayer
             }
         }
         //done
-        public static bool AddEmployeesAccountstHistory(int ID,DateTime Date, float Add, float Dis, float Amount, string Month, DateTime SalaryMonth, char Kind, int UserID)
+        public static bool AddEmployeesAccountstHistory(int ID,DateTime Date, float Add, float Dis, float Amount, DateTime SalaryMonth, char Kind, int UserID)
         {
-            bool Saccess = false;
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
-            using (SqlCommand command = new SqlCommand("exec SP_AddEmployeesAccountstoHistory @ID ,@Date ,@Add ,@Dis ,@Amount  ,@Kind ,@SalaryMonth ", connection))
+            using (SqlCommand command = new SqlCommand("exec SP_AddEmployeesAccountstoHistory @ID ,@Date ,@Add ,@Dis ,@Amount  ,@Kind ,@SalaryMonth,@UserID ", connection))
             {
                 command.Parameters.AddWithValue("@ID", ID);
                 command.Parameters.AddWithValue("@Date", Date);
@@ -138,25 +137,22 @@ namespace MyDataAccessLayer
                 command.Parameters.AddWithValue("@Dis", Dis);
                 command.Parameters.AddWithValue("@Kind", Kind);
                 command.Parameters.AddWithValue("@Amount", Amount);
-                command.Parameters.AddWithValue("@Month", Month);
+                command.Parameters.AddWithValue("@UserID", UserID);
                 command.Parameters.AddWithValue("@SalaryMonth", SalaryMonth);
 
                 try
                 {
+                    // يتم حفظ سجل الخزينة من داخل ال stored procedure
+
                     connection.Open();
-                    if (command.ExecuteNonQuery() != 0)
-                    {
-                        Saccess = true;
-                        //اعمل حساب لو تم دفع راتب في شهر فائت انه ينضاف للشهر اللي ينتمي ليه ويزيد بمقدار المبلغ في الارشيف السنوي
-                        clsTreasuryData.AddToTreasuryMonthlyData(Convert.ToSingle(Amount), Kind, false, UserID, Convert.ToInt32(ID));
-                    }
+                    return command.ExecuteNonQuery() != 0;
+                   
                 }
                 catch (Exception)
                 {
-                    Saccess = false;
+                    return false;
                 }
             }
-            return Saccess;
         }
         //done
         public static DataTable GetEmployeesAccountHistory(char Kind)

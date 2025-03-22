@@ -69,7 +69,7 @@ namespace MyDataAccessLayer
         public static bool AddToTreasuryMonthlyData(float Amount, char Kind, bool Trunsaction, int UserID, int MemberID)
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
-            using (SqlCommand command = new SqlCommand("Exec SP_AddToTreasuryMonthlyData @Amount ,@Kind ,@Trunsaction ,@UserID  ,@MemberID\r\n", connection))
+            using (SqlCommand command = new SqlCommand("Exec SP_AddToTreasuryMonthlyData @Amount ,@Kind ,@Trunsaction ,@UserID  ,@MemberID", connection))
             {
                 command.Parameters.AddWithValue("@Amount", Amount);
                 command.Parameters.AddWithValue("@Kind", Kind);

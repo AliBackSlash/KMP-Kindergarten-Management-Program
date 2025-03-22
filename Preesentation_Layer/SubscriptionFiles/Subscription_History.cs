@@ -49,7 +49,7 @@ namespace K_M_S_PROGRAM.Resources
                         image = (bool)row["Gendor"] ? Properties.Resources.boy : Properties.Resources.girl;
                         period = (bool)row["Period"] ? "صباحي" : "مسائي";
 
-                        dgvPaymentHistory.Rows.Add(image, row["Code"], row["Name"],Convert.ToDateTime( row["DateOfPayment"]).ToString("dd-MM-yyyy"), row["DateOfPayment"], row["Level"],
+                        dgvPaymentHistory.Rows.Add(image, row["Code"], row["Name"],Convert.ToDateTime( row["DateOfPayment"]).ToString("dd-MM-yyyy"), row["Month"], row["Level"],
                             row["Class"], period, Convert.ToInt16(row["Amount"]), Convert.ToInt16(row["Remander"]));
                     }
                     
@@ -157,7 +157,7 @@ namespace K_M_S_PROGRAM.Resources
         private void دفعالباقيoolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (clsSubscriptions.UpdateRemnderForChild(dgvPaymentHistory.CurrentRow.Cells["Code"].Value.ToString(), 
-                dgvPaymentHistory.CurrentRow.Cells["Date"].Value.ToString(),Convert.ToSingle(dgvPaymentHistory.CurrentRow.Cells["Remender1"].Value),clsGlobal.CurrentUser.Code))
+                DateTime.ParseExact( dgvPaymentHistory.CurrentRow.Cells["Date"].Value.ToString(),"MM-yyyy",null),Convert.ToSingle(dgvPaymentHistory.CurrentRow.Cells["Remender1"].Value),clsGlobal.CurrentUser.Code))
                 clsUtil.Show("تم تسديد المبلغ المتبقي بنجاح ");
             else
                 clsUtil.Show("يوجد مشكلة ما حاول لاحقا",false);

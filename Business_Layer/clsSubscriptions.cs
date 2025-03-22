@@ -33,12 +33,12 @@ namespace MyBusinessLayer
         }
 
         public static bool AddToPaymentHistory(float Amount
-           , DateTime DateOfPayment, float Remander, string Code, string Month, int UserID)
+           , DateTime DateOfPayment, float Remander, string Code, DateTime Month, int UserID)
         {
             return clsSubscriptionsData.AddToPaymentHistory(Amount, DateOfPayment, Remander, Code, Month,UserID);
         }
 
-        public static bool UpdateRemnderForChild(string Code, string Month,float Amount, int UserID)
+        public static bool UpdateRemnderForChild(string Code, DateTime Month,float Amount, int UserID)
         {
             return clsSubscriptionsData.UpdateRemnderForChild(Code, Month, Amount,UserID);
         }
