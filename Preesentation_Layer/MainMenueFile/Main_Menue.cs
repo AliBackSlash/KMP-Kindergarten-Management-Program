@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using LiveCharts.WinForms;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace K_M_S_PROGRAM.Resources
 {
@@ -22,6 +23,10 @@ namespace K_M_S_PROGRAM.Resources
         {
             lbTotalAmount.Text = clsMainMenue.TreasuryAmmount().ToString();
             lbCurrentTotalAmount.Text = clsMainMenue.CurrentTreasuryAmmount().ToString();
+            if (Convert.ToInt16(lbCurrentTotalAmount.Text) < 0)
+                lbCurrentTotalAmount.ForeColor = Color.DarkRed;
+            else
+                lbCurrentTotalAmount.ForeColor = Color.White;
 
             int NumOfStudebts = clsChild.NumberOfKids();
             int NumOfTeachers = clsEmployee.NumberOfTeachers();

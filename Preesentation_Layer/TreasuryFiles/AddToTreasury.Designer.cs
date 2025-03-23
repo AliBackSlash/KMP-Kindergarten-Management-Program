@@ -48,6 +48,7 @@
             this.rdOutputs.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
             this.rdOutputs.ButtonColorChecked = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(220)))), ((int)(((byte)(95)))));
             this.rdOutputs.ButtonToggleSize = 12F;
+            this.rdOutputs.Checked = true;
             this.rdOutputs.DrawCircleButton = true;
             this.rdOutputs.DrawCircleToggle = true;
             this.rdOutputs.Location = new System.Drawing.Point(31, 104);
@@ -56,6 +57,7 @@
             this.rdOutputs.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.rdOutputs.Size = new System.Drawing.Size(26, 24);
             this.rdOutputs.TabIndex = 24;
+            this.rdOutputs.TabStop = true;
             this.rdOutputs.UseVisualStyleBackColor = false;
             // 
             // label5

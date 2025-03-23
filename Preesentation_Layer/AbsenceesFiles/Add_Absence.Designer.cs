@@ -42,11 +42,11 @@
             this.sataPictureBox2 = new SATAUiFramework.Controls.SATAPictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.sataPanel1 = new SATAUiFramework.SATAPanel();
+            this.picTirnPhoto = new SATAUiFramework.Controls.SATAPictureBox();
             this.btEntered = new Guna.UI2.WinForms.Guna2Button();
             this.txSearsh = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbVevationMessage = new System.Windows.Forms.Label();
             this.lbTitle = new System.Windows.Forms.Label();
-            this.picTirnPhoto = new SATAUiFramework.Controls.SATAPictureBox();
             this.progNumberOfComes = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.tableLayoutPanel1.SuspendLayout();
             this.sataPanel2.SuspendLayout();
@@ -297,6 +297,23 @@
             this.sataPanel1.Size = new System.Drawing.Size(1049, 670);
             this.sataPanel1.TabIndex = 3;
             // 
+            // picTirnPhoto
+            // 
+            this.picTirnPhoto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picTirnPhoto.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.picTirnPhoto.BorderColor = System.Drawing.Color.Crimson;
+            this.picTirnPhoto.BorderColor2 = System.Drawing.Color.MediumSpringGreen;
+            this.picTirnPhoto.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.picTirnPhoto.BorderSize = 2;
+            this.picTirnPhoto.GradientAngle = 50F;
+            this.picTirnPhoto.Image = global::K_M_S_PROGRAM.Properties.Resources.boy;
+            this.picTirnPhoto.Location = new System.Drawing.Point(473, 107);
+            this.picTirnPhoto.Name = "picTirnPhoto";
+            this.picTirnPhoto.Size = new System.Drawing.Size(100, 100);
+            this.picTirnPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picTirnPhoto.TabIndex = 24;
+            this.picTirnPhoto.TabStop = false;
+            // 
             // btEntered
             // 
             this.btEntered.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -385,35 +402,19 @@
             this.lbTitle.Text = "تسجيل حضور الطلاب ";
             this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // picTirnPhoto
-            // 
-            this.picTirnPhoto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.picTirnPhoto.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.picTirnPhoto.BorderColor = System.Drawing.Color.Crimson;
-            this.picTirnPhoto.BorderColor2 = System.Drawing.Color.MediumSpringGreen;
-            this.picTirnPhoto.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.picTirnPhoto.BorderSize = 2;
-            this.picTirnPhoto.GradientAngle = 50F;
-            this.picTirnPhoto.Image = global::K_M_S_PROGRAM.Properties.Resources.boy;
-            this.picTirnPhoto.Location = new System.Drawing.Point(474, 107);
-            this.picTirnPhoto.Name = "picTirnPhoto";
-            this.picTirnPhoto.Size = new System.Drawing.Size(100, 100);
-            this.picTirnPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picTirnPhoto.TabIndex = 24;
-            this.picTirnPhoto.TabStop = false;
-            // 
             // progNumberOfComes
             // 
             this.progNumberOfComes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.progNumberOfComes.BackColor = System.Drawing.Color.Transparent;
             this.progNumberOfComes.Location = new System.Drawing.Point(455, 89);
             this.progNumberOfComes.Name = "progNumberOfComes";
-            this.progNumberOfComes.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.progNumberOfComes.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.progNumberOfComes.ProgressColor = System.Drawing.Color.Teal;
+            this.progNumberOfComes.ProgressColor2 = System.Drawing.Color.Aqua;
             this.progNumberOfComes.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.progNumberOfComes.ShadowDecoration.Parent = this.progNumberOfComes;
             this.progNumberOfComes.Size = new System.Drawing.Size(138, 138);
             this.progNumberOfComes.TabIndex = 58;
+            this.progNumberOfComes.Value = 100;
             // 
             // Add_Absence
             // 

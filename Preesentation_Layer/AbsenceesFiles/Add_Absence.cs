@@ -24,26 +24,32 @@ namespace K_M_S_PROGRAM.Resources
         enWhoEnter whoEnter = enWhoEnter.child;
         string Period = "";
 
-        //int NumOfStudebts = clsGeneric.ReturnLastValueIWantINT("select count(1) from KidsPersonalInfo");
-        //int NumOfTeachers = clsGeneric.ReturnLastValueIWantINT("select count(1) from TeachersInfo");
-        //int NumOfWorkers = clsGeneric.ReturnLastValueIWantINT("select count(1) from WorkersInfo");
+        static int NumOfStudebts ;
+        static int NumOfTeachers ;
+        static int NumOfWorkers;
+        static int KidsCame;
+        static int TeachersCame;
+        static int WorkersCame;
 
-
-
-        //int KidsCame = clsGeneric.ReturnLastValueIWantINT("select count(ID) from EnterAndLeaveHistory where EnterAndLeaveHistory.Kind='C'" +
-        //    $" and EnterAndLeaveHistory.Date= cast('{DateTime.Now.ToString("MM-dd-yyyy")}' as date)");
         
-        //int TeachersCame = clsGeneric.ReturnLastValueIWantINT("select count(ID) from EnterAndLeaveHistory where EnterAndLeaveHistory.Kind='T'" +
-        //    $" and EnterAndLeaveHistory.Date=cast('{DateTime.Now.ToString("MM-dd-yyyy")}' as date)"); 
-        
-        //int WorkersCame = clsGeneric.ReturnLastValueIWantINT("select count(ID) from EnterAndLeaveHistory where EnterAndLeaveHistory.Kind='T'" +
-        //    $" and EnterAndLeaveHistory.Date=cast('{DateTime.Now.ToString("MM-dd-yyyy")}' as date)");
+
         private void btEmployees_Click(object sender, EventArgs e)
         {
             Period = rdAM.Checked ? "حضور" : "إنصراف";
             picTirnPhoto.Image = Properties.Resources.teacher;
             lbTitle.Text = "تسجيل " + Period + " المعلمين";
             whoEnter = enWhoEnter.Employee;
+            if (rdAM.Checked)
+            {
+                progNumberOfComes.Maximum = NumOfTeachers;
+                progNumberOfComes.Value = TeachersCame = clsGeneric.GetNumberOfAttendedMember('T');
+            }
+            else
+            {
+                progNumberOfComes.Maximum = NumOfTeachers;
+                progNumberOfComes.Value = 0;
+            }
+
         }
 
         private void btWorker_Click(object sender, EventArgs e)
@@ -53,6 +59,16 @@ namespace K_M_S_PROGRAM.Resources
             picTirnPhoto.Image = Properties.Resources.worker;
             lbTitle.Text = "تسجيل " + Period + " العمال";
             whoEnter = enWhoEnter.worker;
+            if (rdAM.Checked)
+            {
+                progNumberOfComes.Maximum = NumOfWorkers;
+                progNumberOfComes.Value = WorkersCame = clsGeneric.GetNumberOfAttendedMember('W');
+            }
+            else
+            {
+                progNumberOfComes.Maximum = NumOfWorkers;
+                progNumberOfComes.Value = 0;
+            }
         }
 
         private void btKids_Click(object sender, EventArgs e)
@@ -62,6 +78,17 @@ namespace K_M_S_PROGRAM.Resources
             picTirnPhoto.Image = Properties.Resources.boy;
             lbTitle.Text = $"تسجيل " + Period + " الطلاب ";
             whoEnter = enWhoEnter.child;
+
+            if(rdAM.Checked)
+            {
+                progNumberOfComes.Maximum = NumOfStudebts;
+                progNumberOfComes.Value = KidsCame = clsGeneric.GetNumberOfAttendedMember('C');
+            }
+            else
+            {
+                progNumberOfComes.Maximum = NumOfStudebts;
+                progNumberOfComes.Value = 0;
+            }
         }
 
         private void EnteredTheMember()
@@ -91,7 +118,7 @@ namespace K_M_S_PROGRAM.Resources
                             date = DateTime.Now;
 
                             if (clsAbsences.ISThisMemberAlreadyRegister(txSearsh.Text, date, 'C'))
-                                clsUtil.Show("تم تحضير هذا الطالب بالفعل", false);
+                                { clsUtil.Show("تم تحضير هذا الطالب بالفعل", false);  }
                             else
                             {
                                 
@@ -103,8 +130,11 @@ namespace K_M_S_PROGRAM.Resources
 
                                 }
                                
-                                if (!clsAbsences.AddToEnterAndLeaveHistory(Code, date, late, 'C'))
+                                if (clsAbsences.AddToEnterAndLeaveHistory(Code, date, late, 'C'))
+                                    progNumberOfComes.Value = ++KidsCame;
+                                else
                                     clsUtil.Show("هناك مشكلة في البيانات يرجي التحدث مع الدعم الفني ", false);
+
                             }
 
 
@@ -118,7 +148,7 @@ namespace K_M_S_PROGRAM.Resources
                         {
                             date = DateTime.Now;
                             if (clsAbsences.ISThisMemberAlreadyRegister(txSearsh.Text, date, 'T'))
-                                clsUtil.Show("تم تحضير هذا الموظف بالفعل", false);
+                                { clsUtil.Show("تم تحضير هذا الموظف بالفعل", false); }
                             else
                             {
                                 DateTime SettingEnterTimeForTeacher = Convert.ToDateTime(clsGlobal.Settings.TimeLateForTeachers);
@@ -129,8 +159,10 @@ namespace K_M_S_PROGRAM.Resources
 
                                 }
 
-                                
-                                if (!clsAbsences.AddToEnterAndLeaveHistory(Code, date,  late, 'T'))
+
+                                if (clsAbsences.AddToEnterAndLeaveHistory(Code, date, late, 'T'))
+                                    progNumberOfComes.Value = ++TeachersCame;
+                                else
                                     clsUtil.Show("هناك مشكلة في البيانات يرجي التحدث مع الدعم الفني ", false);
                             }
 
@@ -144,7 +176,7 @@ namespace K_M_S_PROGRAM.Resources
                         {
                             date = DateTime.Now;
                             if (clsAbsences.ISThisMemberAlreadyRegister(txSearsh.Text, date, 'W'))
-                                clsUtil.Show("تم تحضير هذا الموظف بالفعل", false );
+                               { clsUtil.Show("تم تحضير هذا الموظف بالفعل", false);  }
                             else
                             {
                                 DateTime SettingEnterTimeForTeacher = Convert.ToDateTime(clsGlobal.Settings.TimeLateForWorkers);
@@ -154,8 +186,10 @@ namespace K_M_S_PROGRAM.Resources
                                     late = (short)(TimeNow - SettingEnterTimeForTeacher).TotalMinutes;
 
                                 }
-                               
-                                if (!clsAbsences.AddToEnterAndLeaveHistory(Code, date, late, 'W'))
+
+                                if (clsAbsences.AddToEnterAndLeaveHistory(Code, date, late, 'W'))
+                                    progNumberOfComes.Value = ++WorkersCame;
+                                else
                                     clsUtil.Show("هناك مشكلة في البيانات يرجي التحدث مع الدعم الفني ", false);
                             }
 
@@ -336,6 +370,18 @@ namespace K_M_S_PROGRAM.Resources
 
         public void Add_Absence_Load(object sender, EventArgs e)
         {
+            Task Task = new Task(() => {
+                NumOfStudebts = clsChild.NumberOfKids();
+                NumOfTeachers = clsEmployee.NumberOfTeachers();
+                NumOfWorkers = clsGeneric.ReturnLastValueIWantINT("select count(1) from WorkerInfo");
+                KidsCame = clsGeneric.GetNumberOfAttendedMember('C');
+                TeachersCame = clsGeneric.GetNumberOfAttendedMember('T');
+                WorkersCame = clsGeneric.GetNumberOfAttendedMember('W');
+            });
+            Task.Start();
+
+            progNumberOfComes.Maximum = NumOfStudebts;
+            progNumberOfComes.Value = KidsCame = clsGeneric.GetNumberOfAttendedMember('C');
             if ((byte)DateTime.Now.DayOfWeek == clsGlobal.Settings.Vication1
                ||
              (byte)DateTime.Now.DayOfWeek == clsGlobal.Settings.Vication2)
@@ -364,7 +410,7 @@ namespace K_M_S_PROGRAM.Resources
                 rdAM.Checked = true;
 
             txSearsh.Focus();
-
+            
         }
 
         private void txSearsh_KeyPress(object sender, KeyPressEventArgs e)
