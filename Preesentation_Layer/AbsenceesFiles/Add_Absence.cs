@@ -30,6 +30,9 @@ namespace K_M_S_PROGRAM.Resources
         static int KidsCame;
         static int TeachersCame;
         static int WorkersCame;
+        static int KidsLeave;
+        static int TeachersLeave;
+        static int WorkersLeave;
 
         
 
@@ -47,7 +50,7 @@ namespace K_M_S_PROGRAM.Resources
             else
             {
                 progNumberOfComes.Maximum = NumOfTeachers;
-                progNumberOfComes.Value = 0;
+                progNumberOfComes.Value = TeachersLeave  = clsGeneric.GetNumberOfLeavedMember('T');
             }
 
         }
@@ -67,7 +70,7 @@ namespace K_M_S_PROGRAM.Resources
             else
             {
                 progNumberOfComes.Maximum = NumOfWorkers;
-                progNumberOfComes.Value = 0;
+                progNumberOfComes.Value = WorkersLeave = clsGeneric.GetNumberOfLeavedMember('W');
             }
         }
 
@@ -87,7 +90,7 @@ namespace K_M_S_PROGRAM.Resources
             else
             {
                 progNumberOfComes.Maximum = NumOfStudebts;
-                progNumberOfComes.Value = 0;
+                progNumberOfComes.Value = KidsLeave = clsGeneric.GetNumberOfLeavedMember('C');
             }
         }
 
@@ -236,8 +239,10 @@ namespace K_M_S_PROGRAM.Resources
                                 clsUtil.Show("تم إنصراف هذا الطالب بالفعل", false);
                             else
                             {
-                               
-                                if (!clsAbsences.AddToLeaveHistory( Code,date, 'C'))
+
+                                if (clsAbsences.AddToLeaveHistory(Code, date, 'C'))
+                                    progNumberOfComes.Value = ++KidsLeave;
+                                else
                                     clsUtil.Show("هناك مشكلة في البيانات يرجي التحدث مع الدعم الفني ", false);
                             }
 
@@ -261,8 +266,10 @@ namespace K_M_S_PROGRAM.Resources
                             else
                             {
 
-                              
-                                if (!clsAbsences.AddToLeaveHistory(Code,date, 'T'))
+
+                                if (clsAbsences.AddToLeaveHistory(Code, date, 'T'))
+                                    progNumberOfComes.Value = ++TeachersLeave;
+                                else
                                     clsUtil.Show("هناك مشكلة في البيانات يرجي التحدث مع الدعم الفني ", false);
                             }
                         }
@@ -281,8 +288,10 @@ namespace K_M_S_PROGRAM.Resources
                                 clsUtil.Show("تم إنصراف هذا العامل بالفعل", false);
                             else
                             {
-                              
-                                if (!clsAbsences.AddToLeaveHistory(Code,date, 'W'))
+
+                                if (clsAbsences.AddToLeaveHistory(Code, date, 'W'))
+                                    progNumberOfComes.Value = ++WorkersLeave;
+                                else
                                     clsUtil.Show("هناك مشكلة في البيانات يرجي التحدث مع الدعم الفني ", false);
                             }
 
@@ -370,15 +379,22 @@ namespace K_M_S_PROGRAM.Resources
 
         public void Add_Absence_Load(object sender, EventArgs e)
         {
-            Task Task = new Task(() => {
+            Task Attend = new Task(() => {
                 NumOfStudebts = clsChild.NumberOfKids();
                 NumOfTeachers = clsEmployee.NumberOfTeachers();
-                NumOfWorkers = clsGeneric.ReturnLastValueIWantINT("select count(1) from WorkerInfo");
+                NumOfWorkers  = clsGeneric.ReturnLastValueIWantINT("select count(1) from WorkerInfo");
                 KidsCame = clsGeneric.GetNumberOfAttendedMember('C');
                 TeachersCame = clsGeneric.GetNumberOfAttendedMember('T');
                 WorkersCame = clsGeneric.GetNumberOfAttendedMember('W');
             });
-            Task.Start();
+             Task Leaved = new Task(() => {
+                 NumOfStudebts = clsChild.NumberOfKids();
+                 NumOfTeachers = clsEmployee.NumberOfTeachers();
+                 NumOfWorkers = clsGeneric.ReturnLastValueIWantINT("select count(1) from WorkerInfo");
+                 KidsLeave = clsGeneric.GetNumberOfLeavedMember('C');
+                 TeachersLeave = clsGeneric.GetNumberOfLeavedMember('T');
+                 WorkersLeave = clsGeneric.GetNumberOfLeavedMember('W');
+            });
 
             progNumberOfComes.Maximum = NumOfStudebts;
             progNumberOfComes.Value = KidsCame = clsGeneric.GetNumberOfAttendedMember('C');
@@ -404,10 +420,10 @@ namespace K_M_S_PROGRAM.Resources
                 btKids.Enabled = btTeacher.Enabled = btWorker.Enabled = true;
             }
 
-            if (DateTime.Now.Hour > 11)
-                rdPM.Checked = true;
+            if (DateTime.Now.Hour > Convert.ToDateTime(clsGlobal.Settings.TimeLeave).Hour)
+                { rdPM.Checked = true; Leaved.Start(); }
             else
-                rdAM.Checked = true;
+                { rdAM.Checked = true; Attend.Start(); }
 
             txSearsh.Focus();
             

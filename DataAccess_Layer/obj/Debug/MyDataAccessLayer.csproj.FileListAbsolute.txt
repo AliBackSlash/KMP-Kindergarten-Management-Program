@@ -40,3 +40,17 @@ D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\M
 D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAccessLayer.csproj.CoreCompileInputs.cache
 D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAccessLayer.dll
 D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAccessLayer.pdb
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\MyDataAccessLayer.dll.config
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\SixLabors.ImageSharp.dll
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\System.Buffers.dll
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\System.Memory.dll
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\System.Numerics.Vectors.dll
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\System.Text.Encoding.CodePages.dll
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\SixLabors.ImageSharp.xml
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\System.Buffers.xml
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\System.Memory.xml
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\System.Numerics.Vectors.xml
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\System.Text.Encoding.CodePages.xml
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAc.96FF54B6.Up2Date

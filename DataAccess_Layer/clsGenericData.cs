@@ -16,10 +16,30 @@ namespace MyDataAccessLayer
 
 
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))   
-            using (SqlCommand command = new SqlCommand("Exec SP_GetNumberOfAttendedMember @Kind ,@Date", connection))
+            using (SqlCommand command = new SqlCommand("Exec SP_GetNumberOfAttendedMember @Kind ", connection))
             {
                 command.Parameters.AddWithValue("@Kind", Kind);
-                command.Parameters.AddWithValue("@Date", DateTime.Now);
+                try
+                {
+                    connection.Open();
+                    return (int)command.ExecuteScalar();
+                }
+                catch (Exception)
+                {
+                    return -1;
+                }
+               
+            }  
+
+        } 
+        public static int GetNumberOfLeavedMember(char Kind)
+        {
+
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))   
+            using (SqlCommand command = new SqlCommand("Exec SP_GetNumberOfLeavedMember @Kind", connection))
+            {
+                command.Parameters.AddWithValue("@Kind", Kind);
                 try
                 {
                     connection.Open();

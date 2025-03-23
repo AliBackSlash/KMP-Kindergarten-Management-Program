@@ -56,6 +56,7 @@
             // 
             // lbProgramName
             // 
+            this.lbProgramName.BackColor = System.Drawing.Color.Transparent;
             this.lbProgramName.Font = new System.Drawing.Font("Times New Roman", 33F, System.Drawing.FontStyle.Bold);
             this.lbProgramName.ForeColor = System.Drawing.Color.Black;
             this.lbProgramName.Location = new System.Drawing.Point(306, 18);
@@ -145,7 +146,7 @@
             this.picShowIcon.BackColor = System.Drawing.Color.White;
             this.picShowIcon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picShowIcon.Image = global::K_M_S_PROGRAM.Properties.Resources.hidden;
-            this.picShowIcon.Location = new System.Drawing.Point(316, 165);
+            this.picShowIcon.Location = new System.Drawing.Point(316, 159);
             this.picShowIcon.Name = "picShowIcon";
             this.picShowIcon.Size = new System.Drawing.Size(25, 19);
             this.picShowIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -174,7 +175,7 @@
             this.TxPassword.HoverState.Parent = this.TxPassword;
             this.TxPassword.IconRight = global::K_M_S_PROGRAM.Properties.Resources._lock;
             this.TxPassword.IconRightSize = new System.Drawing.Size(30, 30);
-            this.TxPassword.Location = new System.Drawing.Point(306, 156);
+            this.TxPassword.Location = new System.Drawing.Point(306, 146);
             this.TxPassword.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.TxPassword.Name = "TxPassword";
             this.TxPassword.PasswordChar = '\0';
@@ -182,7 +183,7 @@
             this.TxPassword.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.TxPassword.SelectedText = "";
             this.TxPassword.ShadowDecoration.Parent = this.TxPassword;
-            this.TxPassword.Size = new System.Drawing.Size(247, 38);
+            this.TxPassword.Size = new System.Drawing.Size(247, 45);
             this.TxPassword.TabIndex = 1;
             // 
             // txUserName
@@ -206,7 +207,7 @@
             this.txUserName.HoverState.Parent = this.txUserName;
             this.txUserName.IconRight = global::K_M_S_PROGRAM.Properties.Resources.usericon;
             this.txUserName.IconRightSize = new System.Drawing.Size(30, 30);
-            this.txUserName.Location = new System.Drawing.Point(306, 109);
+            this.txUserName.Location = new System.Drawing.Point(306, 92);
             this.txUserName.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txUserName.Name = "txUserName";
             this.txUserName.PasswordChar = '\0';
@@ -215,11 +216,12 @@
             this.txUserName.SelectedText = "";
             this.txUserName.ShadowDecoration.Parent = this.txUserName;
             this.txUserName.ShortcutsEnabled = false;
-            this.txUserName.Size = new System.Drawing.Size(247, 38);
+            this.txUserName.Size = new System.Drawing.Size(247, 45);
             this.txUserName.TabIndex = 0;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::K_M_S_PROGRAM.Properties.Resources.Forgot_password_rafiki;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;

@@ -15,6 +15,10 @@ namespace MyBusinessLayer
         {
             return clsGenericData.GetNumberOfAttendedMember(Kind);
         }
+        public static int GetNumberOfLeavedMember(char Kind)
+        {
+            return clsGenericData.GetNumberOfLeavedMember(Kind);
+        }
 
         //
         public static DataTable FillComboBoxWithNames(string query)

@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CheckPassword));
             this.TxPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.txUserName = new Guna.UI2.WinForms.Guna2TextBox();
             this.btLogin = new Guna.UI2.WinForms.Guna2Button();
-            this.drag = new SATAUiFramework.Controls.SATADragControl();
-            this.sEllipse1 = new Sipaa.Framework.SEllipse();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.SuspendLayout();
             // 
             // TxPassword
@@ -126,45 +124,22 @@
             this.btLogin.Text = "إدخال";
             this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
             // 
-            // drag
-            // 
-            this.drag.SelectControl = this;
-            // 
-            // sEllipse1
-            // 
-            this.sEllipse1.CornerRadius = 25;
-            this.sEllipse1.TargetControl = this;
-            // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.Animated = true;
-            this.guna2ControlBox1.BorderRadius = 5;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(12, 11);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(35, 30);
-            this.guna2ControlBox1.TabIndex = 37;
-            // 
             // CheckPassword
             // 
             this.AcceptButton = this.btLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(355, 225);
-            this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.TxPassword);
             this.Controls.Add(this.txUserName);
             this.Controls.Add(this.btLogin);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CheckPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Password";
+            this.Text = "Check Password";
             this.ResumeLayout(false);
 
         }
@@ -174,8 +149,5 @@
         private Guna.UI2.WinForms.Guna2TextBox TxPassword;
         private Guna.UI2.WinForms.Guna2TextBox txUserName;
         private Guna.UI2.WinForms.Guna2Button btLogin;
-        private SATAUiFramework.Controls.SATADragControl drag;
-        private Sipaa.Framework.SEllipse sEllipse1;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }

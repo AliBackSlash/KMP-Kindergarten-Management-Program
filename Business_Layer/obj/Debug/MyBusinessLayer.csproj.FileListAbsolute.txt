@@ -61,3 +61,17 @@ D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyB
 D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusine.7BB17094.Up2Date
 D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.dll
 D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.pdb
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyBusinessLayer.dll.config
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\SixLabors.ImageSharp.dll
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\System.Buffers.dll
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\System.Memory.dll
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\System.Numerics.Vectors.dll
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\System.Text.Encoding.CodePages.dll
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyDataAccessLayer.dll.config
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\SixLabors.ImageSharp.xml
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\System.Buffers.xml
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\System.Memory.xml
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\System.Numerics.Vectors.xml
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\System.Text.Encoding.CodePages.xml

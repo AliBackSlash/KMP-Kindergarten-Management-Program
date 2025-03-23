@@ -67,7 +67,7 @@ namespace K_M_S_PROGRAM.Resources
                 txDaysKindsAbsence.Text = clsGlobal.Settings.DaysKindsAbsence.ToString();
                 txKidsBratherAge.Text = clsGlobal.Settings.KidsBratherAge2.ToString();
                 txtimeEnter.Text = clsGlobal.Settings.TimeEnter;
-                txtimeLeave.Text = clsGlobal.Settings.TimeLeave;
+                txtimeLeave.Text = clsGlobal.Settings.TimeLeave.ToString();
                 txTimeLateForKids.Text = clsGlobal.Settings.TimeLateForKids;
                 txLastEnterTime.Text = clsGlobal.Settings.LasttimeEnter;
                 txLasttimeLeave.Text = clsGlobal.Settings.LasttimeLeave;
