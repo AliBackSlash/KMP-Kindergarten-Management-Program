@@ -40,7 +40,6 @@
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.btProgram_Setting = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
             this.pictureBox36 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnUsersList = new System.Windows.Forms.Panel();
@@ -49,7 +48,6 @@
             this.btAdd_Users = new System.Windows.Forms.Button();
             this.btUser_Data = new System.Windows.Forms.Button();
             this.panel28 = new System.Windows.Forms.Panel();
-            this.btSettingsList = new System.Windows.Forms.Button();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
             this.pnTreasury = new System.Windows.Forms.Panel();
@@ -60,35 +58,30 @@
             this.btTreasuryYearly = new System.Windows.Forms.Button();
             this.btTreasuryData = new System.Windows.Forms.Button();
             this.panel26 = new System.Windows.Forms.Panel();
-            this.btBusList = new System.Windows.Forms.Button();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.pnClassesList = new System.Windows.Forms.Panel();
             this.pictureBox54 = new System.Windows.Forms.PictureBox();
             this.btClasses_Level = new System.Windows.Forms.Button();
             this.panel24 = new System.Windows.Forms.Panel();
-            this.btClassesList = new System.Windows.Forms.Button();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.pnLevelsList = new System.Windows.Forms.Panel();
             this.pictureBox58 = new System.Windows.Forms.PictureBox();
             this.btLevels = new System.Windows.Forms.Button();
             this.panel22 = new System.Windows.Forms.Panel();
-            this.btLevelsList = new System.Windows.Forms.Button();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.pnNotesList = new System.Windows.Forms.Panel();
             this.pictureBox57 = new System.Windows.Forms.PictureBox();
             this.btKids_Notes = new System.Windows.Forms.Button();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.btNotesList = new System.Windows.Forms.Button();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.pnMessageList = new System.Windows.Forms.Panel();
             this.pictureBox46 = new System.Windows.Forms.PictureBox();
             this.btMessage_Arshif = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.btMessageList = new System.Windows.Forms.Button();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pnAbsenceList = new System.Windows.Forms.Panel();
@@ -99,7 +92,6 @@
             this.btShow_Absence = new System.Windows.Forms.Button();
             this.btAdd_Absence = new System.Windows.Forms.Button();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.btAbsenceList = new System.Windows.Forms.Button();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.pnEvaluationList = new System.Windows.Forms.Panel();
@@ -110,7 +102,6 @@
             this.btWinKids = new System.Windows.Forms.Button();
             this.btActivity_Evaluation = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.btEvaluationList = new System.Windows.Forms.Button();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.pnEvaluation = new System.Windows.Forms.Panel();
@@ -118,7 +109,6 @@
             this.btNotifications = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
             this.btNoteyfay = new SATAUiFramework.Controls.SATAButton();
-            this.btStoreList = new System.Windows.Forms.Button();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.lb = new System.Windows.Forms.Label();
             this.pnAccountsList = new System.Windows.Forms.Panel();
@@ -127,7 +117,6 @@
             this.btEmploeesAccountsHistory = new System.Windows.Forms.Button();
             this.btEmploeesAccounts = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.btAccountsList = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pnSubscripList = new System.Windows.Forms.Panel();
@@ -138,7 +127,6 @@
             this.btPayment_ٍSubscriptions = new System.Windows.Forms.Button();
             this.btSubscription = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.btSubscripIList = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pnEmploInfo = new System.Windows.Forms.Panel();
@@ -150,7 +138,6 @@
             this.btEmpList = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.btEmploInfo = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.pnKidsInfo = new System.Windows.Forms.Panel();
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
@@ -165,14 +152,12 @@
             this.btSubKidsMenue = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btKidsInfo = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pnMainMenue = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btSubMainMenue = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btMenueInfo = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -203,6 +188,21 @@
             this.timStopHideAndShow = new System.Windows.Forms.Timer(this.components);
             this.sEllipse1 = new Sipaa.Framework.SEllipse();
             this.sataDragControl1 = new SATAUiFramework.Controls.SATADragControl();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.pnList.SuspendLayout();
             this.panMenue.SuspendLayout();
             this.pnSettingsList.SuspendLayout();
@@ -452,7 +452,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button6);
+            this.panel2.Controls.Add(this.label30);
             this.panel2.Controls.Add(this.pictureBox36);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Cursor = System.Windows.Forms.Cursors.Default;
@@ -461,21 +461,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(220, 32);
             this.panel2.TabIndex = 29;
-            // 
-            // button6
-            // 
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(13, -1);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(33, 29);
-            this.button6.TabIndex = 32;
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // pictureBox36
             // 
@@ -589,7 +574,7 @@
             // 
             // panel28
             // 
-            this.panel28.Controls.Add(this.btSettingsList);
+            this.panel28.Controls.Add(this.label29);
             this.panel28.Controls.Add(this.pictureBox16);
             this.panel28.Controls.Add(this.label14);
             this.panel28.Cursor = System.Windows.Forms.Cursors.Default;
@@ -598,21 +583,6 @@
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(220, 32);
             this.panel28.TabIndex = 29;
-            // 
-            // btSettingsList
-            // 
-            this.btSettingsList.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btSettingsList.FlatAppearance.BorderSize = 0;
-            this.btSettingsList.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btSettingsList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btSettingsList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btSettingsList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btSettingsList.Image = ((System.Drawing.Image)(resources.GetObject("btSettingsList.Image")));
-            this.btSettingsList.Location = new System.Drawing.Point(13, -1);
-            this.btSettingsList.Name = "btSettingsList";
-            this.btSettingsList.Size = new System.Drawing.Size(33, 29);
-            this.btSettingsList.TabIndex = 32;
-            this.btSettingsList.UseVisualStyleBackColor = true;
             // 
             // pictureBox16
             // 
@@ -758,7 +728,7 @@
             // 
             // panel26
             // 
-            this.panel26.Controls.Add(this.btBusList);
+            this.panel26.Controls.Add(this.label28);
             this.panel26.Controls.Add(this.pictureBox15);
             this.panel26.Controls.Add(this.label13);
             this.panel26.Cursor = System.Windows.Forms.Cursors.Default;
@@ -767,21 +737,6 @@
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(220, 34);
             this.panel26.TabIndex = 29;
-            // 
-            // btBusList
-            // 
-            this.btBusList.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btBusList.FlatAppearance.BorderSize = 0;
-            this.btBusList.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btBusList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btBusList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btBusList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btBusList.Image = ((System.Drawing.Image)(resources.GetObject("btBusList.Image")));
-            this.btBusList.Location = new System.Drawing.Point(13, 2);
-            this.btBusList.Name = "btBusList";
-            this.btBusList.Size = new System.Drawing.Size(33, 29);
-            this.btBusList.TabIndex = 32;
-            this.btBusList.UseVisualStyleBackColor = true;
             // 
             // pictureBox15
             // 
@@ -859,7 +814,7 @@
             // 
             // panel24
             // 
-            this.panel24.Controls.Add(this.btClassesList);
+            this.panel24.Controls.Add(this.label27);
             this.panel24.Controls.Add(this.pictureBox14);
             this.panel24.Controls.Add(this.label12);
             this.panel24.Cursor = System.Windows.Forms.Cursors.Default;
@@ -868,21 +823,6 @@
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(220, 34);
             this.panel24.TabIndex = 29;
-            // 
-            // btClassesList
-            // 
-            this.btClassesList.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btClassesList.FlatAppearance.BorderSize = 0;
-            this.btClassesList.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btClassesList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btClassesList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btClassesList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btClassesList.Image = ((System.Drawing.Image)(resources.GetObject("btClassesList.Image")));
-            this.btClassesList.Location = new System.Drawing.Point(13, 0);
-            this.btClassesList.Name = "btClassesList";
-            this.btClassesList.Size = new System.Drawing.Size(33, 29);
-            this.btClassesList.TabIndex = 32;
-            this.btClassesList.UseVisualStyleBackColor = true;
             // 
             // pictureBox14
             // 
@@ -960,7 +900,7 @@
             // 
             // panel22
             // 
-            this.panel22.Controls.Add(this.btLevelsList);
+            this.panel22.Controls.Add(this.label26);
             this.panel22.Controls.Add(this.pictureBox13);
             this.panel22.Controls.Add(this.label11);
             this.panel22.Cursor = System.Windows.Forms.Cursors.Default;
@@ -969,21 +909,6 @@
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(220, 34);
             this.panel22.TabIndex = 29;
-            // 
-            // btLevelsList
-            // 
-            this.btLevelsList.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btLevelsList.FlatAppearance.BorderSize = 0;
-            this.btLevelsList.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btLevelsList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btLevelsList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btLevelsList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btLevelsList.Image = ((System.Drawing.Image)(resources.GetObject("btLevelsList.Image")));
-            this.btLevelsList.Location = new System.Drawing.Point(13, 0);
-            this.btLevelsList.Name = "btLevelsList";
-            this.btLevelsList.Size = new System.Drawing.Size(33, 29);
-            this.btLevelsList.TabIndex = 32;
-            this.btLevelsList.UseVisualStyleBackColor = true;
             // 
             // pictureBox13
             // 
@@ -1061,7 +986,7 @@
             // 
             // panel20
             // 
-            this.panel20.Controls.Add(this.btNotesList);
+            this.panel20.Controls.Add(this.label25);
             this.panel20.Controls.Add(this.pictureBox12);
             this.panel20.Controls.Add(this.label10);
             this.panel20.Cursor = System.Windows.Forms.Cursors.Default;
@@ -1070,21 +995,6 @@
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(220, 34);
             this.panel20.TabIndex = 29;
-            // 
-            // btNotesList
-            // 
-            this.btNotesList.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btNotesList.FlatAppearance.BorderSize = 0;
-            this.btNotesList.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btNotesList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btNotesList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btNotesList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btNotesList.Image = ((System.Drawing.Image)(resources.GetObject("btNotesList.Image")));
-            this.btNotesList.Location = new System.Drawing.Point(13, 3);
-            this.btNotesList.Name = "btNotesList";
-            this.btNotesList.Size = new System.Drawing.Size(33, 29);
-            this.btNotesList.TabIndex = 32;
-            this.btNotesList.UseVisualStyleBackColor = true;
             // 
             // pictureBox12
             // 
@@ -1162,7 +1072,7 @@
             // 
             // panel18
             // 
-            this.panel18.Controls.Add(this.btMessageList);
+            this.panel18.Controls.Add(this.label24);
             this.panel18.Controls.Add(this.pictureBox11);
             this.panel18.Controls.Add(this.label9);
             this.panel18.Cursor = System.Windows.Forms.Cursors.Default;
@@ -1171,21 +1081,6 @@
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(220, 34);
             this.panel18.TabIndex = 29;
-            // 
-            // btMessageList
-            // 
-            this.btMessageList.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btMessageList.FlatAppearance.BorderSize = 0;
-            this.btMessageList.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btMessageList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btMessageList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btMessageList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btMessageList.Image = ((System.Drawing.Image)(resources.GetObject("btMessageList.Image")));
-            this.btMessageList.Location = new System.Drawing.Point(13, 2);
-            this.btMessageList.Name = "btMessageList";
-            this.btMessageList.Size = new System.Drawing.Size(33, 29);
-            this.btMessageList.TabIndex = 32;
-            this.btMessageList.UseVisualStyleBackColor = true;
             // 
             // pictureBox11
             // 
@@ -1335,7 +1230,7 @@
             // 
             // panel16
             // 
-            this.panel16.Controls.Add(this.btAbsenceList);
+            this.panel16.Controls.Add(this.label23);
             this.panel16.Controls.Add(this.pictureBox10);
             this.panel16.Controls.Add(this.label8);
             this.panel16.Cursor = System.Windows.Forms.Cursors.Default;
@@ -1344,21 +1239,6 @@
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(220, 34);
             this.panel16.TabIndex = 29;
-            // 
-            // btAbsenceList
-            // 
-            this.btAbsenceList.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btAbsenceList.FlatAppearance.BorderSize = 0;
-            this.btAbsenceList.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btAbsenceList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btAbsenceList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btAbsenceList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btAbsenceList.Image = ((System.Drawing.Image)(resources.GetObject("btAbsenceList.Image")));
-            this.btAbsenceList.Location = new System.Drawing.Point(13, 3);
-            this.btAbsenceList.Name = "btAbsenceList";
-            this.btAbsenceList.Size = new System.Drawing.Size(33, 29);
-            this.btAbsenceList.TabIndex = 32;
-            this.btAbsenceList.UseVisualStyleBackColor = true;
             // 
             // pictureBox10
             // 
@@ -1506,7 +1386,7 @@
             // 
             // panel14
             // 
-            this.panel14.Controls.Add(this.btEvaluationList);
+            this.panel14.Controls.Add(this.label22);
             this.panel14.Controls.Add(this.pictureBox9);
             this.panel14.Controls.Add(this.label7);
             this.panel14.Cursor = System.Windows.Forms.Cursors.Default;
@@ -1515,21 +1395,6 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(220, 34);
             this.panel14.TabIndex = 29;
-            // 
-            // btEvaluationList
-            // 
-            this.btEvaluationList.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btEvaluationList.FlatAppearance.BorderSize = 0;
-            this.btEvaluationList.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btEvaluationList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btEvaluationList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btEvaluationList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btEvaluationList.Image = ((System.Drawing.Image)(resources.GetObject("btEvaluationList.Image")));
-            this.btEvaluationList.Location = new System.Drawing.Point(13, 3);
-            this.btEvaluationList.Name = "btEvaluationList";
-            this.btEvaluationList.Size = new System.Drawing.Size(33, 29);
-            this.btEvaluationList.TabIndex = 32;
-            this.btEvaluationList.UseVisualStyleBackColor = true;
             // 
             // pictureBox9
             // 
@@ -1606,8 +1471,8 @@
             // 
             // panel12
             // 
+            this.panel12.Controls.Add(this.label21);
             this.panel12.Controls.Add(this.btNoteyfay);
-            this.panel12.Controls.Add(this.btStoreList);
             this.panel12.Controls.Add(this.pictureBox8);
             this.panel12.Controls.Add(this.lb);
             this.panel12.Cursor = System.Windows.Forms.Cursors.Default;
@@ -1642,21 +1507,6 @@
             this.btNoteyfay.TextColor = System.Drawing.Color.Red;
             this.btNoteyfay.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.btNoteyfay.Visible = false;
-            // 
-            // btStoreList
-            // 
-            this.btStoreList.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btStoreList.FlatAppearance.BorderSize = 0;
-            this.btStoreList.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btStoreList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btStoreList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btStoreList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btStoreList.Image = ((System.Drawing.Image)(resources.GetObject("btStoreList.Image")));
-            this.btStoreList.Location = new System.Drawing.Point(13, 2);
-            this.btStoreList.Name = "btStoreList";
-            this.btStoreList.Size = new System.Drawing.Size(33, 29);
-            this.btStoreList.TabIndex = 32;
-            this.btStoreList.UseVisualStyleBackColor = true;
             // 
             // pictureBox8
             // 
@@ -1770,7 +1620,7 @@
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.btAccountsList);
+            this.panel10.Controls.Add(this.label20);
             this.panel10.Controls.Add(this.pictureBox7);
             this.panel10.Controls.Add(this.label5);
             this.panel10.Cursor = System.Windows.Forms.Cursors.Default;
@@ -1779,21 +1629,6 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(220, 34);
             this.panel10.TabIndex = 29;
-            // 
-            // btAccountsList
-            // 
-            this.btAccountsList.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btAccountsList.FlatAppearance.BorderSize = 0;
-            this.btAccountsList.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btAccountsList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btAccountsList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btAccountsList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btAccountsList.Image = ((System.Drawing.Image)(resources.GetObject("btAccountsList.Image")));
-            this.btAccountsList.Location = new System.Drawing.Point(13, 2);
-            this.btAccountsList.Name = "btAccountsList";
-            this.btAccountsList.Size = new System.Drawing.Size(33, 29);
-            this.btAccountsList.TabIndex = 32;
-            this.btAccountsList.UseVisualStyleBackColor = true;
             // 
             // pictureBox7
             // 
@@ -1944,7 +1779,7 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.btSubscripIList);
+            this.panel8.Controls.Add(this.label19);
             this.panel8.Controls.Add(this.pictureBox6);
             this.panel8.Controls.Add(this.label4);
             this.panel8.Cursor = System.Windows.Forms.Cursors.Default;
@@ -1953,21 +1788,6 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(220, 34);
             this.panel8.TabIndex = 29;
-            // 
-            // btSubscripIList
-            // 
-            this.btSubscripIList.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btSubscripIList.FlatAppearance.BorderSize = 0;
-            this.btSubscripIList.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btSubscripIList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btSubscripIList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btSubscripIList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btSubscripIList.Image = ((System.Drawing.Image)(resources.GetObject("btSubscripIList.Image")));
-            this.btSubscripIList.Location = new System.Drawing.Point(13, 3);
-            this.btSubscripIList.Name = "btSubscripIList";
-            this.btSubscripIList.Size = new System.Drawing.Size(33, 29);
-            this.btSubscripIList.TabIndex = 32;
-            this.btSubscripIList.UseVisualStyleBackColor = true;
             // 
             // pictureBox6
             // 
@@ -2116,8 +1936,8 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.label18);
             this.panel6.Controls.Add(this.pictureBox5);
-            this.panel6.Controls.Add(this.btEmploInfo);
             this.panel6.Controls.Add(this.label3);
             this.panel6.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
@@ -2136,21 +1956,6 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 31;
             this.pictureBox5.TabStop = false;
-            // 
-            // btEmploInfo
-            // 
-            this.btEmploInfo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btEmploInfo.FlatAppearance.BorderSize = 0;
-            this.btEmploInfo.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btEmploInfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btEmploInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btEmploInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btEmploInfo.Image = ((System.Drawing.Image)(resources.GetObject("btEmploInfo.Image")));
-            this.btEmploInfo.Location = new System.Drawing.Point(13, 3);
-            this.btEmploInfo.Name = "btEmploInfo";
-            this.btEmploInfo.Size = new System.Drawing.Size(33, 29);
-            this.btEmploInfo.TabIndex = 30;
-            this.btEmploInfo.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -2356,8 +2161,8 @@
             // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.label17);
             this.panel7.Controls.Add(this.pictureBox1);
-            this.panel7.Controls.Add(this.btKidsInfo);
             this.panel7.Controls.Add(this.label2);
             this.panel7.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
@@ -2376,21 +2181,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;
-            // 
-            // btKidsInfo
-            // 
-            this.btKidsInfo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btKidsInfo.FlatAppearance.BorderSize = 0;
-            this.btKidsInfo.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btKidsInfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btKidsInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btKidsInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btKidsInfo.Image = ((System.Drawing.Image)(resources.GetObject("btKidsInfo.Image")));
-            this.btKidsInfo.Location = new System.Drawing.Point(13, 3);
-            this.btKidsInfo.Name = "btKidsInfo";
-            this.btKidsInfo.Size = new System.Drawing.Size(33, 29);
-            this.btKidsInfo.TabIndex = 30;
-            this.btKidsInfo.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -2459,8 +2249,8 @@
             // 
             // panel9
             // 
+            this.panel9.Controls.Add(this.label6);
             this.panel9.Controls.Add(this.pictureBox4);
-            this.panel9.Controls.Add(this.btMenueInfo);
             this.panel9.Controls.Add(this.label15);
             this.panel9.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
@@ -2479,21 +2269,6 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 31;
             this.pictureBox4.TabStop = false;
-            // 
-            // btMenueInfo
-            // 
-            this.btMenueInfo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btMenueInfo.FlatAppearance.BorderSize = 0;
-            this.btMenueInfo.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btMenueInfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btMenueInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btMenueInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btMenueInfo.Image = ((System.Drawing.Image)(resources.GetObject("btMenueInfo.Image")));
-            this.btMenueInfo.Location = new System.Drawing.Point(13, 3);
-            this.btMenueInfo.Name = "btMenueInfo";
-            this.btMenueInfo.Size = new System.Drawing.Size(33, 29);
-            this.btMenueInfo.TabIndex = 30;
-            this.btMenueInfo.UseVisualStyleBackColor = true;
             // 
             // label15
             // 
@@ -2847,6 +2622,141 @@
             // 
             this.sataDragControl1.SelectControl = this.lbDayDate;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(21, 11);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(16, 13);
+            this.label6.TabIndex = 32;
+            this.label6.Text = "▼";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(21, 11);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(16, 13);
+            this.label17.TabIndex = 33;
+            this.label17.Text = "▼";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(21, 11);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(16, 13);
+            this.label18.TabIndex = 33;
+            this.label18.Text = "▼";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(21, 11);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(16, 13);
+            this.label19.TabIndex = 33;
+            this.label19.Text = "▼";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(21, 11);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(16, 13);
+            this.label20.TabIndex = 33;
+            this.label20.Text = "▼";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(21, 11);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(16, 13);
+            this.label21.TabIndex = 33;
+            this.label21.Text = "▼";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(21, 11);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(16, 13);
+            this.label22.TabIndex = 33;
+            this.label22.Text = "▼";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(21, 11);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(16, 13);
+            this.label23.TabIndex = 33;
+            this.label23.Text = "▼";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(21, 11);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(16, 13);
+            this.label24.TabIndex = 33;
+            this.label24.Text = "▼";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(21, 11);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(16, 13);
+            this.label25.TabIndex = 33;
+            this.label25.Text = "▼";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(21, 11);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(16, 13);
+            this.label26.TabIndex = 33;
+            this.label26.Text = "▼";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(21, 11);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(16, 13);
+            this.label27.TabIndex = 33;
+            this.label27.Text = "▼";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(21, 11);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(16, 13);
+            this.label28.TabIndex = 33;
+            this.label28.Text = "▼";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(21, 10);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(16, 13);
+            this.label29.TabIndex = 33;
+            this.label29.Text = "▼";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(21, 10);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(16, 13);
+            this.label30.TabIndex = 33;
+            this.label30.Text = "▼";
+            // 
             // Main_Screan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2986,7 +2896,6 @@
         private System.Windows.Forms.Button btAdd_Users;
         private System.Windows.Forms.Button btUser_Data;
         private System.Windows.Forms.Panel panel28;
-        private System.Windows.Forms.Button btSettingsList;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel pnTreasury;
@@ -2995,34 +2904,29 @@
         private System.Windows.Forms.Button btTreasuryYearly;
         private System.Windows.Forms.Button btTreasuryData;
         private System.Windows.Forms.Panel panel26;
-        private System.Windows.Forms.Button btBusList;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel pnClassesList;
         private System.Windows.Forms.PictureBox pictureBox54;
         private System.Windows.Forms.Button btClasses_Level;
         private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.Button btClassesList;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel pnLevelsList;
         private System.Windows.Forms.PictureBox pictureBox58;
         private System.Windows.Forms.Button btLevels;
         private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.Button btLevelsList;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel pnNotesList;
         private System.Windows.Forms.PictureBox pictureBox57;
         private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Button btNotesList;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel pnMessageList;
         private System.Windows.Forms.PictureBox pictureBox46;
         private System.Windows.Forms.Button btMessage_Arshif;
         private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Button btMessageList;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel pnAbsenceList;
@@ -3031,7 +2935,6 @@
         private System.Windows.Forms.Button btShow_Absence;
         private System.Windows.Forms.Button btAdd_Absence;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Button btAbsenceList;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel pnEvaluationList;
@@ -3040,14 +2943,12 @@
         private System.Windows.Forms.Button btWinKids;
         private System.Windows.Forms.Button btActivity_Evaluation;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Button btEvaluationList;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel pnEvaluation;
         private System.Windows.Forms.PictureBox pictureBox53;
         private System.Windows.Forms.Button btNotifications;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Button btStoreList;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label lb;
         private System.Windows.Forms.Panel pnAccountsList;
@@ -3056,7 +2957,6 @@
         private System.Windows.Forms.Button btEmploeesAccountsHistory;
         private System.Windows.Forms.Button btEmploeesAccounts;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Button btAccountsList;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel pnSubscripList;
@@ -3066,7 +2966,6 @@
         private System.Windows.Forms.PictureBox pictureBox31;
         private System.Windows.Forms.Button btSubscription;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button btSubscripIList;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel pnEmploInfo;
@@ -3078,7 +2977,6 @@
         private System.Windows.Forms.Button btEmpList;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button btEmploInfo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel pnKidsInfo;
         private System.Windows.Forms.PictureBox pictureBox26;
@@ -3093,13 +2991,11 @@
         private System.Windows.Forms.Button btSubKidsMenue;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btKidsInfo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel pnMainMenue;
         private System.Windows.Forms.Button btSubMainMenue;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button btMenueInfo;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.PictureBox pictureBox27;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -3133,7 +3029,6 @@
         private System.Windows.Forms.PictureBox pictureBox30;
         private System.Windows.Forms.Button btProgram_Setting;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox pictureBox36;
         private System.Windows.Forms.Label label1;
         private SATAUiFramework.Controls.SATADragControl sataDragControl1;
@@ -3147,5 +3042,20 @@
         private Sipaa.Framework.SEllipse sEllipse1;
         private System.Windows.Forms.PictureBox pictureBox34;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label30;
     }
 }
