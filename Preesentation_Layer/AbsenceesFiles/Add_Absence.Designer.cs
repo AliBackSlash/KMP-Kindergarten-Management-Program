@@ -37,8 +37,6 @@
             this.btKids = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.rdAM = new CodeeloUI.Controls.CodeeloRadioButton();
-            this.rdPM = new CodeeloUI.Controls.CodeeloRadioButton();
             this.sataPictureBox2 = new SATAUiFramework.Controls.SATAPictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.sataPanel1 = new SATAUiFramework.SATAPanel();
@@ -48,6 +46,8 @@
             this.lbVevationMessage = new System.Windows.Forms.Label();
             this.lbTitle = new System.Windows.Forms.Label();
             this.progNumberOfComes = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.rdAM = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.rdPM = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.sataPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sataPictureBox2)).BeginInit();
@@ -83,13 +83,13 @@
             borderRadius1.TopRight = 10;
             this.sataPanel2.BorderRadius = borderRadius1;
             this.sataPanel2.BorderThickness = 3;
+            this.sataPanel2.Controls.Add(this.rdPM);
+            this.sataPanel2.Controls.Add(this.rdAM);
             this.sataPanel2.Controls.Add(this.btWorker);
             this.sataPanel2.Controls.Add(this.btTeacher);
             this.sataPanel2.Controls.Add(this.btKids);
             this.sataPanel2.Controls.Add(this.label4);
             this.sataPanel2.Controls.Add(this.label5);
-            this.sataPanel2.Controls.Add(this.rdAM);
-            this.sataPanel2.Controls.Add(this.rdPM);
             this.sataPanel2.Controls.Add(this.sataPictureBox2);
             this.sataPanel2.Controls.Add(this.label3);
             this.sataPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -192,52 +192,12 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.Green;
-            this.label5.Location = new System.Drawing.Point(161, 29);
+            this.label5.Location = new System.Drawing.Point(161, 28);
             this.label5.Name = "label5";
             this.label5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label5.Size = new System.Drawing.Size(49, 28);
             this.label5.TabIndex = 26;
             this.label5.Text = "إنصراف";
-            // 
-            // rdAM
-            // 
-            this.rdAM.BackColor = System.Drawing.Color.Transparent;
-            this.rdAM.ButtonAreaSize = 18F;
-            this.rdAM.ButtonBorderSize = 1.6F;
-            this.rdAM.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
-            this.rdAM.ButtonColorChecked = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(220)))), ((int)(((byte)(95)))));
-            this.rdAM.ButtonToggleSize = 12F;
-            this.rdAM.Checked = true;
-            this.rdAM.DrawCircleButton = true;
-            this.rdAM.DrawCircleToggle = true;
-            this.rdAM.Location = new System.Drawing.Point(217, 6);
-            this.rdAM.MinimumSize = new System.Drawing.Size(0, 21);
-            this.rdAM.Name = "rdAM";
-            this.rdAM.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.rdAM.Size = new System.Drawing.Size(26, 24);
-            this.rdAM.TabIndex = 23;
-            this.rdAM.TabStop = true;
-            this.rdAM.UseVisualStyleBackColor = false;
-            this.rdAM.CheckedChanged += new System.EventHandler(this.rdAM_CheckedChanged);
-            // 
-            // rdPM
-            // 
-            this.rdPM.BackColor = System.Drawing.Color.Transparent;
-            this.rdPM.ButtonAreaSize = 18F;
-            this.rdPM.ButtonBorderSize = 1.6F;
-            this.rdPM.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
-            this.rdPM.ButtonColorChecked = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(220)))), ((int)(((byte)(95)))));
-            this.rdPM.ButtonToggleSize = 12F;
-            this.rdPM.DrawCircleButton = true;
-            this.rdPM.DrawCircleToggle = true;
-            this.rdPM.Location = new System.Drawing.Point(217, 31);
-            this.rdPM.MinimumSize = new System.Drawing.Size(0, 21);
-            this.rdPM.Name = "rdPM";
-            this.rdPM.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.rdPM.Size = new System.Drawing.Size(26, 24);
-            this.rdPM.TabIndex = 24;
-            this.rdPM.UseVisualStyleBackColor = false;
-            this.rdPM.CheckedChanged += new System.EventHandler(this.rdPM_CheckedChanged);
             // 
             // sataPictureBox2
             // 
@@ -416,6 +376,47 @@
             this.progNumberOfComes.TabIndex = 58;
             this.progNumberOfComes.Value = 100;
             // 
+            // rdAM
+            // 
+            this.rdAM.Animated = true;
+            this.rdAM.Checked = true;
+            this.rdAM.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.rdAM.CheckedState.BorderThickness = 0;
+            this.rdAM.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.rdAM.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdAM.CheckedState.Parent = this.rdAM;
+            this.rdAM.Location = new System.Drawing.Point(216, 8);
+            this.rdAM.Name = "rdAM";
+            this.rdAM.ShadowDecoration.Parent = this.rdAM;
+            this.rdAM.Size = new System.Drawing.Size(20, 20);
+            this.rdAM.TabIndex = 60;
+            this.rdAM.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rdAM.UncheckedState.BorderThickness = 2;
+            this.rdAM.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdAM.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rdAM.UncheckedState.Parent = this.rdAM;
+            this.rdAM.CheckedChanged += new System.EventHandler(this.rdAM_CheckedChanged);
+            // 
+            // rdPM
+            // 
+            this.rdPM.Animated = true;
+            this.rdPM.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.rdPM.CheckedState.BorderThickness = 0;
+            this.rdPM.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.rdPM.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdPM.CheckedState.Parent = this.rdPM;
+            this.rdPM.Location = new System.Drawing.Point(216, 32);
+            this.rdPM.Name = "rdPM";
+            this.rdPM.ShadowDecoration.Parent = this.rdPM;
+            this.rdPM.Size = new System.Drawing.Size(20, 20);
+            this.rdPM.TabIndex = 61;
+            this.rdPM.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rdPM.UncheckedState.BorderThickness = 2;
+            this.rdPM.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdPM.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rdPM.UncheckedState.Parent = this.rdPM;
+            this.rdPM.CheckedChanged += new System.EventHandler(this.rdPM_CheckedChanged);
+            // 
             // Add_Absence
             // 
             this.AcceptButton = this.btEntered;
@@ -451,8 +452,6 @@
         private SATAUiFramework.SATAPanel sataPanel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private CodeeloUI.Controls.CodeeloRadioButton rdAM;
-        private CodeeloUI.Controls.CodeeloRadioButton rdPM;
         private SATAUiFramework.Controls.SATAPictureBox picTirnPhoto;
         private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.Label lbVevationMessage;
@@ -462,5 +461,7 @@
         private Guna.UI2.WinForms.Guna2Button btTeacher;
         private Guna.UI2.WinForms.Guna2Button btKids;
         private Guna.UI2.WinForms.Guna2CircleProgressBar progNumberOfComes;
+        private Guna.UI2.WinForms.Guna2CustomRadioButton rdAM;
+        private Guna.UI2.WinForms.Guna2CustomRadioButton rdPM;
     }
 }

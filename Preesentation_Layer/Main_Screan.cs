@@ -311,7 +311,11 @@ namespace K_M_S_PROGRAM.Resources
 
         private void WhiteColorLabel(Label label)
         {
-            label.ForeColor = Color.White;
+            if (clsGlobal.Settings.Mode)
+                label.ForeColor = Color.White;
+            else
+                label.ForeColor = Color.Black;
+
         }
 
         private void GoldColorButton(Button button)
@@ -321,7 +325,10 @@ namespace K_M_S_PROGRAM.Resources
 
         private void WhiteColorButton(Button button)
         {
-            button.ForeColor = Color.White;
+            if (clsGlobal.Settings.Mode)
+                button.ForeColor = Color.White;
+            else
+                button.ForeColor = Color.Black;
         }
 
         private void SubButton_MouseEnter(object sender, EventArgs e)
@@ -364,8 +371,11 @@ namespace K_M_S_PROGRAM.Resources
             form.TopLevel = false;
             pnShow.Controls.Add(form);
             form.Dock = DockStyle.Fill;
-            if (!IsDarkMode)
-                form.BackColor = SystemColors.ControlDarkDark;
+            if (clsGlobal.Settings.Mode)
+                form.BackColor = Color.Black;
+            else
+                form.BackColor = Color.Gainsboro;
+
             form.Show();
            
             return;
@@ -374,15 +384,15 @@ namespace K_M_S_PROGRAM.Resources
         {
             if ((Permission & Convert.ToInt32(form.Tag)) == Convert.ToInt32(form.Tag)|| Permission==-1)
             {
-                //if (Sender != null)
-                //    Sender.Close();
-                //Sender = form;
+               
                 pnShow.Controls.Clear();
                 form.TopLevel = false;
                 pnShow.Controls.Add(form);
                 form.Dock = DockStyle.Fill;
-                if (!IsDarkMode)
-                    form.BackColor = SystemColors.ControlDarkDark;
+                if (clsGlobal.Settings.Mode)
+                    form.BackColor = Color.Black;
+                else
+                    form.BackColor = Color.Gainsboro;
 
                 form.Show();
                
@@ -394,6 +404,76 @@ namespace K_M_S_PROGRAM.Resources
                 clsUtil.Show("للأسف ليس لديك وصول لهذه الشاشة من فضلك تواصل مع مدير المؤسسة!", false);
                 return;
             }
+        }
+
+        public void ChangeLabelsColor(Color ForeColor, Color BackColor)
+        {
+            this.BackColor = BackColor;
+            pnList.BackColor = BackColor;
+            lbUserName.ForeColor = ForeColor;
+            lb1.ForeColor = ForeColor;
+            lbMain.ForeColor = ForeColor;
+            lb2.ForeColor = ForeColor;
+            lbKids.ForeColor = ForeColor;
+            lb3.ForeColor = ForeColor;
+            lbEmp.ForeColor = ForeColor;
+            lb4.ForeColor = ForeColor;
+            lbSub.ForeColor = ForeColor;
+            lb5.ForeColor = ForeColor;
+            lbAccounts.ForeColor = ForeColor;
+            lb6.ForeColor = ForeColor;
+            lbNoti.ForeColor = ForeColor;
+            lb7.ForeColor = ForeColor;
+            lbEvalu.ForeColor = ForeColor;
+            lb8.ForeColor = ForeColor;
+            lbAbs.ForeColor = ForeColor;
+            lb9.ForeColor = ForeColor;
+            lbMess.ForeColor = ForeColor;
+            lb10.ForeColor = ForeColor;
+            lbNotesArchive.ForeColor = ForeColor;
+            lb11.ForeColor = ForeColor;
+            lbLevels.ForeColor = ForeColor;  
+            lb12.ForeColor = ForeColor;
+            lbClases.ForeColor = ForeColor;
+            lb13.ForeColor = ForeColor;
+            lbTreasry.ForeColor = ForeColor;
+            lb14.ForeColor = ForeColor;
+            lbUsers.ForeColor = ForeColor;
+            lb15.ForeColor = ForeColor;
+            lbSetting.ForeColor = ForeColor;
+            btProgram_Setting.ForeColor = ForeColor;
+            btRegister.ForeColor = ForeColor;
+            btAbout_this_Program.ForeColor = ForeColor;
+            btUser_Data.ForeColor = ForeColor;
+            btAdd_Users.ForeColor = ForeColor;
+            btTreasuryData.ForeColor = ForeColor;
+            btTreasuryYearly.ForeColor = ForeColor;
+            btTreasuryHistory.ForeColor = ForeColor;
+            btClasses.ForeColor = ForeColor;
+            btLevels.ForeColor = ForeColor;
+            btKids_Notes.ForeColor = ForeColor;
+            btMessage_Arshif.ForeColor = ForeColor;
+            btAbsenceHistory.ForeColor = ForeColor;
+            btShow_Absence.ForeColor = ForeColor;
+            btAdd_Absence.ForeColor = ForeColor;
+            btWinnersHistory.ForeColor = ForeColor;
+            btWinKids.ForeColor = ForeColor;
+            btActivity_Evaluation.ForeColor = ForeColor;
+            btNotifications.ForeColor = ForeColor;
+            btEmploeesAccountsHistory.ForeColor = ForeColor;
+            btEmploeesAccounts.ForeColor = ForeColor;
+            btSubscription.ForeColor = ForeColor;
+            btPayment_ٍSubscriptions .ForeColor = ForeColor;
+            bSubscription_Details.ForeColor = ForeColor;
+            btAddEmp.ForeColor = ForeColor;
+            btEmpData.ForeColor = ForeColor;
+            btEmpList.ForeColor = ForeColor;
+            btKids_Grudiation.ForeColor = ForeColor;
+            btArshef.ForeColor = ForeColor;
+            btAddNewChild.ForeColor = ForeColor;
+            btSubKidsInfo.ForeColor = ForeColor;
+            btSubKidsMenue.ForeColor = ForeColor;
+            btSubMainMenue.ForeColor= ForeColor;
         }
         private void btSubMainMenue_Click(object sender, EventArgs e)
         {
@@ -736,6 +816,10 @@ namespace K_M_S_PROGRAM.Resources
         {
             lbDayDate.Text = DateTime.Now.ToLongDateString();
             clsGlobal.Settings = clsSettings.GetSetting();
+            if (!clsGlobal.Settings.Mode)
+                ChangeLabelsColor(Color.Black,Color.Gainsboro);
+            
+
             ComputeTheCammingDate();
 
             ShowUserNameAndUserImage();

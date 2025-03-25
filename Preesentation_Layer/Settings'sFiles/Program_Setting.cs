@@ -71,13 +71,27 @@ namespace K_M_S_PROGRAM.Resources
                 txTimeLateForKids.Text = clsGlobal.Settings.TimeLateForKids;
                 txLastEnterTime.Text = clsGlobal.Settings.LasttimeEnter;
                 txLasttimeLeave.Text = clsGlobal.Settings.LasttimeLeave;
+
+                txtimeEnterPM.Text = clsGlobal.Settings.TimeEnterPM;
+                txtimeLeavePM.Text = clsGlobal.Settings.TimeLeavePM.ToString();
+                txTimeLateForKidsPM.Text = clsGlobal.Settings.TimeLateForKidsPM;
+                txLastEnterTimePM.Text = clsGlobal.Settings.LasttimeEnterPM;
+                txLasttimeLeavePM.Text = clsGlobal.Settings.LasttimeLeavePM;
+
                 SavePath = clsGlobal.Settings.PackupPath;
 
                 txNotefayKidsAbsence.Text = clsGlobal.Settings.NotefayKidsLate;
+                
                 txTimeEnterForTeacher.Text = clsGlobal.Settings.TimeEnterForTeacher;
                 txTimeLateForTeachers.Text = clsGlobal.Settings.TimeLateForTeachers;
                 txTimeEnterForWorker.Text = clsGlobal.Settings.TimeEnterForWorkers;
                 txTimeLateForWorker.Text = clsGlobal.Settings.TimeLateForWorkers;
+
+                txTimeEnterForTeacherPM.Text = clsGlobal.Settings.TimeEnterForTeacherPM;
+                txTimeLateForTeachersPM.Text = clsGlobal.Settings.TimeLateForTeachersPM;
+                txTimeEnterForWorkerPM.Text = clsGlobal.Settings.TimeEnterForWorkersPM;
+                txTimeLateForWorkerPM.Text = clsGlobal.Settings.TimeLateForWorkersPM;
+
                 txLateDiscount.Text = clsGlobal.Settings.LateDiscount.ToString();
                 txAbsenceLate.Text = clsGlobal.Settings.AbsenceLate.ToString();
                 txDayOfStaudyInMonth.Text = clsGlobal.Settings.DaysOfStaudyInMonth;
@@ -113,6 +127,11 @@ namespace K_M_S_PROGRAM.Resources
                     rdInBeginingOfMonth.Checked = true;
                 else
                     rdInEndOfMonth.Checked = true;
+                 
+                if (clsGlobal.Settings.Mode)
+                    swiMode.Checked = true;
+                else
+                    swiMode.Checked = false;
 
 
                 CheckedVecationDay(clsGlobal.Settings.Vication1);
@@ -189,7 +208,7 @@ namespace K_M_S_PROGRAM.Resources
            
             return vacation;
         }
-        private bool _HandlePersonImage()
+        private bool _HandleOrgImage()
         {
 
             if (OldLogoPath != picLogo.ImageLocation)
@@ -244,15 +263,15 @@ namespace K_M_S_PROGRAM.Resources
             TimeSpan duration = endDate - startDate;
             int days = duration.Days;
 
-            if (!_HandlePersonImage())
+            if (!_HandleOrgImage())
                 return false;
 
             return clsSettings.UpdateSetting(txDaysLateToPay.Text, txDaysKindsAbsence.Text, days.ToString(),txKidsBratherAge.Text,
-            txtimeEnter.Text,  txLastEnterTime.Text, txLasttimeLeave.Text,txtimeLeave.Text, txTimeLateForKids.Text, txNotefayKidsAbsence.Text,
-            txTimeEnterForTeacher.Text, txTimeLateForTeachers.Text, txTimeEnterForWorker.Text, txTimeLateForWorker.Text,
+            txtimeEnter.Text,  txLastEnterTime.Text, txLasttimeLeave.Text,txtimeLeave.Text, txTimeLateForKids.Text, txtimeEnterPM.Text, txLastEnterTimePM.Text, txLasttimeLeavePM.Text, txtimeLeavePM.Text, txTimeLateForKidsPM.Text, txNotefayKidsAbsence.Text,
+            txTimeEnterForTeacher.Text, txTimeLateForTeachers.Text, txTimeEnterForWorker.Text, txTimeLateForWorker.Text, txTimeEnterForTeacherPM.Text, txTimeLateForTeachersPM.Text, txTimeEnterForWorkerPM.Text, txTimeLateForWorkerPM.Text,
             txLateDiscount.Text, txAbsenceLate.Text, txDayOfStaudyInMonth.Text, vacation[1], vacation[0] , SavePath,
            txOrgName.Text, txManagerName.Text,rdSmaolPaper.Checked, picLogo.ImageLocation, ckAskBeforPrint.Checked, ckShowBeforPrint.Checked,txSMSNumber.Text,txWhatsAppNumber.Text,txOrgEmail.Text,txAbsenceMessage.Text
-           ,txSubMessage.Text,txBrothersAgeMessage.Text,txBirthDayMessage.Text, txEmpAge.Text,rdInBeginingOfMonth.Checked);
+           ,txSubMessage.Text,txBrothersAgeMessage.Text,txBirthDayMessage.Text, txEmpAge.Text,rdInBeginingOfMonth.Checked,swiMode.Checked);
 
            
             
@@ -268,7 +287,12 @@ namespace K_M_S_PROGRAM.Resources
                 clsUtil.Show("لم يتم تحديث الإعدادات  تأكد من إدخال البيانات بصورة صحيحة",false);
             clsGlobal.main_Screan.ComputeTheCammingDate();
             clsGlobal.Settings = clsSettings.GetSetting();
-        }
+            if (!clsGlobal.Settings.Mode)
+                { this.BackColor = Color.Black;clsGlobal.main_Screan.ChangeLabelsColor(Color.Black, Color.Gainsboro); }
+            else
+            {  this.BackColor = Color.Gainsboro;  clsGlobal.main_Screan.ChangeLabelsColor(Color.White, Color.Black);}
+
+    }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

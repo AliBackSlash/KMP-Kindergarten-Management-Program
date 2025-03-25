@@ -40,16 +40,18 @@
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.btProgram_Setting = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lb15 = new System.Windows.Forms.Label();
             this.pictureBox36 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbSetting = new System.Windows.Forms.Label();
             this.pnUsersList = new System.Windows.Forms.Panel();
             this.pictureBox38 = new System.Windows.Forms.PictureBox();
             this.pictureBox39 = new System.Windows.Forms.PictureBox();
             this.btAdd_Users = new System.Windows.Forms.Button();
             this.btUser_Data = new System.Windows.Forms.Button();
             this.panel28 = new System.Windows.Forms.Panel();
+            this.lb14 = new System.Windows.Forms.Label();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lbUsers = new System.Windows.Forms.Label();
             this.pnTreasury = new System.Windows.Forms.Panel();
             this.pictureBox33 = new System.Windows.Forms.PictureBox();
             this.btTreasuryHistory = new System.Windows.Forms.Button();
@@ -58,32 +60,37 @@
             this.btTreasuryYearly = new System.Windows.Forms.Button();
             this.btTreasuryData = new System.Windows.Forms.Button();
             this.panel26 = new System.Windows.Forms.Panel();
+            this.lb13 = new System.Windows.Forms.Label();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lbTreasry = new System.Windows.Forms.Label();
             this.pnClassesList = new System.Windows.Forms.Panel();
             this.pictureBox54 = new System.Windows.Forms.PictureBox();
-            this.btClasses_Level = new System.Windows.Forms.Button();
+            this.btClasses = new System.Windows.Forms.Button();
             this.panel24 = new System.Windows.Forms.Panel();
+            this.lb12 = new System.Windows.Forms.Label();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lbClases = new System.Windows.Forms.Label();
             this.pnLevelsList = new System.Windows.Forms.Panel();
             this.pictureBox58 = new System.Windows.Forms.PictureBox();
             this.btLevels = new System.Windows.Forms.Button();
             this.panel22 = new System.Windows.Forms.Panel();
+            this.lb11 = new System.Windows.Forms.Label();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lbLevels = new System.Windows.Forms.Label();
             this.pnNotesList = new System.Windows.Forms.Panel();
             this.pictureBox57 = new System.Windows.Forms.PictureBox();
             this.btKids_Notes = new System.Windows.Forms.Button();
             this.panel20 = new System.Windows.Forms.Panel();
+            this.lb10 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbNotesArchive = new System.Windows.Forms.Label();
             this.pnMessageList = new System.Windows.Forms.Panel();
             this.pictureBox46 = new System.Windows.Forms.PictureBox();
             this.btMessage_Arshif = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
+            this.lb9 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lbMess = new System.Windows.Forms.Label();
             this.pnAbsenceList = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btAbsenceHistory = new System.Windows.Forms.Button();
@@ -92,33 +99,37 @@
             this.btShow_Absence = new System.Windows.Forms.Button();
             this.btAdd_Absence = new System.Windows.Forms.Button();
             this.panel16 = new System.Windows.Forms.Panel();
+            this.lb8 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lbAbs = new System.Windows.Forms.Label();
             this.pnEvaluationList = new System.Windows.Forms.Panel();
             this.pictureBox34 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btWinnersHistory = new System.Windows.Forms.Button();
             this.pictureBox51 = new System.Windows.Forms.PictureBox();
             this.pictureBox50 = new System.Windows.Forms.PictureBox();
             this.btWinKids = new System.Windows.Forms.Button();
             this.btActivity_Evaluation = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.lb7 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lbEvalu = new System.Windows.Forms.Label();
             this.pnEvaluation = new System.Windows.Forms.Panel();
             this.pictureBox53 = new System.Windows.Forms.PictureBox();
             this.btNotifications = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.lb6 = new System.Windows.Forms.Label();
             this.btNoteyfay = new SATAUiFramework.Controls.SATAButton();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.lb = new System.Windows.Forms.Label();
+            this.lbNoti = new System.Windows.Forms.Label();
             this.pnAccountsList = new System.Windows.Forms.Panel();
             this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.pictureBox35 = new System.Windows.Forms.PictureBox();
             this.btEmploeesAccountsHistory = new System.Windows.Forms.Button();
             this.btEmploeesAccounts = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.lb5 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbAccounts = new System.Windows.Forms.Label();
             this.pnSubscripList = new System.Windows.Forms.Panel();
             this.pictureBox41 = new System.Windows.Forms.PictureBox();
             this.bSubscription_Details = new System.Windows.Forms.Button();
@@ -127,8 +138,9 @@
             this.btPayment_ٍSubscriptions = new System.Windows.Forms.Button();
             this.btSubscription = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.lb4 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbSub = new System.Windows.Forms.Label();
             this.pnEmploInfo = new System.Windows.Forms.Panel();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
@@ -137,28 +149,31 @@
             this.btEmpData = new System.Windows.Forms.Button();
             this.btEmpList = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.lb3 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbEmp = new System.Windows.Forms.Label();
             this.pnKidsInfo = new System.Windows.Forms.Panel();
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.btKids_Reports = new System.Windows.Forms.Button();
+            this.btKids_Grudiation = new System.Windows.Forms.Button();
             this.btArshef = new System.Windows.Forms.Button();
             this.btAddNewChild = new System.Windows.Forms.Button();
             this.btSubKidsInfo = new System.Windows.Forms.Button();
             this.btSubKidsMenue = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.lb2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbKids = new System.Windows.Forms.Label();
             this.pnMainMenue = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btSubMainMenue = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.lb1 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lbMain = new System.Windows.Forms.Label();
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lbUserName = new System.Windows.Forms.Label();
@@ -188,21 +203,6 @@
             this.timStopHideAndShow = new System.Windows.Forms.Timer(this.components);
             this.sEllipse1 = new Sipaa.Framework.SEllipse();
             this.sataDragControl1 = new SATAUiFramework.Controls.SATADragControl();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
             this.pnList.SuspendLayout();
             this.panMenue.SuspendLayout();
             this.pnSettingsList.SuspendLayout();
@@ -369,7 +369,7 @@
             this.btAbout_this_Program.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btAbout_this_Program.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btAbout_this_Program.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btAbout_this_Program.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btAbout_this_Program.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btAbout_this_Program.ForeColor = System.Drawing.Color.White;
             this.btAbout_this_Program.Location = new System.Drawing.Point(0, 90);
             this.btAbout_this_Program.Name = "btAbout_this_Program";
@@ -403,7 +403,7 @@
             this.btRegister.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btRegister.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btRegister.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btRegister.ForeColor = System.Drawing.Color.White;
             this.btRegister.Location = new System.Drawing.Point(0, 61);
             this.btRegister.Name = "btRegister";
@@ -437,7 +437,7 @@
             this.btProgram_Setting.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btProgram_Setting.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btProgram_Setting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btProgram_Setting.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btProgram_Setting.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btProgram_Setting.ForeColor = System.Drawing.Color.White;
             this.btProgram_Setting.Location = new System.Drawing.Point(0, 32);
             this.btProgram_Setting.Name = "btProgram_Setting";
@@ -452,15 +452,24 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label30);
+            this.panel2.Controls.Add(this.lb15);
             this.panel2.Controls.Add(this.pictureBox36);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.lbSetting);
             this.panel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(220, 32);
             this.panel2.TabIndex = 29;
+            // 
+            // lb15
+            // 
+            this.lb15.AutoSize = true;
+            this.lb15.Location = new System.Drawing.Point(21, 10);
+            this.lb15.Name = "lb15";
+            this.lb15.Size = new System.Drawing.Size(16, 13);
+            this.lb15.TabIndex = 33;
+            this.lb15.Text = "▼";
             // 
             // pictureBox36
             // 
@@ -473,21 +482,21 @@
             this.pictureBox36.TabIndex = 31;
             this.pictureBox36.TabStop = false;
             // 
-            // label1
+            // lbSetting
             // 
-            this.label1.AutoSize = true;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(109, -1);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label1.Size = new System.Drawing.Size(71, 32);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "الإعدادات";
-            this.label1.Click += new System.EventHandler(this.btSettingsList_Click);
-            this.label1.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
-            this.label1.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
+            this.lbSetting.AutoSize = true;
+            this.lbSetting.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbSetting.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbSetting.ForeColor = System.Drawing.Color.White;
+            this.lbSetting.Location = new System.Drawing.Point(109, -1);
+            this.lbSetting.Name = "lbSetting";
+            this.lbSetting.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbSetting.Size = new System.Drawing.Size(71, 32);
+            this.lbSetting.TabIndex = 29;
+            this.lbSetting.Text = "الإعدادات";
+            this.lbSetting.Click += new System.EventHandler(this.btSettingsList_Click);
+            this.lbSetting.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
+            this.lbSetting.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
             // 
             // pnUsersList
             // 
@@ -536,7 +545,7 @@
             this.btAdd_Users.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btAdd_Users.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btAdd_Users.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btAdd_Users.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btAdd_Users.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btAdd_Users.ForeColor = System.Drawing.Color.White;
             this.btAdd_Users.Location = new System.Drawing.Point(0, 61);
             this.btAdd_Users.Name = "btAdd_Users";
@@ -559,7 +568,7 @@
             this.btUser_Data.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btUser_Data.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btUser_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btUser_Data.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btUser_Data.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btUser_Data.ForeColor = System.Drawing.Color.White;
             this.btUser_Data.Location = new System.Drawing.Point(0, 32);
             this.btUser_Data.Name = "btUser_Data";
@@ -574,15 +583,24 @@
             // 
             // panel28
             // 
-            this.panel28.Controls.Add(this.label29);
+            this.panel28.Controls.Add(this.lb14);
             this.panel28.Controls.Add(this.pictureBox16);
-            this.panel28.Controls.Add(this.label14);
+            this.panel28.Controls.Add(this.lbUsers);
             this.panel28.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel28.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel28.Location = new System.Drawing.Point(0, 0);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(220, 32);
             this.panel28.TabIndex = 29;
+            // 
+            // lb14
+            // 
+            this.lb14.AutoSize = true;
+            this.lb14.Location = new System.Drawing.Point(21, 10);
+            this.lb14.Name = "lb14";
+            this.lb14.Size = new System.Drawing.Size(16, 13);
+            this.lb14.TabIndex = 33;
+            this.lb14.Text = "▼";
             // 
             // pictureBox16
             // 
@@ -595,21 +613,21 @@
             this.pictureBox16.TabIndex = 31;
             this.pictureBox16.TabStop = false;
             // 
-            // label14
+            // lbUsers
             // 
-            this.label14.AutoSize = true;
-            this.label14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label14.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(93, -1);
-            this.label14.Name = "label14";
-            this.label14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label14.Size = new System.Drawing.Size(87, 32);
-            this.label14.TabIndex = 29;
-            this.label14.Text = "المستخدمين";
-            this.label14.Click += new System.EventHandler(this.btUserList_Click);
-            this.label14.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
-            this.label14.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
+            this.lbUsers.AutoSize = true;
+            this.lbUsers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbUsers.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbUsers.ForeColor = System.Drawing.Color.White;
+            this.lbUsers.Location = new System.Drawing.Point(93, -1);
+            this.lbUsers.Name = "lbUsers";
+            this.lbUsers.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbUsers.Size = new System.Drawing.Size(87, 32);
+            this.lbUsers.TabIndex = 29;
+            this.lbUsers.Text = "المستخدمين";
+            this.lbUsers.Click += new System.EventHandler(this.btUserList_Click);
+            this.lbUsers.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
+            this.lbUsers.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
             // 
             // pnTreasury
             // 
@@ -631,7 +649,7 @@
             // 
             this.pictureBox33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox33.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox33.Image")));
-            this.pictureBox33.Location = new System.Drawing.Point(169, 98);
+            this.pictureBox33.Location = new System.Drawing.Point(164, 98);
             this.pictureBox33.Name = "pictureBox33";
             this.pictureBox33.Size = new System.Drawing.Size(15, 20);
             this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -647,7 +665,7 @@
             this.btTreasuryHistory.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btTreasuryHistory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btTreasuryHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btTreasuryHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btTreasuryHistory.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btTreasuryHistory.ForeColor = System.Drawing.Color.White;
             this.btTreasuryHistory.Location = new System.Drawing.Point(0, 92);
             this.btTreasuryHistory.Name = "btTreasuryHistory";
@@ -664,7 +682,7 @@
             // 
             this.pictureBox43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox43.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox43.Image")));
-            this.pictureBox43.Location = new System.Drawing.Point(169, 69);
+            this.pictureBox43.Location = new System.Drawing.Point(164, 69);
             this.pictureBox43.Name = "pictureBox43";
             this.pictureBox43.Size = new System.Drawing.Size(15, 20);
             this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -675,7 +693,7 @@
             // 
             this.pictureBox42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox42.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox42.Image")));
-            this.pictureBox42.Location = new System.Drawing.Point(169, 39);
+            this.pictureBox42.Location = new System.Drawing.Point(164, 39);
             this.pictureBox42.Name = "pictureBox42";
             this.pictureBox42.Size = new System.Drawing.Size(15, 20);
             this.pictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -691,7 +709,7 @@
             this.btTreasuryYearly.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btTreasuryYearly.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btTreasuryYearly.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btTreasuryYearly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btTreasuryYearly.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btTreasuryYearly.ForeColor = System.Drawing.Color.White;
             this.btTreasuryYearly.Location = new System.Drawing.Point(0, 63);
             this.btTreasuryYearly.Name = "btTreasuryYearly";
@@ -713,7 +731,7 @@
             this.btTreasuryData.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btTreasuryData.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btTreasuryData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btTreasuryData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btTreasuryData.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btTreasuryData.ForeColor = System.Drawing.Color.White;
             this.btTreasuryData.Location = new System.Drawing.Point(0, 34);
             this.btTreasuryData.Name = "btTreasuryData";
@@ -728,15 +746,24 @@
             // 
             // panel26
             // 
-            this.panel26.Controls.Add(this.label28);
+            this.panel26.Controls.Add(this.lb13);
             this.panel26.Controls.Add(this.pictureBox15);
-            this.panel26.Controls.Add(this.label13);
+            this.panel26.Controls.Add(this.lbTreasry);
             this.panel26.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel26.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel26.Location = new System.Drawing.Point(0, 0);
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(220, 34);
             this.panel26.TabIndex = 29;
+            // 
+            // lb13
+            // 
+            this.lb13.AutoSize = true;
+            this.lb13.Location = new System.Drawing.Point(21, 11);
+            this.lb13.Name = "lb13";
+            this.lb13.Size = new System.Drawing.Size(16, 13);
+            this.lb13.TabIndex = 33;
+            this.lb13.Text = "▼";
             // 
             // pictureBox15
             // 
@@ -749,28 +776,28 @@
             this.pictureBox15.TabIndex = 31;
             this.pictureBox15.TabStop = false;
             // 
-            // label13
+            // lbTreasry
             // 
-            this.label13.AutoSize = true;
-            this.label13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label13.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(124, -1);
-            this.label13.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.label13.Name = "label13";
-            this.label13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label13.Size = new System.Drawing.Size(56, 32);
-            this.label13.TabIndex = 29;
-            this.label13.Text = "الخزينة";
-            this.label13.Click += new System.EventHandler(this.btBusList_Click);
-            this.label13.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
-            this.label13.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
+            this.lbTreasry.AutoSize = true;
+            this.lbTreasry.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTreasry.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbTreasry.ForeColor = System.Drawing.Color.White;
+            this.lbTreasry.Location = new System.Drawing.Point(124, -1);
+            this.lbTreasry.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lbTreasry.Name = "lbTreasry";
+            this.lbTreasry.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbTreasry.Size = new System.Drawing.Size(56, 32);
+            this.lbTreasry.TabIndex = 29;
+            this.lbTreasry.Text = "الخزينة";
+            this.lbTreasry.Click += new System.EventHandler(this.btBusList_Click);
+            this.lbTreasry.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
+            this.lbTreasry.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
             // 
             // pnClassesList
             // 
             this.pnClassesList.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pnClassesList.Controls.Add(this.pictureBox54);
-            this.pnClassesList.Controls.Add(this.btClasses_Level);
+            this.pnClassesList.Controls.Add(this.btClasses);
             this.pnClassesList.Controls.Add(this.panel24);
             this.pnClassesList.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnClassesList.Location = new System.Drawing.Point(0, 385);
@@ -789,40 +816,49 @@
             this.pictureBox54.TabIndex = 40;
             this.pictureBox54.TabStop = false;
             // 
-            // btClasses_Level
+            // btClasses
             // 
-            this.btClasses_Level.BackColor = System.Drawing.Color.Transparent;
-            this.btClasses_Level.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btClasses_Level.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btClasses_Level.FlatAppearance.BorderSize = 0;
-            this.btClasses_Level.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btClasses_Level.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btClasses_Level.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btClasses_Level.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btClasses_Level.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btClasses_Level.ForeColor = System.Drawing.Color.White;
-            this.btClasses_Level.Location = new System.Drawing.Point(0, 34);
-            this.btClasses_Level.Name = "btClasses_Level";
-            this.btClasses_Level.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btClasses_Level.Size = new System.Drawing.Size(220, 29);
-            this.btClasses_Level.TabIndex = 35;
-            this.btClasses_Level.Text = "مستوايات الفصول";
-            this.btClasses_Level.UseVisualStyleBackColor = false;
-            this.btClasses_Level.Click += new System.EventHandler(this.btClasses_Level_Click);
-            this.btClasses_Level.MouseEnter += new System.EventHandler(this.SubButton_MouseEnter);
-            this.btClasses_Level.MouseLeave += new System.EventHandler(this.SubButton_MouseLeave);
+            this.btClasses.BackColor = System.Drawing.Color.Transparent;
+            this.btClasses.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btClasses.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btClasses.FlatAppearance.BorderSize = 0;
+            this.btClasses.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.btClasses.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btClasses.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btClasses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btClasses.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.btClasses.ForeColor = System.Drawing.Color.White;
+            this.btClasses.Location = new System.Drawing.Point(0, 34);
+            this.btClasses.Name = "btClasses";
+            this.btClasses.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btClasses.Size = new System.Drawing.Size(220, 29);
+            this.btClasses.TabIndex = 35;
+            this.btClasses.Text = "مستوايات الفصول";
+            this.btClasses.UseVisualStyleBackColor = false;
+            this.btClasses.Click += new System.EventHandler(this.btClasses_Level_Click);
+            this.btClasses.MouseEnter += new System.EventHandler(this.SubButton_MouseEnter);
+            this.btClasses.MouseLeave += new System.EventHandler(this.SubButton_MouseLeave);
             // 
             // panel24
             // 
-            this.panel24.Controls.Add(this.label27);
+            this.panel24.Controls.Add(this.lb12);
             this.panel24.Controls.Add(this.pictureBox14);
-            this.panel24.Controls.Add(this.label12);
+            this.panel24.Controls.Add(this.lbClases);
             this.panel24.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel24.Location = new System.Drawing.Point(0, 0);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(220, 34);
             this.panel24.TabIndex = 29;
+            // 
+            // lb12
+            // 
+            this.lb12.AutoSize = true;
+            this.lb12.Location = new System.Drawing.Point(21, 11);
+            this.lb12.Name = "lb12";
+            this.lb12.Size = new System.Drawing.Size(16, 13);
+            this.lb12.TabIndex = 33;
+            this.lb12.Text = "▼";
             // 
             // pictureBox14
             // 
@@ -835,21 +871,21 @@
             this.pictureBox14.TabIndex = 31;
             this.pictureBox14.TabStop = false;
             // 
-            // label12
+            // lbClases
             // 
-            this.label12.AutoSize = true;
-            this.label12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label12.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(119, -1);
-            this.label12.Name = "label12";
-            this.label12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label12.Size = new System.Drawing.Size(61, 32);
-            this.label12.TabIndex = 29;
-            this.label12.Text = "الفصول";
-            this.label12.Click += new System.EventHandler(this.btClassesList_Click);
-            this.label12.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
-            this.label12.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
+            this.lbClases.AutoSize = true;
+            this.lbClases.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbClases.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbClases.ForeColor = System.Drawing.Color.White;
+            this.lbClases.Location = new System.Drawing.Point(119, -1);
+            this.lbClases.Name = "lbClases";
+            this.lbClases.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbClases.Size = new System.Drawing.Size(61, 32);
+            this.lbClases.TabIndex = 29;
+            this.lbClases.Text = "الفصول";
+            this.lbClases.Click += new System.EventHandler(this.btClassesList_Click);
+            this.lbClases.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
+            this.lbClases.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
             // 
             // pnLevelsList
             // 
@@ -868,7 +904,7 @@
             // 
             this.pictureBox58.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox58.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox58.Image")));
-            this.pictureBox58.Location = new System.Drawing.Point(169, 40);
+            this.pictureBox58.Location = new System.Drawing.Point(172, 41);
             this.pictureBox58.Name = "pictureBox58";
             this.pictureBox58.Size = new System.Drawing.Size(15, 20);
             this.pictureBox58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -885,12 +921,12 @@
             this.btLevels.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btLevels.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btLevels.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btLevels.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btLevels.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btLevels.ForeColor = System.Drawing.Color.White;
             this.btLevels.Location = new System.Drawing.Point(0, 34);
             this.btLevels.Name = "btLevels";
             this.btLevels.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btLevels.Size = new System.Drawing.Size(220, 29);
+            this.btLevels.Size = new System.Drawing.Size(220, 38);
             this.btLevels.TabIndex = 35;
             this.btLevels.Text = "إعدادات المستويات";
             this.btLevels.UseVisualStyleBackColor = false;
@@ -900,15 +936,24 @@
             // 
             // panel22
             // 
-            this.panel22.Controls.Add(this.label26);
+            this.panel22.Controls.Add(this.lb11);
             this.panel22.Controls.Add(this.pictureBox13);
-            this.panel22.Controls.Add(this.label11);
+            this.panel22.Controls.Add(this.lbLevels);
             this.panel22.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel22.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel22.Location = new System.Drawing.Point(0, 0);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(220, 34);
             this.panel22.TabIndex = 29;
+            // 
+            // lb11
+            // 
+            this.lb11.AutoSize = true;
+            this.lb11.Location = new System.Drawing.Point(21, 11);
+            this.lb11.Name = "lb11";
+            this.lb11.Size = new System.Drawing.Size(16, 13);
+            this.lb11.TabIndex = 33;
+            this.lb11.Text = "▼";
             // 
             // pictureBox13
             // 
@@ -921,21 +966,21 @@
             this.pictureBox13.TabIndex = 31;
             this.pictureBox13.TabStop = false;
             // 
-            // label11
+            // lbLevels
             // 
-            this.label11.AutoSize = true;
-            this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label11.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(105, -4);
-            this.label11.Name = "label11";
-            this.label11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label11.Size = new System.Drawing.Size(75, 32);
-            this.label11.TabIndex = 29;
-            this.label11.Text = "المستويات";
-            this.label11.Click += new System.EventHandler(this.btLevelsList_Click);
-            this.label11.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
-            this.label11.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
+            this.lbLevels.AutoSize = true;
+            this.lbLevels.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbLevels.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbLevels.ForeColor = System.Drawing.Color.White;
+            this.lbLevels.Location = new System.Drawing.Point(105, -4);
+            this.lbLevels.Name = "lbLevels";
+            this.lbLevels.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbLevels.Size = new System.Drawing.Size(75, 32);
+            this.lbLevels.TabIndex = 29;
+            this.lbLevels.Text = "المستويات";
+            this.lbLevels.Click += new System.EventHandler(this.btLevelsList_Click);
+            this.lbLevels.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
+            this.lbLevels.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
             // 
             // pnNotesList
             // 
@@ -971,7 +1016,7 @@
             this.btKids_Notes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btKids_Notes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btKids_Notes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btKids_Notes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btKids_Notes.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btKids_Notes.ForeColor = System.Drawing.Color.White;
             this.btKids_Notes.Location = new System.Drawing.Point(0, 34);
             this.btKids_Notes.Name = "btKids_Notes";
@@ -986,15 +1031,24 @@
             // 
             // panel20
             // 
-            this.panel20.Controls.Add(this.label25);
+            this.panel20.Controls.Add(this.lb10);
             this.panel20.Controls.Add(this.pictureBox12);
-            this.panel20.Controls.Add(this.label10);
+            this.panel20.Controls.Add(this.lbNotesArchive);
             this.panel20.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel20.Location = new System.Drawing.Point(0, 0);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(220, 34);
             this.panel20.TabIndex = 29;
+            // 
+            // lb10
+            // 
+            this.lb10.AutoSize = true;
+            this.lb10.Location = new System.Drawing.Point(21, 11);
+            this.lb10.Name = "lb10";
+            this.lb10.Size = new System.Drawing.Size(16, 13);
+            this.lb10.TabIndex = 33;
+            this.lb10.Text = "▼";
             // 
             // pictureBox12
             // 
@@ -1007,21 +1061,21 @@
             this.pictureBox12.TabIndex = 31;
             this.pictureBox12.TabStop = false;
             // 
-            // label10
+            // lbNotesArchive
             // 
-            this.label10.AutoSize = true;
-            this.label10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label10.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(112, -1);
-            this.label10.Name = "label10";
-            this.label10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label10.Size = new System.Drawing.Size(68, 32);
-            this.label10.TabIndex = 29;
-            this.label10.Text = "ملاحظات";
-            this.label10.Click += new System.EventHandler(this.btNotesList_Click);
-            this.label10.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
-            this.label10.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
+            this.lbNotesArchive.AutoSize = true;
+            this.lbNotesArchive.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbNotesArchive.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbNotesArchive.ForeColor = System.Drawing.Color.White;
+            this.lbNotesArchive.Location = new System.Drawing.Point(112, -1);
+            this.lbNotesArchive.Name = "lbNotesArchive";
+            this.lbNotesArchive.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbNotesArchive.Size = new System.Drawing.Size(68, 32);
+            this.lbNotesArchive.TabIndex = 29;
+            this.lbNotesArchive.Text = "ملاحظات";
+            this.lbNotesArchive.Click += new System.EventHandler(this.btNotesList_Click);
+            this.lbNotesArchive.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
+            this.lbNotesArchive.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
             // 
             // pnMessageList
             // 
@@ -1057,7 +1111,7 @@
             this.btMessage_Arshif.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btMessage_Arshif.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btMessage_Arshif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btMessage_Arshif.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btMessage_Arshif.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btMessage_Arshif.ForeColor = System.Drawing.Color.White;
             this.btMessage_Arshif.Location = new System.Drawing.Point(0, 34);
             this.btMessage_Arshif.Name = "btMessage_Arshif";
@@ -1072,15 +1126,24 @@
             // 
             // panel18
             // 
-            this.panel18.Controls.Add(this.label24);
+            this.panel18.Controls.Add(this.lb9);
             this.panel18.Controls.Add(this.pictureBox11);
-            this.panel18.Controls.Add(this.label9);
+            this.panel18.Controls.Add(this.lbMess);
             this.panel18.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel18.Location = new System.Drawing.Point(0, 0);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(220, 34);
             this.panel18.TabIndex = 29;
+            // 
+            // lb9
+            // 
+            this.lb9.AutoSize = true;
+            this.lb9.Location = new System.Drawing.Point(21, 11);
+            this.lb9.Name = "lb9";
+            this.lb9.Size = new System.Drawing.Size(16, 13);
+            this.lb9.TabIndex = 33;
+            this.lb9.Text = "▼";
             // 
             // pictureBox11
             // 
@@ -1093,21 +1156,21 @@
             this.pictureBox11.TabIndex = 31;
             this.pictureBox11.TabStop = false;
             // 
-            // label9
+            // lbMess
             // 
-            this.label9.AutoSize = true;
-            this.label9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label9.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(123, -1);
-            this.label9.Name = "label9";
-            this.label9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label9.Size = new System.Drawing.Size(57, 32);
-            this.label9.TabIndex = 29;
-            this.label9.Text = "الرسائل";
-            this.label9.Click += new System.EventHandler(this.btMessageList_Click);
-            this.label9.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
-            this.label9.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
+            this.lbMess.AutoSize = true;
+            this.lbMess.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbMess.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbMess.ForeColor = System.Drawing.Color.White;
+            this.lbMess.Location = new System.Drawing.Point(123, -1);
+            this.lbMess.Name = "lbMess";
+            this.lbMess.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbMess.Size = new System.Drawing.Size(57, 32);
+            this.lbMess.TabIndex = 29;
+            this.lbMess.Text = "الرسائل";
+            this.lbMess.Click += new System.EventHandler(this.btMessageList_Click);
+            this.lbMess.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
+            this.lbMess.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
             // 
             // pnAbsenceList
             // 
@@ -1130,7 +1193,7 @@
             // 
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.Image = global::K_M_S_PROGRAM.Properties.Resources.ok;
-            this.pictureBox3.Location = new System.Drawing.Point(169, 98);
+            this.pictureBox3.Location = new System.Drawing.Point(164, 98);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(15, 20);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1147,11 +1210,11 @@
             this.btAbsenceHistory.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btAbsenceHistory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btAbsenceHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btAbsenceHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btAbsenceHistory.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btAbsenceHistory.ForeColor = System.Drawing.Color.White;
             this.btAbsenceHistory.Location = new System.Drawing.Point(0, 92);
             this.btAbsenceHistory.Name = "btAbsenceHistory";
-            this.btAbsenceHistory.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.btAbsenceHistory.Padding = new System.Windows.Forms.Padding(43, 0, 0, 0);
             this.btAbsenceHistory.Size = new System.Drawing.Size(220, 34);
             this.btAbsenceHistory.TabIndex = 42;
             this.btAbsenceHistory.Text = "سجل الغياب";
@@ -1164,7 +1227,7 @@
             // 
             this.pictureBox48.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox48.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox48.Image")));
-            this.pictureBox48.Location = new System.Drawing.Point(169, 37);
+            this.pictureBox48.Location = new System.Drawing.Point(164, 37);
             this.pictureBox48.Name = "pictureBox48";
             this.pictureBox48.Size = new System.Drawing.Size(15, 20);
             this.pictureBox48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1175,7 +1238,7 @@
             // 
             this.pictureBox47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox47.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox47.Image")));
-            this.pictureBox47.Location = new System.Drawing.Point(169, 66);
+            this.pictureBox47.Location = new System.Drawing.Point(164, 66);
             this.pictureBox47.Name = "pictureBox47";
             this.pictureBox47.Size = new System.Drawing.Size(15, 20);
             this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1192,11 +1255,11 @@
             this.btShow_Absence.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btShow_Absence.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btShow_Absence.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btShow_Absence.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btShow_Absence.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btShow_Absence.ForeColor = System.Drawing.Color.White;
             this.btShow_Absence.Location = new System.Drawing.Point(0, 63);
             this.btShow_Absence.Name = "btShow_Absence";
-            this.btShow_Absence.Padding = new System.Windows.Forms.Padding(0, 0, 40, 0);
+            this.btShow_Absence.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
             this.btShow_Absence.Size = new System.Drawing.Size(220, 29);
             this.btShow_Absence.TabIndex = 36;
             this.btShow_Absence.Text = "سجل الحضور و الإنصراف";
@@ -1215,7 +1278,7 @@
             this.btAdd_Absence.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btAdd_Absence.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btAdd_Absence.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btAdd_Absence.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btAdd_Absence.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btAdd_Absence.ForeColor = System.Drawing.Color.White;
             this.btAdd_Absence.Location = new System.Drawing.Point(0, 34);
             this.btAdd_Absence.Name = "btAdd_Absence";
@@ -1230,15 +1293,24 @@
             // 
             // panel16
             // 
-            this.panel16.Controls.Add(this.label23);
+            this.panel16.Controls.Add(this.lb8);
             this.panel16.Controls.Add(this.pictureBox10);
-            this.panel16.Controls.Add(this.label8);
+            this.panel16.Controls.Add(this.lbAbs);
             this.panel16.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel16.Location = new System.Drawing.Point(0, 0);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(220, 34);
             this.panel16.TabIndex = 29;
+            // 
+            // lb8
+            // 
+            this.lb8.AutoSize = true;
+            this.lb8.Location = new System.Drawing.Point(21, 11);
+            this.lb8.Name = "lb8";
+            this.lb8.Size = new System.Drawing.Size(16, 13);
+            this.lb8.TabIndex = 33;
+            this.lb8.Text = "▼";
             // 
             // pictureBox10
             // 
@@ -1251,27 +1323,27 @@
             this.pictureBox10.TabIndex = 31;
             this.pictureBox10.TabStop = false;
             // 
-            // label8
+            // lbAbs
             // 
-            this.label8.AutoSize = true;
-            this.label8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label8.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(129, -1);
-            this.label8.Name = "label8";
-            this.label8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label8.Size = new System.Drawing.Size(51, 32);
-            this.label8.TabIndex = 29;
-            this.label8.Text = "الغياب";
-            this.label8.Click += new System.EventHandler(this.btAbsenceList_Click);
-            this.label8.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
-            this.label8.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
+            this.lbAbs.AutoSize = true;
+            this.lbAbs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbAbs.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbAbs.ForeColor = System.Drawing.Color.White;
+            this.lbAbs.Location = new System.Drawing.Point(129, -1);
+            this.lbAbs.Name = "lbAbs";
+            this.lbAbs.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbAbs.Size = new System.Drawing.Size(51, 32);
+            this.lbAbs.TabIndex = 29;
+            this.lbAbs.Text = "الغياب";
+            this.lbAbs.Click += new System.EventHandler(this.btAbsenceList_Click);
+            this.lbAbs.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
+            this.lbAbs.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
             // 
             // pnEvaluationList
             // 
             this.pnEvaluationList.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pnEvaluationList.Controls.Add(this.pictureBox34);
-            this.pnEvaluationList.Controls.Add(this.button2);
+            this.pnEvaluationList.Controls.Add(this.btWinnersHistory);
             this.pnEvaluationList.Controls.Add(this.pictureBox51);
             this.pnEvaluationList.Controls.Add(this.pictureBox50);
             this.pnEvaluationList.Controls.Add(this.btWinKids);
@@ -1288,39 +1360,39 @@
             // 
             this.pictureBox34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox34.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox34.Image")));
-            this.pictureBox34.Location = new System.Drawing.Point(169, 97);
+            this.pictureBox34.Location = new System.Drawing.Point(164, 97);
             this.pictureBox34.Name = "pictureBox34";
             this.pictureBox34.Size = new System.Drawing.Size(15, 20);
             this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox34.TabIndex = 44;
             this.pictureBox34.TabStop = false;
             // 
-            // button2
+            // btWinnersHistory
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 92);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(220, 29);
-            this.button2.TabIndex = 43;
-            this.button2.Text = "سجل الفئزون";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btWinnersHistory.BackColor = System.Drawing.Color.Transparent;
+            this.btWinnersHistory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btWinnersHistory.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btWinnersHistory.FlatAppearance.BorderSize = 0;
+            this.btWinnersHistory.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.btWinnersHistory.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btWinnersHistory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btWinnersHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btWinnersHistory.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.btWinnersHistory.ForeColor = System.Drawing.Color.White;
+            this.btWinnersHistory.Location = new System.Drawing.Point(0, 92);
+            this.btWinnersHistory.Name = "btWinnersHistory";
+            this.btWinnersHistory.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.btWinnersHistory.Size = new System.Drawing.Size(220, 29);
+            this.btWinnersHistory.TabIndex = 43;
+            this.btWinnersHistory.Text = "سجل الفئزون";
+            this.btWinnersHistory.UseVisualStyleBackColor = false;
+            this.btWinnersHistory.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox51
             // 
             this.pictureBox51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox51.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox51.Image")));
-            this.pictureBox51.Location = new System.Drawing.Point(169, 37);
+            this.pictureBox51.Location = new System.Drawing.Point(164, 37);
             this.pictureBox51.Name = "pictureBox51";
             this.pictureBox51.Size = new System.Drawing.Size(15, 20);
             this.pictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1331,7 +1403,7 @@
             // 
             this.pictureBox50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox50.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox50.Image")));
-            this.pictureBox50.Location = new System.Drawing.Point(169, 67);
+            this.pictureBox50.Location = new System.Drawing.Point(164, 67);
             this.pictureBox50.Name = "pictureBox50";
             this.pictureBox50.Size = new System.Drawing.Size(15, 20);
             this.pictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1348,11 +1420,11 @@
             this.btWinKids.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btWinKids.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btWinKids.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btWinKids.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btWinKids.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btWinKids.ForeColor = System.Drawing.Color.White;
             this.btWinKids.Location = new System.Drawing.Point(0, 63);
             this.btWinKids.Name = "btWinKids";
-            this.btWinKids.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btWinKids.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btWinKids.Size = new System.Drawing.Size(220, 29);
             this.btWinKids.TabIndex = 37;
             this.btWinKids.Text = "الأطفال الفئزون";
@@ -1371,7 +1443,7 @@
             this.btActivity_Evaluation.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btActivity_Evaluation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btActivity_Evaluation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btActivity_Evaluation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btActivity_Evaluation.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btActivity_Evaluation.ForeColor = System.Drawing.Color.White;
             this.btActivity_Evaluation.Location = new System.Drawing.Point(0, 34);
             this.btActivity_Evaluation.Name = "btActivity_Evaluation";
@@ -1386,15 +1458,24 @@
             // 
             // panel14
             // 
-            this.panel14.Controls.Add(this.label22);
+            this.panel14.Controls.Add(this.lb7);
             this.panel14.Controls.Add(this.pictureBox9);
-            this.panel14.Controls.Add(this.label7);
+            this.panel14.Controls.Add(this.lbEvalu);
             this.panel14.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel14.Location = new System.Drawing.Point(0, 0);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(220, 34);
             this.panel14.TabIndex = 29;
+            // 
+            // lb7
+            // 
+            this.lb7.AutoSize = true;
+            this.lb7.Location = new System.Drawing.Point(21, 11);
+            this.lb7.Name = "lb7";
+            this.lb7.Size = new System.Drawing.Size(16, 13);
+            this.lb7.TabIndex = 33;
+            this.lb7.Text = "▼";
             // 
             // pictureBox9
             // 
@@ -1407,21 +1488,21 @@
             this.pictureBox9.TabIndex = 31;
             this.pictureBox9.TabStop = false;
             // 
-            // label7
+            // lbEvalu
             // 
-            this.label7.AutoSize = true;
-            this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label7.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(77, -1);
-            this.label7.Name = "label7";
-            this.label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label7.Size = new System.Drawing.Size(103, 32);
-            this.label7.TabIndex = 29;
-            this.label7.Text = "تقيمات الأطفال";
-            this.label7.Click += new System.EventHandler(this.btEvaluationList_Click);
-            this.label7.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
-            this.label7.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
+            this.lbEvalu.AutoSize = true;
+            this.lbEvalu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbEvalu.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbEvalu.ForeColor = System.Drawing.Color.White;
+            this.lbEvalu.Location = new System.Drawing.Point(77, -1);
+            this.lbEvalu.Name = "lbEvalu";
+            this.lbEvalu.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbEvalu.Size = new System.Drawing.Size(103, 32);
+            this.lbEvalu.TabIndex = 29;
+            this.lbEvalu.Text = "تقيمات الأطفال";
+            this.lbEvalu.Click += new System.EventHandler(this.btEvaluationList_Click);
+            this.lbEvalu.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
+            this.lbEvalu.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
             // 
             // pnEvaluation
             // 
@@ -1439,7 +1520,7 @@
             // 
             this.pictureBox53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox53.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox53.Image")));
-            this.pictureBox53.Location = new System.Drawing.Point(169, 43);
+            this.pictureBox53.Location = new System.Drawing.Point(162, 43);
             this.pictureBox53.Name = "pictureBox53";
             this.pictureBox53.Size = new System.Drawing.Size(15, 20);
             this.pictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1456,7 +1537,7 @@
             this.btNotifications.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btNotifications.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btNotifications.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btNotifications.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btNotifications.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btNotifications.ForeColor = System.Drawing.Color.White;
             this.btNotifications.Location = new System.Drawing.Point(0, 34);
             this.btNotifications.Name = "btNotifications";
@@ -1471,16 +1552,25 @@
             // 
             // panel12
             // 
-            this.panel12.Controls.Add(this.label21);
+            this.panel12.Controls.Add(this.lb6);
             this.panel12.Controls.Add(this.btNoteyfay);
             this.panel12.Controls.Add(this.pictureBox8);
-            this.panel12.Controls.Add(this.lb);
+            this.panel12.Controls.Add(this.lbNoti);
             this.panel12.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(0, 0);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(220, 34);
             this.panel12.TabIndex = 29;
+            // 
+            // lb6
+            // 
+            this.lb6.AutoSize = true;
+            this.lb6.Location = new System.Drawing.Point(21, 11);
+            this.lb6.Name = "lb6";
+            this.lb6.Size = new System.Drawing.Size(16, 13);
+            this.lb6.TabIndex = 33;
+            this.lb6.Text = "▼";
             // 
             // btNoteyfay
             // 
@@ -1519,21 +1609,21 @@
             this.pictureBox8.TabIndex = 31;
             this.pictureBox8.TabStop = false;
             // 
-            // lb
+            // lbNoti
             // 
-            this.lb.AutoSize = true;
-            this.lb.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lb.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lb.ForeColor = System.Drawing.Color.White;
-            this.lb.Location = new System.Drawing.Point(110, -1);
-            this.lb.Name = "lb";
-            this.lb.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lb.Size = new System.Drawing.Size(70, 32);
-            this.lb.TabIndex = 29;
-            this.lb.Text = "الإشعارات";
-            this.lb.Click += new System.EventHandler(this.btStoreList_Click);
-            this.lb.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
-            this.lb.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
+            this.lbNoti.AutoSize = true;
+            this.lbNoti.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbNoti.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbNoti.ForeColor = System.Drawing.Color.White;
+            this.lbNoti.Location = new System.Drawing.Point(110, -1);
+            this.lbNoti.Name = "lbNoti";
+            this.lbNoti.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbNoti.Size = new System.Drawing.Size(70, 32);
+            this.lbNoti.TabIndex = 29;
+            this.lbNoti.Text = "الإشعارات";
+            this.lbNoti.Click += new System.EventHandler(this.btStoreList_Click);
+            this.lbNoti.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
+            this.lbNoti.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
             // 
             // pnAccountsList
             // 
@@ -1582,14 +1672,13 @@
             this.btEmploeesAccountsHistory.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btEmploeesAccountsHistory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btEmploeesAccountsHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btEmploeesAccountsHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEmploeesAccountsHistory.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btEmploeesAccountsHistory.ForeColor = System.Drawing.Color.White;
             this.btEmploeesAccountsHistory.Location = new System.Drawing.Point(0, 63);
             this.btEmploeesAccountsHistory.Name = "btEmploeesAccountsHistory";
-            this.btEmploeesAccountsHistory.Padding = new System.Windows.Forms.Padding(0, 0, 25, 0);
             this.btEmploeesAccountsHistory.Size = new System.Drawing.Size(220, 29);
             this.btEmploeesAccountsHistory.TabIndex = 46;
-            this.btEmploeesAccountsHistory.Text = "سجل حسابات الموظفين";
+            this.btEmploeesAccountsHistory.Text = "سجل رواتب الموظفين";
             this.btEmploeesAccountsHistory.UseVisualStyleBackColor = false;
             this.btEmploeesAccountsHistory.Click += new System.EventHandler(this.btAccountsHistory_Click);
             this.btEmploeesAccountsHistory.MouseEnter += new System.EventHandler(this.SubButton_MouseEnter);
@@ -1605,14 +1694,14 @@
             this.btEmploeesAccounts.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btEmploeesAccounts.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btEmploeesAccounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btEmploeesAccounts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btEmploeesAccounts.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btEmploeesAccounts.ForeColor = System.Drawing.Color.White;
             this.btEmploeesAccounts.Location = new System.Drawing.Point(0, 34);
             this.btEmploeesAccounts.Name = "btEmploeesAccounts";
             this.btEmploeesAccounts.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btEmploeesAccounts.Size = new System.Drawing.Size(220, 29);
             this.btEmploeesAccounts.TabIndex = 43;
-            this.btEmploeesAccounts.Text = "حسابات الموظفين";
+            this.btEmploeesAccounts.Text = "دفع رواتب الموظفين";
             this.btEmploeesAccounts.UseVisualStyleBackColor = false;
             this.btEmploeesAccounts.Click += new System.EventHandler(this.btAccounts_Click);
             this.btEmploeesAccounts.MouseEnter += new System.EventHandler(this.SubButton_MouseEnter);
@@ -1620,15 +1709,24 @@
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.label20);
+            this.panel10.Controls.Add(this.lb5);
             this.panel10.Controls.Add(this.pictureBox7);
-            this.panel10.Controls.Add(this.label5);
+            this.panel10.Controls.Add(this.lbAccounts);
             this.panel10.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(220, 34);
             this.panel10.TabIndex = 29;
+            // 
+            // lb5
+            // 
+            this.lb5.AutoSize = true;
+            this.lb5.Location = new System.Drawing.Point(21, 11);
+            this.lb5.Name = "lb5";
+            this.lb5.Size = new System.Drawing.Size(16, 13);
+            this.lb5.TabIndex = 33;
+            this.lb5.Text = "▼";
             // 
             // pictureBox7
             // 
@@ -1642,21 +1740,21 @@
             this.pictureBox7.TabIndex = 31;
             this.pictureBox7.TabStop = false;
             // 
-            // label5
+            // lbAccounts
             // 
-            this.label5.AutoSize = true;
-            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label5.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(111, -1);
-            this.label5.Name = "label5";
-            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label5.Size = new System.Drawing.Size(69, 32);
-            this.label5.TabIndex = 29;
-            this.label5.Text = "الحسابات";
-            this.label5.Click += new System.EventHandler(this.btAccountsList_Click);
-            this.label5.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
-            this.label5.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
+            this.lbAccounts.AutoSize = true;
+            this.lbAccounts.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbAccounts.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbAccounts.ForeColor = System.Drawing.Color.White;
+            this.lbAccounts.Location = new System.Drawing.Point(111, -1);
+            this.lbAccounts.Name = "lbAccounts";
+            this.lbAccounts.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbAccounts.Size = new System.Drawing.Size(69, 32);
+            this.lbAccounts.TabIndex = 29;
+            this.lbAccounts.Text = "الحسابات";
+            this.lbAccounts.Click += new System.EventHandler(this.btAccountsList_Click);
+            this.lbAccounts.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
+            this.lbAccounts.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
             // 
             // pnSubscripList
             // 
@@ -1679,7 +1777,7 @@
             // 
             this.pictureBox41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox41.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox41.Image")));
-            this.pictureBox41.Location = new System.Drawing.Point(169, 96);
+            this.pictureBox41.Location = new System.Drawing.Point(164, 96);
             this.pictureBox41.Name = "pictureBox41";
             this.pictureBox41.Size = new System.Drawing.Size(15, 20);
             this.pictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1696,7 +1794,7 @@
             this.bSubscription_Details.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.bSubscription_Details.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bSubscription_Details.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bSubscription_Details.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bSubscription_Details.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.bSubscription_Details.ForeColor = System.Drawing.Color.White;
             this.bSubscription_Details.Location = new System.Drawing.Point(0, 92);
             this.bSubscription_Details.Name = "bSubscription_Details";
@@ -1713,7 +1811,7 @@
             // 
             this.pictureBox28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox28.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox28.Image")));
-            this.pictureBox28.Location = new System.Drawing.Point(169, 67);
+            this.pictureBox28.Location = new System.Drawing.Point(164, 67);
             this.pictureBox28.Name = "pictureBox28";
             this.pictureBox28.Size = new System.Drawing.Size(15, 20);
             this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1724,7 +1822,7 @@
             // 
             this.pictureBox31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox31.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox31.Image")));
-            this.pictureBox31.Location = new System.Drawing.Point(169, 38);
+            this.pictureBox31.Location = new System.Drawing.Point(164, 38);
             this.pictureBox31.Name = "pictureBox31";
             this.pictureBox31.Size = new System.Drawing.Size(15, 20);
             this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1741,7 +1839,7 @@
             this.btPayment_ٍSubscriptions.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btPayment_ٍSubscriptions.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btPayment_ٍSubscriptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btPayment_ٍSubscriptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btPayment_ٍSubscriptions.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btPayment_ٍSubscriptions.ForeColor = System.Drawing.Color.White;
             this.btPayment_ٍSubscriptions.Location = new System.Drawing.Point(0, 63);
             this.btPayment_ٍSubscriptions.Name = "btPayment_ٍSubscriptions";
@@ -1764,11 +1862,11 @@
             this.btSubscription.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btSubscription.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btSubscription.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btSubscription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btSubscription.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btSubscription.ForeColor = System.Drawing.Color.White;
             this.btSubscription.Location = new System.Drawing.Point(0, 34);
             this.btSubscription.Name = "btSubscription";
-            this.btSubscription.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btSubscription.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
             this.btSubscription.Size = new System.Drawing.Size(220, 29);
             this.btSubscription.TabIndex = 34;
             this.btSubscription.Text = "اشتراكات الأطفال";
@@ -1779,15 +1877,24 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.label19);
+            this.panel8.Controls.Add(this.lb4);
             this.panel8.Controls.Add(this.pictureBox6);
-            this.panel8.Controls.Add(this.label4);
+            this.panel8.Controls.Add(this.lbSub);
             this.panel8.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(220, 34);
             this.panel8.TabIndex = 29;
+            // 
+            // lb4
+            // 
+            this.lb4.AutoSize = true;
+            this.lb4.Location = new System.Drawing.Point(21, 11);
+            this.lb4.Name = "lb4";
+            this.lb4.Size = new System.Drawing.Size(16, 13);
+            this.lb4.TabIndex = 33;
+            this.lb4.Text = "▼";
             // 
             // pictureBox6
             // 
@@ -1800,21 +1907,21 @@
             this.pictureBox6.TabIndex = 31;
             this.pictureBox6.TabStop = false;
             // 
-            // label4
+            // lbSub
             // 
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(105, -1);
-            this.label4.Name = "label4";
-            this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label4.Size = new System.Drawing.Size(75, 32);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "الإشتراكات";
-            this.label4.Click += new System.EventHandler(this.btSubscripIList_Click);
-            this.label4.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
-            this.label4.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
+            this.lbSub.AutoSize = true;
+            this.lbSub.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbSub.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbSub.ForeColor = System.Drawing.Color.White;
+            this.lbSub.Location = new System.Drawing.Point(105, -1);
+            this.lbSub.Name = "lbSub";
+            this.lbSub.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbSub.Size = new System.Drawing.Size(75, 32);
+            this.lbSub.TabIndex = 29;
+            this.lbSub.Text = "الإشتراكات";
+            this.lbSub.Click += new System.EventHandler(this.btSubscripIList_Click);
+            this.lbSub.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
+            this.lbSub.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
             // 
             // pnEmploInfo
             // 
@@ -1836,7 +1943,7 @@
             // 
             this.pictureBox19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
-            this.pictureBox19.Location = new System.Drawing.Point(169, 95);
+            this.pictureBox19.Location = new System.Drawing.Point(160, 95);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(15, 20);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1847,7 +1954,7 @@
             // 
             this.pictureBox18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
-            this.pictureBox18.Location = new System.Drawing.Point(169, 66);
+            this.pictureBox18.Location = new System.Drawing.Point(160, 66);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(15, 20);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1858,7 +1965,7 @@
             // 
             this.pictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
-            this.pictureBox17.Location = new System.Drawing.Point(169, 37);
+            this.pictureBox17.Location = new System.Drawing.Point(160, 37);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(15, 20);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1875,11 +1982,11 @@
             this.btAddEmp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btAddEmp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btAddEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btAddEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btAddEmp.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btAddEmp.ForeColor = System.Drawing.Color.White;
             this.btAddEmp.Location = new System.Drawing.Point(0, 92);
             this.btAddEmp.Name = "btAddEmp";
-            this.btAddEmp.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btAddEmp.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btAddEmp.Size = new System.Drawing.Size(220, 29);
             this.btAddEmp.TabIndex = 32;
             this.btAddEmp.Text = "إضافة موظف";
@@ -1898,11 +2005,11 @@
             this.btEmpData.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btEmpData.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btEmpData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btEmpData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btEmpData.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btEmpData.ForeColor = System.Drawing.Color.White;
             this.btEmpData.Location = new System.Drawing.Point(0, 63);
             this.btEmpData.Name = "btEmpData";
-            this.btEmpData.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btEmpData.Padding = new System.Windows.Forms.Padding(18, 0, 0, 0);
             this.btEmpData.Size = new System.Drawing.Size(220, 29);
             this.btEmpData.TabIndex = 31;
             this.btEmpData.Text = "بيانات الموظفين";
@@ -1921,7 +2028,7 @@
             this.btEmpList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btEmpList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btEmpList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btEmpList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btEmpList.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btEmpList.ForeColor = System.Drawing.Color.White;
             this.btEmpList.Location = new System.Drawing.Point(0, 34);
             this.btEmpList.Name = "btEmpList";
@@ -1936,15 +2043,24 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.label18);
+            this.panel6.Controls.Add(this.lb3);
             this.panel6.Controls.Add(this.pictureBox5);
-            this.panel6.Controls.Add(this.label3);
+            this.panel6.Controls.Add(this.lbEmp);
             this.panel6.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(220, 34);
             this.panel6.TabIndex = 29;
+            // 
+            // lb3
+            // 
+            this.lb3.AutoSize = true;
+            this.lb3.Location = new System.Drawing.Point(21, 11);
+            this.lb3.Name = "lb3";
+            this.lb3.Size = new System.Drawing.Size(16, 13);
+            this.lb3.TabIndex = 33;
+            this.lb3.Text = "▼";
             // 
             // pictureBox5
             // 
@@ -1957,21 +2073,21 @@
             this.pictureBox5.TabIndex = 31;
             this.pictureBox5.TabStop = false;
             // 
-            // label3
+            // lbEmp
             // 
-            this.label3.AutoSize = true;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label3.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(70, -1);
-            this.label3.Name = "label3";
-            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label3.Size = new System.Drawing.Size(110, 32);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "بيانات الموظفين";
-            this.label3.Click += new System.EventHandler(this.btEmploInfo_Click);
-            this.label3.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
-            this.label3.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
+            this.lbEmp.AutoSize = true;
+            this.lbEmp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbEmp.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbEmp.ForeColor = System.Drawing.Color.White;
+            this.lbEmp.Location = new System.Drawing.Point(70, -1);
+            this.lbEmp.Name = "lbEmp";
+            this.lbEmp.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbEmp.Size = new System.Drawing.Size(110, 32);
+            this.lbEmp.TabIndex = 29;
+            this.lbEmp.Text = "بيانات الموظفين";
+            this.lbEmp.Click += new System.EventHandler(this.btEmploInfo_Click);
+            this.lbEmp.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
+            this.lbEmp.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
             // 
             // pnKidsInfo
             // 
@@ -1981,7 +2097,7 @@
             this.pnKidsInfo.Controls.Add(this.pictureBox24);
             this.pnKidsInfo.Controls.Add(this.pictureBox23);
             this.pnKidsInfo.Controls.Add(this.pictureBox22);
-            this.pnKidsInfo.Controls.Add(this.btKids_Reports);
+            this.pnKidsInfo.Controls.Add(this.btKids_Grudiation);
             this.pnKidsInfo.Controls.Add(this.btArshef);
             this.pnKidsInfo.Controls.Add(this.btAddNewChild);
             this.pnKidsInfo.Controls.Add(this.btSubKidsInfo);
@@ -1997,7 +2113,7 @@
             // 
             this.pictureBox26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox26.Image = global::K_M_S_PROGRAM.Properties.Resources.wrong;
-            this.pictureBox26.Location = new System.Drawing.Point(169, 155);
+            this.pictureBox26.Location = new System.Drawing.Point(162, 155);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(15, 20);
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2008,7 +2124,7 @@
             // 
             this.pictureBox25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox25.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox25.Image")));
-            this.pictureBox25.Location = new System.Drawing.Point(169, 124);
+            this.pictureBox25.Location = new System.Drawing.Point(162, 124);
             this.pictureBox25.Name = "pictureBox25";
             this.pictureBox25.Size = new System.Drawing.Size(15, 20);
             this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2019,7 +2135,7 @@
             // 
             this.pictureBox24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox24.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox24.Image")));
-            this.pictureBox24.Location = new System.Drawing.Point(169, 97);
+            this.pictureBox24.Location = new System.Drawing.Point(162, 97);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(15, 20);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2030,7 +2146,7 @@
             // 
             this.pictureBox23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
-            this.pictureBox23.Location = new System.Drawing.Point(169, 66);
+            this.pictureBox23.Location = new System.Drawing.Point(162, 66);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(15, 20);
             this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2041,35 +2157,35 @@
             // 
             this.pictureBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
-            this.pictureBox22.Location = new System.Drawing.Point(169, 35);
+            this.pictureBox22.Location = new System.Drawing.Point(162, 35);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(15, 22);
             this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox22.TabIndex = 35;
             this.pictureBox22.TabStop = false;
             // 
-            // btKids_Reports
+            // btKids_Grudiation
             // 
-            this.btKids_Reports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btKids_Reports.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btKids_Reports.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btKids_Reports.FlatAppearance.BorderSize = 0;
-            this.btKids_Reports.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btKids_Reports.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btKids_Reports.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btKids_Reports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btKids_Reports.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btKids_Reports.ForeColor = System.Drawing.Color.White;
-            this.btKids_Reports.Location = new System.Drawing.Point(0, 150);
-            this.btKids_Reports.Name = "btKids_Reports";
-            this.btKids_Reports.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btKids_Reports.Size = new System.Drawing.Size(220, 29);
-            this.btKids_Reports.TabIndex = 34;
-            this.btKids_Reports.Text = "الأطفال المتخرجين";
-            this.btKids_Reports.UseVisualStyleBackColor = true;
-            this.btKids_Reports.Click += new System.EventHandler(this.btKids_Reports_Click);
-            this.btKids_Reports.MouseEnter += new System.EventHandler(this.SubButton_MouseEnter);
-            this.btKids_Reports.MouseLeave += new System.EventHandler(this.SubButton_MouseLeave);
+            this.btKids_Grudiation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btKids_Grudiation.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btKids_Grudiation.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btKids_Grudiation.FlatAppearance.BorderSize = 0;
+            this.btKids_Grudiation.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.btKids_Grudiation.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btKids_Grudiation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btKids_Grudiation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btKids_Grudiation.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.btKids_Grudiation.ForeColor = System.Drawing.Color.White;
+            this.btKids_Grudiation.Location = new System.Drawing.Point(0, 150);
+            this.btKids_Grudiation.Name = "btKids_Grudiation";
+            this.btKids_Grudiation.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btKids_Grudiation.Size = new System.Drawing.Size(220, 29);
+            this.btKids_Grudiation.TabIndex = 34;
+            this.btKids_Grudiation.Text = "الأطفال المتخرجين";
+            this.btKids_Grudiation.UseVisualStyleBackColor = true;
+            this.btKids_Grudiation.Click += new System.EventHandler(this.btKids_Reports_Click);
+            this.btKids_Grudiation.MouseEnter += new System.EventHandler(this.SubButton_MouseEnter);
+            this.btKids_Grudiation.MouseLeave += new System.EventHandler(this.SubButton_MouseLeave);
             // 
             // btArshef
             // 
@@ -2080,7 +2196,7 @@
             this.btArshef.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btArshef.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btArshef.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btArshef.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btArshef.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btArshef.ForeColor = System.Drawing.Color.White;
             this.btArshef.Location = new System.Drawing.Point(0, 121);
             this.btArshef.Name = "btArshef";
@@ -2102,7 +2218,7 @@
             this.btAddNewChild.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btAddNewChild.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btAddNewChild.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btAddNewChild.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAddNewChild.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btAddNewChild.ForeColor = System.Drawing.Color.White;
             this.btAddNewChild.Location = new System.Drawing.Point(0, 92);
             this.btAddNewChild.Name = "btAddNewChild";
@@ -2124,7 +2240,7 @@
             this.btSubKidsInfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btSubKidsInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btSubKidsInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btSubKidsInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSubKidsInfo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btSubKidsInfo.ForeColor = System.Drawing.Color.White;
             this.btSubKidsInfo.Location = new System.Drawing.Point(0, 63);
             this.btSubKidsInfo.Name = "btSubKidsInfo";
@@ -2146,7 +2262,7 @@
             this.btSubKidsMenue.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btSubKidsMenue.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btSubKidsMenue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btSubKidsMenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSubKidsMenue.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btSubKidsMenue.ForeColor = System.Drawing.Color.White;
             this.btSubKidsMenue.Location = new System.Drawing.Point(0, 34);
             this.btSubKidsMenue.Name = "btSubKidsMenue";
@@ -2161,15 +2277,24 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.label17);
+            this.panel7.Controls.Add(this.lb2);
             this.panel7.Controls.Add(this.pictureBox1);
-            this.panel7.Controls.Add(this.label2);
+            this.panel7.Controls.Add(this.lbKids);
             this.panel7.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(220, 34);
             this.panel7.TabIndex = 29;
+            // 
+            // lb2
+            // 
+            this.lb2.AutoSize = true;
+            this.lb2.Location = new System.Drawing.Point(21, 11);
+            this.lb2.Name = "lb2";
+            this.lb2.Size = new System.Drawing.Size(16, 13);
+            this.lb2.TabIndex = 33;
+            this.lb2.Text = "▼";
             // 
             // pictureBox1
             // 
@@ -2182,21 +2307,21 @@
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;
             // 
-            // label2
+            // lbKids
             // 
-            this.label2.AutoSize = true;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(83, -1);
-            this.label2.Name = "label2";
-            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label2.Size = new System.Drawing.Size(97, 32);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "بيانات الأطفال";
-            this.label2.Click += new System.EventHandler(this.btKidsInfo_Click);
-            this.label2.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
-            this.label2.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
+            this.lbKids.AutoSize = true;
+            this.lbKids.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbKids.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbKids.ForeColor = System.Drawing.Color.White;
+            this.lbKids.Location = new System.Drawing.Point(83, -1);
+            this.lbKids.Name = "lbKids";
+            this.lbKids.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbKids.Size = new System.Drawing.Size(97, 32);
+            this.lbKids.TabIndex = 29;
+            this.lbKids.Text = "بيانات الأطفال";
+            this.lbKids.Click += new System.EventHandler(this.btKidsInfo_Click);
+            this.lbKids.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
+            this.lbKids.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
             // 
             // pnMainMenue
             // 
@@ -2249,15 +2374,24 @@
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.label6);
+            this.panel9.Controls.Add(this.lb1);
             this.panel9.Controls.Add(this.pictureBox4);
-            this.panel9.Controls.Add(this.label15);
+            this.panel9.Controls.Add(this.lbMain);
             this.panel9.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(220, 34);
             this.panel9.TabIndex = 29;
+            // 
+            // lb1
+            // 
+            this.lb1.AutoSize = true;
+            this.lb1.Location = new System.Drawing.Point(21, 11);
+            this.lb1.Name = "lb1";
+            this.lb1.Size = new System.Drawing.Size(16, 13);
+            this.lb1.TabIndex = 32;
+            this.lb1.Text = "▼";
             // 
             // pictureBox4
             // 
@@ -2270,21 +2404,21 @@
             this.pictureBox4.TabIndex = 31;
             this.pictureBox4.TabStop = false;
             // 
-            // label15
+            // lbMain
             // 
-            this.label15.AutoSize = true;
-            this.label15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label15.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(100, -1);
-            this.label15.Name = "label15";
-            this.label15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label15.Size = new System.Drawing.Size(80, 32);
-            this.label15.TabIndex = 29;
-            this.label15.Text = "الرئيسية   ";
-            this.label15.Click += new System.EventHandler(this.btMenueInfo_Click);
-            this.label15.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
-            this.label15.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
+            this.lbMain.AutoSize = true;
+            this.lbMain.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbMain.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbMain.ForeColor = System.Drawing.Color.White;
+            this.lbMain.Location = new System.Drawing.Point(100, -1);
+            this.lbMain.Name = "lbMain";
+            this.lbMain.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbMain.Size = new System.Drawing.Size(80, 32);
+            this.lbMain.TabIndex = 29;
+            this.lbMain.Text = "الرئيسية   ";
+            this.lbMain.Click += new System.EventHandler(this.btMenueInfo_Click);
+            this.lbMain.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
+            this.lbMain.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
             // 
             // pictureBox27
             // 
@@ -2590,6 +2724,7 @@
             // pictureBox29
             // 
             this.pictureBox29.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox29.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox29.Image = global::K_M_S_PROGRAM.Properties.Resources.Logo__7_;
             this.pictureBox29.Location = new System.Drawing.Point(331, 197);
             this.pictureBox29.Name = "pictureBox29";
@@ -2622,141 +2757,6 @@
             // 
             this.sataDragControl1.SelectControl = this.lbDayDate;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(21, 11);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(16, 13);
-            this.label6.TabIndex = 32;
-            this.label6.Text = "▼";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(21, 11);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(16, 13);
-            this.label17.TabIndex = 33;
-            this.label17.Text = "▼";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(21, 11);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(16, 13);
-            this.label18.TabIndex = 33;
-            this.label18.Text = "▼";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(21, 11);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(16, 13);
-            this.label19.TabIndex = 33;
-            this.label19.Text = "▼";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(21, 11);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(16, 13);
-            this.label20.TabIndex = 33;
-            this.label20.Text = "▼";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(21, 11);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(16, 13);
-            this.label21.TabIndex = 33;
-            this.label21.Text = "▼";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(21, 11);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(16, 13);
-            this.label22.TabIndex = 33;
-            this.label22.Text = "▼";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(21, 11);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(16, 13);
-            this.label23.TabIndex = 33;
-            this.label23.Text = "▼";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(21, 11);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(16, 13);
-            this.label24.TabIndex = 33;
-            this.label24.Text = "▼";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(21, 11);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(16, 13);
-            this.label25.TabIndex = 33;
-            this.label25.Text = "▼";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(21, 11);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(16, 13);
-            this.label26.TabIndex = 33;
-            this.label26.Text = "▼";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(21, 11);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(16, 13);
-            this.label27.TabIndex = 33;
-            this.label27.Text = "▼";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(21, 11);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(16, 13);
-            this.label28.TabIndex = 33;
-            this.label28.Text = "▼";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(21, 10);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(16, 13);
-            this.label29.TabIndex = 33;
-            this.label29.Text = "▼";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(21, 10);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(16, 13);
-            this.label30.TabIndex = 33;
-            this.label30.Text = "▼";
-            // 
             // Main_Screan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2766,6 +2766,7 @@
             this.Controls.Add(this.pnShow);
             this.Controls.Add(this.pnHeader);
             this.Controls.Add(this.pnList);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main_Screan";
@@ -2897,7 +2898,7 @@
         private System.Windows.Forms.Button btUser_Data;
         private System.Windows.Forms.Panel panel28;
         private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lbUsers;
         private System.Windows.Forms.Panel pnTreasury;
         private System.Windows.Forms.PictureBox pictureBox43;
         private System.Windows.Forms.PictureBox pictureBox42;
@@ -2905,30 +2906,30 @@
         private System.Windows.Forms.Button btTreasuryData;
         private System.Windows.Forms.Panel panel26;
         private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lbTreasry;
         private System.Windows.Forms.Panel pnClassesList;
         private System.Windows.Forms.PictureBox pictureBox54;
-        private System.Windows.Forms.Button btClasses_Level;
+        private System.Windows.Forms.Button btClasses;
         private System.Windows.Forms.Panel panel24;
         private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lbClases;
         private System.Windows.Forms.Panel pnLevelsList;
         private System.Windows.Forms.PictureBox pictureBox58;
         private System.Windows.Forms.Button btLevels;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lbLevels;
         private System.Windows.Forms.Panel pnNotesList;
         private System.Windows.Forms.PictureBox pictureBox57;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lbNotesArchive;
         private System.Windows.Forms.Panel pnMessageList;
         private System.Windows.Forms.PictureBox pictureBox46;
         private System.Windows.Forms.Button btMessage_Arshif;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lbMess;
         private System.Windows.Forms.Panel pnAbsenceList;
         private System.Windows.Forms.PictureBox pictureBox48;
         private System.Windows.Forms.PictureBox pictureBox47;
@@ -2936,7 +2937,7 @@
         private System.Windows.Forms.Button btAdd_Absence;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lbAbs;
         private System.Windows.Forms.Panel pnEvaluationList;
         private System.Windows.Forms.PictureBox pictureBox51;
         private System.Windows.Forms.PictureBox pictureBox50;
@@ -2944,13 +2945,13 @@
         private System.Windows.Forms.Button btActivity_Evaluation;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbEvalu;
         private System.Windows.Forms.Panel pnEvaluation;
         private System.Windows.Forms.PictureBox pictureBox53;
         private System.Windows.Forms.Button btNotifications;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.Label lb;
+        private System.Windows.Forms.Label lbNoti;
         private System.Windows.Forms.Panel pnAccountsList;
         private System.Windows.Forms.PictureBox pictureBox32;
         private System.Windows.Forms.PictureBox pictureBox35;
@@ -2958,7 +2959,7 @@
         private System.Windows.Forms.Button btEmploeesAccounts;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbAccounts;
         private System.Windows.Forms.Panel pnSubscripList;
         private System.Windows.Forms.PictureBox pictureBox41;
         private System.Windows.Forms.Button bSubscription_Details;
@@ -2967,7 +2968,7 @@
         private System.Windows.Forms.Button btSubscription;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbSub;
         private System.Windows.Forms.Panel pnEmploInfo;
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.PictureBox pictureBox18;
@@ -2977,26 +2978,26 @@
         private System.Windows.Forms.Button btEmpList;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbEmp;
         private System.Windows.Forms.Panel pnKidsInfo;
         private System.Windows.Forms.PictureBox pictureBox26;
         private System.Windows.Forms.PictureBox pictureBox25;
         private System.Windows.Forms.PictureBox pictureBox24;
         private System.Windows.Forms.PictureBox pictureBox23;
         private System.Windows.Forms.PictureBox pictureBox22;
-        private System.Windows.Forms.Button btKids_Reports;
+        private System.Windows.Forms.Button btKids_Grudiation;
         private System.Windows.Forms.Button btArshef;
         private System.Windows.Forms.Button btAddNewChild;
         private System.Windows.Forms.Button btSubKidsInfo;
         private System.Windows.Forms.Button btSubKidsMenue;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbKids;
         private System.Windows.Forms.Panel pnMainMenue;
         private System.Windows.Forms.Button btSubMainMenue;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lbMain;
         private System.Windows.Forms.PictureBox pictureBox27;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btPayment_ٍSubscriptions;
@@ -3030,7 +3031,7 @@
         private System.Windows.Forms.Button btProgram_Setting;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox36;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbSetting;
         private SATAUiFramework.Controls.SATADragControl sataDragControl1;
         private System.Windows.Forms.PictureBox pictureBox20;
         private System.Windows.Forms.Button btAbout_this_Program;
@@ -3041,21 +3042,21 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Sipaa.Framework.SEllipse sEllipse1;
         private System.Windows.Forms.PictureBox pictureBox34;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Button btWinnersHistory;
+        private System.Windows.Forms.Label lb14;
+        private System.Windows.Forms.Label lb13;
+        private System.Windows.Forms.Label lb12;
+        private System.Windows.Forms.Label lb11;
+        private System.Windows.Forms.Label lb10;
+        private System.Windows.Forms.Label lb9;
+        private System.Windows.Forms.Label lb8;
+        private System.Windows.Forms.Label lb7;
+        private System.Windows.Forms.Label lb6;
+        private System.Windows.Forms.Label lb5;
+        private System.Windows.Forms.Label lb4;
+        private System.Windows.Forms.Label lb3;
+        private System.Windows.Forms.Label lb2;
+        private System.Windows.Forms.Label lb1;
+        private System.Windows.Forms.Label lb15;
     }
 }

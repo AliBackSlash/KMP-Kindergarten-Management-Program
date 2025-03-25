@@ -22,11 +22,20 @@ namespace MyBusinessLayer
         public string LasttimeLeave { get; }
         public string TimeLeave { get; }
         public string TimeLateForKids { get; }
+        public string TimeEnterPM { get; }
+        public string LasttimeEnterPM { get; }
+        public string LasttimeLeavePM { get; }
+        public string TimeLeavePM { get; }
+        public string TimeLateForKidsPM { get; }
         public string NotefayKidsLate { get; }
         public string TimeEnterForTeacher { get; }
         public string TimeLateForTeachers { get; }
         public string TimeEnterForWorkers { get; }
         public string TimeLateForWorkers { get; }
+        public string TimeEnterForTeacherPM { get; }
+        public string TimeLateForTeachersPM { get; }
+        public string TimeEnterForWorkersPM { get; }
+        public string TimeLateForWorkersPM { get; }
         public float LateDiscount { get; }
         public float AbsenceLate { get; }
         public string DaysOfStaudyInMonth { get; }
@@ -48,12 +57,15 @@ namespace MyBusinessLayer
         public string BirthDayMessage { get; }
         public string EmpAge { get; }
         public bool IsPayInBegning { get; }
+        public bool Mode { get; }
         public clsSettings(byte DaysLateToPay, byte DaysKindsAbsence, short KidsBratherAge,
-           string KidsBratherAge2, string timeEnter, string lasttimeEnter, string lasttimeLeave, string timeLeave, string TimeLateForKids, string NotefayKidsLate,
-           string TimeEnterForTeacher, string TimeLateForTeacher, string TimeEnterForWorker, string TimeLateForWorkers,
+           string KidsBratherAge2, string timeEnter, string lasttimeEnter, string lasttimeLeave, string timeLeave, string TimeLateForKids, string timeEnterPM, string lasttimeEnterPM,
+           string lasttimeLeavePM, string timeLeavePM, string TimeLateForKidsPM, string NotefayKidsLate,
+           string TimeEnterForTeacher, string TimeLateForTeacher, string TimeEnterForWorker, string TimeLateForWorkers,string TimeEnterForTeacherPM, string TimeLateForTeacherPM, string TimeEnterForWorkerPM,
+           string TimeLateForWorkersPM,
            float LateDiscount, float AbsenceLate, string DayOfStaudyInMonth, byte Vication1, byte Vication2, string packupPath, string
            OrgName, string ManagerName, bool SmaolPaper, string LogoPath, bool AskBeforPrint, bool ShowBeforPrint, string SMSNumber, string WhatsAppNumber,
-           string OrgEmail, string AbsenceMessage, string SubMessage, string BrothersAgeMessage, string BirthDayMessage, string EmpAge, bool isPayInBegning)
+           string OrgEmail, string AbsenceMessage, string SubMessage, string BrothersAgeMessage, string BirthDayMessage, string EmpAge, bool isPayInBegning,bool Mode)
         {
             this.DaysLateToPay = DaysLateToPay;
             this.DaysKindsAbsence = DaysKindsAbsence;
@@ -64,11 +76,20 @@ namespace MyBusinessLayer
             LasttimeLeave = lasttimeLeave;
             TimeLeave = timeLeave;
             this.TimeLateForKids = TimeLateForKids;
-            this.NotefayKidsLate = NotefayKidsLate;
+            TimeEnterPM = timeEnterPM;
+            LasttimeEnterPM = lasttimeEnterPM;
+            LasttimeLeavePM = lasttimeLeavePM;
+            TimeLeavePM = timeLeavePM;
+            this.TimeLateForKidsPM = TimeLateForKidsPM;
             this.TimeEnterForTeacher = TimeEnterForTeacher;
             this.TimeLateForTeachers = TimeLateForTeacher;
             this.TimeEnterForWorkers = TimeEnterForWorker;
             this.TimeLateForWorkers = TimeLateForWorkers;
+            this.TimeEnterForTeacherPM = TimeEnterForTeacherPM;
+            this.TimeLateForTeachersPM = TimeLateForTeacherPM;
+            this.TimeEnterForWorkersPM = TimeEnterForWorkerPM;
+            this.TimeLateForWorkersPM = TimeLateForWorkersPM;
+            this.NotefayKidsLate = NotefayKidsLate;
             this.LateDiscount = LateDiscount;
             this.AbsenceLate = AbsenceLate;
             this.DaysOfStaudyInMonth = DayOfStaudyInMonth;
@@ -90,6 +111,8 @@ namespace MyBusinessLayer
             this.BirthDayMessage = BirthDayMessage;
             this.EmpAge = EmpAge;
             IsPayInBegning = isPayInBegning;
+            this.Mode = Mode;
+
         }
         public static DataTable GetSettingInfo()
         {
@@ -99,8 +122,10 @@ namespace MyBusinessLayer
         public static clsSettings GetSetting()
         {
             DataTable SettingData = clsSettingsData.GetSettingInfo();
-            string   KidsBratherAge2 = "", timeEnter = "", lasttimeEnter = "", lasttimeLeave = "", timeLeave = "", TimeLateForKids = "", NotefayKidsLate = "", TimeEnterForTeacher = "", TimeLateForTeacher = "", 
-            TimeEnterForWorker = "", TimeLateForWorkers = "", DayOfStaudyInMonth = "", packupPath = "", OrgName = "", ManagerName = "", LogoPath = "", 
+            string   KidsBratherAge2 = "", timeEnter = "", lasttimeEnter = "", lasttimeLeave = "", timeLeave = "", TimeLateForKids = "",timeEnterPM = "", lasttimeEnterPM = "", lasttimeLeavePM = ""
+                , timeLeavePM = "", TimeLateForKidsPM = "", NotefayKidsLate = "", TimeEnterForTeacher = "", TimeLateForTeacher = "", 
+            TimeEnterForWorker = "", TimeLateForWorkers = "", TimeEnterForTeacherPM = "", TimeLateForTeacherPM = "", 
+            TimeEnterForWorkerPM = "", TimeLateForWorkersPM = "", DayOfStaudyInMonth = "", packupPath = "", OrgName = "", ManagerName = "", LogoPath = "", 
             SMSNumber = "", WhatsAppNumber = "", OrgEmail = "", AbsenceMessage = "", SubMessage = "", BrothersAgeMessage = "",BirthDayMessage = "", EmpAge = "";
             byte DaysLateToPay = 0, DaysKindsAbsence = 0;
             float LateDiscount = 0, AbsenceLate = 0;
@@ -108,7 +133,7 @@ namespace MyBusinessLayer
             short KidsBratherAge = 0;
 
 
-            bool AskBeforPrint = false, ShowBeforPrint = false, SmaolPaper = false, IsPayInBegning = false;
+            bool AskBeforPrint = false, ShowBeforPrint = false, SmaolPaper = false, IsPayInBegning = false,Mode = false;
             DataRow row;
             bool Success = false;
             if (SettingData!=null)
@@ -124,11 +149,22 @@ namespace MyBusinessLayer
                 lasttimeLeave = row["LasttimeLeave"].ToString();
                 timeLeave = row["timeLeave"].ToString();
                 TimeLateForKids = row["TimeLateForKids"].ToString();
-                NotefayKidsLate = row["NotefayKidsLate"].ToString();
                 TimeEnterForTeacher = row["TimeEnterForTeacher"].ToString();
                 TimeLateForTeacher = row["TimeLateForTeachers"].ToString();
                 TimeEnterForWorker = row["TimeEnterForWorker"].ToString();
                 TimeLateForWorkers = row["TimeLateForWorkers"].ToString();
+                //
+                timeEnterPM = row["timeEnterPM"].ToString();
+                lasttimeEnterPM = row["LasttimeEnterPM"].ToString();
+                lasttimeLeavePM = row["LasttimeLeavePM"].ToString();
+                timeLeavePM = row["timeLeavePM"].ToString();
+                TimeLateForKidsPM = row["TimeLateForKidsPM"].ToString();
+                TimeEnterForTeacherPM = row["TimeEnterForTeacherPM"].ToString();
+                TimeLateForTeacherPM = row["TimeLateForTeachersPM"].ToString();
+                TimeEnterForWorkerPM = row["TimeEnterForWorkerPM"].ToString();
+                TimeLateForWorkersPM = row["TimeLateForWorkersPM"].ToString();
+                //
+                NotefayKidsLate = row["NotefayKidsLate"].ToString();
                 LateDiscount = Convert.ToSingle(row["LateDiscount"]);
                 AbsenceLate = Convert.ToSingle(row["AbsenceLate"]);
                 DayOfStaudyInMonth = row["DayOfStaudyInMonth"].ToString();
@@ -152,16 +188,17 @@ namespace MyBusinessLayer
                 ShowBeforPrint = Convert.ToBoolean(row["ShowBeforPrint"]);
                 SmaolPaper = Convert.ToBoolean(row["SmallPaper"]);
                 IsPayInBegning = Convert.ToBoolean(row["IsPayInBegning"]);
+                Mode = Convert.ToBoolean(row["Mode"]);
                 Success = true;
             }
 
             if (Success)
                 return new clsSettings( DaysLateToPay,  DaysKindsAbsence,  KidsBratherAge,
-            KidsBratherAge2,  timeEnter,  lasttimeEnter,  lasttimeLeave,  timeLeave,  TimeLateForKids,  NotefayKidsLate,
-            TimeEnterForTeacher,  TimeLateForTeacher,  TimeEnterForWorker,  TimeLateForWorkers,
+            KidsBratherAge2,  timeEnter,  lasttimeEnter,  lasttimeLeave,  timeLeave,  TimeLateForKids, timeEnterPM, lasttimeEnterPM, lasttimeLeavePM, timeLeavePM, TimeLateForKidsPM, NotefayKidsLate,
+            TimeEnterForTeacher,  TimeLateForTeacher,  TimeEnterForWorker,  TimeLateForWorkers, TimeEnterForTeacherPM, TimeLateForTeacherPM, TimeEnterForWorkerPM, TimeLateForWorkersPM,
             LateDiscount,  AbsenceLate,  DayOfStaudyInMonth,  Vication1,  Vication2,  packupPath, 
            OrgName,  ManagerName,  SmaolPaper,  LogoPath,  AskBeforPrint,  ShowBeforPrint,  SMSNumber,  WhatsAppNumber,
-            OrgEmail,  AbsenceMessage,  SubMessage,  BrothersAgeMessage,  BirthDayMessage,  EmpAge,IsPayInBegning);
+            OrgEmail,  AbsenceMessage,  SubMessage,  BrothersAgeMessage,  BirthDayMessage,  EmpAge,IsPayInBegning,Mode);
             else
                 return null;
 
@@ -170,18 +207,20 @@ namespace MyBusinessLayer
         }
 
         public static bool UpdateSetting(string DaysLateToPay, string DaysKindsAbsence, string KidsBratherAge,
-           string KidsBratherAge2, string timeEnter, string lasttimeEnter, string lasttimeLeave, string timeLeave, string TimeLateForKids, string NotefayKidsLate,
+           string KidsBratherAge2, string timeEnter, string lasttimeEnter, string lasttimeLeave, string timeLeave, string TimeLateForKids
+            , string timeEnterPM, string lasttimeEnterPM, string lasttimeLeavePM, string timeLeavePM, string TimeLateForKidsPM, string NotefayKidsLate,
            string TimeEnterForTeacher, string TimeLateForTeacher, string TimeEnterForWorker, string TimeLateForWorkers,
+           string TimeEnterForTeacherPM, string TimeLateForTeacherPM, string TimeEnterForWorkerPM, string TimeLateForWorkersPM,
            string LateDiscount, string AbsenceLate, string DayOfStaudyInMonth, char Vication1, char Vication2, string packupPath, string
            OrgName, string ManagerName, bool SmaolPaper, string LogoPath, bool AskBeforPrint,bool ShowBeforPrint,string SMSNumber,string WhatsAppNumber,
-           string OrgEmail,string AbsenceMessage,string SubMessage,string BrothersAgeMessage,string BirthDayMessage,string EmpAge,bool IsPayInBegning)
+           string OrgEmail,string AbsenceMessage,string SubMessage,string BrothersAgeMessage,string BirthDayMessage,string EmpAge,bool IsPayInBegning,bool Mode)
         {
             return clsSettingsData.UpdateSetting(DaysLateToPay, DaysKindsAbsence, KidsBratherAge,
-            KidsBratherAge2, timeEnter, lasttimeEnter, lasttimeLeave, timeLeave, TimeLateForKids, NotefayKidsLate,
-            TimeEnterForTeacher, TimeLateForTeacher, TimeEnterForWorker, TimeLateForWorkers,
+            KidsBratherAge2, timeEnter, lasttimeEnter, lasttimeLeave, timeLeave, TimeLateForKids, timeEnterPM, lasttimeEnterPM, lasttimeLeavePM, timeLeavePM, TimeLateForKidsPM, NotefayKidsLate,
+            TimeEnterForTeacher, TimeLateForTeacher, TimeEnterForWorker, TimeLateForWorkers, TimeEnterForTeacherPM, TimeLateForTeacherPM, TimeEnterForWorkerPM, TimeLateForWorkersPM,
             LateDiscount, AbsenceLate, DayOfStaudyInMonth, Vication1, Vication2, packupPath,
            OrgName, ManagerName, SmaolPaper, LogoPath, AskBeforPrint, ShowBeforPrint,  SMSNumber,  WhatsAppNumber,  OrgEmail, 
-           AbsenceMessage,  SubMessage, BrothersAgeMessage, BirthDayMessage, EmpAge, IsPayInBegning);
+           AbsenceMessage,  SubMessage, BrothersAgeMessage, BirthDayMessage, EmpAge, IsPayInBegning,Mode);
         }
 
         public static bool BackUPDataBase(string BackupPath)

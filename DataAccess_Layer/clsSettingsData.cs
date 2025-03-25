@@ -65,21 +65,21 @@ namespace MyDataAccessLayer
 
         public static bool UpdateSetting(string DaysLateToPay, string DaysKindsAbsence, string KidsBratherAge,
             string KidsBratherAge2, string timeEnter, string lasttimeEnter, string lasttimeLeave, string timeLeave,
-            string TimeEarlyLeave, string NotefayKidsLate, string TimeEnterForTeacher, string TimeLeaveForTeacher,
-            string TimeEnterForWorker, string TimeLeaveForWorker, string LateDiscount, string AbsenceLate,
+            string TimeLateForKids, string timeEnterPM, string lasttimeEnterPM, string lasttimeLeavePM, string timeLeavePM,
+            string TimeLateForKidsPM, string NotefayKidsLate, string TimeEnterForTeacher, string TimeLeaveForTeacher,
+            string TimeEnterForWorker, string TimeLeaveForWorker,string TimeEnterForTeacherPM, string TimeLeaveForTeacherPM,
+            string TimeEnterForWorkerPM, string TimeLeaveForWorkerPM, string LateDiscount, string AbsenceLate,
             string DayOfStaudyInMonth, char Vication1, char Vication2, string packupPath, string OrgName,
             string ManagerName, bool SmaolPaper, string LogoPath, bool AskBeforPrint, bool ShowBeforPrint,
             string SMSNumber, string WhatsAppNumber, string OrgEmail, string AbsenceMessage, string SubMessage,
-            string BrothersAgeMessage, string BirthDayMessage, string EmpAge, bool IsPayInBegning)
+            string BrothersAgeMessage, string BirthDayMessage, string EmpAge, bool IsPayInBegning,bool Mode)
         {
-            string query = @"exec SP_UpdateProgramSettings @DaysLateToPay ,@DaysKindsAbsence ,
-                            @KidsBratherAge ,@KidsBratherAge2 ,@timeEnter ,@lasttimeEnter ,@timeLeave ,
-                            @lasttimeLeave ,@TimeEarlyLeave ,@NotefayKidsLate ,
-                            @TimeEnterForTeacher ,@TimeLeaveForTeacher ,@TimeEnterForWorker ,@TimeLeaveForWorker ,
-                            @LateDiscount ,@AbsenceLate ,@DayOfStaudyInMonth ,@Vication1 ,@Vication2 ,
-                            @packupPath ,@ShowBeforPrint ,@OrgName ,@SmaolPaper ,@ManagerName ,
-                            @LogoPath ,@AskBeforPrint ,@SMSNumber ,@WhatsAppNumber ,@AbsenceMessage ,
-                            @SubMessage ,@BrothersAgeMessage ,@BirthDayMessage ,@EmpAge ,@OrgEmail ,@IsPayInBegning;";
+            string query = @"exec SP_UpdateProgramSettings @DaysLateToPay ,@DaysKindsAbsence ,@KidsBratherAge ,@KidsBratherAge2 ,@timeEnter ,@lasttimeEnter,@timeLeave ,
+                            @lasttimeLeave,@TimeLateForKids,@timeEnterPM ,@lasttimeEnterPM ,@timeLeavePM ,@lasttimeLeavePM ,@TimeLateForKidsPM ,
+                            @NotefayKidsLate ,@TimeEnterForTeacher ,@TimeLeaveForTeacher ,@TimeEnterForWorker ,@TimeLeaveForWorker ,@TimeEnterForTeacherPM,@TimeLeaveForTeacherPM ,
+                            @TimeEnterForWorkerPM ,@TimeLeaveForWorkerPM ,@LateDiscount ,@AbsenceLate,@DayOfStaudyInMonth ,@Vication1 ,@Vication2 ,
+                            @packupPath ,@ShowBeforPrint ,@OrgName ,@SmaolPaper ,@ManagerName ,@LogoPath ,@AskBeforPrint ,@SMSNumber ,@WhatsAppNumber ,
+                            @AbsenceMessage,@SubMessage ,@BrothersAgeMessage ,@BirthDayMessage ,@EmpAge ,@OrgEmail ,@IsPayInBegning ,@Mode;";
 
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             using (SqlCommand command = new SqlCommand(query, connection))
@@ -90,12 +90,25 @@ namespace MyDataAccessLayer
                 command.Parameters.AddWithValue("@KidsBratherAge2", KidsBratherAge2);
                 command.Parameters.AddWithValue("@timeEnter", timeEnter);
                 command.Parameters.AddWithValue("@timeLeave", timeLeave);
-                command.Parameters.AddWithValue("@TimeEarlyLeave", TimeEarlyLeave);
-                command.Parameters.AddWithValue("@NotefayKidsLate", NotefayKidsLate);
+                command.Parameters.AddWithValue("@lasttimeEnter", lasttimeEnter);
+                command.Parameters.AddWithValue("@lasttimeLeave", lasttimeLeave);
+                command.Parameters.AddWithValue("@TimeLateForKids", TimeLateForKids);
                 command.Parameters.AddWithValue("@TimeEnterForTeacher", TimeEnterForTeacher);
                 command.Parameters.AddWithValue("@TimeLeaveForTeacher", TimeLeaveForTeacher);
                 command.Parameters.AddWithValue("@TimeEnterForWorker", TimeEnterForWorker);
                 command.Parameters.AddWithValue("@TimeLeaveForWorker", TimeLeaveForWorker);
+                //
+                command.Parameters.AddWithValue("@timeEnterPM", timeEnterPM);
+                command.Parameters.AddWithValue("@timeLeavePM", timeLeavePM);
+                command.Parameters.AddWithValue("@lasttimeEnterPM", lasttimeEnterPM);
+                command.Parameters.AddWithValue("@lasttimeLeavePM", lasttimeLeavePM);
+                command.Parameters.AddWithValue("@TimeLateForKidsPM", TimeLateForKidsPM);
+                command.Parameters.AddWithValue("@TimeEnterForTeacherPM", TimeEnterForTeacherPM);
+                command.Parameters.AddWithValue("@TimeLeaveForTeacherPM", TimeLeaveForTeacherPM);
+                command.Parameters.AddWithValue("@TimeEnterForWorkerPM", TimeEnterForWorkerPM);
+                command.Parameters.AddWithValue("@TimeLeaveForWorkerPM", TimeLeaveForWorkerPM);
+                //
+                command.Parameters.AddWithValue("@NotefayKidsLate", NotefayKidsLate);
                 command.Parameters.AddWithValue("@LateDiscount", LateDiscount);
                 command.Parameters.AddWithValue("@AbsenceLate", AbsenceLate);
                 command.Parameters.AddWithValue("@DayOfStaudyInMonth", DayOfStaudyInMonth);
@@ -105,8 +118,6 @@ namespace MyDataAccessLayer
                 command.Parameters.AddWithValue("@OrgName", OrgName);
                 command.Parameters.AddWithValue("@ManagerName", ManagerName);
                 command.Parameters.AddWithValue("@LogoPath", LogoPath ?? (object)DBNull.Value);
-                command.Parameters.AddWithValue("@lasttimeEnter", lasttimeEnter);
-                command.Parameters.AddWithValue("@lasttimeLeave", lasttimeLeave);
                 command.Parameters.AddWithValue("@SmaolPaper", SmaolPaper);
                 command.Parameters.AddWithValue("@AskBeforPrint", AskBeforPrint);
                 command.Parameters.AddWithValue("@ShowBeforPrint", ShowBeforPrint);
@@ -119,6 +130,7 @@ namespace MyDataAccessLayer
                 command.Parameters.AddWithValue("@BirthDayMessage", BirthDayMessage);
                 command.Parameters.AddWithValue("@EmpAge", EmpAge);
                 command.Parameters.AddWithValue("@IsPayInBegning", IsPayInBegning);
+                command.Parameters.AddWithValue("@Mode", Mode);
 
                 try
                 {

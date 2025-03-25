@@ -262,12 +262,12 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label2.Location = new System.Drawing.Point(994, 14);
+            this.label2.Location = new System.Drawing.Point(1013, 15);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label2.Size = new System.Drawing.Size(173, 31);
+            this.label2.Size = new System.Drawing.Size(154, 31);
             this.label2.TabIndex = 17;
             this.label2.Text = "إضافة طفل جديد";
             // 
@@ -333,7 +333,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.ForeColor = System.Drawing.Color.DimGray;
             this.label18.Location = new System.Drawing.Point(783, 0);
             this.label18.Name = "label18";
             this.label18.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -345,7 +345,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.ForeColor = System.Drawing.Color.DimGray;
             this.label19.Location = new System.Drawing.Point(1107, 0);
             this.label19.Name = "label19";
             this.label19.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -357,7 +357,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.ForeColor = System.Drawing.Color.DimGray;
             this.label21.Location = new System.Drawing.Point(1003, 0);
             this.label21.Name = "label21";
             this.label21.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -369,7 +369,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.ForeColor = System.Drawing.Color.DimGray;
             this.label20.Location = new System.Drawing.Point(580, 0);
             this.label20.Name = "label20";
             this.label20.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -401,7 +401,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.ForeColor = System.Drawing.Color.DimGray;
             this.label15.Location = new System.Drawing.Point(1117, 0);
             this.label15.Name = "label15";
             this.label15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -413,7 +413,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.ForeColor = System.Drawing.Color.DimGray;
             this.label14.Location = new System.Drawing.Point(578, 0);
             this.label14.Name = "label14";
             this.label14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -425,7 +425,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.ForeColor = System.Drawing.Color.DimGray;
             this.label16.Location = new System.Drawing.Point(990, 0);
             this.label16.Name = "label16";
             this.label16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -437,7 +437,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.ForeColor = System.Drawing.Color.DimGray;
             this.label17.Location = new System.Drawing.Point(768, 0);
             this.label17.Name = "label17";
             this.label17.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -450,7 +450,7 @@
             this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.92967F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.07033F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 647F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 649F));
             this.tableLayoutPanel7.Controls.Add(this.txCity, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.txAddress, 1, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -480,11 +480,11 @@
             // 
             this.txAddress.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txAddress.Font = new System.Drawing.Font("Simplified Arabic", 16F, System.Drawing.FontStyle.Bold);
-            this.txAddress.Location = new System.Drawing.Point(651, 3);
+            this.txAddress.Location = new System.Drawing.Point(653, 3);
             this.txAddress.MaxLength = 30;
             this.txAddress.Multiline = true;
             this.txAddress.Name = "txAddress";
-            this.txAddress.Size = new System.Drawing.Size(413, 42);
+            this.txAddress.Size = new System.Drawing.Size(411, 42);
             this.txAddress.TabIndex = 6;
             // 
             // tableLayoutPanel6
@@ -492,7 +492,7 @@
             this.tableLayoutPanel6.ColumnCount = 3;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.15625F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.84375F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 601F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 603F));
             this.tableLayoutPanel6.Controls.Add(this.label13, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.label12, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -509,7 +509,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.ForeColor = System.Drawing.Color.DimGray;
             this.label13.Location = new System.Drawing.Point(997, 0);
             this.label13.Name = "label13";
             this.label13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -521,7 +521,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.ForeColor = System.Drawing.Color.DimGray;
             this.label12.Location = new System.Drawing.Point(1151, 0);
             this.label12.Name = "label12";
             this.label12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -534,7 +534,7 @@
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.41825F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.58175F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 719F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 721F));
             this.tableLayoutPanel5.Controls.Add(this.txCode, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.txName, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.txSubAmount, 2, 0);
@@ -568,12 +568,12 @@
             // 
             this.txName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txName.Font = new System.Drawing.Font("Simplified Arabic", 16F, System.Drawing.FontStyle.Bold);
-            this.txName.Location = new System.Drawing.Point(723, 3);
+            this.txName.Location = new System.Drawing.Point(725, 3);
             this.txName.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
             this.txName.MaxLength = 50;
             this.txName.Multiline = true;
             this.txName.Name = "txName";
-            this.txName.Size = new System.Drawing.Size(341, 39);
+            this.txName.Size = new System.Drawing.Size(339, 39);
             this.txName.TabIndex = 5;
             this.txName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txName_KeyPress);
@@ -584,7 +584,7 @@
             this.txSubAmount.Dock = System.Windows.Forms.DockStyle.Left;
             this.txSubAmount.Font = new System.Drawing.Font("Simplified Arabic", 15F, System.Drawing.FontStyle.Bold);
             this.txSubAmount.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.txSubAmount.Location = new System.Drawing.Point(573, 3);
+            this.txSubAmount.Location = new System.Drawing.Point(575, 3);
             this.txSubAmount.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
             this.txSubAmount.MaxLength = 11;
             this.txSubAmount.Multiline = true;
@@ -599,7 +599,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.65134F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.34866F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 719F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 721F));
             this.tableLayoutPanel4.Controls.Add(this.label7, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.label10, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.label11, 1, 0);
@@ -617,8 +617,8 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(643, 0);
+            this.label7.ForeColor = System.Drawing.Color.DimGray;
+            this.label7.Location = new System.Drawing.Point(645, 0);
             this.label7.Name = "label7";
             this.label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label7.Size = new System.Drawing.Size(74, 30);
@@ -629,7 +629,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.ForeColor = System.Drawing.Color.DimGray;
             this.label10.Location = new System.Drawing.Point(1131, 0);
             this.label10.Name = "label10";
             this.label10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -641,7 +641,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.ForeColor = System.Drawing.Color.DimGray;
             this.label11.Location = new System.Drawing.Point(1007, 0);
             this.label11.Name = "label11";
             this.label11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -990,8 +990,8 @@
             // 
             // sataPanel2
             // 
-            this.sataPanel2.BackColor = System.Drawing.Color.DimGray;
-            this.sataPanel2.BackColor2 = System.Drawing.Color.Black;
+            this.sataPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.sataPanel2.BackColor2 = System.Drawing.Color.White;
             this.sataPanel2.BorderColor = System.Drawing.Color.Black;
             borderRadius3.BottomLeft = 10;
             borderRadius3.BottomRight = 10;
@@ -1156,7 +1156,7 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label34.ForeColor = System.Drawing.Color.White;
+            this.label34.ForeColor = System.Drawing.Color.DimGray;
             this.label34.Location = new System.Drawing.Point(776, 105);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(130, 32);
@@ -1187,7 +1187,7 @@
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label31.ForeColor = System.Drawing.Color.White;
+            this.label31.ForeColor = System.Drawing.Color.DimGray;
             this.label31.Location = new System.Drawing.Point(459, 0);
             this.label31.Name = "label31";
             this.label31.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -1199,7 +1199,7 @@
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label30.ForeColor = System.Drawing.Color.White;
+            this.label30.ForeColor = System.Drawing.Color.DimGray;
             this.label30.Location = new System.Drawing.Point(731, 0);
             this.label30.Name = "label30";
             this.label30.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -1211,7 +1211,7 @@
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label32.ForeColor = System.Drawing.Color.White;
+            this.label32.ForeColor = System.Drawing.Color.DimGray;
             this.label32.Location = new System.Drawing.Point(171, 0);
             this.label32.Name = "label32";
             this.label32.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -1258,7 +1258,7 @@
             this.label33.AutoSize = true;
             this.label33.Dock = System.Windows.Forms.DockStyle.Right;
             this.label33.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label33.ForeColor = System.Drawing.Color.White;
+            this.label33.ForeColor = System.Drawing.Color.DimGray;
             this.label33.Location = new System.Drawing.Point(85, 0);
             this.label33.Name = "label33";
             this.label33.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
