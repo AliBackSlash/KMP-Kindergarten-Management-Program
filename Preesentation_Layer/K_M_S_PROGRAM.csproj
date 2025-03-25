@@ -70,9 +70,6 @@
     <Reference Include="CodeeloUI">
       <HintPath>Packages\CodeeloUI.1.1.1\lib\net472\CodeeloUI.dll</HintPath>
     </Reference>
-    <Reference Include="CxFlatUI">
-      <HintPath>Packages\Flat UI\CxFlatUI.1.0.0.4\lib\net45\CxFlatUI.dll</HintPath>
-    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Packages\Guna\Guna.UI2.dll</HintPath>
