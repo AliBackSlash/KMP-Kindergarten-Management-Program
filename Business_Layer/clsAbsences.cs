@@ -72,9 +72,9 @@ namespace MyBusinessLayer
             return clsAbsenceData.GetEnterAndLeaveHistoryBetweenTowDates(Kind, DateFrom, DateTo);
         }
 
-        public static DataTable GetAllMemberThanDontCameToday(string query)
+        public static bool GetAllMemberThatDontCameTodayAndPutThimInAnAbsenceHistory(bool Peroid)
         {
-            return clsAbsenceData.GetAllMemberThatDontCameToday(query);
+            return clsAbsenceData.GetAllMemberThatDontCameTodayAndPutThimInAnAbsenceHistory(Peroid);
         }
 
         public static DataTable GetAbsenceHistoryData(char Kind)

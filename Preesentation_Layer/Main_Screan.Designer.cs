@@ -1520,7 +1520,7 @@
             // 
             this.pictureBox53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox53.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox53.Image")));
-            this.pictureBox53.Location = new System.Drawing.Point(162, 43);
+            this.pictureBox53.Location = new System.Drawing.Point(165, 41);
             this.pictureBox53.Name = "pictureBox53";
             this.pictureBox53.Size = new System.Drawing.Size(15, 20);
             this.pictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1644,7 +1644,7 @@
             // 
             this.pictureBox32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox32.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox32.Image")));
-            this.pictureBox32.Location = new System.Drawing.Point(169, 71);
+            this.pictureBox32.Location = new System.Drawing.Point(166, 68);
             this.pictureBox32.Name = "pictureBox32";
             this.pictureBox32.Size = new System.Drawing.Size(15, 20);
             this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1655,7 +1655,7 @@
             // 
             this.pictureBox35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox35.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox35.Image")));
-            this.pictureBox35.Location = new System.Drawing.Point(169, 38);
+            this.pictureBox35.Location = new System.Drawing.Point(166, 35);
             this.pictureBox35.Name = "pictureBox35";
             this.pictureBox35.Size = new System.Drawing.Size(15, 20);
             this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2342,7 +2342,7 @@
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(169, 37);
+            this.pictureBox2.Location = new System.Drawing.Point(160, 37);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(15, 22);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2494,6 +2494,8 @@
             // 
             this.progTimeTrack.Location = new System.Drawing.Point(177, 4);
             this.progTimeTrack.Name = "progTimeTrack";
+            this.progTimeTrack.ProgressColor = System.Drawing.Color.Red;
+            this.progTimeTrack.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.progTimeTrack.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.progTimeTrack.ShadowDecoration.Parent = this.progTimeTrack;
             this.progTimeTrack.Size = new System.Drawing.Size(34, 36);
@@ -2513,8 +2515,10 @@
             // 
             // progTimeTrack2
             // 
-            this.progTimeTrack2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.progTimeTrack2.Location = new System.Drawing.Point(0, 49);
+            this.progTimeTrack2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.progTimeTrack2.BackColor = System.Drawing.Color.Gray;
+            this.progTimeTrack2.ForeColor = System.Drawing.Color.Tomato;
+            this.progTimeTrack2.Location = new System.Drawing.Point(0, 47);
             this.progTimeTrack2.Name = "progTimeTrack2";
             this.progTimeTrack2.Size = new System.Drawing.Size(220, 3);
             this.progTimeTrack2.TabIndex = 5;
@@ -2588,8 +2592,8 @@
             // pnHeader
             // 
             this.pnHeader.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pnHeader.Controls.Add(this.guna2ControlBox1);
             this.pnHeader.Controls.Add(this.lbDayDate);
+            this.pnHeader.Controls.Add(this.guna2ControlBox1);
             this.pnHeader.Controls.Add(this.button1);
             this.pnHeader.Controls.Add(this.btMaxmize);
             this.pnHeader.Controls.Add(this.lbTimeTittle);
@@ -2618,11 +2622,11 @@
             this.lbDayDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbDayDate.BackColor = System.Drawing.Color.Transparent;
             this.lbDayDate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbDayDate.Font = new System.Drawing.Font("Tw Cen MT Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDayDate.Font = new System.Drawing.Font("Tw Cen MT Condensed", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDayDate.ForeColor = System.Drawing.Color.Black;
-            this.lbDayDate.Location = new System.Drawing.Point(331, 0);
+            this.lbDayDate.Location = new System.Drawing.Point(377, 0);
             this.lbDayDate.Name = "lbDayDate";
-            this.lbDayDate.Size = new System.Drawing.Size(410, 53);
+            this.lbDayDate.Size = new System.Drawing.Size(318, 53);
             this.lbDayDate.TabIndex = 40;
             this.lbDayDate.Text = "00-00-0000";
             this.lbDayDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2631,6 +2635,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -2649,6 +2654,7 @@
             this.btMaxmize.BackColor = System.Drawing.Color.Transparent;
             this.btMaxmize.BackgroundImage = global::K_M_S_PROGRAM.Properties.Resources.maximize;
             this.btMaxmize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btMaxmize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btMaxmize.FlatAppearance.BorderSize = 0;
             this.btMaxmize.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.btMaxmize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -2663,9 +2669,10 @@
             // 
             // lbTimeTittle
             // 
+            this.lbTimeTittle.BackColor = System.Drawing.Color.Transparent;
             this.lbTimeTittle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTimeTittle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbTimeTittle.Font = new System.Drawing.Font("Simplified Arabic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbTimeTittle.Font = new System.Drawing.Font("Simplified Arabic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbTimeTittle.ForeColor = System.Drawing.Color.Black;
             this.lbTimeTittle.Location = new System.Drawing.Point(0, 0);
             this.lbTimeTittle.Name = "lbTimeTittle";

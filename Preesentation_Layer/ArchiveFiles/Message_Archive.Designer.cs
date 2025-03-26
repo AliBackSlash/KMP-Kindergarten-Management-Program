@@ -165,8 +165,8 @@
             // 
             // sataPanel1
             // 
-            this.sataPanel1.BackColor = System.Drawing.Color.Gainsboro;
-            this.sataPanel1.BackColor2 = System.Drawing.Color.LightGray;
+            this.sataPanel1.BackColor = System.Drawing.Color.White;
+            this.sataPanel1.BackColor2 = System.Drawing.Color.White;
             this.sataPanel1.BorderColor = System.Drawing.Color.Black;
             borderRadius1.BottomLeft = 10;
             borderRadius1.BottomRight = 10;

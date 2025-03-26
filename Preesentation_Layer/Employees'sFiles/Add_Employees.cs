@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using K_M_S_PROGRAM.GlobalClasses;
 using System.IO;
 using K_M_S_PROGRAM.ImportantForms;
+using Xamarin.Forms;
 
 namespace K_M_S_PROGRAM.Resources
 {
@@ -43,7 +44,10 @@ namespace K_M_S_PROGRAM.Resources
             else
             { btClose.Visible = true; rdWorker.Checked = true; }
 
-
+            if (clsGlobal.Settings.Mode)
+                this.BackColor = Color.Black;
+            else
+                this.BackColor = Color.Gainsboro;
         }
 
         public delegate void CallUpdateMethod();
@@ -85,7 +89,10 @@ namespace K_M_S_PROGRAM.Resources
                 }
             }
             btClose.Visible = true;
-
+            if (clsGlobal.Settings.Mode)
+                this.BackColor = Color.Black;
+            else
+                this.BackColor = Color.Gainsboro;
         }
        
         clsEmployee _employee;

@@ -40,7 +40,7 @@ namespace K_M_S_PROGRAM.Resources
                 else
                 { image = Properties.Resources.girl; gender = "بنت"; }
 
-                dgvArchiveMenue.Rows.Add(image,row["DateOfArchive"], row["Name"],row["DateOfBirth"],
+                dgvArchiveMenue.Rows.Add(image,Convert.ToDateTime(row["DateOfArchive"]).ToString(clsUtil.DateFormat), row["Name"], Convert.ToDateTime(row["DateOfBirth"]).ToString(clsUtil.DateFormat),
                     row["Level"], row["Class"], row["Period"], row["FatherPhoneNumber"],gender,0, row["Code"]);
                 
 

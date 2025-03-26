@@ -279,7 +279,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Simplified Arabic", 12.25F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.ForeColor = System.Drawing.Color.Gray;
             this.label3.Location = new System.Drawing.Point(599, 77);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -292,7 +292,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Simplified Arabic", 12.25F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.Gray;
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -305,7 +305,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Simplified Arabic", 12.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Gray;
             this.label1.Location = new System.Drawing.Point(311, 0);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -318,7 +318,7 @@
             this.lbECode.BackColor = System.Drawing.Color.Transparent;
             this.lbECode.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbECode.Font = new System.Drawing.Font("Simplified Arabic", 12.25F, System.Drawing.FontStyle.Bold);
-            this.lbECode.ForeColor = System.Drawing.Color.White;
+            this.lbECode.ForeColor = System.Drawing.Color.Gray;
             this.lbECode.Location = new System.Drawing.Point(599, 0);
             this.lbECode.Name = "lbECode";
             this.lbECode.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -336,13 +336,14 @@
             // 
             // ckFullAccess
             // 
-            this.ckFullAccess.BackColor = System.Drawing.Color.Black;
+            this.ckFullAccess.BackColor = System.Drawing.Color.Transparent;
             this.ckFullAccess.ButtonBorderSize = 1.6F;
             this.ckFullAccess.ButtonCircleSize = 18F;
             this.ckFullAccess.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
             this.ckFullAccess.ButtonColorChecked = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(220)))), ((int)(((byte)(95)))));
             this.ckFullAccess.DrawCircleButton = false;
             this.ckFullAccess.Font = new System.Drawing.Font("Simplified Arabic", 14F, System.Drawing.FontStyle.Bold);
+            this.ckFullAccess.ForeColor = System.Drawing.Color.Gray;
             this.ckFullAccess.Location = new System.Drawing.Point(604, 160);
             this.ckFullAccess.MarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
             this.ckFullAccess.MarkType = CodeeloUI.Enums.CheckBoxMark.Mark;
@@ -380,6 +381,7 @@
             // 
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("Simplified Arabic", 12.25F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.Gray;
             this.label5.Location = new System.Drawing.Point(311, 77);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(282, 29);

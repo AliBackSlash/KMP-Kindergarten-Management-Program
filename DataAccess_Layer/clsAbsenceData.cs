@@ -189,30 +189,24 @@ namespace MyDataAccessLayer
             }
         }
         //----
-        public static DataTable GetAllMemberThatDontCameToday(string query)
+        public static bool GetAllMemberThatDontCameTodayAndPutThimInAnAbsenceHistory(bool Peroid)
         {
-            DataTable datble = new DataTable();
+            //AM = true,PM = false
 
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
-            using (SqlCommand command = new SqlCommand(query, connection))
+            using (SqlCommand command = new SqlCommand("exec SP_AddAllRemanderMembersToAbsenceHistory  @Peroid", connection))
             {
+                command.Parameters.AddWithValue("@Peroid", Peroid);
                 try
                 {
                     connection.Open();
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                        if (reader.HasRows)
-                        {
-                            datble.Load(reader);
-                        }
-                    }
+                    return command.ExecuteNonQuery() != 0;
                 }
                 catch (Exception)
                 {
-                    throw;
+                    return false;
                 }
             }
-            return datble;
         }
         //done
         public static DataTable GetAbsenceHistoryData(char Kind)

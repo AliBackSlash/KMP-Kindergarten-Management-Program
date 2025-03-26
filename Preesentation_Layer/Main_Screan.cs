@@ -320,7 +320,10 @@ namespace K_M_S_PROGRAM.Resources
 
         private void GoldColorButton(Button button)
         {
-            button.ForeColor = Color.Gold;
+            if (clsGlobal.Settings.Mode)
+                button.ForeColor = Color.Gold;
+            else
+                button.ForeColor = Color.MediumBlue;
         }
 
         private void WhiteColorButton(Button button)
@@ -408,8 +411,6 @@ namespace K_M_S_PROGRAM.Resources
 
         public void ChangeLabelsColor(Color ForeColor, Color BackColor)
         {
-            this.BackColor = BackColor;
-            pnList.BackColor = BackColor;
             lbUserName.ForeColor = ForeColor;
             lb1.ForeColor = ForeColor;
             lbMain.ForeColor = ForeColor;
@@ -441,6 +442,10 @@ namespace K_M_S_PROGRAM.Resources
             lbUsers.ForeColor = ForeColor;
             lb15.ForeColor = ForeColor;
             lbSetting.ForeColor = ForeColor;
+
+            this.BackColor = BackColor;
+            pnList.BackColor = BackColor;
+
             btProgram_Setting.ForeColor = ForeColor;
             btRegister.ForeColor = ForeColor;
             btAbout_this_Program.ForeColor = ForeColor;
@@ -747,7 +752,7 @@ namespace K_M_S_PROGRAM.Resources
             ShowSubForm(absenceHistory);
         }
        
-        public delegate void Call();
+        public delegate void Call(bool Peroid);
         public void ComputeTheCammingDate()
         {
             TimeSpan CurrentTime = DateTime.Now.TimeOfDay;
@@ -765,24 +770,26 @@ namespace K_M_S_PROGRAM.Resources
             }
             else
             {
-                bool notDateFound = true;
-                var timesAndMessages = new List<(string query, string message, Call call)>
+                var timesAndMessages = new List<(string query, string message, Call call,bool Peroid)>
                 {
-               ("select top 1 timeEnter from ProgramSetting", "وقت متبقي لبداية اليوم",null),
-               ("select top 1 LasttimeEnter from ProgramSetting", "وقت متبقي لأخذ غياب لمن لم يحضر",null),
-               ("select top 1 timeLeave from ProgramSetting", "وقت متبقي لتسجيل الإنصراف",clsUtil.btAbsenceRemander_Click),
-               ("select top 1 LasttimeLeave from ProgramSetting", "وقت متبقي لإغلاق اليوم",null)
+               ("select top 1 timeEnter from ProgramSetting", "وقت متبقي لبداية اليوم",null,true),
+               ("select top 1 LasttimeEnter from ProgramSetting", "وقت متبقي لأخذ غياب لمن لم يحضر",null,true),
+               ("select top 1 timeLeave from ProgramSetting", "وقت متبقي لتسجيل الإنصراف",clsUtil.btAbsenceRemander_Click,true),
+               
+               ("select top 1 timeEnterPM from ProgramSetting", "وقت متبقي لبداية الفترة المسائية",null,false),
+               ("select top 1 LasttimeEnterPM from ProgramSetting", "وقت متبقي لأخذ غياب لمن لم يحضر(الفترة المسائية)",null,false),
+               ("select top 1 timeLeavePM from ProgramSetting", "وقت متبقي لتسجيل الإنصراف(الفترة المسائية)",clsUtil.btAbsenceRemander_Click,false),
+               ("select top 1 LasttimeLeavePM from ProgramSetting", "وقت متبقي لإغلاق اليوم",null,false)
                 };
 
-                foreach (var (query, message, call) in timesAndMessages)
+                foreach (var (query, message, call, Peroid) in timesAndMessages)
                 {
                     TargetTime = DateTime.ParseExact(clsGeneric.ReturnLastValueIWant(query), "HH:mm:ss", null).TimeOfDay;
-                    if (TargetTime > DateTime.Now.TimeOfDay)
+                    if (TargetTime >= DateTime.Now.TimeOfDay)
                     {
                         lbTimeTittle.Text = message;
-                        notDateFound = false;
                         lbTimeTittle.Visible = true;
-                        call?.Invoke();
+                        call?.Invoke(Peroid);
                         break;
                     }
                 }

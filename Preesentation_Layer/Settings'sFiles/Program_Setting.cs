@@ -129,9 +129,9 @@ namespace K_M_S_PROGRAM.Resources
                     rdInEndOfMonth.Checked = true;
                  
                 if (clsGlobal.Settings.Mode)
-                    swiMode.Checked = true;
+                    ckMode.Checked = true;
                 else
-                    swiMode.Checked = false;
+                    ckMode.Checked = false;
 
 
                 CheckedVecationDay(clsGlobal.Settings.Vication1);
@@ -271,7 +271,7 @@ namespace K_M_S_PROGRAM.Resources
             txTimeEnterForTeacher.Text, txTimeLateForTeachers.Text, txTimeEnterForWorker.Text, txTimeLateForWorker.Text, txTimeEnterForTeacherPM.Text, txTimeLateForTeachersPM.Text, txTimeEnterForWorkerPM.Text, txTimeLateForWorkerPM.Text,
             txLateDiscount.Text, txAbsenceLate.Text, txDayOfStaudyInMonth.Text, vacation[1], vacation[0] , SavePath,
            txOrgName.Text, txManagerName.Text,rdSmaolPaper.Checked, picLogo.ImageLocation, ckAskBeforPrint.Checked, ckShowBeforPrint.Checked,txSMSNumber.Text,txWhatsAppNumber.Text,txOrgEmail.Text,txAbsenceMessage.Text
-           ,txSubMessage.Text,txBrothersAgeMessage.Text,txBirthDayMessage.Text, txEmpAge.Text,rdInBeginingOfMonth.Checked,swiMode.Checked);
+           ,txSubMessage.Text,txBrothersAgeMessage.Text,txBirthDayMessage.Text, txEmpAge.Text,rdInBeginingOfMonth.Checked,ckMode.Checked);
 
            
             
@@ -287,10 +287,10 @@ namespace K_M_S_PROGRAM.Resources
                 clsUtil.Show("لم يتم تحديث الإعدادات  تأكد من إدخال البيانات بصورة صحيحة",false);
             clsGlobal.main_Screan.ComputeTheCammingDate();
             clsGlobal.Settings = clsSettings.GetSetting();
-            if (!clsGlobal.Settings.Mode)
-                { this.BackColor = Color.Black;clsGlobal.main_Screan.ChangeLabelsColor(Color.Black, Color.Gainsboro); }
+            if (clsGlobal.Settings.Mode)
+                { this.BackColor = Color.Black;clsGlobal.main_Screan.ChangeLabelsColor(Color.White, Color.Black); }
             else
-            {  this.BackColor = Color.Gainsboro;  clsGlobal.main_Screan.ChangeLabelsColor(Color.White, Color.Black);}
+            {  this.BackColor = Color.Gainsboro;  clsGlobal.main_Screan.ChangeLabelsColor(Color.Black, Color.Gainsboro);}
 
     }
 

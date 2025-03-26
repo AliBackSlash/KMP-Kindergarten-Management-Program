@@ -163,20 +163,21 @@ namespace K_M_S_PROGRAM.GlobalClasses
 
         }
 
-        public static string ComputeHash(string Value)
-        {
-            using (SHA256 sha256 = SHA256.Create())
-            {
-                byte[] HashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(Value));
-                StringBuilder sd = new StringBuilder();
-                foreach (byte b in HashBytes)
-                {
-                    sd.Append(b.ToString("x2"));
-                }
-                return sd.ToString();
-            }
-        }
-        //استبدال الهاش بيهم
+        //public static string ComputeHash(string Value)
+        //{
+        //    using (SHA256 sha256 = SHA256.Create())
+        //    {
+        //        byte[] HashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(Value));
+        //        StringBuilder sd = new StringBuilder();
+        //        foreach (byte b in HashBytes)
+        //        {
+        //            sd.Append(b.ToString("x2"));
+        //        }
+        //        return sd.ToString();
+        //    }
+        //}
+        ////استبدال الهاش بيهم
+     
         public static string Encrypt(string plainText)
         {
             using (Aes aesAlg = Aes.Create())
@@ -230,95 +231,39 @@ namespace K_M_S_PROGRAM.GlobalClasses
             }
         }
 
-        private static bool AbsenceAllKidsRemander()
-        {
-            DateTime date = DateTime.Now;
+       
 
-            DataTable KidsAbsence = clsAbsences.GetAllMemberThanDontCameToday(@"select KidsPersonalInfo.code from KidsPersonalInfo  where KidsPersonalInfo.Code not in (select ID from
-                                                                                EnterAndLeaveHistory where Date  = cast(getdate() as date)  and Kind='C')");
-
-            bool Success = false;
-            foreach (DataRow row in KidsAbsence.Rows)
-            {
-                Success = clsAbsences.AddToAbsenceHistory(Convert.ToInt16(row["Code"]), date, 'C');
-            }
-
-            return Success;
-        }
-
-        private static bool AbsenceAllEmployeesRemander()
-        {
-            DateTime date = DateTime.Now;
-
-
-            DataTable EmployeeAbsence = clsAbsences.GetAllMemberThanDontCameToday(@"select TeachersInfo.code from TeachersInfo  where TeachersInfo.Code not in (select ID from 
-                                                                                     EnterAndLeaveHistory where Date  = cast(getdate() as date) and Kind='T')");
-
-
-
-            bool Success = false;
-
-            foreach (DataRow row in EmployeeAbsence.Rows)
-            {
-                Success = clsAbsences.AddToAbsenceHistory(Convert.ToInt16(row["Code"]), date,'T');
-
-            }
-
-            return Success;
-        }
-
-        private static bool AbsenceAllWorkersRemander()
-        {
-            DateTime date = DateTime.Now;
-
-
-            DataTable WorkerAbsence = clsAbsences.GetAllMemberThanDontCameToday(@"select WorkerInfo.code from WorkerInfo where WorkerInfo.Code not in
-                                                                                (select ID from EnterAndLeaveHistory where Date  = cast(getdate() as date) and Kind='W')");
-
-            bool Success = false;
-
-            foreach (DataRow row in WorkerAbsence.Rows)
-            {
-                Success = clsAbsences.AddToAbsenceHistory(Convert.ToInt16(row["Code"]), date, 'W');
-
-            }
-            return Success;
-        }
-
-        public static void btAbsenceRemander_Click()
+        public static void btAbsenceRemander_Click(bool Peroid)
         {
             string date = DateTime.Now.ToString("dd-MM-yyyy");
-            bool Kids =false , Employees=false, Workers = false;
-            string Message = "تمت إضافة جميع ";
-            if (date != clsGeneric.ReturnLastDateOfOpen("select DateOfAbsenceRemander from DateOpen"))
+            if (Peroid)
             {
+                if (date != clsGeneric.ReturnLastDateOfOpen("select DateOfAbsenceRemander from DateOpen"))
+                {
 
-                if (AbsenceAllKidsRemander())
-                    Kids = true;
+                    if (clsAbsences.GetAllMemberThatDontCameTodayAndPutThimInAnAbsenceHistory(Peroid))
+                    {
+                        clsGeneric.Reset("DateOfAbsenceRemander", date);
+                        Show("تمت إضافة جميع الذين لم يحضروا الي سجل الغياب(الفترة الصباحية)");
 
-                if (AbsenceAllEmployeesRemander())
-                    Employees = true;
+                    }
 
-                if (AbsenceAllWorkersRemander())
-                    Workers = true;
-                
-                if (Kids == false && Employees == false && Workers == false)
-                    return;
-               
-                clsGeneric.Reset("DateOfAbsenceRemander", date);
-
-                if (Kids)
-                    Message += "الأطفال ";
-                if (Employees)
-                    Message += "المعلمين ";
-                if (Workers)
-                    Message += "العمال ";
-                Message += "الذين لم يحضروا الي سجل الغياب ";
-
-                Show(Message);
-
+                }
             }
-            
+            else
+            {
+                if (date != clsGeneric.ReturnLastDateOfOpen("select DateOfAbsenceRemanderPM from DateOpen"))
+                {
+
+                    if (clsAbsences.GetAllMemberThatDontCameTodayAndPutThimInAnAbsenceHistory(Peroid))
+                    {
+                        clsGeneric.Reset("DateOfAbsenceRemanderPM", date);
+                        Show("تمت إضافة جميع الذين لم يحضروا الي سجل الغياب(الفترة المسائية) ");
+
+                    }
+
+                }
+            }
         }
         //فيه مشكلة في كيفية بدأ اضافة الاشتراكات في اول مرة استخدام للبرنامج شوف حلها قبل ما تنقل البرنامج للعميل
         public static void GetSubscaition()

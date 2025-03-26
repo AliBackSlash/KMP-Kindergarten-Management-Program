@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using K_M_S_PROGRAM.GlobalClasses;
@@ -46,6 +47,10 @@ namespace K_M_S_PROGRAM.Resources
             FillCmKidsNameWithNames();
             cmKidsNames.Visible = false;
             _addChild = new clsChild();
+            if (clsGlobal.Settings.Mode)
+                this.BackColor = Color.Black;
+            else
+                this.BackColor = Color.Gainsboro;
         }
         public Add_Child(int Code)
         {
@@ -56,6 +61,10 @@ namespace K_M_S_PROGRAM.Resources
             _addChild = clsChild.FindByCode(Code);
             btClose.Visible = true;
             FillChildPersonalData();
+            if (clsGlobal.Settings.Mode)
+                this.BackColor = Color.Black;
+            else
+                this.BackColor = Color.Gainsboro;
         }
         clsChild _addChild = null;
         string CurrentID;
@@ -159,6 +168,7 @@ namespace K_M_S_PROGRAM.Resources
         }
         private void Add_Child_Load(object sender, EventArgs e)
         {
+
             GetLastCode();
 
             cmClass.SelectedIndex = 0;
@@ -266,7 +276,6 @@ namespace K_M_S_PROGRAM.Resources
             txSubAmount.Text = _addChild.SubAmount.ToString();
 
             cmClass.SelectedIndex = cmClass.FindString(_addChild.className);
-            rdAM.Checked = _addChild.period;
             cmLevel.SelectedIndex = cmLevel.FindString(_addChild.levelName);
            
             cmBus.Text = _addChild.bus;
@@ -276,6 +285,11 @@ namespace K_M_S_PROGRAM.Resources
                 rdMale.Checked = true;
             else
                 rdFemale.Checked = true;
+               
+            if (_addChild.period)
+                rdAM.Checked = true;
+            else
+                rdPM.Checked = true;
 
             
             cmHowYouKnowAboutNursery.SelectedIndex = Convert.ToByte(_addChild.howYouKnowNurssry) - 1;

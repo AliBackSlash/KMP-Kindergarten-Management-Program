@@ -40,8 +40,8 @@ namespace K_M_S_PROGRAM.Resources
 
                     image = (bool)row["Gendor"] ? Properties.Resources.man1 : image = Properties.Resources.woman;
 
-                    dgvEmployeesMenue.Rows.Add(image, row["Code"], row["Name"], row["Address"], row["Qualification"], row["DateOfBirth"]
-                        ,clsLevels.GetLevelName(Convert.ToInt16(row["LevelID"])),clsClsases.GetClassName(Convert.ToInt16(row["ClassID"])), row["Period"], row["PhoneNumber"], row["GendorName"]);
+                    dgvEmployeesMenue.Rows.Add(image, row["Code"], row["Name"], row["Address"], row["Qualification"], Convert.ToDateTime(row["DateOfBirth"]).ToString(clsUtil.DateFormat)
+                        , clsLevels.GetLevelName(Convert.ToInt16(row["LevelID"])),clsClsases.GetClassName(Convert.ToInt16(row["ClassID"])), row["Period"], row["PhoneNumber"], row["GendorName"]);
                 }
                 Kind = 'T';
             }
@@ -53,7 +53,7 @@ namespace K_M_S_PROGRAM.Resources
 
                     image = (bool)row["Gendor"] ? Properties.Resources.man1 : image = Properties.Resources.woman;
                     
-                    dgvEmployeesMenue.Rows.Add(image, row["Code"], row["Name"], row["Address"], row["Qualification"], row["DateOfBirth"]
+                    dgvEmployeesMenue.Rows.Add(image, row["Code"], row["Name"], row["Address"], row["Qualification"], Convert.ToDateTime(row["DateOfBirth"]).ToString(clsUtil.DateFormat)
                         , row["LevelID"], row["ClassID"], row["Period"], row["PhoneNumber"], row["GendorName"]);
                 }
                 Kind = 'T';
