@@ -100,14 +100,14 @@ namespace K_M_S_PROGRAM.Resources
 
         void OpenAndCloseforTeacherAndWorker(bool Status)
         {
-            txQualification.Visible = Status;
-            txSchool.Visible = Status;
-            cmSocialStutas.Visible = Status;
+            txQualification.Enabled = Status;
+            txSchool.Enabled = Status;
+            cmSocialStutas.Enabled = Status;
             txAddress.Enabled = Status;
-            txEmail.Visible = Status;
-            cmClases.Visible = Status;
-            cmLevels.Visible = Status;
-            btTestMessageNumber.Visible = Status;
+            txEmail.Enabled = Status;
+            cmClases.Enabled = Status;
+            cmLevels.Enabled = Status;
+          //  btTestMessageNumber.Enabled = Status;
         }
         private void rdWhoAdded_Click(object sender, EventArgs e)
         {
@@ -120,6 +120,8 @@ namespace K_M_S_PROGRAM.Resources
                 string st = clsGeneric.ReturnLastID("select top 1 Code+1 from WorkerInfo order by code desc");
                 if (st != null && txCode.Text == "")
                     txCode.Text = st;
+                else
+                    txCode.Text = "50";
             }
             else if(rdTeacher.Checked)
             {
@@ -129,6 +131,8 @@ namespace K_M_S_PROGRAM.Resources
                 string st = clsGeneric.ReturnLastID("select top 1 Code+1 from TeachersInfo order by code desc");
                 if (st != null && txCode.Text == "")
                     txCode.Text = st;
+                else
+                    txCode.Text = "1";
             }
         }
 
@@ -274,26 +278,36 @@ namespace K_M_S_PROGRAM.Resources
                 if (!_HandleTeacherImage())
                     return false;
 
-            _employee.ID = Convert.ToInt16(txCode.Text) ;
-            _employee.Name = txName.Text;
-            _employee.Qualification = txQualification.Text;
-            _employee.School = txSchool.Text;
-            _employee.CardNumber = txPersonalCardNumber.Text;
-            _employee.Email = txEmail.Text;
-            _employee.Phone = txPhone.Text;
-            _employee.Address = txAddress.Text;
-            _employee.SocialStatus = Convert.ToByte(cmSocialStutas.SelectedIndex);
-            _employee.Image = picEmpPhoto.ImageLocation;
-            _employee.Gendor = rdMail.Checked;
-            _employee.Period = rdAM.Checked;
-            _employee.ClassID = clsClsases.GetClassID(cmClases.Text);
-            _employee.LevelID = clsLevels.GetLevelID(cmLevels.Text);
-            _employee.Salary = Convert.ToSingle(txSalary.Text);
+            try
+            {
+                _employee.ID = Convert.ToInt16(txCode.Text);
+                _employee.Name = txName.Text;
+                _employee.Qualification = txQualification.Text;
+                _employee.School = txSchool.Text;
+                _employee.CardNumber = txPersonalCardNumber.Text;
+                _employee.Email = txEmail.Text;
+                _employee.Phone = txPhone.Text;
+                _employee.Address = txAddress.Text;
+                _employee.SocialStatus = Convert.ToByte(cmSocialStutas.SelectedIndex);
+                _employee.Image = picEmpPhoto.ImageLocation;
+                _employee.Gendor = rdMail.Checked;
+                _employee.Period = rdAM.Checked;
+                _employee.ClassID = clsClsases.GetClassID(cmClases.Text);
+                _employee.LevelID = clsLevels.GetLevelID(cmLevels.Text);
+                _employee.Salary = Convert.ToSingle(txSalary.Text);
+                
+                if (_employee.Save())
+                    return true;
+                else
+                    return false;
+            }
+            catch (Exception)
+            {
 
-            if (_employee.Save())
-                return true;
-            else
-                return false;
+               return false;
+            }
+            
+
         }
 
         private bool AddAndUpdateWorker()
@@ -328,10 +342,7 @@ namespace K_M_S_PROGRAM.Resources
             txEmail.Text = "";
             txPhone.Text = "";         
             txAddress.Text = "";
-            rdMail.Checked = false;            
-            rdFimail.Checked = false;           
-            rdAM.Checked = false;
-            rdPM.Checked = false;
+          
             cmClases.Text = "";
             cmLevels.Text = "";
             txSalary.Text = "";
@@ -388,6 +399,8 @@ namespace K_M_S_PROGRAM.Resources
             string st = clsGeneric.ReturnLastID("select top 1 Code+1 from TeachersInfo order by code desc");
             if (st != null && txCode.Text == "")
                 txCode.Text = st;
+            else
+                txCode.Text = "1";
 
             txDataOfBirth.MaxDate = DateTime.Now.AddYears(-15);
             FillCmClasesAndLevelsNameWithNames();
@@ -511,6 +524,10 @@ namespace K_M_S_PROGRAM.Resources
             }
         }
 
+        private void rdWorker_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
 
         private void btClose_Click(object sender, EventArgs e)
         {

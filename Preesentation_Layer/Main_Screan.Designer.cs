@@ -189,8 +189,8 @@
             this.label16 = new System.Windows.Forms.Label();
             this.timChek = new System.Windows.Forms.Timer(this.components);
             this.pnHeader = new System.Windows.Forms.Panel();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.lbDayDate = new System.Windows.Forms.Label();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btMaxmize = new System.Windows.Forms.Button();
             this.lbTimeTittle = new System.Windows.Forms.Label();
@@ -343,9 +343,9 @@
             this.pnSettingsList.Controls.Add(this.panel2);
             this.pnSettingsList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnSettingsList.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnSettingsList.Location = new System.Drawing.Point(0, 490);
+            this.pnSettingsList.Location = new System.Drawing.Point(0, 656);
             this.pnSettingsList.Name = "pnSettingsList";
-            this.pnSettingsList.Size = new System.Drawing.Size(220, 35);
+            this.pnSettingsList.Size = new System.Drawing.Size(203, 35);
             this.pnSettingsList.TabIndex = 35;
             // 
             // pictureBox20
@@ -374,7 +374,7 @@
             this.btAbout_this_Program.Location = new System.Drawing.Point(0, 90);
             this.btAbout_this_Program.Name = "btAbout_this_Program";
             this.btAbout_this_Program.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btAbout_this_Program.Size = new System.Drawing.Size(220, 29);
+            this.btAbout_this_Program.Size = new System.Drawing.Size(203, 29);
             this.btAbout_this_Program.TabIndex = 52;
             this.btAbout_this_Program.Text = "عن البرنامج";
             this.btAbout_this_Program.UseVisualStyleBackColor = false;
@@ -408,7 +408,7 @@
             this.btRegister.Location = new System.Drawing.Point(0, 61);
             this.btRegister.Name = "btRegister";
             this.btRegister.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btRegister.Size = new System.Drawing.Size(220, 29);
+            this.btRegister.Size = new System.Drawing.Size(203, 29);
             this.btRegister.TabIndex = 50;
             this.btRegister.Text = "عمليات التسجيل";
             this.btRegister.UseVisualStyleBackColor = false;
@@ -442,7 +442,7 @@
             this.btProgram_Setting.Location = new System.Drawing.Point(0, 32);
             this.btProgram_Setting.Name = "btProgram_Setting";
             this.btProgram_Setting.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btProgram_Setting.Size = new System.Drawing.Size(220, 29);
+            this.btProgram_Setting.Size = new System.Drawing.Size(203, 29);
             this.btProgram_Setting.TabIndex = 46;
             this.btProgram_Setting.Text = "إعدادات البرنامج";
             this.btProgram_Setting.UseVisualStyleBackColor = false;
@@ -459,7 +459,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(220, 32);
+            this.panel2.Size = new System.Drawing.Size(203, 32);
             this.panel2.TabIndex = 29;
             // 
             // lb15
@@ -508,9 +508,9 @@
             this.pnUsersList.Controls.Add(this.panel28);
             this.pnUsersList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnUsersList.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnUsersList.Location = new System.Drawing.Point(0, 455);
+            this.pnUsersList.Location = new System.Drawing.Point(0, 621);
             this.pnUsersList.Name = "pnUsersList";
-            this.pnUsersList.Size = new System.Drawing.Size(220, 35);
+            this.pnUsersList.Size = new System.Drawing.Size(203, 35);
             this.pnUsersList.TabIndex = 42;
             // 
             // pictureBox38
@@ -550,7 +550,7 @@
             this.btAdd_Users.Location = new System.Drawing.Point(0, 61);
             this.btAdd_Users.Name = "btAdd_Users";
             this.btAdd_Users.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.btAdd_Users.Size = new System.Drawing.Size(220, 29);
+            this.btAdd_Users.Size = new System.Drawing.Size(203, 29);
             this.btAdd_Users.TabIndex = 44;
             this.btAdd_Users.Text = "إضافة مستخدم";
             this.btAdd_Users.UseVisualStyleBackColor = false;
@@ -573,7 +573,7 @@
             this.btUser_Data.Location = new System.Drawing.Point(0, 32);
             this.btUser_Data.Name = "btUser_Data";
             this.btUser_Data.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btUser_Data.Size = new System.Drawing.Size(220, 29);
+            this.btUser_Data.Size = new System.Drawing.Size(203, 29);
             this.btUser_Data.TabIndex = 43;
             this.btUser_Data.Text = "بيانات المستخدمين";
             this.btUser_Data.UseVisualStyleBackColor = false;
@@ -590,7 +590,7 @@
             this.panel28.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel28.Location = new System.Drawing.Point(0, 0);
             this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(220, 32);
+            this.panel28.Size = new System.Drawing.Size(203, 32);
             this.panel28.TabIndex = 29;
             // 
             // lb14
@@ -640,9 +640,9 @@
             this.pnTreasury.Controls.Add(this.btTreasuryData);
             this.pnTreasury.Controls.Add(this.panel26);
             this.pnTreasury.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnTreasury.Location = new System.Drawing.Point(0, 420);
+            this.pnTreasury.Location = new System.Drawing.Point(0, 586);
             this.pnTreasury.Name = "pnTreasury";
-            this.pnTreasury.Size = new System.Drawing.Size(220, 35);
+            this.pnTreasury.Size = new System.Drawing.Size(203, 35);
             this.pnTreasury.TabIndex = 40;
             // 
             // pictureBox33
@@ -670,7 +670,7 @@
             this.btTreasuryHistory.Location = new System.Drawing.Point(0, 92);
             this.btTreasuryHistory.Name = "btTreasuryHistory";
             this.btTreasuryHistory.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
-            this.btTreasuryHistory.Size = new System.Drawing.Size(220, 29);
+            this.btTreasuryHistory.Size = new System.Drawing.Size(203, 29);
             this.btTreasuryHistory.TabIndex = 42;
             this.btTreasuryHistory.Text = "سجل الخزينة";
             this.btTreasuryHistory.UseVisualStyleBackColor = true;
@@ -714,7 +714,7 @@
             this.btTreasuryYearly.Location = new System.Drawing.Point(0, 63);
             this.btTreasuryYearly.Name = "btTreasuryYearly";
             this.btTreasuryYearly.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            this.btTreasuryYearly.Size = new System.Drawing.Size(220, 29);
+            this.btTreasuryYearly.Size = new System.Drawing.Size(203, 29);
             this.btTreasuryYearly.TabIndex = 31;
             this.btTreasuryYearly.Text = "بيانات الشهور السابقة";
             this.btTreasuryYearly.UseVisualStyleBackColor = true;
@@ -736,7 +736,7 @@
             this.btTreasuryData.Location = new System.Drawing.Point(0, 34);
             this.btTreasuryData.Name = "btTreasuryData";
             this.btTreasuryData.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btTreasuryData.Size = new System.Drawing.Size(220, 29);
+            this.btTreasuryData.Size = new System.Drawing.Size(203, 29);
             this.btTreasuryData.TabIndex = 30;
             this.btTreasuryData.Text = "بيانات الخزينة";
             this.btTreasuryData.UseVisualStyleBackColor = true;
@@ -753,7 +753,7 @@
             this.panel26.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel26.Location = new System.Drawing.Point(0, 0);
             this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(220, 34);
+            this.panel26.Size = new System.Drawing.Size(203, 34);
             this.panel26.TabIndex = 29;
             // 
             // lb13
@@ -768,7 +768,7 @@
             // pictureBox15
             // 
             this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox15.Image = global::K_M_S_PROGRAM.Properties.Resources.zcash_seeklogo_com;
+            this.pictureBox15.Image = global::K_M_S_PROGRAM.Properties.Resources.reserve;
             this.pictureBox15.Location = new System.Drawing.Point(186, 6);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(15, 28);
@@ -800,9 +800,9 @@
             this.pnClassesList.Controls.Add(this.btClasses);
             this.pnClassesList.Controls.Add(this.panel24);
             this.pnClassesList.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnClassesList.Location = new System.Drawing.Point(0, 385);
+            this.pnClassesList.Location = new System.Drawing.Point(0, 551);
             this.pnClassesList.Name = "pnClassesList";
-            this.pnClassesList.Size = new System.Drawing.Size(220, 35);
+            this.pnClassesList.Size = new System.Drawing.Size(203, 35);
             this.pnClassesList.TabIndex = 39;
             // 
             // pictureBox54
@@ -831,7 +831,7 @@
             this.btClasses.Location = new System.Drawing.Point(0, 34);
             this.btClasses.Name = "btClasses";
             this.btClasses.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btClasses.Size = new System.Drawing.Size(220, 29);
+            this.btClasses.Size = new System.Drawing.Size(203, 29);
             this.btClasses.TabIndex = 35;
             this.btClasses.Text = "مستوايات الفصول";
             this.btClasses.UseVisualStyleBackColor = false;
@@ -848,7 +848,7 @@
             this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel24.Location = new System.Drawing.Point(0, 0);
             this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(220, 34);
+            this.panel24.Size = new System.Drawing.Size(203, 34);
             this.panel24.TabIndex = 29;
             // 
             // lb12
@@ -895,9 +895,9 @@
             this.pnLevelsList.Controls.Add(this.panel22);
             this.pnLevelsList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnLevelsList.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnLevelsList.Location = new System.Drawing.Point(0, 350);
+            this.pnLevelsList.Location = new System.Drawing.Point(0, 516);
             this.pnLevelsList.Name = "pnLevelsList";
-            this.pnLevelsList.Size = new System.Drawing.Size(220, 35);
+            this.pnLevelsList.Size = new System.Drawing.Size(203, 35);
             this.pnLevelsList.TabIndex = 38;
             // 
             // pictureBox58
@@ -926,7 +926,7 @@
             this.btLevels.Location = new System.Drawing.Point(0, 34);
             this.btLevels.Name = "btLevels";
             this.btLevels.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btLevels.Size = new System.Drawing.Size(220, 38);
+            this.btLevels.Size = new System.Drawing.Size(203, 38);
             this.btLevels.TabIndex = 35;
             this.btLevels.Text = "إعدادات المستويات";
             this.btLevels.UseVisualStyleBackColor = false;
@@ -943,7 +943,7 @@
             this.panel22.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel22.Location = new System.Drawing.Point(0, 0);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(220, 34);
+            this.panel22.Size = new System.Drawing.Size(203, 34);
             this.panel22.TabIndex = 29;
             // 
             // lb11
@@ -990,9 +990,9 @@
             this.pnNotesList.Controls.Add(this.panel20);
             this.pnNotesList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnNotesList.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnNotesList.Location = new System.Drawing.Point(0, 315);
+            this.pnNotesList.Location = new System.Drawing.Point(0, 481);
             this.pnNotesList.Name = "pnNotesList";
-            this.pnNotesList.Size = new System.Drawing.Size(220, 35);
+            this.pnNotesList.Size = new System.Drawing.Size(203, 35);
             this.pnNotesList.TabIndex = 37;
             // 
             // pictureBox57
@@ -1021,7 +1021,7 @@
             this.btKids_Notes.Location = new System.Drawing.Point(0, 34);
             this.btKids_Notes.Name = "btKids_Notes";
             this.btKids_Notes.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btKids_Notes.Size = new System.Drawing.Size(220, 29);
+            this.btKids_Notes.Size = new System.Drawing.Size(203, 29);
             this.btKids_Notes.TabIndex = 35;
             this.btKids_Notes.Text = "سجل الملاحظات";
             this.btKids_Notes.UseVisualStyleBackColor = false;
@@ -1038,7 +1038,7 @@
             this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel20.Location = new System.Drawing.Point(0, 0);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(220, 34);
+            this.panel20.Size = new System.Drawing.Size(203, 34);
             this.panel20.TabIndex = 29;
             // 
             // lb10
@@ -1085,9 +1085,9 @@
             this.pnMessageList.Controls.Add(this.panel18);
             this.pnMessageList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnMessageList.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnMessageList.Location = new System.Drawing.Point(0, 280);
+            this.pnMessageList.Location = new System.Drawing.Point(0, 446);
             this.pnMessageList.Name = "pnMessageList";
-            this.pnMessageList.Size = new System.Drawing.Size(220, 35);
+            this.pnMessageList.Size = new System.Drawing.Size(203, 35);
             this.pnMessageList.TabIndex = 36;
             // 
             // pictureBox46
@@ -1116,7 +1116,7 @@
             this.btMessage_Arshif.Location = new System.Drawing.Point(0, 34);
             this.btMessage_Arshif.Name = "btMessage_Arshif";
             this.btMessage_Arshif.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btMessage_Arshif.Size = new System.Drawing.Size(220, 29);
+            this.btMessage_Arshif.Size = new System.Drawing.Size(203, 29);
             this.btMessage_Arshif.TabIndex = 36;
             this.btMessage_Arshif.Text = "سجل الرسائل";
             this.btMessage_Arshif.UseVisualStyleBackColor = false;
@@ -1133,7 +1133,7 @@
             this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel18.Location = new System.Drawing.Point(0, 0);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(220, 34);
+            this.panel18.Size = new System.Drawing.Size(203, 34);
             this.panel18.TabIndex = 29;
             // 
             // lb9
@@ -1184,9 +1184,9 @@
             this.pnAbsenceList.Controls.Add(this.panel16);
             this.pnAbsenceList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnAbsenceList.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnAbsenceList.Location = new System.Drawing.Point(0, 245);
+            this.pnAbsenceList.Location = new System.Drawing.Point(0, 411);
             this.pnAbsenceList.Name = "pnAbsenceList";
-            this.pnAbsenceList.Size = new System.Drawing.Size(220, 35);
+            this.pnAbsenceList.Size = new System.Drawing.Size(203, 35);
             this.pnAbsenceList.TabIndex = 35;
             // 
             // pictureBox3
@@ -1215,7 +1215,7 @@
             this.btAbsenceHistory.Location = new System.Drawing.Point(0, 92);
             this.btAbsenceHistory.Name = "btAbsenceHistory";
             this.btAbsenceHistory.Padding = new System.Windows.Forms.Padding(43, 0, 0, 0);
-            this.btAbsenceHistory.Size = new System.Drawing.Size(220, 34);
+            this.btAbsenceHistory.Size = new System.Drawing.Size(203, 34);
             this.btAbsenceHistory.TabIndex = 42;
             this.btAbsenceHistory.Text = "سجل الغياب";
             this.btAbsenceHistory.UseVisualStyleBackColor = false;
@@ -1260,7 +1260,7 @@
             this.btShow_Absence.Location = new System.Drawing.Point(0, 63);
             this.btShow_Absence.Name = "btShow_Absence";
             this.btShow_Absence.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.btShow_Absence.Size = new System.Drawing.Size(220, 29);
+            this.btShow_Absence.Size = new System.Drawing.Size(203, 29);
             this.btShow_Absence.TabIndex = 36;
             this.btShow_Absence.Text = "سجل الحضور و الإنصراف";
             this.btShow_Absence.UseVisualStyleBackColor = false;
@@ -1283,7 +1283,7 @@
             this.btAdd_Absence.Location = new System.Drawing.Point(0, 34);
             this.btAdd_Absence.Name = "btAdd_Absence";
             this.btAdd_Absence.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btAdd_Absence.Size = new System.Drawing.Size(220, 29);
+            this.btAdd_Absence.Size = new System.Drawing.Size(203, 29);
             this.btAdd_Absence.TabIndex = 35;
             this.btAdd_Absence.Text = "إضافة الغياب";
             this.btAdd_Absence.UseVisualStyleBackColor = false;
@@ -1300,7 +1300,7 @@
             this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel16.Location = new System.Drawing.Point(0, 0);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(220, 34);
+            this.panel16.Size = new System.Drawing.Size(203, 34);
             this.panel16.TabIndex = 29;
             // 
             // lb8
@@ -1351,9 +1351,9 @@
             this.pnEvaluationList.Controls.Add(this.panel14);
             this.pnEvaluationList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnEvaluationList.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnEvaluationList.Location = new System.Drawing.Point(0, 210);
+            this.pnEvaluationList.Location = new System.Drawing.Point(0, 376);
             this.pnEvaluationList.Name = "pnEvaluationList";
-            this.pnEvaluationList.Size = new System.Drawing.Size(220, 35);
+            this.pnEvaluationList.Size = new System.Drawing.Size(203, 35);
             this.pnEvaluationList.TabIndex = 34;
             // 
             // pictureBox34
@@ -1382,7 +1382,7 @@
             this.btWinnersHistory.Location = new System.Drawing.Point(0, 92);
             this.btWinnersHistory.Name = "btWinnersHistory";
             this.btWinnersHistory.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btWinnersHistory.Size = new System.Drawing.Size(220, 29);
+            this.btWinnersHistory.Size = new System.Drawing.Size(203, 29);
             this.btWinnersHistory.TabIndex = 43;
             this.btWinnersHistory.Text = "سجل الفئزون";
             this.btWinnersHistory.UseVisualStyleBackColor = false;
@@ -1425,7 +1425,7 @@
             this.btWinKids.Location = new System.Drawing.Point(0, 63);
             this.btWinKids.Name = "btWinKids";
             this.btWinKids.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btWinKids.Size = new System.Drawing.Size(220, 29);
+            this.btWinKids.Size = new System.Drawing.Size(203, 29);
             this.btWinKids.TabIndex = 37;
             this.btWinKids.Text = "الأطفال الفئزون";
             this.btWinKids.UseVisualStyleBackColor = false;
@@ -1448,7 +1448,7 @@
             this.btActivity_Evaluation.Location = new System.Drawing.Point(0, 34);
             this.btActivity_Evaluation.Name = "btActivity_Evaluation";
             this.btActivity_Evaluation.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btActivity_Evaluation.Size = new System.Drawing.Size(220, 29);
+            this.btActivity_Evaluation.Size = new System.Drawing.Size(203, 29);
             this.btActivity_Evaluation.TabIndex = 36;
             this.btActivity_Evaluation.Text = "تقيمات النشاطات";
             this.btActivity_Evaluation.UseVisualStyleBackColor = false;
@@ -1465,7 +1465,7 @@
             this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel14.Location = new System.Drawing.Point(0, 0);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(220, 34);
+            this.panel14.Size = new System.Drawing.Size(203, 34);
             this.panel14.TabIndex = 29;
             // 
             // lb7
@@ -1511,9 +1511,9 @@
             this.pnEvaluation.Controls.Add(this.btNotifications);
             this.pnEvaluation.Controls.Add(this.panel12);
             this.pnEvaluation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnEvaluation.Location = new System.Drawing.Point(0, 175);
+            this.pnEvaluation.Location = new System.Drawing.Point(0, 341);
             this.pnEvaluation.Name = "pnEvaluation";
-            this.pnEvaluation.Size = new System.Drawing.Size(220, 35);
+            this.pnEvaluation.Size = new System.Drawing.Size(203, 35);
             this.pnEvaluation.TabIndex = 33;
             // 
             // pictureBox53
@@ -1542,7 +1542,7 @@
             this.btNotifications.Location = new System.Drawing.Point(0, 34);
             this.btNotifications.Name = "btNotifications";
             this.btNotifications.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btNotifications.Size = new System.Drawing.Size(220, 37);
+            this.btNotifications.Size = new System.Drawing.Size(203, 37);
             this.btNotifications.TabIndex = 35;
             this.btNotifications.Text = "قائمة الإشعارات";
             this.btNotifications.UseVisualStyleBackColor = false;
@@ -1560,7 +1560,7 @@
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(0, 0);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(220, 34);
+            this.panel12.Size = new System.Drawing.Size(203, 34);
             this.panel12.TabIndex = 29;
             // 
             // lb6
@@ -1635,9 +1635,9 @@
             this.pnAccountsList.Controls.Add(this.panel10);
             this.pnAccountsList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnAccountsList.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnAccountsList.Location = new System.Drawing.Point(0, 140);
+            this.pnAccountsList.Location = new System.Drawing.Point(0, 306);
             this.pnAccountsList.Name = "pnAccountsList";
-            this.pnAccountsList.Size = new System.Drawing.Size(220, 35);
+            this.pnAccountsList.Size = new System.Drawing.Size(203, 35);
             this.pnAccountsList.TabIndex = 32;
             // 
             // pictureBox32
@@ -1676,7 +1676,7 @@
             this.btEmploeesAccountsHistory.ForeColor = System.Drawing.Color.White;
             this.btEmploeesAccountsHistory.Location = new System.Drawing.Point(0, 63);
             this.btEmploeesAccountsHistory.Name = "btEmploeesAccountsHistory";
-            this.btEmploeesAccountsHistory.Size = new System.Drawing.Size(220, 29);
+            this.btEmploeesAccountsHistory.Size = new System.Drawing.Size(203, 29);
             this.btEmploeesAccountsHistory.TabIndex = 46;
             this.btEmploeesAccountsHistory.Text = "سجل رواتب الموظفين";
             this.btEmploeesAccountsHistory.UseVisualStyleBackColor = false;
@@ -1699,7 +1699,7 @@
             this.btEmploeesAccounts.Location = new System.Drawing.Point(0, 34);
             this.btEmploeesAccounts.Name = "btEmploeesAccounts";
             this.btEmploeesAccounts.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btEmploeesAccounts.Size = new System.Drawing.Size(220, 29);
+            this.btEmploeesAccounts.Size = new System.Drawing.Size(203, 29);
             this.btEmploeesAccounts.TabIndex = 43;
             this.btEmploeesAccounts.Text = "دفع رواتب الموظفين";
             this.btEmploeesAccounts.UseVisualStyleBackColor = false;
@@ -1716,7 +1716,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(220, 34);
+            this.panel10.Size = new System.Drawing.Size(203, 34);
             this.panel10.TabIndex = 29;
             // 
             // lb5
@@ -1768,9 +1768,9 @@
             this.pnSubscripList.Controls.Add(this.panel8);
             this.pnSubscripList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnSubscripList.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnSubscripList.Location = new System.Drawing.Point(0, 105);
+            this.pnSubscripList.Location = new System.Drawing.Point(0, 271);
             this.pnSubscripList.Name = "pnSubscripList";
-            this.pnSubscripList.Size = new System.Drawing.Size(220, 35);
+            this.pnSubscripList.Size = new System.Drawing.Size(203, 35);
             this.pnSubscripList.TabIndex = 31;
             // 
             // pictureBox41
@@ -1799,7 +1799,7 @@
             this.bSubscription_Details.Location = new System.Drawing.Point(0, 92);
             this.bSubscription_Details.Name = "bSubscription_Details";
             this.bSubscription_Details.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            this.bSubscription_Details.Size = new System.Drawing.Size(220, 29);
+            this.bSubscription_Details.Size = new System.Drawing.Size(203, 29);
             this.bSubscription_Details.TabIndex = 45;
             this.bSubscription_Details.Text = "سجل سداد الإشتراكات";
             this.bSubscription_Details.UseVisualStyleBackColor = false;
@@ -1844,7 +1844,7 @@
             this.btPayment_ٍSubscriptions.Location = new System.Drawing.Point(0, 63);
             this.btPayment_ٍSubscriptions.Name = "btPayment_ٍSubscriptions";
             this.btPayment_ٍSubscriptions.Padding = new System.Windows.Forms.Padding(19, 0, 0, 0);
-            this.btPayment_ٍSubscriptions.Size = new System.Drawing.Size(220, 29);
+            this.btPayment_ٍSubscriptions.Size = new System.Drawing.Size(203, 29);
             this.btPayment_ٍSubscriptions.TabIndex = 37;
             this.btPayment_ٍSubscriptions.Text = "سداد الإشتراكات";
             this.btPayment_ٍSubscriptions.UseVisualStyleBackColor = false;
@@ -1867,7 +1867,7 @@
             this.btSubscription.Location = new System.Drawing.Point(0, 34);
             this.btSubscription.Name = "btSubscription";
             this.btSubscription.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.btSubscription.Size = new System.Drawing.Size(220, 29);
+            this.btSubscription.Size = new System.Drawing.Size(203, 29);
             this.btSubscription.TabIndex = 34;
             this.btSubscription.Text = "اشتراكات الأطفال";
             this.btSubscription.UseVisualStyleBackColor = false;
@@ -1884,7 +1884,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(220, 34);
+            this.panel8.Size = new System.Drawing.Size(203, 34);
             this.panel8.TabIndex = 29;
             // 
             // lb4
@@ -1934,9 +1934,9 @@
             this.pnEmploInfo.Controls.Add(this.btEmpList);
             this.pnEmploInfo.Controls.Add(this.panel6);
             this.pnEmploInfo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnEmploInfo.Location = new System.Drawing.Point(0, 70);
+            this.pnEmploInfo.Location = new System.Drawing.Point(0, 236);
             this.pnEmploInfo.Name = "pnEmploInfo";
-            this.pnEmploInfo.Size = new System.Drawing.Size(220, 35);
+            this.pnEmploInfo.Size = new System.Drawing.Size(203, 35);
             this.pnEmploInfo.TabIndex = 30;
             // 
             // pictureBox19
@@ -1987,7 +1987,7 @@
             this.btAddEmp.Location = new System.Drawing.Point(0, 92);
             this.btAddEmp.Name = "btAddEmp";
             this.btAddEmp.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btAddEmp.Size = new System.Drawing.Size(220, 29);
+            this.btAddEmp.Size = new System.Drawing.Size(203, 29);
             this.btAddEmp.TabIndex = 32;
             this.btAddEmp.Text = "إضافة موظف";
             this.btAddEmp.UseVisualStyleBackColor = false;
@@ -2010,7 +2010,7 @@
             this.btEmpData.Location = new System.Drawing.Point(0, 63);
             this.btEmpData.Name = "btEmpData";
             this.btEmpData.Padding = new System.Windows.Forms.Padding(18, 0, 0, 0);
-            this.btEmpData.Size = new System.Drawing.Size(220, 29);
+            this.btEmpData.Size = new System.Drawing.Size(203, 29);
             this.btEmpData.TabIndex = 31;
             this.btEmpData.Text = "بيانات الموظفين";
             this.btEmpData.UseVisualStyleBackColor = false;
@@ -2033,7 +2033,7 @@
             this.btEmpList.Location = new System.Drawing.Point(0, 34);
             this.btEmpList.Name = "btEmpList";
             this.btEmpList.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btEmpList.Size = new System.Drawing.Size(220, 29);
+            this.btEmpList.Size = new System.Drawing.Size(203, 29);
             this.btEmpList.TabIndex = 30;
             this.btEmpList.Text = "قائمة الموظفين";
             this.btEmpList.UseVisualStyleBackColor = false;
@@ -2050,7 +2050,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(220, 34);
+            this.panel6.Size = new System.Drawing.Size(203, 34);
             this.panel6.TabIndex = 29;
             // 
             // lb3
@@ -2106,14 +2106,14 @@
             this.pnKidsInfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnKidsInfo.Location = new System.Drawing.Point(0, 35);
             this.pnKidsInfo.Name = "pnKidsInfo";
-            this.pnKidsInfo.Size = new System.Drawing.Size(220, 35);
+            this.pnKidsInfo.Size = new System.Drawing.Size(203, 201);
             this.pnKidsInfo.TabIndex = 29;
             // 
             // pictureBox26
             // 
             this.pictureBox26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox26.Image = global::K_M_S_PROGRAM.Properties.Resources.wrong;
-            this.pictureBox26.Location = new System.Drawing.Point(162, 155);
+            this.pictureBox26.Image = global::K_M_S_PROGRAM.Properties.Resources.ok;
+            this.pictureBox26.Location = new System.Drawing.Point(162, 153);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(15, 20);
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2179,7 +2179,7 @@
             this.btKids_Grudiation.Location = new System.Drawing.Point(0, 150);
             this.btKids_Grudiation.Name = "btKids_Grudiation";
             this.btKids_Grudiation.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btKids_Grudiation.Size = new System.Drawing.Size(220, 29);
+            this.btKids_Grudiation.Size = new System.Drawing.Size(203, 29);
             this.btKids_Grudiation.TabIndex = 34;
             this.btKids_Grudiation.Text = "الأطفال المتخرجين";
             this.btKids_Grudiation.UseVisualStyleBackColor = true;
@@ -2201,7 +2201,7 @@
             this.btArshef.Location = new System.Drawing.Point(0, 121);
             this.btArshef.Name = "btArshef";
             this.btArshef.Padding = new System.Windows.Forms.Padding(19, 0, 0, 0);
-            this.btArshef.Size = new System.Drawing.Size(220, 29);
+            this.btArshef.Size = new System.Drawing.Size(203, 29);
             this.btArshef.TabIndex = 33;
             this.btArshef.Text = "أرشيف الأطفال";
             this.btArshef.UseVisualStyleBackColor = true;
@@ -2223,7 +2223,7 @@
             this.btAddNewChild.Location = new System.Drawing.Point(0, 92);
             this.btAddNewChild.Name = "btAddNewChild";
             this.btAddNewChild.Padding = new System.Windows.Forms.Padding(19, 0, 0, 0);
-            this.btAddNewChild.Size = new System.Drawing.Size(220, 29);
+            this.btAddNewChild.Size = new System.Drawing.Size(203, 29);
             this.btAddNewChild.TabIndex = 32;
             this.btAddNewChild.Text = "إضافة طفل جديد";
             this.btAddNewChild.UseVisualStyleBackColor = true;
@@ -2245,7 +2245,7 @@
             this.btSubKidsInfo.Location = new System.Drawing.Point(0, 63);
             this.btSubKidsInfo.Name = "btSubKidsInfo";
             this.btSubKidsInfo.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btSubKidsInfo.Size = new System.Drawing.Size(220, 29);
+            this.btSubKidsInfo.Size = new System.Drawing.Size(203, 29);
             this.btSubKidsInfo.TabIndex = 31;
             this.btSubKidsInfo.Text = "بيانات الأطفال";
             this.btSubKidsInfo.UseVisualStyleBackColor = true;
@@ -2267,7 +2267,7 @@
             this.btSubKidsMenue.Location = new System.Drawing.Point(0, 34);
             this.btSubKidsMenue.Name = "btSubKidsMenue";
             this.btSubKidsMenue.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
-            this.btSubKidsMenue.Size = new System.Drawing.Size(220, 29);
+            this.btSubKidsMenue.Size = new System.Drawing.Size(203, 29);
             this.btSubKidsMenue.TabIndex = 30;
             this.btSubKidsMenue.Text = "قائمة الأطفال";
             this.btSubKidsMenue.UseVisualStyleBackColor = true;
@@ -2284,7 +2284,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(220, 34);
+            this.panel7.Size = new System.Drawing.Size(203, 34);
             this.panel7.TabIndex = 29;
             // 
             // lb2
@@ -2334,7 +2334,7 @@
             this.pnMainMenue.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnMainMenue.Location = new System.Drawing.Point(0, 0);
             this.pnMainMenue.Name = "pnMainMenue";
-            this.pnMainMenue.Size = new System.Drawing.Size(220, 35);
+            this.pnMainMenue.Size = new System.Drawing.Size(203, 35);
             this.pnMainMenue.TabIndex = 13;
             this.pnMainMenue.Tag = "72";
             // 
@@ -2364,7 +2364,7 @@
             this.btSubMainMenue.Location = new System.Drawing.Point(0, 34);
             this.btSubMainMenue.Name = "btSubMainMenue";
             this.btSubMainMenue.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btSubMainMenue.Size = new System.Drawing.Size(220, 29);
+            this.btSubMainMenue.Size = new System.Drawing.Size(203, 29);
             this.btSubMainMenue.TabIndex = 30;
             this.btSubMainMenue.Text = "القائمة  الرئيسية";
             this.btSubMainMenue.UseVisualStyleBackColor = false;
@@ -2381,7 +2381,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(220, 34);
+            this.panel9.Size = new System.Drawing.Size(203, 34);
             this.panel9.TabIndex = 29;
             // 
             // lb1
@@ -2603,20 +2603,6 @@
             this.pnHeader.Size = new System.Drawing.Size(1072, 52);
             this.pnHeader.TabIndex = 1;
             // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.guna2ControlBox1.Animated = true;
-            this.guna2ControlBox1.BorderRadius = 10;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.Maroon;
-            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(8, 7);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(50, 35);
-            this.guna2ControlBox1.TabIndex = 41;
-            // 
             // lbDayDate
             // 
             this.lbDayDate.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -2630,6 +2616,20 @@
             this.lbDayDate.TabIndex = 40;
             this.lbDayDate.Text = "00-00-0000";
             this.lbDayDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.guna2ControlBox1.Animated = true;
+            this.guna2ControlBox1.BorderRadius = 10;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Maroon;
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(8, 7);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(50, 35);
+            this.guna2ControlBox1.TabIndex = 41;
             // 
             // button1
             // 

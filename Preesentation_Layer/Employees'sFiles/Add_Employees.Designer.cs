@@ -416,7 +416,7 @@
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel10.Controls.Add(this.txPhone, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.cmSocialStutas, 2, 0);
-            this.tableLayoutPanel10.Controls.Add(this.txEmail, 0, 0);
+            this.tableLayoutPanel10.Controls.Add(this.txEmail, 1, 0);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 219);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
@@ -432,11 +432,11 @@
             this.txPhone.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txPhone.Font = new System.Drawing.Font("Simplified Arabic", 16F, System.Drawing.FontStyle.Bold);
             this.txPhone.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.txPhone.Location = new System.Drawing.Point(242, 3);
+            this.txPhone.Location = new System.Drawing.Point(479, 3);
             this.txPhone.MaxLength = 11;
             this.txPhone.Multiline = true;
             this.txPhone.Name = "txPhone";
-            this.txPhone.Size = new System.Drawing.Size(231, 45);
+            this.txPhone.Size = new System.Drawing.Size(310, 45);
             this.txPhone.TabIndex = 7;
             this.txPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txCode_KeyPress);
@@ -464,12 +464,12 @@
             this.txEmail.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txEmail.Font = new System.Drawing.Font("Simplified Arabic", 16F, System.Drawing.FontStyle.Bold);
             this.txEmail.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.txEmail.Location = new System.Drawing.Point(479, 3);
+            this.txEmail.Location = new System.Drawing.Point(242, 3);
             this.txEmail.Margin = new System.Windows.Forms.Padding(8, 3, 3, 3);
             this.txEmail.MaxLength = 40;
             this.txEmail.Multiline = true;
             this.txEmail.Name = "txEmail";
-            this.txEmail.Size = new System.Drawing.Size(305, 45);
+            this.txEmail.Size = new System.Drawing.Size(226, 45);
             this.txEmail.TabIndex = 6;
             this.txEmail.TextChanged += new System.EventHandler(this.txEmail_TextChanged);
             // 
@@ -479,9 +479,9 @@
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel9.Controls.Add(this.panel4, 1, 0);
+            this.tableLayoutPanel9.Controls.Add(this.panel4, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.label8, 2, 0);
-            this.tableLayoutPanel9.Controls.Add(this.label4, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.label4, 1, 0);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel9.Location = new System.Drawing.Point(3, 181);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
@@ -494,9 +494,10 @@
             // 
             this.panel4.Controls.Add(this.btTestMessageNumber);
             this.panel4.Controls.Add(this.label33);
-            this.panel4.Location = new System.Drawing.Point(242, 3);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(479, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(231, 26);
+            this.panel4.Size = new System.Drawing.Size(310, 26);
             this.panel4.TabIndex = 24;
             // 
             // btTestMessageNumber
@@ -530,7 +531,7 @@
             this.label33.Dock = System.Windows.Forms.DockStyle.Right;
             this.label33.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
             this.label33.ForeColor = System.Drawing.Color.Gray;
-            this.label33.Location = new System.Drawing.Point(138, 0);
+            this.label33.Location = new System.Drawing.Point(217, 0);
             this.label33.Name = "label33";
             this.label33.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label33.Size = new System.Drawing.Size(93, 32);
@@ -554,9 +555,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Left;
             this.label4.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(723, 0);
+            this.label4.Location = new System.Drawing.Point(407, 0);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label4.Size = new System.Drawing.Size(66, 32);
@@ -1145,6 +1147,7 @@
             this.rdWorker.Size = new System.Drawing.Size(25, 24);
             this.rdWorker.TabIndex = 18;
             this.rdWorker.UseVisualStyleBackColor = false;
+            this.rdWorker.CheckedChanged += new System.EventHandler(this.rdWorker_CheckedChanged);
             this.rdWorker.Click += new System.EventHandler(this.rdWhoAdded_Click);
             // 
             // label20

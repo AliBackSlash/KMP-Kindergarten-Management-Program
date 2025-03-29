@@ -218,11 +218,18 @@ namespace MyBusinessLayer
             return clsChildData.GetUnActiveMenue(Name);
         }
 
-        public static int NumberOfKids()
+        public static int NumberOfKids(bool Peroid)
         {
-            return clsChildData.NumberOfKids();
+            return clsChildData.NumberOfKids(Peroid);
 
         }
-
+        public static bool AddToGraduationsTable(int ID)
+        {
+            return clsChildData.AddToGraduationsTable(ID);
+        }
+        public static DataTable GetGraduations()
+        {
+            return clsChildData.GetGraduations();
+        }
     }
 }

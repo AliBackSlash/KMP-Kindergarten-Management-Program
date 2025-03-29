@@ -173,7 +173,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.BackgroundImage = global::K_M_S_PROGRAM.Properties.Resources.absent;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(119, 16);
+            this.pictureBox6.Location = new System.Drawing.Point(122, 16);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(31, 34);
             this.pictureBox6.TabIndex = 23;
@@ -278,7 +278,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::K_M_S_PROGRAM.Properties.Resources.teamwork;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(124, 16);
+            this.pictureBox1.Location = new System.Drawing.Point(127, 16);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(31, 34);
             this.pictureBox1.TabIndex = 19;
@@ -383,7 +383,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::K_M_S_PROGRAM.Properties.Resources.kids;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(113, 16);
+            this.pictureBox2.Location = new System.Drawing.Point(117, 16);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(31, 34);
             this.pictureBox2.TabIndex = 19;

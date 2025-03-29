@@ -572,6 +572,8 @@ namespace K_M_S_PROGRAM.Resources
 
         private void btKids_Reports_Click(object sender, EventArgs e)
         {
+            if(kids_S_Repports.Visible)
+                kids_S_Repports.Kids_s_Repports_Load(null, null);
             ShowSubForm(kids_S_Repports);
         }
         //--------Empl-----------//

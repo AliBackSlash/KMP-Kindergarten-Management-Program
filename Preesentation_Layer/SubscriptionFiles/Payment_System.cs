@@ -60,16 +60,16 @@ namespace K_M_S_PROGRAM.Resources
         }
 
         bool IgnoreRemender = false;
-        private bool SaveHistory(DataRow row, float paid)
+        private bool SaveHistory(int amount, string Code, float paid)
         {
-            Amount = Convert.ToInt16(row["Amount"]);
+            Amount = amount;
             if (IgnoreRemender)
                 Remender = 0;
             else
                 Remender = Amount - paid;
             Paid = paid;
             IgnoreRemender = false;
-            return clsSubscriptions.AddToPaymentHistory( Paid, DateTime.Now, Remender, row["Code"].ToString(), CurrentRowDate,clsGlobal.CurrentUser.Code);
+            return clsSubscriptions.AddToPaymentHistory( Paid, DateTime.Now, Remender,Code, CurrentRowDate,clsGlobal.CurrentUser.Code);
         }
         PrintPreviewDialog printPreviewDialog = new PrintPreviewDialog();
 
@@ -79,7 +79,7 @@ namespace K_M_S_PROGRAM.Resources
             foreach (DataRow row in table.Rows)
             {
                 if (row["Code"].ToString()==Code)
-                    if(SaveHistory(row, Convert.ToSingle(Paid)))
+                    if(SaveHistory(Convert.ToInt16(row["Amount"]), Code ,Convert.ToSingle(Paid)))
                     {
                         if(clsGlobal.Settings.AskBeforPrint)
                         {

@@ -11,13 +11,13 @@ namespace MyBusinessLayer
     public class clsGeneric
     {
         //
-        public static int GetNumberOfAttendedMember(char Kind)
+        public static int GetNumberOfAttendedMember(char Kind, bool Peroid)
         {
-            return clsGenericData.GetNumberOfAttendedMember(Kind);
+            return clsGenericData.GetNumberOfAttendedMember(Kind,Peroid);
         }
-        public static int GetNumberOfLeavedMember(char Kind)
+        public static int GetNumberOfLeavedMember(char Kind, bool Peroid)
         {
-            return clsGenericData.GetNumberOfLeavedMember(Kind);
+            return clsGenericData.GetNumberOfLeavedMember(Kind, Peroid);
         }
 
         //

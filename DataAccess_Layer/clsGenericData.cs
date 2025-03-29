@@ -11,14 +11,15 @@ namespace MyDataAccessLayer
     public class clsGenericData
     {
         //
-        public static int GetNumberOfAttendedMember(char Kind)
+        public static int GetNumberOfAttendedMember(char Kind, bool Peroid)
         {
 
 
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))   
-            using (SqlCommand command = new SqlCommand("Exec SP_GetNumberOfAttendedMember @Kind ", connection))
+            using (SqlCommand command = new SqlCommand("Exec SP_GetNumberOfAttendedMember @Kind,@Peroid ", connection))
             {
                 command.Parameters.AddWithValue("@Kind", Kind);
+                command.Parameters.AddWithValue("@Peroid", Peroid);
                 try
                 {
                     connection.Open();
@@ -32,14 +33,15 @@ namespace MyDataAccessLayer
             }  
 
         } 
-        public static int GetNumberOfLeavedMember(char Kind)
+        public static int GetNumberOfLeavedMember(char Kind, bool Peroid)
         {
 
 
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))   
-            using (SqlCommand command = new SqlCommand("Exec SP_GetNumberOfLeavedMember @Kind", connection))
+            using (SqlCommand command = new SqlCommand("Exec SP_GetNumberOfLeavedMember @Kind,@Peroid ", connection))
             {
                 command.Parameters.AddWithValue("@Kind", Kind);
+                command.Parameters.AddWithValue("@Peroid", Peroid);
                 try
                 {
                     connection.Open();

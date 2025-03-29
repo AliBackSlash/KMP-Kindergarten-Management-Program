@@ -28,23 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            SATAUiFramework.BorderRadius borderRadius1 = new SATAUiFramework.BorderRadius();
+            SATAUiFramework.BorderRadius borderRadius2 = new SATAUiFramework.BorderRadius();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.sataPanel1 = new SATAUiFramework.SATAPanel();
             this.cmListKidsNames = new System.Windows.Forms.ComboBox();
             this.flCoutaner = new System.Windows.Forms.FlowLayoutPanel();
             this.sEllipse1 = new Sipaa.Framework.SEllipse();
-            this.graduationCard1 = new K_M_S_PROGRAM.Kids_sFile.GraduationCard();
-            this.graduationCard2 = new K_M_S_PROGRAM.Kids_sFile.GraduationCard();
-            this.graduationCard3 = new K_M_S_PROGRAM.Kids_sFile.GraduationCard();
-            this.graduationCard4 = new K_M_S_PROGRAM.Kids_sFile.GraduationCard();
-            this.graduationCard5 = new K_M_S_PROGRAM.Kids_sFile.GraduationCard();
-            this.graduationCard6 = new K_M_S_PROGRAM.Kids_sFile.GraduationCard();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.sataPanel1.SuspendLayout();
-            this.flCoutaner.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -80,11 +73,11 @@
             this.sataPanel1.BackColor = System.Drawing.Color.White;
             this.sataPanel1.BackColor2 = System.Drawing.Color.White;
             this.sataPanel1.BorderColor = System.Drawing.Color.Black;
-            borderRadius1.BottomLeft = 10;
-            borderRadius1.BottomRight = 10;
-            borderRadius1.TopLeft = 10;
-            borderRadius1.TopRight = 10;
-            this.sataPanel1.BorderRadius = borderRadius1;
+            borderRadius2.BottomLeft = 10;
+            borderRadius2.BottomRight = 10;
+            borderRadius2.TopLeft = 10;
+            borderRadius2.TopRight = 10;
+            this.sataPanel1.BorderRadius = borderRadius2;
             this.sataPanel1.BorderThickness = 0;
             this.sataPanel1.Controls.Add(this.cmListKidsNames);
             this.sataPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -108,12 +101,6 @@
             // 
             this.flCoutaner.AutoScroll = true;
             this.flCoutaner.BackColor = System.Drawing.Color.White;
-            this.flCoutaner.Controls.Add(this.graduationCard1);
-            this.flCoutaner.Controls.Add(this.graduationCard2);
-            this.flCoutaner.Controls.Add(this.graduationCard3);
-            this.flCoutaner.Controls.Add(this.graduationCard4);
-            this.flCoutaner.Controls.Add(this.graduationCard5);
-            this.flCoutaner.Controls.Add(this.graduationCard6);
             this.flCoutaner.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flCoutaner.Location = new System.Drawing.Point(3, 96);
             this.flCoutaner.Name = "flCoutaner";
@@ -124,60 +111,6 @@
             // 
             this.sEllipse1.CornerRadius = 20;
             this.sEllipse1.TargetControl = this.flCoutaner;
-            // 
-            // graduationCard1
-            // 
-            this.graduationCard1.BackColor = System.Drawing.Color.White;
-            this.graduationCard1.Location = new System.Drawing.Point(536, 3);
-            this.graduationCard1.Name = "graduationCard1";
-            this.graduationCard1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.graduationCard1.Size = new System.Drawing.Size(510, 308);
-            this.graduationCard1.TabIndex = 0;
-            // 
-            // graduationCard2
-            // 
-            this.graduationCard2.BackColor = System.Drawing.Color.White;
-            this.graduationCard2.Location = new System.Drawing.Point(20, 3);
-            this.graduationCard2.Name = "graduationCard2";
-            this.graduationCard2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.graduationCard2.Size = new System.Drawing.Size(510, 308);
-            this.graduationCard2.TabIndex = 1;
-            // 
-            // graduationCard3
-            // 
-            this.graduationCard3.BackColor = System.Drawing.Color.White;
-            this.graduationCard3.Location = new System.Drawing.Point(536, 317);
-            this.graduationCard3.Name = "graduationCard3";
-            this.graduationCard3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.graduationCard3.Size = new System.Drawing.Size(510, 308);
-            this.graduationCard3.TabIndex = 2;
-            // 
-            // graduationCard4
-            // 
-            this.graduationCard4.BackColor = System.Drawing.Color.White;
-            this.graduationCard4.Location = new System.Drawing.Point(20, 317);
-            this.graduationCard4.Name = "graduationCard4";
-            this.graduationCard4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.graduationCard4.Size = new System.Drawing.Size(510, 308);
-            this.graduationCard4.TabIndex = 3;
-            // 
-            // graduationCard5
-            // 
-            this.graduationCard5.BackColor = System.Drawing.Color.White;
-            this.graduationCard5.Location = new System.Drawing.Point(536, 631);
-            this.graduationCard5.Name = "graduationCard5";
-            this.graduationCard5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.graduationCard5.Size = new System.Drawing.Size(510, 308);
-            this.graduationCard5.TabIndex = 4;
-            // 
-            // graduationCard6
-            // 
-            this.graduationCard6.BackColor = System.Drawing.Color.White;
-            this.graduationCard6.Location = new System.Drawing.Point(20, 631);
-            this.graduationCard6.Name = "graduationCard6";
-            this.graduationCard6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.graduationCard6.Size = new System.Drawing.Size(510, 308);
-            this.graduationCard6.TabIndex = 5;
             // 
             // Kids_s_Repports
             // 
@@ -193,10 +126,10 @@
             this.RightToLeftLayout = true;
             this.Tag = "32";
             this.Text = "Kids_s_Repports";
+            this.Load += new System.EventHandler(this.Kids_s_Repports_Load);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.sataPanel1.ResumeLayout(false);
-            this.flCoutaner.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -209,11 +142,5 @@
         private System.Windows.Forms.ComboBox cmListKidsNames;
         private System.Windows.Forms.FlowLayoutPanel flCoutaner;
         private Sipaa.Framework.SEllipse sEllipse1;
-        private Kids_sFile.GraduationCard graduationCard1;
-        private Kids_sFile.GraduationCard graduationCard2;
-        private Kids_sFile.GraduationCard graduationCard3;
-        private Kids_sFile.GraduationCard graduationCard4;
-        private Kids_sFile.GraduationCard graduationCard5;
-        private Kids_sFile.GraduationCard graduationCard6;
     }
 }

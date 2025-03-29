@@ -23,6 +23,7 @@ namespace K_M_S_PROGRAM.Resources
         enum enWhoEnter { Employee, worker, child }
         enWhoEnter whoEnter = enWhoEnter.child;
         string Period = "";
+        bool Peroid = true;
 
         static int NumOfStudebts ;
         static int NumOfTeachers ;
@@ -45,12 +46,12 @@ namespace K_M_S_PROGRAM.Resources
             if (rdAM.Checked)
             {
                 progNumberOfComes.Maximum = NumOfTeachers;
-                progNumberOfComes.Value = TeachersCame = clsGeneric.GetNumberOfAttendedMember('T');
+                progNumberOfComes.Value = TeachersCame = clsGeneric.GetNumberOfAttendedMember('T',Peroid);
             }
             else
             {
                 progNumberOfComes.Maximum = NumOfTeachers;
-                progNumberOfComes.Value = TeachersLeave  = clsGeneric.GetNumberOfLeavedMember('T');
+                progNumberOfComes.Value = TeachersLeave  = clsGeneric.GetNumberOfLeavedMember('T', Peroid);
             }
 
         }
@@ -65,12 +66,12 @@ namespace K_M_S_PROGRAM.Resources
             if (rdAM.Checked)
             {
                 progNumberOfComes.Maximum = NumOfWorkers;
-                progNumberOfComes.Value = WorkersCame = clsGeneric.GetNumberOfAttendedMember('W');
+                progNumberOfComes.Value = WorkersCame = clsGeneric.GetNumberOfAttendedMember('W', Peroid);
             }
             else
             {
                 progNumberOfComes.Maximum = NumOfWorkers;
-                progNumberOfComes.Value = WorkersLeave = clsGeneric.GetNumberOfLeavedMember('W');
+                progNumberOfComes.Value = WorkersLeave = clsGeneric.GetNumberOfLeavedMember('W', Peroid);
             }
         }
 
@@ -85,28 +86,36 @@ namespace K_M_S_PROGRAM.Resources
             if(rdAM.Checked)
             {
                 progNumberOfComes.Maximum = NumOfStudebts;
-                progNumberOfComes.Value = KidsCame = clsGeneric.GetNumberOfAttendedMember('C');
+                progNumberOfComes.Value = KidsCame = clsGeneric.GetNumberOfAttendedMember('C', Peroid);
             }
             else
             {
                 progNumberOfComes.Maximum = NumOfStudebts;
-                progNumberOfComes.Value = KidsLeave = clsGeneric.GetNumberOfLeavedMember('C');
+                progNumberOfComes.Value = KidsLeave = clsGeneric.GetNumberOfLeavedMember('C', Peroid  );
             }
         }
 
         private void EnteredTheMember()
         {
             DataTable data = new DataTable();
-            DataRow row;
-            DateTime date ;
+            DateTime date = DateTime.Now;
+            DateTime SettingEnterTime ;
+            DateTime LastSettingEnterTime ;
 
-            DateTime SettingEnterTime = Convert.ToDateTime(clsGlobal.Settings.TimeEnter);
-            DateTime LastSettingEnterTime = Convert.ToDateTime(clsGlobal.Settings.LasttimeEnter);
+            if(date.TimeOfDay >= DateTime.ParseExact(clsGlobal.Settings.TimeEnterPM, "HH:mm:ss", null).TimeOfDay)
+            {
+                SettingEnterTime = Convert.ToDateTime(clsGlobal.Settings.TimeEnterPM);
+                LastSettingEnterTime = Convert.ToDateTime(clsGlobal.Settings.LasttimeEnterPM);
+            }
+            else
+            {
+                SettingEnterTime = Convert.ToDateTime(clsGlobal.Settings.TimeEnter);
+                LastSettingEnterTime = Convert.ToDateTime(clsGlobal.Settings.LasttimeEnter);
+            }
 
            
-            
-            string Hour = DateTime.Now.ToString("HH:mm");
-            DateTime TimeNow = DateTime.ParseExact(Hour, "HH:mm", null);
+          
+            DateTime TimeNow = DateTime.Now;
             int Code = Convert.ToInt32(txSearsh.Text);
 
 
@@ -116,11 +125,10 @@ namespace K_M_S_PROGRAM.Resources
                 {
                     case enWhoEnter.child:
 
-                        if (clsAbsences.FindChild(Code))
+                        if (clsAbsences.FindChild(Code,Peroid))
                         {
-                            date = DateTime.Now;
 
-                            if (clsAbsences.ISThisMemberAlreadyRegister(txSearsh.Text, date, 'C'))
+                            if (clsAbsences.ISThisMemberAlreadyRegister(txSearsh.Text, date, 'C', Peroid))
                                 { clsUtil.Show("تم تحضير هذا الطالب بالفعل", false);  }
                             else
                             {
@@ -147,10 +155,9 @@ namespace K_M_S_PROGRAM.Resources
                         break;
 
                     case enWhoEnter.Employee:
-                        if (clsAbsences.FindEmployee(Code))
+                        if (clsAbsences.FindEmployee(Code, Peroid))
                         {
-                            date = DateTime.Now;
-                            if (clsAbsences.ISThisMemberAlreadyRegister(txSearsh.Text, date, 'T'))
+                            if (clsAbsences.ISThisMemberAlreadyRegister(txSearsh.Text, date, 'T', Peroid))
                                 { clsUtil.Show("تم تحضير هذا الموظف بالفعل", false); }
                             else
                             {
@@ -175,10 +182,9 @@ namespace K_M_S_PROGRAM.Resources
                         break;
 
                     case enWhoEnter.worker:
-                        if (clsAbsences.FindWorker(Code))
+                        if (clsAbsences.FindWorker(Code, Peroid))
                         {
-                            date = DateTime.Now;
-                            if (clsAbsences.ISThisMemberAlreadyRegister(txSearsh.Text, date, 'W'))
+                            if (clsAbsences.ISThisMemberAlreadyRegister(txSearsh.Text, date, 'W', Peroid))
                                { clsUtil.Show("تم تحضير هذا الموظف بالفعل", false);  }
                             else
                             {
@@ -206,36 +212,41 @@ namespace K_M_S_PROGRAM.Resources
             else
                 clsUtil.Show("لا يمكنك إضافة غياب في ذلك الوقت ", false);
         }
-        //تعديل نوع التاريخ من نص الي datetime
 
         private void LeaveTheMember()
         {
             DataTable data = new DataTable();
-            DataRow row;
-            DateTime date;
-            //string Time = "";
+            DateTime date = DateTime.Now;
+            DateTime SettingLeaveTime;
+            DateTime LastSettingLeaveTime;
 
-            DateTime SettingLeaveTime = Convert.ToDateTime(clsGlobal.Settings.TimeLeave);
-            DateTime LastSettingLeaveTime = Convert.ToDateTime(clsGlobal.Settings.LasttimeLeave);
+            if (date.TimeOfDay >= DateTime.ParseExact(clsGlobal.Settings.TimeEnterPM, "HH:mm:ss", null).TimeOfDay)
+            {
+                SettingLeaveTime = Convert.ToDateTime(clsGlobal.Settings.TimeLeavePM);
+                LastSettingLeaveTime = Convert.ToDateTime(clsGlobal.Settings.LasttimeLeavePM);
+            }
+            else
+            {
+                SettingLeaveTime = Convert.ToDateTime(clsGlobal.Settings.TimeLeave);
+                LastSettingLeaveTime = Convert.ToDateTime(clsGlobal.Settings.LasttimeLeave);
+            }
 
 
-
-            string Hour = DateTime.Now.ToString("HH:mm");
-            DateTime TimeNow = DateTime.ParseExact(Hour, "HH:mm", null);
+          
+            DateTime TimeNow = DateTime.Now;
             int Code = Convert.ToInt32(txSearsh.Text);
-
 
             if (TimeNow.TimeOfDay >= SettingLeaveTime.TimeOfDay && TimeNow.TimeOfDay <= LastSettingLeaveTime.TimeOfDay)
             {
                 switch (whoEnter)
                 {
                     case enWhoEnter.child:
-                        if (clsAbsences.FindChild(Code))
+                        if (clsAbsences.FindChild(Code, Peroid))
                         {
                             date = DateTime.Now;
                            
 
-                            if (clsAbsences.ISThisMemberAlreadyRegisterLeave(txSearsh.Text, date, 'C'))
+                            if (clsAbsences.ISThisMemberAlreadyRegisterLeave(txSearsh.Text, date, 'C', Peroid))
                                 clsUtil.Show("تم إنصراف هذا الطالب بالفعل", false);
                             else
                             {
@@ -255,13 +266,13 @@ namespace K_M_S_PROGRAM.Resources
                         break;
 
                     case enWhoEnter.Employee:
-                        if (clsAbsences.FindEmployee(Code))
+                        if (clsAbsences.FindEmployee(Code, Peroid))
                         {
                             date = DateTime.Now;
 
 
 
-                            if (clsAbsences.ISThisMemberAlreadyRegisterLeave(Code.ToString(), date, 'T'))
+                            if (clsAbsences.ISThisMemberAlreadyRegisterLeave(Code.ToString(), date, 'T', Peroid))
                                 clsUtil.Show("تم إنصراف هذا الموظف بالفعل", false);
                             else
                             {
@@ -278,13 +289,13 @@ namespace K_M_S_PROGRAM.Resources
                         break;
 
                     case enWhoEnter.worker:
-                        if (clsAbsences.FindWorker(Code))
+                        if (clsAbsences.FindWorker(Code, Peroid ))
                         {
                             date = DateTime.Now;
 
 
 
-                            if (clsAbsences.ISThisMemberAlreadyRegisterLeave(txSearsh.Text, date, 'W'))
+                            if (clsAbsences.ISThisMemberAlreadyRegisterLeave(txSearsh.Text, date, 'W', Peroid))
                                 clsUtil.Show("تم إنصراف هذا العامل بالفعل", false);
                             else
                             {
@@ -376,31 +387,11 @@ namespace K_M_S_PROGRAM.Resources
                     break;
             }
         }
-
-        public void Add_Absence_Load(object sender, EventArgs e)
+        void TestVication()
         {
-            Task Attend = new Task(() => {
-                NumOfStudebts = clsChild.NumberOfKids();
-                NumOfTeachers = clsEmployee.NumberOfTeachers();
-                NumOfWorkers  = clsGeneric.ReturnLastValueIWantINT("select count(1) from WorkerInfo");
-                KidsCame = clsGeneric.GetNumberOfAttendedMember('C');
-                TeachersCame = clsGeneric.GetNumberOfAttendedMember('T');
-                WorkersCame = clsGeneric.GetNumberOfAttendedMember('W');
-            });
-             Task Leaved = new Task(() => {
-                 NumOfStudebts = clsChild.NumberOfKids();
-                 NumOfTeachers = clsEmployee.NumberOfTeachers();
-                 NumOfWorkers = clsGeneric.ReturnLastValueIWantINT("select count(1) from WorkerInfo");
-                 KidsLeave = clsGeneric.GetNumberOfLeavedMember('C');
-                 TeachersLeave = clsGeneric.GetNumberOfLeavedMember('T');
-                 WorkersLeave = clsGeneric.GetNumberOfLeavedMember('W');
-            });
-
-            progNumberOfComes.Maximum = NumOfStudebts;
-            progNumberOfComes.Value = KidsCame = clsGeneric.GetNumberOfAttendedMember('C');
             if ((byte)DateTime.Now.DayOfWeek == clsGlobal.Settings.Vication1
-               ||
-             (byte)DateTime.Now.DayOfWeek == clsGlobal.Settings.Vication2)
+              ||
+            (byte)DateTime.Now.DayOfWeek == clsGlobal.Settings.Vication2)
             {
                 lbVevationMessage.Visible = true;
                 txSearsh.Enabled = false;
@@ -419,12 +410,40 @@ namespace K_M_S_PROGRAM.Resources
                 rdPM.Enabled = rdPM.Checked = true;
                 btKids.Enabled = btTeacher.Enabled = btWorker.Enabled = true;
             }
+        }
 
-            if (DateTime.Now.Hour > Convert.ToDateTime(clsGlobal.Settings.TimeLeave).Hour)
-                { rdPM.Checked = true; Leaved.Start(); }
+        void ProgressValue()
+        {
+            Peroid = clsUtil.GetPeroid();
+
+
+            NumOfStudebts = clsChild.NumberOfKids(Peroid);
+            NumOfTeachers = clsEmployee.NumberOfTeachers(Peroid);
+            NumOfWorkers = clsWorker.NumberOfTeachers(Peroid);
+
+           
+            if (Peroid)
+            {
+                if (DateTime.Now.Hour > Convert.ToDateTime(clsGlobal.Settings.TimeLeave).Hour)
+                { rdPM.Checked = true; }
+                else
+                { rdAM.Checked = true; }
+            }
             else
-                { rdAM.Checked = true; Attend.Start(); }
+            {
+                if (DateTime.Now.Hour > Convert.ToDateTime(clsGlobal.Settings.TimeLeavePM).Hour)
+                { rdPM.Checked = true;  }
+                else
+                { rdAM.Checked = true;  }
+            }
+           
+            btKids.PerformClick();
 
+        }
+        public void Add_Absence_Load(object sender, EventArgs e)
+        {
+            TestVication();
+            ProgressValue();
             txSearsh.Focus();
             
         }

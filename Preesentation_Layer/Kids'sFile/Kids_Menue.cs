@@ -157,11 +157,13 @@ namespace K_M_S_PROGRAM.Resources
                 if (Convert.ToBoolean(row.Cells[11].Value))
                 {
 
-                    clsNotes.AddNotes((int)row.Cells[1].Value, Note, 'C', Date);
+                    if (clsNotes.AddNotes((int)row.Cells[1].Value, Note, 'C', Date))
+                        clsUtil.Show("تم تسجيل الملاحظات ");
+                   
+
 
                 }
             }
-            clsUtil.Show("تم تسجيل الملاحظات ");
 
         }
 
@@ -456,6 +458,14 @@ namespace K_M_S_PROGRAM.Resources
         {
             BGWorker.CancelAsync();
             
+        }
+
+        private void انهاءفترةدراسةالطفلToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (clsChild.AddToGraduationsTable((int)dgvKidsMenue.CurrentRow.Cells["Code"].Value))
+                clsUtil.Show("تم انهاء فترة الدراسة والاحتفاظ بتذكار لهذا الطفل في شاشة الاطفال المتخرجين");
+            else
+                clsUtil.Show("حدث خطأ", false);
         }
     }
 }

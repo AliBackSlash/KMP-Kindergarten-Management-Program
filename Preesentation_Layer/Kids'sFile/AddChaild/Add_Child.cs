@@ -70,33 +70,41 @@ namespace K_M_S_PROGRAM.Resources
         string CurrentID;
         private bool AddUpdateChild()
         {
-           
-            
-            _addChild.Code = Convert.ToInt16(txCode.Text);
-            _addChild.name= txName.Text;
-            _addChild.address = txAddress.Text;
-            _addChild.city = txCity.Text;
-            _addChild.dateOfBirth = txDataOfBirth.Value;
-            _addChild.period = rdAM.Checked;
-            _addChild.classID = clsClsases.GetClassID(cmClass.Text);
-            _addChild.levelID = clsLevels.GetLevelID(cmLevel.Text);
-            _addChild.dateOfJoin = txDateOfJoin.Value;
-            _addChild.branch = "1";
-            _addChild.bus = "1";
-            _addChild.gendor = rdMale.Checked;
-            _addChild.image = picPersonalImage.ImageLocation!=null? picPersonalImage.ImageLocation:"";
-            _addChild.howYouKnowNurssry = Convert.ToByte(cmHowYouKnowAboutNursery.SelectedIndex + 1);
-            _addChild.socialStatus = Convert.ToByte(cmFatherSocialStatus.SelectedIndex + 1);
-            _addChild.messageNumber = txMessageNumber.Text;
-            _addChild.mail = txEmail.Text;
-            _addChild.infoAboutChild = txInfoAboutChild.Text;
-            _addChild.SubAmount = Convert.ToSingle(txSubAmount.Text!=""? txSubAmount.Text : "0");
 
-            if (_addChild.Save())
-                return true;
-            else
+            try
+            {
+
+                _addChild.Code = Convert.ToInt16(txCode.Text);
+                _addChild.name = txName.Text;
+                _addChild.address = txAddress.Text;
+                _addChild.city = txCity.Text;
+                _addChild.dateOfBirth = txDataOfBirth.Value;
+                _addChild.period = rdAM.Checked;
+                _addChild.classID = clsClsases.GetClassID(cmClass.Text);
+                _addChild.levelID = clsLevels.GetLevelID(cmLevel.Text);
+                _addChild.dateOfJoin = txDateOfJoin.Value;
+                _addChild.branch = "1";
+                _addChild.bus = "1";
+                _addChild.gendor = rdMale.Checked;
+                _addChild.image = picPersonalImage.ImageLocation != null ? picPersonalImage.ImageLocation : "";
+                _addChild.howYouKnowNurssry = Convert.ToByte(cmHowYouKnowAboutNursery.SelectedIndex + 1);
+                _addChild.socialStatus = Convert.ToByte(cmFatherSocialStatus.SelectedIndex + 1);
+                _addChild.messageNumber = txMessageNumber.Text;
+                _addChild.mail = txEmail.Text;
+                _addChild.infoAboutChild = txInfoAboutChild.Text;
+                _addChild.SubAmount = Convert.ToSingle(txSubAmount.Text != "" ? txSubAmount.Text : "0");
+
+                if (_addChild.Save())
+                    return true;
+                else
+                    return false;
+
+            }
+            catch (Exception)
+            {
                 return false;
-
+                
+            }
 
         }
         string imagePath;
@@ -164,6 +172,8 @@ namespace K_M_S_PROGRAM.Resources
             string st = clsGeneric.ReturnLastID("select top 1 Code+1 from KidsPersonalInfo order by code desc");
             if (st != null && txCode.Text=="")
                 txCode.Text = st;
+            else
+                txCode.Text = "100";
 
         }
         private void Add_Child_Load(object sender, EventArgs e)
@@ -171,8 +181,6 @@ namespace K_M_S_PROGRAM.Resources
 
             GetLastCode();
 
-            cmClass.SelectedIndex = 0;
-            cmLevel.SelectedIndex = 0;
             txDataOfBirth.MaxDate = DateTime.Now.AddYears(-2);
             txDataOfBirth.MinDate = DateTime.Now.AddYears(-4);
             txDateOfJoin.MinDate = DateTime.Now.AddYears(-4);

@@ -24,14 +24,14 @@ namespace MyBusinessLayer
             return clsAbsenceData.AddToLeaveHistory(ID,Date,Kind);
         }
 
-        public static bool ISThisMemberAlreadyRegister(string ID, DateTime Date, char Kind)
+        public static bool ISThisMemberAlreadyRegister(string ID, DateTime Date, char Kind,bool Peroid)
         {
-            return clsAbsenceData.ISThisMemberAlreadyRegister(ID, Date, Kind);
+            return clsAbsenceData.ISThisMemberAlreadyRegister(ID, Date, Kind, Peroid);
         }
 
-        public static bool ISThisMemberAlreadyRegisterLeave(string ID, DateTime Date, char Kind)
+        public static bool ISThisMemberAlreadyRegisterLeave(string ID, DateTime Date, char Kind, bool Peroid)
         {
-            return clsAbsenceData.ISThisMemberAlreadyRegisterLeave(ID, Date, Kind); ;
+            return clsAbsenceData.ISThisMemberAlreadyRegisterLeave(ID, Date, Kind,  Peroid); ;
         }
 
         public static bool AddToAbsenceHistory( int ID, DateTime Date, char Kind)
@@ -39,19 +39,19 @@ namespace MyBusinessLayer
             return clsAbsenceData.AddToAbsenceHistory(ID, Date, Kind);
         }
 
-        public static bool FindChild(int ID)
+        public static bool FindChild(int ID,bool Peroid)
         {
-            return clsAbsenceData.FindChild(ID);
+            return clsAbsenceData.FindChild(ID,Peroid);
         }
 
-        public static bool FindEmployee(int ID)
+        public static bool FindEmployee(int ID, bool Peroid)
         {
-            return clsAbsenceData.FindEmployee(ID);
+            return clsAbsenceData.FindEmployee(ID,  Peroid);
         }
 
-        public static bool FindWorker(int ID)
+        public static bool FindWorker(int ID, bool Peroid)
         {
-            return clsAbsenceData.FindWorker(ID);
+            return clsAbsenceData.FindWorker(ID,  Peroid);
         }
 
         public static DataTable GetLeaveHistory(char Kind)

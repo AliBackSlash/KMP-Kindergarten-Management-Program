@@ -9,15 +9,44 @@ using System.Threading.Tasks;
 namespace MyDataAccessLayer
 {
     public class clsEvaluationsData
-    {//done
-        public static DataTable GetEvaluationInfo(short classID)
+    {
+        //done
+        public static DataTable GetEvaluationInfo(short classID,bool Peroid)
         {
             DataTable datble = new DataTable();
 
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
-            using (SqlCommand command = new SqlCommand("exec SP_GetEvaluationInfo @classID", connection))
+            using (SqlCommand command = new SqlCommand("exec SP_GetEvaluationInfo @classID,@Peroid", connection))
             {
                 command.Parameters.AddWithValue("@classID", classID);
+                command.Parameters.AddWithValue("@Peroid", Peroid);
+
+                try
+                {
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.HasRows)
+                        {
+                            datble.Load(reader);
+                        }
+                    }
+                }
+                catch (Exception)
+                {
+                    // لا يتم رمي الاستثناء
+                }
+            }
+            return datble;
+        }
+        public static DataTable GetAVGOfEvaluation(bool Peroid)
+        {
+            DataTable datble = new DataTable();
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
+            using (SqlCommand command = new SqlCommand("exec SP_AVGOfEvalueation @Peroid", connection))
+            {
+                command.Parameters.AddWithValue("@Peroid", Peroid);
 
                 try
                 {

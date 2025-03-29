@@ -27,7 +27,7 @@ namespace K_M_S_PROGRAM.TreasuryFiles
             dgvTreasuryHistory.Rows.Clear();
             foreach (DataRow row in data.Rows)
             {
-                dgvTreasuryHistory.Rows.Add(row["TotalExpenses"], row["TotalRevenue"] , row["Month"]);
+                dgvTreasuryHistory.Rows.Add(row["TotalExpenses"], row["TotalRevenue"],Convert.ToSingle(row["TotalRevenue"]) - Convert.ToSingle(row["TotalExpenses"]), row["Month"]);
             }
         }
         private void TreasuryHistory_Load(object sender, EventArgs e)
@@ -36,12 +36,13 @@ namespace K_M_S_PROGRAM.TreasuryFiles
             SeriesCollection seriesCollection = new SeriesCollection();
             Random r = new Random();
 
-            for (byte i = 0; i < 4; i++)
+            foreach (DataGridViewRow row in dgvTreasuryHistory.Rows)
             {
 
                 seriesCollection.Add(new PieSeries
                 {
-                    Values = new ChartValues<double> { r.NextDouble() },
+                    Title = row.Cells[3].Value.ToString(),
+                    Values = new ChartValues<float> { Convert.ToSingle(row.Cells[2].Value) },
                     DataLabels = true,
 
                 });

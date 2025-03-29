@@ -304,6 +304,8 @@ namespace K_M_S_PROGRAM.GlobalClasses
             }
            
         }
+
+        //make auto reset the daily evalueation .........
         public static void RestMonthly()
         {
 
@@ -330,7 +332,7 @@ namespace K_M_S_PROGRAM.GlobalClasses
         {
             int receiptWidth = 240;
             int lineHeight = 20;
-            int currentY = 80;
+            int currentY = 120;
 
             StringFormat format = new StringFormat();
             format.Alignment = StringAlignment.Near;
@@ -346,12 +348,12 @@ namespace K_M_S_PROGRAM.GlobalClasses
             Font BackFont = new Font("Times New Roman", 7, FontStyle.Bold);
 
             PictureBox p = new PictureBox();
-            string LogoPath = clsGeneric.ReturnLastValueIWant("Select LogoPath from ProgramSetting");
-            string OrgnaizatiionName = clsGeneric.ReturnLastValueIWant("Select OrgName from ProgramSetting");
+            string LogoPath = clsGlobal.Settings.LogoPath;
+            string OrgnaizatiionName = clsGlobal.Settings.OrgName;
             if (LogoPath != "")
             {
                 p.Image = Image.FromFile(LogoPath);
-                e.Graphics.DrawImage(ResizeImage(p.Image, 70, 70), new Point(110, 0));
+                e.Graphics.DrawImage(ResizeImage(p.Image, 110,110), new Point(90, 0));
             }
 
 
@@ -408,7 +410,7 @@ namespace K_M_S_PROGRAM.GlobalClasses
         {
             int receiptWidth = 270;
             int lineHeight = 20;
-            int currentY = 80;
+            int currentY = 120;
 
             StringFormat format = new StringFormat();
             format.Alignment = StringAlignment.Near;
@@ -429,7 +431,7 @@ namespace K_M_S_PROGRAM.GlobalClasses
             if (LogoPath != "")
             {
                 p.Image = Image.FromFile(LogoPath);
-                e.Graphics.DrawImage(ResizeImage(p.Image, 70, 70), new Point(110, 0));
+                e.Graphics.DrawImage(ResizeImage(p.Image, 110, 110), new Point(90, 0));
             }
 
 
@@ -489,7 +491,7 @@ namespace K_M_S_PROGRAM.GlobalClasses
         {
             int receiptWidth = 240;
             int lineHeight = 20;
-            int currentY = 80;
+            int currentY = 120;
 
             StringFormat format = new StringFormat();
             format.Alignment = StringAlignment.Near;
@@ -510,7 +512,7 @@ namespace K_M_S_PROGRAM.GlobalClasses
             if (LogoPath != "")
             {
                 p.Image = Image.FromFile(LogoPath);
-                e.Graphics.DrawImage(ResizeImage(p.Image, 70, 70), new Point(110, 0));
+                e.Graphics.DrawImage(ResizeImage(p.Image, 110, 110), new Point(90, 0));
             }
 
 
@@ -573,7 +575,7 @@ namespace K_M_S_PROGRAM.GlobalClasses
         {
             int receiptWidth = 270;
             int lineHeight = 20;
-            int currentY = 80;
+            int currentY = 120;
 
             StringFormat format = new StringFormat();
             format.Alignment = StringAlignment.Near;
@@ -594,7 +596,7 @@ namespace K_M_S_PROGRAM.GlobalClasses
             if (LogoPath != "")
             {
                 p.Image = Image.FromFile(LogoPath);
-                e.Graphics.DrawImage(ResizeImage(p.Image, 70, 70), new Point(110, 0));
+                e.Graphics.DrawImage(ResizeImage(p.Image, 110,110), new Point(90, 0));
             }
 
 
@@ -655,7 +657,10 @@ namespace K_M_S_PROGRAM.GlobalClasses
             return new Bitmap(imgToResize, new Size(width, height));
         }
 
-        
+        public static bool GetPeroid()
+        {
+            return DateTime.Now.TimeOfDay < DateTime.ParseExact(clsGlobal.Settings.TimeEnterPM, "HH:mm:ss", null).TimeOfDay;
+        }
 
     }
 }

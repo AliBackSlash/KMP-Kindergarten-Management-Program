@@ -12,8 +12,9 @@ namespace MyDataAccessLayer
         public static int TreasuryAmmount()
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
-            using (SqlCommand command = new SqlCommand("exec SP_TotalExpectTreasuryAmmount", connection))
+            using (SqlCommand command = new SqlCommand("exec SP_TotalExpectTreasuryAmmount ", connection))
             {
+                //command.Parameters.AddWithValue("@Peroid", Peroid);
                 int Amount = 0;
                 try
                 {
@@ -33,9 +34,9 @@ namespace MyDataAccessLayer
         public static int CurrentTreasuryAmmount()
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
-            using (SqlCommand command = new SqlCommand("exec SP_CurrentTreasuryAmmount", connection))
+            using (SqlCommand command = new SqlCommand("exec SP_CurrentTreasuryAmmount ", connection))
             {
-
+                //command.Parameters.AddWithValue("@Peroid", Peroid);
                 int Amount = 0;
                 try
                 {

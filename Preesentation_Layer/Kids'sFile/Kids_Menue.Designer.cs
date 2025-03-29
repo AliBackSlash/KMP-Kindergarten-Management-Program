@@ -34,7 +34,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kids_Menue));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             SATAUiFramework.BorderRadius borderRadius1 = new SATAUiFramework.BorderRadius();
             SATAUiFramework.BorderRadius borderRadius2 = new SATAUiFramework.BorderRadius();
@@ -97,6 +96,7 @@
             this.sEllipse1 = new Sipaa.Framework.SEllipse();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.BGWorker = new System.ComponentModel.BackgroundWorker();
+            this.انهاءفترةدراسةالطفلToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKidsMenue)).BeginInit();
             this.cnTask.SuspendLayout();
@@ -108,6 +108,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.dgvKidsMenue, 0, 2);
@@ -198,7 +199,7 @@
             // 
             this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle2.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle2.NullValue")));
+            dataGridViewCellStyle2.NullValue = null;
             this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewImageColumn1.FillWeight = 200F;
             this.dataGridViewImageColumn1.HeaderText = "....";
@@ -305,10 +306,11 @@
             this.إضافةأخToolStripMenuItem,
             this.إضافةبياناتالأبوينToolStripMenuItem,
             this.إضافةمستلمToolStripMenuItem,
-            this.طباعةالباركودToolStripMenuItem});
+            this.طباعةالباركودToolStripMenuItem,
+            this.انهاءفترةدراسةالطفلToolStripMenuItem});
             this.cnTask.Name = "cnTask";
             this.cnTask.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cnTask.Size = new System.Drawing.Size(171, 220);
+            this.cnTask.Size = new System.Drawing.Size(200, 266);
             this.cnTask.Opening += new System.ComponentModel.CancelEventHandler(this.cnTask_Opening);
             // 
             // toolStripMenuItem2
@@ -319,7 +321,7 @@
             this.تعديلبياناتالطفلToolStripMenuItem});
             this.toolStripMenuItem2.Image = global::K_M_S_PROGRAM.Properties.Resources.children;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(170, 24);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(199, 24);
             this.toolStripMenuItem2.Text = "بيانات الطفل";
             // 
             // إظهاربياناتالطفلToolStripMenuItem
@@ -350,7 +352,7 @@
             // 
             this.كتابةملاحظةToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.notepad;
             this.كتابةملاحظةToolStripMenuItem.Name = "كتابةملاحظةToolStripMenuItem";
-            this.كتابةملاحظةToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.كتابةملاحظةToolStripMenuItem.Size = new System.Drawing.Size(199, 24);
             this.كتابةملاحظةToolStripMenuItem.Text = "كتابة ملاحظة";
             this.كتابةملاحظةToolStripMenuItem.Click += new System.EventHandler(this.كتابةملاحظةToolStripMenuItem_Click);
             // 
@@ -361,7 +363,7 @@
             this.sMSToolStripMenuItem});
             this.إرسالرسالةToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.discussion;
             this.إرسالرسالةToolStripMenuItem.Name = "إرسالرسالةToolStripMenuItem";
-            this.إرسالرسالةToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.إرسالرسالةToolStripMenuItem.Size = new System.Drawing.Size(199, 24);
             this.إرسالرسالةToolStripMenuItem.Text = "إرسال رسالة عبر";
             // 
             // واتسابToolStripMenuItem
@@ -384,7 +386,7 @@
             // 
             this.نقلاليالأرشيفToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.inbox;
             this.نقلاليالأرشيفToolStripMenuItem.Name = "نقلاليالأرشيفToolStripMenuItem";
-            this.نقلاليالأرشيفToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.نقلاليالأرشيفToolStripMenuItem.Size = new System.Drawing.Size(199, 24);
             this.نقلاليالأرشيفToolStripMenuItem.Text = "نقل الي الأرشيف";
             this.نقلاليالأرشيفToolStripMenuItem.Click += new System.EventHandler(this.نقلاليالأرشيفToolStripMenuItem_Click);
             // 
@@ -392,7 +394,7 @@
             // 
             this.حذفToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.Delete;
             this.حذفToolStripMenuItem.Name = "حذفToolStripMenuItem";
-            this.حذفToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.حذفToolStripMenuItem.Size = new System.Drawing.Size(199, 24);
             this.حذفToolStripMenuItem.Text = "حذف";
             this.حذفToolStripMenuItem.Click += new System.EventHandler(this.btDelete_Click);
             // 
@@ -403,7 +405,7 @@
             this.إضافةأخToolStripMenuItem1});
             this.إضافةأخToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.kids;
             this.إضافةأخToolStripMenuItem.Name = "إضافةأخToolStripMenuItem";
-            this.إضافةأخToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.إضافةأخToolStripMenuItem.Size = new System.Drawing.Size(199, 24);
             this.إضافةأخToolStripMenuItem.Text = "بيانات الإخوة";
             // 
             // قائمةالإخوةToolStripMenuItem
@@ -429,7 +431,7 @@
             this.تعديلبياناتالاباءToolStripMenuItem});
             this.إضافةبياناتالأبوينToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.Treetog_Junior_User_group_72;
             this.إضافةبياناتالأبوينToolStripMenuItem.Name = "إضافةبياناتالأبوينToolStripMenuItem";
-            this.إضافةبياناتالأبوينToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.إضافةبياناتالأبوينToolStripMenuItem.Size = new System.Drawing.Size(199, 24);
             this.إضافةبياناتالأبوينToolStripMenuItem.Text = "بيانات الأبوين";
             // 
             // إضافةبياناتالأبوينToolStripMenuItem1
@@ -455,7 +457,7 @@
             this.تعديلبياناتالمستلمToolStripMenuItem});
             this.إضافةمستلمToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.man1;
             this.إضافةمستلمToolStripMenuItem.Name = "إضافةمستلمToolStripMenuItem";
-            this.إضافةمستلمToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.إضافةمستلمToolStripMenuItem.Size = new System.Drawing.Size(199, 24);
             this.إضافةمستلمToolStripMenuItem.Text = "بيانات مستلم";
             // 
             // إضافةمستلمToolStripMenuItem1
@@ -478,7 +480,7 @@
             // 
             this.طباعةالباركودToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.printer;
             this.طباعةالباركودToolStripMenuItem.Name = "طباعةالباركودToolStripMenuItem";
-            this.طباعةالباركودToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.طباعةالباركودToolStripMenuItem.Size = new System.Drawing.Size(199, 24);
             this.طباعةالباركودToolStripMenuItem.Text = "طباعة الباركود";
             this.طباعةالباركودToolStripMenuItem.Click += new System.EventHandler(this.طباعةالباركودToolStripMenuItem_Click);
             // 
@@ -842,7 +844,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
@@ -918,6 +920,14 @@
             // 
             this.BGWorker.WorkerSupportsCancellation = true;
             this.BGWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BGWorker_DoWork);
+            // 
+            // انهاءفترةدراسةالطفلToolStripMenuItem
+            // 
+            this.انهاءفترةدراسةالطفلToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.v3;
+            this.انهاءفترةدراسةالطفلToolStripMenuItem.Name = "انهاءفترةدراسةالطفلToolStripMenuItem";
+            this.انهاءفترةدراسةالطفلToolStripMenuItem.Size = new System.Drawing.Size(199, 24);
+            this.انهاءفترةدراسةالطفلToolStripMenuItem.Text = "انهاء فترة دراسة الطفل";
+            this.انهاءفترةدراسةالطفلToolStripMenuItem.Click += new System.EventHandler(this.انهاءفترةدراسةالطفلToolStripMenuItem_Click);
             // 
             // Kids_Menue
             // 
@@ -1007,5 +1017,6 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.ComponentModel.BackgroundWorker BGWorker;
         private Guna.UI2.WinForms.Guna2Button btStopSend;
+        private System.Windows.Forms.ToolStripMenuItem انهاءفترةدراسةالطفلToolStripMenuItem;
     }
 }

@@ -484,13 +484,15 @@ namespace MyDataAccessLayer
             return table;
         }
 
-        public static int NumberOfKids()
+        public static int NumberOfKids(bool Peroid)
         {
 
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                using (SqlCommand command = new SqlCommand("exec SP_GetNumberOfKids", connection))
+                using (SqlCommand command = new SqlCommand("exec SP_GetNumberOfKids @Peroid", connection))
                 {
+                    command.Parameters.AddWithValue("@Peroid", Peroid);
+
                     try
                     {
                         connection.Open();
@@ -505,6 +507,62 @@ namespace MyDataAccessLayer
             }
 
             
+        }
+
+        public static bool AddToGraduationsTable(int ID)
+        {
+
+           
+            using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
+            {
+                using (SqlCommand command = new SqlCommand("exec SP_AddToGraduation @ID;", connection))
+                {
+                    // إضافة المعاملات
+                
+                    command.Parameters.AddWithValue("@ID", ID);
+                    
+                    try
+                    {
+                        connection.Open();
+                        return command.ExecuteNonQuery() != 0;
+                       
+                    }
+                    catch (Exception )
+                    {
+                        return false;
+                    }
+                }
+            }
+
+        }
+
+        public static DataTable GetGraduations()
+        {
+            DataTable table = new DataTable();
+            SqlConnection Connection = new SqlConnection(ConnectionString.Connectionstring);
+
+
+            SqlCommand command = new SqlCommand("exec SP_GetGraduations", Connection);
+
+            try
+            {
+                Connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    table.Load(reader);
+                }
+                reader.Close();
+
+            }
+            catch (Exception)
+            {
+
+                //Throw;
+            }
+            finally { Connection.Close(); }
+
+            return table;
         }
 
     }

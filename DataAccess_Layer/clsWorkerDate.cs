@@ -256,6 +256,30 @@ namespace MyDataAccessLayer
             return data;
         }
 
-      
+        public static int NumberOfWorkers(bool Peroid)
+        {
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
+            {
+                using (SqlCommand command = new SqlCommand("exec SP_NumberOfWorkers @Peroid", connection))
+                {
+                    command.Parameters.AddWithValue("@Peroid", Peroid);
+
+                    try
+                    {
+                        connection.Open();
+                        return (int)command.ExecuteScalar();
+
+                    }
+                    catch (Exception)
+                    {
+                        return 0;
+                    }
+                }
+            }
+
+
+        }
+
     }
 }

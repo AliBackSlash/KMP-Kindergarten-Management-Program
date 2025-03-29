@@ -1,4 +1,6 @@
-﻿using System;
+﻿using K_M_S_PROGRAM.Kids_sFile;
+using MyBusinessLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +19,18 @@ namespace K_M_S_PROGRAM.Resources
             InitializeComponent();
         }
 
-     
+        public void Kids_s_Repports_Load(object sender, EventArgs e)
+        {
+            DataTable data = clsChild.GetGraduations();
+
+            flCoutaner.Controls.Clear();
+
+            foreach (DataRow row in data.Rows)
+            {
+                GraduationCard card = new GraduationCard(row["Name"].ToString(), Convert.ToDateTime(row["DateOfJoin"])
+                    , Convert.ToDateTime(row["DateOfGraduation"]), row["ImagePath"].ToString(),Convert.ToBoolean( row["Gendor"]));
+                flCoutaner.Controls.Add(card);
+            }
+        }
     }
 }

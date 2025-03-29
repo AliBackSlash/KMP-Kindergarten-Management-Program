@@ -9,6 +9,7 @@ using LiveCharts.WinForms;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Drawing;
+using K_M_S_PROGRAM.GlobalClasses;
 
 namespace K_M_S_PROGRAM.Resources
 {
@@ -18,9 +19,11 @@ namespace K_M_S_PROGRAM.Resources
         {
             InitializeComponent();
         }
-
+        bool Peroid ;
         private void HeaderInfo()
         {
+            Peroid = clsUtil.GetPeroid();
+
             lbTotalAmount.Text = clsMainMenue.TreasuryAmmount().ToString();
             lbCurrentTotalAmount.Text = clsMainMenue.CurrentTreasuryAmmount().ToString();
             if (Convert.ToInt16(lbCurrentTotalAmount.Text) < 0)
@@ -28,18 +31,18 @@ namespace K_M_S_PROGRAM.Resources
             else
                 lbCurrentTotalAmount.ForeColor = Color.White;
 
-            int NumOfStudebts = clsChild.NumberOfKids();
-            int NumOfTeachers = clsEmployee.NumberOfTeachers();
+            int NumOfStudebts = clsChild.NumberOfKids(Peroid);
+            int NumOfTeachers = clsEmployee.NumberOfTeachers(Peroid);
+            
 
 
-
-            string KidsCame =  clsGeneric.GetNumberOfAttendedMember('C').ToString();
+            string KidsCame =  clsGeneric.GetNumberOfAttendedMember('C', Peroid).ToString();
             lbKidsCame.Text = KidsCame != "" ? KidsCame : "0";
 
 
             lbKidsNotCame.Text = (NumOfStudebts - Convert.ToInt16(KidsCame)).ToString();
 
-            string TeacherCame = clsGeneric.GetNumberOfAttendedMember('T').ToString();
+            string TeacherCame = clsGeneric.GetNumberOfAttendedMember('T',Peroid).ToString();
             lbTeacherCame.Text = TeacherCame != "" ? TeacherCame : "0";
 
             lbTeacherNotCame.Text = (NumOfTeachers - Convert.ToInt16(TeacherCame)).ToString();
@@ -141,9 +144,10 @@ namespace K_M_S_PROGRAM.Resources
 
         private void Chart3Info()
         {
+            Peroid = clsUtil.GetPeroid();
             try
             {
-                DataTable degrees = clsGeneric.ReturnGroupOfDataIWant("SELECT AVG(E.TotalDegrees) AS Degree, C.Class FROM DayEvaluation E INNER JOIN KidsPersonalInfo K on k.Code = E.ChildID inner join Clases C ON C.Code = K.ClassID GROUP BY C.Class");
+                DataTable degrees = clsEvaluations.GetAVGOfEvaluation(Peroid);
                 if (degrees == null || degrees.Rows.Count == 0) return;
 
                 SeriesCollection seriesCollection = new SeriesCollection();
@@ -172,13 +176,14 @@ namespace K_M_S_PROGRAM.Resources
         {
             try
             {
-                DataTable inputTable = clsGeneric.ReturnGroupOfDataIWant("select * from TreasuryHistory");
+                DataTable inputTable = clsGeneric.ReturnGroupOfDataIWant("select Month, TotalExpenses,TotalRevenue,TotalRevenue-TotalExpenses Remender from TreasuryHistory");
                 SeriesCollection seriesCollection = new SeriesCollection();
                 List<string> labels = new List<string>(); // قائمة لتخزين أسماء الأشهر
 
                 // إنشاء قوائم لتخزين القيم
                 ChartValues<int> revenueValues = new ChartValues<int>();
                 ChartValues<int> expenseValues = new ChartValues<int>();
+                ChartValues<int> remender = new ChartValues<int>();
 
                 foreach (DataRow row in inputTable.Rows)
                 {
@@ -188,6 +193,7 @@ namespace K_M_S_PROGRAM.Resources
                     // إضافة القيم إلى القوائم
                     revenueValues.Add(Convert.ToInt32(row["TotalRevenue"]));
                     expenseValues.Add(Convert.ToInt32(row["TotalExpenses"]));
+                    remender.Add(Convert.ToInt32(row["Remender"]));
                 }
 
                 // إضافة السلسلتين إلى المجموعة بعد جمع كل القيم
@@ -202,6 +208,13 @@ namespace K_M_S_PROGRAM.Resources
                 {
                     Title = "مصروفات",
                     Values = expenseValues,
+                    DataLabels = true
+                });
+               
+                seriesCollection.Add(new ColumnSeries
+                {
+                    Title = "اجمالي الربح",
+                    Values = remender,
                     DataLabels = true
                 });
 

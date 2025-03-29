@@ -171,29 +171,37 @@ namespace K_M_S_PROGRAM.Resources
             if (picPersonalImage.ImageLocation != null)
                 if (!_HandlePersonImage())
                     return false;
+            try
+            {
 
-            int Pirrimsion = 0;
+                int Pirrimsion = 0;
 
-            if (ckFullAccess.Checked)
-                Pirrimsion = -1;
-            else
-                Pirrimsion = GetPrimsion();
+                if (ckFullAccess.Checked)
+                    Pirrimsion = -1;
+                else
+                    Pirrimsion = GetPrimsion();
 
-            _User.Name = txName.Text;
-            _User.UserName = txUserName.Text;
-            _User.Password = clsUtil.Encrypt(txPassword.Text.Trim());
-            _User.Temp = clsUtil.Encrypt(txTemp.Text.Trim());
-            _User.Pirrimsion = Pirrimsion;
-            _User.ImagePath = picPersonalImage.ImageLocation!=null ?picPersonalImage.ImageLocation:"";
-            _User.Gendor = rdMail.Checked;
-            _User.JopName = txJop.Text;
+                _User.Name = txName.Text;
+                _User.UserName = txUserName.Text;
+                _User.Password = clsUtil.Encrypt(txPassword.Text.Trim());
+                _User.Temp = clsUtil.Encrypt(txTemp.Text.Trim());
+                _User.Pirrimsion = Pirrimsion;
+                _User.ImagePath = picPersonalImage.ImageLocation != null ? picPersonalImage.ImageLocation : "";
+                _User.Gendor = rdMail.Checked;
+                _User.JopName = txJop.Text;
 
-           if ( _User.Save())
-           {
-                ResetAllTexBoxes();
-                return true;
-           }
-            return false;
+                if (_User.Save())
+                {
+                    ResetAllTexBoxes();
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
         }
         void CloseAfterUpdate()
         {

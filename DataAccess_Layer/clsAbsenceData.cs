@@ -121,15 +121,16 @@ namespace MyDataAccessLayer
             }
         }
         //done
-        public static bool ISThisMemberAlreadyRegister(string ID, DateTime Date, char Kind)
+        public static bool ISThisMemberAlreadyRegister(string ID, DateTime Date, char Kind, bool Peroid)
         {
-            string query = "exec SP_ISThisMemberAlreadyRegister @ID ,@Date ,@Kind ";
+            string query = "exec SP_ISThisMemberAlreadyRegister @ID ,@Date ,@Kind ,@Peroid";
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             using (SqlCommand command = new SqlCommand(query, connection))
             {
                 command.Parameters.AddWithValue("@ID", ID);
                 command.Parameters.AddWithValue("@Date", Date);
                 command.Parameters.AddWithValue("@Kind", Kind);
+                command.Parameters.AddWithValue("@Peroid", Peroid);
 
                 try
                 {
@@ -143,15 +144,16 @@ namespace MyDataAccessLayer
             }
         }
         //done
-        public static bool ISThisMemberAlreadyRegisterLeave(string ID, DateTime Date, char Kind)
+        public static bool ISThisMemberAlreadyRegisterLeave(string ID, DateTime Date, char Kind, bool Peroid)
         {
-            string query = "SP_ISThisMemberAlreadyRegisterLeave @ID ,@Date ,@Kind";
+            string query = "SP_ISThisMemberAlreadyRegisterLeave @ID ,@Date ,@Kind,@Peroid";
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             using (SqlCommand command = new SqlCommand(query, connection))
             {
                 command.Parameters.AddWithValue("@ID", ID);
                 command.Parameters.AddWithValue("@Date", Date);
                 command.Parameters.AddWithValue("@Kind", Kind);
+                command.Parameters.AddWithValue("@Peroid", Peroid);
 
                 try
                 {
@@ -281,14 +283,14 @@ namespace MyDataAccessLayer
             return datble;
         }
         //done
-        public static bool FindChild(int ID)
+        public static bool FindChild(int ID,bool Peroid)
         {
-            string query = "exec SP_AbsenceFindChild @ID";
 
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
-            using (SqlCommand command = new SqlCommand(query, connection))
+            using (SqlCommand command = new SqlCommand("exec SP_AbsenceFindChild @ID,@Peroid", connection))
             {
                 command.Parameters.AddWithValue("@ID", ID);
+                command.Parameters.AddWithValue("@Peroid", Peroid);
                 try
                 {
                     connection.Open();
@@ -302,14 +304,15 @@ namespace MyDataAccessLayer
             }
         }
         //done
-        public static bool FindEmployee(int ID)
+        public static bool FindEmployee(int ID, bool Peroid)
         {
-            string query = "exec SP_AbsenceFindEmployee @ID";
 
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
-            using (SqlCommand command = new SqlCommand(query, connection))
+            using (SqlCommand command = new SqlCommand("exec SP_AbsenceFindEmployee @ID,@Peroid", connection))
             {
                 command.Parameters.AddWithValue("@ID", ID);
+                command.Parameters.AddWithValue("@Peroid", Peroid);
+
                 try
                 {
                     connection.Open();
@@ -323,14 +326,15 @@ namespace MyDataAccessLayer
             }
         }
         //done
-        public static bool FindWorker(int ID)
+        public static bool FindWorker(int ID, bool Peroid)
         {
-            string query = "exec SP_AbsenceFindWorker @ID";
 
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
-            using (SqlCommand command = new SqlCommand(query, connection))
+            using (SqlCommand command = new SqlCommand("exec SP_AbsenceFindWorker @ID, @Peroid", connection))
             {
                 command.Parameters.AddWithValue("@ID", ID);
+                command.Parameters.AddWithValue("@Peroid", Peroid);
+
                 try
                 {
                     connection.Open();

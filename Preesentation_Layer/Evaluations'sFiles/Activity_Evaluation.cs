@@ -26,7 +26,7 @@ namespace K_M_S_PROGRAM.Resources
        
         private void FillKidsEvaluation(string Code="")
         {
-            DataTable table = clsEvaluations.GetEvaluationInfo(clsClsases.GetClassID(cmClassName.Text));
+            DataTable table = clsEvaluations.GetEvaluationInfo(clsClsases.GetClassID(cmClassName.Text),clsUtil.GetPeroid());
 
             Image image = null;
             if(Code!="")
@@ -82,9 +82,9 @@ namespace K_M_S_PROGRAM.Resources
        
         private void GetStudentDayDegree()
         {
-            bool Success = clsEvaluations.ResetDally();
+          
 
-            if (Success)
+            if (clsEvaluations.ResetDally())
                 clsUtil.Show("تم بنجاح");
             else
                 clsUtil.Show("لم تتم  تأكد من أنك قمت بملئ المدخلات بصورة صحيحة", false);

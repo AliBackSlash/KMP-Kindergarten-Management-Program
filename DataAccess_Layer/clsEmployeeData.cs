@@ -289,13 +289,15 @@ namespace MyDataAccessLayer
 
             return find;
         }
-        public static int NumberOfTeachers()
+        public static int NumberOfTeachers(bool Peroid)
         {
 
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
-                using (SqlCommand command = new SqlCommand("exec SP_NumberOfTeachers", connection))
+                using (SqlCommand command = new SqlCommand("exec SP_NumberOfTeachers @Peroid", connection))
                 {
+                    command.Parameters.AddWithValue("@Peroid", Peroid);
+
                     try
                     {
                         connection.Open();

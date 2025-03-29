@@ -30,22 +30,22 @@
         {
             SATAUiFramework.BorderRadius borderRadius1 = new SATAUiFramework.BorderRadius();
             this.sataPanel1 = new SATAUiFramework.SATAPanel();
+            this.picPhote = new SATAUiFramework.Controls.SATAPictureBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbNumOfStudyYears = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbDateOfGraduation = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lbCode = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.sataPictureBox1 = new SATAUiFramework.Controls.SATAPictureBox();
+            this.lbDateOfJoin = new System.Windows.Forms.Label();
+            this.lbName = new System.Windows.Forms.Label();
             this.sataPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sataPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPhote)).BeginInit();
             this.SuspendLayout();
             // 
             // sataPanel1
             // 
             this.sataPanel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.sataPanel1.BackColor2 = System.Drawing.Color.Red;
+            this.sataPanel1.BackColor2 = System.Drawing.Color.SeaGreen;
             this.sataPanel1.BorderColor = System.Drawing.Color.Black;
             borderRadius1.BottomLeft = 10;
             borderRadius1.BottomRight = 10;
@@ -53,19 +53,36 @@
             borderRadius1.TopRight = 10;
             this.sataPanel1.BorderRadius = borderRadius1;
             this.sataPanel1.BorderThickness = 0;
-            this.sataPanel1.Controls.Add(this.sataPictureBox1);
+            this.sataPanel1.Controls.Add(this.picPhote);
             this.sataPanel1.Controls.Add(this.label6);
-            this.sataPanel1.Controls.Add(this.label5);
+            this.sataPanel1.Controls.Add(this.lbNumOfStudyYears);
             this.sataPanel1.Controls.Add(this.label3);
-            this.sataPanel1.Controls.Add(this.label4);
+            this.sataPanel1.Controls.Add(this.lbDateOfGraduation);
             this.sataPanel1.Controls.Add(this.label2);
-            this.sataPanel1.Controls.Add(this.lbCode);
-            this.sataPanel1.Controls.Add(this.label1);
+            this.sataPanel1.Controls.Add(this.lbDateOfJoin);
+            this.sataPanel1.Controls.Add(this.lbName);
             this.sataPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sataPanel1.Location = new System.Drawing.Point(0, 0);
             this.sataPanel1.Name = "sataPanel1";
-            this.sataPanel1.Size = new System.Drawing.Size(510, 308);
+            this.sataPanel1.Size = new System.Drawing.Size(598, 308);
             this.sataPanel1.TabIndex = 0;
+            // 
+            // picPhote
+            // 
+            this.picPhote.BackColor = System.Drawing.Color.Transparent;
+            this.picPhote.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.picPhote.BorderColor = System.Drawing.Color.Black;
+            this.picPhote.BorderColor2 = System.Drawing.Color.Crimson;
+            this.picPhote.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.picPhote.BorderSize = 1;
+            this.picPhote.GradientAngle = 50F;
+            this.picPhote.Image = global::K_M_S_PROGRAM.Properties.Resources.boy;
+            this.picPhote.Location = new System.Drawing.Point(18, 82);
+            this.picPhote.Name = "picPhote";
+            this.picPhote.Size = new System.Drawing.Size(156, 156);
+            this.picPhote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPhote.TabIndex = 0;
+            this.picPhote.TabStop = false;
             // 
             // label6
             // 
@@ -73,25 +90,26 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(320, 251);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(408, 251);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(186, 32);
             this.label6.TabIndex = 7;
             this.label6.Text = "عدد سنين الدراسة";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label5
+            // lbNumOfStudyYears
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(52, 251);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(226, 26);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "؟؟؟";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbNumOfStudyYears.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbNumOfStudyYears.BackColor = System.Drawing.Color.Transparent;
+            this.lbNumOfStudyYears.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNumOfStudyYears.ForeColor = System.Drawing.Color.White;
+            this.lbNumOfStudyYears.Location = new System.Drawing.Point(89, 248);
+            this.lbNumOfStudyYears.Name = "lbNumOfStudyYears";
+            this.lbNumOfStudyYears.Size = new System.Drawing.Size(313, 39);
+            this.lbNumOfStudyYears.TabIndex = 6;
+            this.lbNumOfStudyYears.Text = "؟؟؟";
+            this.lbNumOfStudyYears.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
@@ -99,25 +117,26 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(349, 161);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(437, 161);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(146, 32);
             this.label3.TabIndex = 7;
             this.label3.Text = "تاريخ التخرج ";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label4
+            // lbDateOfGraduation
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(97, 161);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(226, 26);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "؟؟؟";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbDateOfGraduation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbDateOfGraduation.BackColor = System.Drawing.Color.Transparent;
+            this.lbDateOfGraduation.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDateOfGraduation.ForeColor = System.Drawing.Color.White;
+            this.lbDateOfGraduation.Location = new System.Drawing.Point(185, 158);
+            this.lbDateOfGraduation.Name = "lbDateOfGraduation";
+            this.lbDateOfGraduation.Size = new System.Drawing.Size(246, 39);
+            this.lbDateOfGraduation.TabIndex = 6;
+            this.lbDateOfGraduation.Text = "؟؟؟";
+            this.lbDateOfGraduation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
@@ -125,55 +144,39 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(349, 102);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(437, 102);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(148, 32);
             this.label2.TabIndex = 5;
             this.label2.Text = "تاريخ الإلتحاق";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lbCode
+            // lbDateOfJoin
             // 
-            this.lbCode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbCode.BackColor = System.Drawing.Color.Transparent;
-            this.lbCode.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCode.ForeColor = System.Drawing.Color.Black;
-            this.lbCode.Location = new System.Drawing.Point(97, 102);
-            this.lbCode.Name = "lbCode";
-            this.lbCode.Size = new System.Drawing.Size(226, 26);
-            this.lbCode.TabIndex = 4;
-            this.lbCode.Text = "؟؟؟";
-            this.lbCode.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbDateOfJoin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbDateOfJoin.BackColor = System.Drawing.Color.Transparent;
+            this.lbDateOfJoin.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDateOfJoin.ForeColor = System.Drawing.Color.White;
+            this.lbDateOfJoin.Location = new System.Drawing.Point(185, 99);
+            this.lbDateOfJoin.Name = "lbDateOfJoin";
+            this.lbDateOfJoin.Size = new System.Drawing.Size(246, 39);
+            this.lbDateOfJoin.TabIndex = 4;
+            this.lbDateOfJoin.Text = "؟؟؟";
+            this.lbDateOfJoin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label1
+            // lbName
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("PT Bold Stars", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(139, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(361, 63);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "علي السعيد علي متولي";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // sataPictureBox1
-            // 
-            this.sataPictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.sataPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.sataPictureBox1.BorderColor = System.Drawing.Color.Black;
-            this.sataPictureBox1.BorderColor2 = System.Drawing.Color.Crimson;
-            this.sataPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.sataPictureBox1.BorderSize = 1;
-            this.sataPictureBox1.GradientAngle = 50F;
-            this.sataPictureBox1.Image = global::K_M_S_PROGRAM.Properties.Resources.boy;
-            this.sataPictureBox1.Location = new System.Drawing.Point(23, 50);
-            this.sataPictureBox1.Name = "sataPictureBox1";
-            this.sataPictureBox1.Size = new System.Drawing.Size(156, 156);
-            this.sataPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.sataPictureBox1.TabIndex = 0;
-            this.sataPictureBox1.TabStop = false;
+            this.lbName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbName.BackColor = System.Drawing.Color.Transparent;
+            this.lbName.Font = new System.Drawing.Font("PT Bold Stars", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbName.ForeColor = System.Drawing.Color.White;
+            this.lbName.Location = new System.Drawing.Point(3, 0);
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(595, 63);
+            this.lbName.TabIndex = 3;
+            this.lbName.Text = "علي السعيد علي متولي";
+            this.lbName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // GraduationCard
             // 
@@ -183,10 +186,10 @@
             this.Controls.Add(this.sataPanel1);
             this.Name = "GraduationCard";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Size = new System.Drawing.Size(510, 308);
+            this.Size = new System.Drawing.Size(598, 308);
             this.sataPanel1.ResumeLayout(false);
             this.sataPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sataPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPhote)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -195,12 +198,12 @@
 
         private SATAUiFramework.SATAPanel sataPanel1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbDateOfGraduation;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lbCode;
-        private System.Windows.Forms.Label label1;
-        private SATAUiFramework.Controls.SATAPictureBox sataPictureBox1;
+        private System.Windows.Forms.Label lbDateOfJoin;
+        private System.Windows.Forms.Label lbName;
+        private SATAUiFramework.Controls.SATAPictureBox picPhote;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbNumOfStudyYears;
     }
 }

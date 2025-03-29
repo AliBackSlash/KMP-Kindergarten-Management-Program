@@ -33,11 +33,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            SATAUiFramework.BorderRadius borderRadius2 = new SATAUiFramework.BorderRadius();
+            SATAUiFramework.BorderRadius borderRadius3 = new SATAUiFramework.BorderRadius();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            SATAUiFramework.BorderRadius borderRadius2 = new SATAUiFramework.BorderRadius();
-            SATAUiFramework.BorderRadius borderRadius3 = new SATAUiFramework.BorderRadius();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.sataPanel4 = new SATAUiFramework.SATAPanel();
             this.btDelete = new Guna.UI2.WinForms.Guna2Button();
@@ -45,15 +45,17 @@
             this.sataPictureBox2 = new SATAUiFramework.Controls.SATAPictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvTreasuryHistory = new MetroFramework.Controls.MetroGrid();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.sataPanel1 = new SATAUiFramework.SATAPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sataPanel2 = new SATAUiFramework.SATAPanel();
-            this.pieChart1 = new LiveCharts.WinForms.PieChart();
             this.sEllipse1 = new Sipaa.Framework.SEllipse();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
+            this.pieChart1 = new LiveCharts.Wpf.PieChart();
             this.tableLayoutPanel1.SuspendLayout();
             this.sataPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sataPictureBox2)).BeginInit();
@@ -195,6 +197,7 @@
             this.dgvTreasuryHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6,
+            this.Column1,
             this.Amount});
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
@@ -227,41 +230,6 @@
             this.dgvTreasuryHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTreasuryHistory.Size = new System.Drawing.Size(654, 539);
             this.dgvTreasuryHistory.TabIndex = 5;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.NullValue = "0";
-            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridViewTextBoxColumn5.HeaderText = "إجمالي المصروفات";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 250;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.NullValue = "0";
-            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridViewTextBoxColumn6.HeaderText = "إجمالي الإيرادات";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // Amount
-            // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            this.Amount.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Amount.HeaderText = "الشهر";
-            this.Amount.Name = "Amount";
-            this.Amount.ReadOnly = true;
-            this.Amount.Width = 200;
             // 
             // tableLayoutPanel3
             // 
@@ -299,12 +267,12 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackgroundImage = global::K_M_S_PROGRAM.Properties.Resources.reserve;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(131, 1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(429, 170);
+            this.pictureBox1.Size = new System.Drawing.Size(166, 170);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -319,26 +287,70 @@
             borderRadius3.TopRight = 10;
             this.sataPanel2.BorderRadius = borderRadius3;
             this.sataPanel2.BorderThickness = 0;
-            this.sataPanel2.Controls.Add(this.pieChart1);
+            this.sataPanel2.Controls.Add(this.elementHost1);
             this.sataPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sataPanel2.Location = new System.Drawing.Point(3, 179);
             this.sataPanel2.Name = "sataPanel2";
             this.sataPanel2.Size = new System.Drawing.Size(429, 361);
             this.sataPanel2.TabIndex = 3;
             // 
-            // pieChart1
-            // 
-            this.pieChart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pieChart1.Location = new System.Drawing.Point(0, 0);
-            this.pieChart1.Name = "pieChart1";
-            this.pieChart1.Size = new System.Drawing.Size(429, 361);
-            this.pieChart1.TabIndex = 0;
-            this.pieChart1.Text = "pieChart1";
-            // 
             // sEllipse1
             // 
             this.sEllipse1.CornerRadius = 20;
             this.sEllipse1.TargetControl = this.dgvTreasuryHistory;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.NullValue = "0";
+            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewTextBoxColumn5.HeaderText = "إجمالي المصروفات";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.NullValue = "0";
+            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewTextBoxColumn6.HeaderText = "إجمالي الإيرادات";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.HeaderText = "المبلغ الصافي";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Amount
+            // 
+            this.Amount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            this.Amount.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Amount.HeaderText = "الشهر";
+            this.Amount.Name = "Amount";
+            this.Amount.ReadOnly = true;
+            this.Amount.Width = 64;
+            // 
+            // elementHost1
+            // 
+            this.elementHost1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.elementHost1.Location = new System.Drawing.Point(0, 0);
+            this.elementHost1.Name = "elementHost1";
+            this.elementHost1.Size = new System.Drawing.Size(429, 361);
+            this.elementHost1.TabIndex = 0;
+            this.elementHost1.Text = "elementHost1";
+            this.elementHost1.Child = this.pieChart1;
             // 
             // TreasuryHistory
             // 
@@ -380,10 +392,12 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
         private SATAUiFramework.SATAPanel sataPanel2;
-        private LiveCharts.WinForms.PieChart pieChart1;
+        private Guna.UI2.WinForms.Guna2Button btDelete;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Amount;
-        private Guna.UI2.WinForms.Guna2Button btDelete;
+        private System.Windows.Forms.Integration.ElementHost elementHost1;
+        private LiveCharts.Wpf.PieChart pieChart1;
     }
 }

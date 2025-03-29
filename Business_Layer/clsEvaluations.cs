@@ -10,12 +10,16 @@ namespace MyBusinessLayer
 {
     public class clsEvaluations
     {
-        public static DataTable GetEvaluationInfo(short className)
+        public static DataTable GetEvaluationInfo(short className, bool Peroid)
         {
-            return clsEvaluationsData.GetEvaluationInfo(className);
+            return clsEvaluationsData.GetEvaluationInfo(className,Peroid);
         }
 
-        public static DataTable GetWinnerHistory()
+        public static DataTable GetAVGOfEvaluation(bool Peroid)
+        { 
+            return clsEvaluationsData.GetAVGOfEvaluation(Peroid);
+        }
+            public static DataTable GetWinnerHistory()
         {
             return clsEvaluationsData.GetWinnerHistory();
         }

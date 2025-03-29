@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -129,6 +130,11 @@ namespace MyBusinessLayer
         {
             return clsWorkerDate.DeleteWorker(ID);
         }
-       
+        public static int NumberOfTeachers(bool peroid)
+        {
+
+            return clsWorkerDate.NumberOfWorkers(peroid);
+
+        }
     }
 }
