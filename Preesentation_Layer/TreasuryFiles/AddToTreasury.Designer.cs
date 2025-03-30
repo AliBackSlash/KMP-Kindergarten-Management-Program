@@ -1,6 +1,6 @@
 ﻿namespace K_M_S_PROGRAM.TreasuryFiles
 {
-    partial class AddToTreasury
+    partial class Transaction
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddToTreasury));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Transaction));
             this.rdOutputs = new CodeeloUI.Controls.CodeeloRadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.txAmount = new Guna.UI2.WinForms.Guna2TextBox();
@@ -164,8 +164,9 @@
             this.label3.TabIndex = 26;
             this.label3.Text = "إيرادات";
             // 
-            // AddToTreasury
+            // Transaction
             // 
+            this.AcceptButton = this.btSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(250, 208);
@@ -178,7 +179,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "AddToTreasury";
+            this.Name = "Transaction";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

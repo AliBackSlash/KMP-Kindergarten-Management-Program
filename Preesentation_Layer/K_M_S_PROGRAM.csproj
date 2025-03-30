@@ -974,6 +974,9 @@
   <ItemGroup>
     <None Include="Resources\Recovered_png_file%28952%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\404 error with person looking for-rafiki.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -33,6 +33,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             SATAUiFramework.BorderRadius borderRadius2 = new SATAUiFramework.BorderRadius();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -41,16 +45,18 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.sataPanel4 = new SATAUiFramework.SATAPanel();
             this.sataPictureBox1 = new SATAUiFramework.Controls.SATAPictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvEmployeesAmounts = new MetroFramework.Controls.MetroGrid();
+            this.Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AddM = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dis = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mstEmployeeDis = new MetroFramework.Controls.MetroContextMenu(this.components);
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.تفاصيلالخصمToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,12 +86,6 @@
             this.sEllipse1 = new Sipaa.Framework.SEllipse();
             this.sEllipse2 = new Sipaa.Framework.SEllipse();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AddM = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dis = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.sataPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sataPictureBox1)).BeginInit();
@@ -237,6 +237,60 @@
             this.dgvEmployeesAmounts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvEmployeesAmounts.Size = new System.Drawing.Size(527, 636);
             this.dgvEmployeesAmounts.TabIndex = 5;
+            // 
+            // Code
+            // 
+            this.Code.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Code.HeaderText = "الكود";
+            this.Code.Name = "Code";
+            this.Code.Width = 63;
+            // 
+            // Name
+            // 
+            this.Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.Name.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Name.FillWeight = 74.25744F;
+            this.Name.HeaderText = "إسم المعلم";
+            this.Name.Name = "Name";
+            // 
+            // Date
+            // 
+            this.Date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Date.HeaderText = "التاريخ";
+            this.Date.Name = "Date";
+            this.Date.Width = 74;
+            // 
+            // Amount
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            this.Amount.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Amount.FillWeight = 124.4585F;
+            this.Amount.HeaderText = "المبلغ ";
+            this.Amount.Name = "Amount";
+            this.Amount.Width = 73;
+            // 
+            // AddM
+            // 
+            dataGridViewCellStyle4.NullValue = "0";
+            this.AddM.DefaultCellStyle = dataGridViewCellStyle4;
+            this.AddM.FillWeight = 76.98713F;
+            this.AddM.HeaderText = "حوافز";
+            this.AddM.Name = "AddM";
+            this.AddM.Width = 67;
+            // 
+            // Dis
+            // 
+            dataGridViewCellStyle5.NullValue = "0";
+            this.Dis.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Dis.FillWeight = 100.5543F;
+            this.Dis.HeaderText = "خصم";
+            this.Dis.Name = "Dis";
+            this.Dis.Width = 64;
             // 
             // mstEmployeeDis
             // 
@@ -400,8 +454,8 @@
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 2;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.39806F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.60194F));
             this.tableLayoutPanel6.Controls.Add(this.lbTotal, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -421,7 +475,7 @@
             this.lbTotal.Location = new System.Drawing.Point(10, 5);
             this.lbTotal.Margin = new System.Windows.Forms.Padding(5, 5, 10, 5);
             this.lbTotal.Name = "lbTotal";
-            this.lbTotal.Size = new System.Drawing.Size(346, 39);
+            this.lbTotal.Size = new System.Drawing.Size(328, 39);
             this.lbTotal.TabIndex = 3;
             this.lbTotal.Text = "0";
             this.lbTotal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -432,10 +486,10 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(366, 5);
+            this.label3.Location = new System.Drawing.Point(348, 5);
             this.label3.Margin = new System.Windows.Forms.Padding(10, 5, 5, 5);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 39);
+            this.label3.Size = new System.Drawing.Size(157, 39);
             this.label3.TabIndex = 2;
             this.label3.Text = "إجمالي المبلغ ";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -593,60 +647,6 @@
             // printDocument1
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
-            // 
-            // Code
-            // 
-            this.Code.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Code.HeaderText = "الكود";
-            this.Code.Name = "Code";
-            this.Code.Width = 63;
-            // 
-            // Name
-            // 
-            this.Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.Name.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Name.FillWeight = 74.25744F;
-            this.Name.HeaderText = "إسم المعلم";
-            this.Name.Name = "Name";
-            // 
-            // Date
-            // 
-            this.Date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Date.HeaderText = "التاريخ";
-            this.Date.Name = "Date";
-            this.Date.Width = 74;
-            // 
-            // Amount
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.Amount.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Amount.FillWeight = 124.4585F;
-            this.Amount.HeaderText = "المبلغ ";
-            this.Amount.Name = "Amount";
-            this.Amount.Width = 73;
-            // 
-            // AddM
-            // 
-            dataGridViewCellStyle4.NullValue = "0";
-            this.AddM.DefaultCellStyle = dataGridViewCellStyle4;
-            this.AddM.FillWeight = 76.98713F;
-            this.AddM.HeaderText = "حوافز";
-            this.AddM.Name = "AddM";
-            this.AddM.Width = 67;
-            // 
-            // Dis
-            // 
-            dataGridViewCellStyle5.NullValue = "0";
-            this.Dis.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Dis.FillWeight = 100.5543F;
-            this.Dis.HeaderText = "خصم";
-            this.Dis.Name = "Dis";
-            this.Dis.Width = 64;
             // 
             // EmploeesAccounts
             // 

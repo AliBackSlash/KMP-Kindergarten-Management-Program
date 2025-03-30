@@ -27,8 +27,30 @@ namespace K_M_S_PROGRAM.TreasuryFiles
             dgvTreasuryHistory.Rows.Clear();
             foreach (DataRow row in data.Rows)
             {
-                dgvTreasuryHistory.Rows.Add(row["TotalExpenses"], row["TotalRevenue"],Convert.ToSingle(row["TotalRevenue"]) - Convert.ToSingle(row["TotalExpenses"]), row["Month"]);
+                dgvTreasuryHistory.Rows.Add(row["TotalExpenses"], row["TotalRevenue"],row["Total"], row["Month"]);
             }
+            fillChaaaart(data);
+            lbTotal.Text = data.Compute("SUM(Total)", string.Empty).ToString();
+        }
+
+        void fillChaaaart(DataTable data)
+        {
+            SeriesCollection seriesCollection = new SeriesCollection();
+            Random r = new Random();
+
+            foreach (DataRow row in data.Rows)
+            {
+
+                seriesCollection.Add(new PieSeries
+                {
+                    Title = row["Month"].ToString(),
+                    Values = new ChartValues<float> { Convert.ToSingle(row["Total"]) },
+                    DataLabels = true,
+
+                });
+            }
+
+            pieChart1.Series = seriesCollection;
         }
         private void TreasuryHistory_Load(object sender, EventArgs e)
         {
@@ -60,6 +82,23 @@ namespace K_M_S_PROGRAM.TreasuryFiles
                 else
                     clsUtil.Show("حدث خطأ", false);            
             }
+        }
+
+        private void ctmsTask_Opening(object sender, CancelEventArgs e)
+        {
+            if (Convert.ToSingle(dgvTreasuryHistory.CurrentRow.Cells[2].Value) <= 0)
+                سحبمبلغToolStripMenuItem.Enabled = false;
+            else
+                سحبمبلغToolStripMenuItem.Enabled = true;
+
+        }
+
+        private void سحبمبلغToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Transaction transaction = new Transaction(dgvTreasuryHistory.CurrentRow.Cells[3].Value.ToString(), Convert.ToSingle(dgvTreasuryHistory.CurrentRow.Cells[2].Value));
+            transaction.ShowDialog();
+            
+            FillData();
         }
     }
 }

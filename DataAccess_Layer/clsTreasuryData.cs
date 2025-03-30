@@ -284,6 +284,25 @@ namespace MyDataAccessLayer
                 }
             }
         }
+        public static bool Trunsaction(string Month,float Amount)
+        {
+            using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
+            using (SqlCommand command = new SqlCommand("Exec SP_Trunsaction @Month,@Amount", connection))
+            {
+                command.Parameters.AddWithValue("@Month", Month);
+                command.Parameters.AddWithValue("@Amount", Amount);
+
+                try
+                {
+                    connection.Open();
+                    return command.ExecuteNonQuery() != 0;
+                }
+                catch (Exception)
+                {
+                    return false;
+                }
+            }
+        }
 
         public static DataTable GetCurrentMonthes()
         {

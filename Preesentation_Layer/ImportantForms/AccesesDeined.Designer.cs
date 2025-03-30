@@ -34,7 +34,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::K_M_S_PROGRAM.Properties.Resources.Acces_Denied;
+            this.pictureBox1.BackgroundImage = global::K_M_S_PROGRAM.Properties.Resources._404_error_with_person_looking_for_rafiki;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);

@@ -67,7 +67,7 @@ namespace K_M_S_PROGRAM.TreasuryFiles
 
         private void btStopSend_Click(object sender, EventArgs e)
         {
-            AddToTreasury toTreasury = new AddToTreasury();
+            Transaction toTreasury = new Transaction();
             toTreasury.ShowDialog();
             FillData();
         }

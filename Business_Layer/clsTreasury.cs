@@ -77,7 +77,10 @@ namespace MyBusinessLayer
             return Success;
           
         }
-
+        public static bool Trunsaction(string Month, float Amount)
+        {
+            return clsTreasuryData.Trunsaction(Month, Amount);
+        }
         public static DataTable GetHistory()
         {
             return clsTreasuryData.GetHistory();
