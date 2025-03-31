@@ -48,7 +48,7 @@ namespace K_M_S_PROGRAM.UsersFiles
         private void RegistersList_Load(object sender, EventArgs e)
         {
             DTPDateFrom.MaxDate = DateTime.Now;
-            DTPDateTo.MaxDate = DateTime.Now.AddDays(1);
+            DTPDateTo.MinDate = DateTime.Now;
             FillInfo();
         }
 
@@ -92,9 +92,14 @@ namespace K_M_S_PROGRAM.UsersFiles
 
         private void txSearsh_TextChanged(object sender, EventArgs e)
         {
-            DTPDateTo.MinDate = DTPDateFrom.MaxDate.AddDays(1);
+            DTPDateTo.MinDate = DTPDateFrom.MinDate.AddDays(1);
             FillInfo(txSearsh.Text);
 
+        }
+
+        private void DTPDateTo_ValueChanged(object sender, EventArgs e)
+        {
+            FillInfo(txSearsh.Text);
         }
     }
 }

@@ -47,11 +47,6 @@ namespace MyBusinessLayer
             return clsGenericData.DeleteTableData(query);
         }
        
-        public static bool Reset(string Column, string date)
-        {
-            return clsGenericData.UpdateDateOfOpen(Column, date);
-        }
-
         public static string ReturnLastDateOfOpen(string query)
         {
             return clsGenericData.ReturnLastDateOfOpen(query);

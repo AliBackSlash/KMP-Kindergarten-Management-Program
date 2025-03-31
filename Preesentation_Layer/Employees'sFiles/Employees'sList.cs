@@ -188,13 +188,12 @@ namespace K_M_S_PROGRAM.Resources
 
         private void Save_Notes(string Note)
         {
-            string Date = DateTime.Now.ToString("dd-MM-yyyy");
             foreach (DataGridViewRow row in dgvEmployeesMenue.Rows)
             {
                 if (Convert.ToBoolean(row.Cells[11].Value))
                 {
 
-                    clsNotes.AddNotes(Convert.ToInt16(row.Cells[1].Value), Note, rdTeacher.Checked ? 'T' : 'W', Date);
+                    clsNotes.AddNotes(Convert.ToInt16(row.Cells[1].Value), Note, rdTeacher.Checked ? 'T' : 'W');
 
                 }
             }
@@ -253,8 +252,7 @@ namespace K_M_S_PROGRAM.Resources
 
         private void SaveNotes(string Note)
         {
-            string Date = DateTime.Now.ToString("dd-MM-yyyy");
-            if (clsNotes.AddNotes(Convert.ToInt16(dgvEmployeesMenue.CurrentRow.Cells[1].Value), Note,rdTeacher.Checked?'T':'W', Date))
+            if (clsNotes.AddNotes(Convert.ToInt16(dgvEmployeesMenue.CurrentRow.Cells[1].Value), Note,rdTeacher.Checked?'T':'W'))
                 clsUtil.Show("تم حفظ الملاحظة");
             else
                 clsUtil.Show("لم يتم حفظ الملاحظة",false);

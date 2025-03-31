@@ -136,10 +136,9 @@ namespace K_M_S_PROGRAM.Resources
             {
                 dgvKidsEvaluation.EndEdit();
                 GetStudentDayDegree();
-                if (clsGeneric.Reset("DateOfEvaluation", Date)) { 
-                    OneGetEvaluation = clsGeneric.ReturnLastDateOfOpen("select DateOfEvaluation from DateOpen");
-                    dgvKidsEvaluation.Rows.Clear();
-                }
+                OneGetEvaluation = clsGeneric.ReturnLastDateOfOpen("select DateOfEvaluation from DateOpen");
+                dgvKidsEvaluation.Rows.Clear();
+                
             }
         }
 

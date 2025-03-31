@@ -145,32 +145,6 @@ namespace MyDataAccessLayer
             return deleted;
         }
      
-        public static bool UpdateDateOfOpen(string Column, string date)
-        {
-
-            SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring);
-            string query = $"update DateOpen set {Column} = @date";
-
-            SqlCommand command = new SqlCommand(query, connection);
-
-            command.Parameters.AddWithValue("@date", date);
-
-            bool Saccess = false;
-            try
-            {
-                connection.Open();
-                if (command.ExecuteNonQuery() != 0)
-                    Saccess = true;
-            }
-            catch (Exception)
-            {
-                Saccess = false;
-            }
-            finally { connection.Close(); }
-
-            return Saccess;
-        }
-
         public static string ReturnLastDateOfOpen(string query)
         {
 

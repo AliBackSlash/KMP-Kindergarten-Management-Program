@@ -171,6 +171,7 @@
             this.btDelete.ShadowDecoration.Parent = this.btDelete;
             this.btDelete.Size = new System.Drawing.Size(38, 40);
             this.btDelete.TabIndex = 49;
+            this.btDelete.Visible = false;
             this.btDelete.Click += new System.EventHandler(this.btDelete_Click);
             // 
             // lbFrom
@@ -221,6 +222,7 @@
             this.DTPDateFrom.Size = new System.Drawing.Size(133, 35);
             this.DTPDateFrom.TabIndex = 32;
             this.DTPDateFrom.TextColor = System.Drawing.Color.Black;
+            this.DTPDateFrom.Visible = false;
             this.DTPDateFrom.ValueChanged += new System.EventHandler(this.txSearsh_TextChanged);
             // 
             // DTPDateTo
@@ -244,7 +246,7 @@
             this.DTPDateTo.TabIndex = 45;
             this.DTPDateTo.TextColor = System.Drawing.Color.Black;
             this.DTPDateTo.Visible = false;
-            this.DTPDateTo.ValueChanged += new System.EventHandler(this.txSearsh_TextChanged);
+            this.DTPDateTo.ValueChanged += new System.EventHandler(this.DTPDateTo_ValueChanged);
             // 
             // ckDate
             // 
@@ -262,6 +264,7 @@
             this.ckDate.Size = new System.Drawing.Size(27, 24);
             this.ckDate.TabIndex = 44;
             this.ckDate.UseVisualStyleBackColor = true;
+            this.ckDate.Visible = false;
             this.ckDate.CheckedChanged += new System.EventHandler(this.ckDate_CheckedChanged);
             // 
             // label3

@@ -51,13 +51,13 @@
             this.label7 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvTreasryMonthlyData = new MetroFramework.Controls.MetroGrid();
+            this.sEllipse1 = new Sipaa.Framework.SEllipse();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sEllipse1 = new Sipaa.Framework.SEllipse();
             this.tableLayoutPanel1.SuspendLayout();
             this.sataPanel4.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -358,6 +358,11 @@
             this.dgvTreasryMonthlyData.Size = new System.Drawing.Size(1089, 576);
             this.dgvTreasryMonthlyData.TabIndex = 5;
             // 
+            // sEllipse1
+            // 
+            this.sEllipse1.CornerRadius = 20;
+            this.sEllipse1.TargetControl = this.dgvTreasryMonthlyData;
+            // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
@@ -377,7 +382,7 @@
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridViewTextBoxColumn6.HeaderText = "التاريخ";
+            this.dataGridViewTextBoxColumn6.HeaderText = "تاريخ الدفع";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
@@ -387,7 +392,7 @@
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
             this.Amount.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Amount.HeaderText = "الوقت";
+            this.Amount.HeaderText = "وقت الدفع";
             this.Amount.Name = "Amount";
             this.Amount.ReadOnly = true;
             this.Amount.Width = 200;
@@ -412,11 +417,6 @@
             this.Column2.HeaderText = "منفذ العملية";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            // 
-            // sEllipse1
-            // 
-            this.sEllipse1.CornerRadius = 20;
-            this.sEllipse1.TargetControl = this.dgvTreasryMonthlyData;
             // 
             // TreasuryData
             // 
@@ -460,12 +460,12 @@
         private MetroFramework.Controls.MetroGrid dgvTreasryMonthlyData;
         private Sipaa.Framework.SEllipse sEllipse1;
         private System.Windows.Forms.ComboBox cmDays;
+        private Guna.UI2.WinForms.Guna2Button btStopSend;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Amount;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private Guna.UI2.WinForms.Guna2Button btStopSend;
     }
 }

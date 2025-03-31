@@ -67,7 +67,6 @@
             this.txNote.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txNote.Size = new System.Drawing.Size(428, 291);
             this.txNote.TabIndex = 34;
-            this.txNote.TextChanged += new System.EventHandler(this.txNote_TextChanged);
             // 
             // label3
             // 
@@ -82,7 +81,6 @@
             this.label3.Size = new System.Drawing.Size(127, 31);
             this.label3.TabIndex = 35;
             this.label3.Text = "أكتب ملاحظة";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Notes
             // 

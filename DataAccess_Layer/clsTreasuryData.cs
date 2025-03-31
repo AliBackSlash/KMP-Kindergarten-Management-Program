@@ -251,7 +251,7 @@ namespace MyDataAccessLayer
             }
         }
 
-        public static bool MoveMonthlyToYearlyTreasury()
+        public static bool MoveMonthlyToYearlyTreasuryandSaveTreasuryHistoryData()
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             using (SqlCommand command = new SqlCommand("Exec SP_MoveMonthlyToYearlyTreasury ", connection))
@@ -268,22 +268,7 @@ namespace MyDataAccessLayer
             }
         }
 
-        public static bool SaveTreasuryHistoryData()
-        {
-            using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
-            using (SqlCommand command = new SqlCommand("Exec SP_SaveTreasuryHistoryData", connection))
-            {
-                try
-                {
-                    connection.Open();
-                    return command.ExecuteNonQuery() != 0;
-                }
-                catch (Exception)
-                {
-                    return false;
-                }
-            }
-        }
+       
         public static bool Trunsaction(string Month,float Amount)
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))

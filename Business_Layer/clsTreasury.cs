@@ -66,11 +66,8 @@ namespace MyBusinessLayer
             bool Success = false;
             if (clsGeneric.ReturnLastDateOfOpen("select DateOfResetTrueasury from DateOpen") != Month)
             {
-                if (clsTreasuryData.MoveMonthlyToYearlyTreasury() && clsTreasuryData.SaveTreasuryHistoryData())
-                {
+                if (clsTreasuryData.MoveMonthlyToYearlyTreasuryandSaveTreasuryHistoryData())
                     Success = true;
-                    clsGeneric.Reset("DateOfResetTrueasury", Month);
-                }
                else
                     Success = false;
             }

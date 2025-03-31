@@ -128,7 +128,16 @@ namespace K_M_S_PROGRAM.Resources
         private void كتابةملاحظةToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Notes frm = new Notes(dgvPaymentSubscriotins.CurrentRow.Cells["Code"].Value.ToString(), 'C');
+            frm.Get += SaveNote;
             frm.ShowDialog();
+        }
+
+        private void SaveNote(string Note)
+        {
+            if (clsNotes.AddNotes((int)dgvPaymentSubscriotins.CurrentRow.Cells[1].Value, Note, 'C'))
+                clsUtil.Show("تم حفظ الملاحظة");
+            else
+                clsUtil.Show("لم يتم حفظ الملاحظة", false);
         }
 
         private void تعديلtoolStripMenuItem1_Click(object sender, EventArgs e)

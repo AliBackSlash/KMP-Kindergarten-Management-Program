@@ -34,18 +34,8 @@ namespace K_M_S_PROGRAM.Resources
             Get?.Invoke(txNote.Text);
             this.Close();
 
-           
-
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txNote_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

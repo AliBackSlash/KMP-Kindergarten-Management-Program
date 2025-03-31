@@ -10,9 +10,9 @@ namespace MyBusinessLayer
 {
     public class clsNotes
     {
-        public static bool AddNotes(int ID, string Note, char Kind, string Date)
+        public static bool AddNotes(int ID, string Note, char Kind)
         {
-            return clsNotesData.AddNotes(ID, Note, Kind, Date);
+            return clsNotesData.AddNotes(ID, Note, Kind);
         }
 
         public static DataTable GetNotes(string ID, char Kind)

@@ -151,13 +151,12 @@ namespace K_M_S_PROGRAM.Resources
 
         private void Save_Notes(string Note)
         {
-            string Date = DateTime.Now.ToString("dd-MM-yyyy");
             foreach (DataGridViewRow row in dgvKidsMenue.Rows)
             {
                 if (Convert.ToBoolean(row.Cells[11].Value))
                 {
 
-                    if (clsNotes.AddNotes((int)row.Cells[1].Value, Note, 'C', Date))
+                    if (clsNotes.AddNotes((int)row.Cells[1].Value, Note, 'C'))
                         clsUtil.Show("تم تسجيل الملاحظات ");
                    
 
@@ -177,9 +176,8 @@ namespace K_M_S_PROGRAM.Resources
 
         private void SaveNotes(string Note)
         {
-            string Date = DateTime.Now.ToString("dd-MM-yyyy");
 
-            if (clsNotes.AddNotes((int)dgvKidsMenue.CurrentRow.Cells[1].Value, Note, 'C', Date))
+            if (clsNotes.AddNotes((int)dgvKidsMenue.CurrentRow.Cells[1].Value, Note, 'C'))
                 clsUtil.Show("تم حفظ الملاحظة");
             else
                 clsUtil.Show("لم يتم حفظ الملاحظة", false);

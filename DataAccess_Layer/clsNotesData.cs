@@ -7,17 +7,16 @@ namespace MyDataAccessLayer
 {
     public class clsNotesData
     {
-        public static bool AddNotes(int ID, string Note, char Kind, string Date)
+        public static bool AddNotes(int ID, string Note, char Kind)
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
 
-                using (SqlCommand command = new SqlCommand("Exec SP_AddNotes @ID, @Note, @Kind, @Date", connection))
+                using (SqlCommand command = new SqlCommand("Exec SP_AddNotes @ID, @Note, @Kind", connection))
                 {
                     command.Parameters.AddWithValue("@ID", ID);
                     command.Parameters.AddWithValue("@Note", Note);
                     command.Parameters.AddWithValue("@Kind", Kind);
-                    command.Parameters.AddWithValue("@Date", Date);
 
                     bool success = false;
                     try

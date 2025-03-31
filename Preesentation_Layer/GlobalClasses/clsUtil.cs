@@ -242,11 +242,9 @@ namespace K_M_S_PROGRAM.GlobalClasses
                 {
 
                     if (clsAbsences.GetAllMemberThatDontCameTodayAndPutThimInAnAbsenceHistory(Peroid))
-                    {
-                        clsGeneric.Reset("DateOfAbsenceRemander", date);
                         Show("تمت إضافة جميع الذين لم يحضروا الي سجل الغياب(الفترة الصباحية)");
 
-                    }
+                    
 
                 }
             }
@@ -256,11 +254,9 @@ namespace K_M_S_PROGRAM.GlobalClasses
                 {
 
                     if (clsAbsences.GetAllMemberThatDontCameTodayAndPutThimInAnAbsenceHistory(Peroid))
-                    {
-                        clsGeneric.Reset("DateOfAbsenceRemanderPM", date);
                         Show("تمت إضافة جميع الذين لم يحضروا الي سجل الغياب(الفترة المسائية) ");
 
-                    }
+                    
 
                 }
             }
@@ -272,15 +268,10 @@ namespace K_M_S_PROGRAM.GlobalClasses
             if (DateNow != clsGeneric.ReturnLastDateOfOpen("select DateOfGetSubscraipData from DateOpen"))
             {
                 if (clsSubscriptions.GetPaymentSubscriptionInfoDataAndPutTiInSubscraitionPaymentTable(clsGlobal.Settings.IsPayInBegning))
-                {
-                    Show("تم إضافة الإشتراكات بنجاح");           
-                    clsGeneric.Reset("DateOfGetSubscraipData", DateNow);
-             
-                }
+                    Show("تم إضافة الإشتراكات بنجاح"); 
                 else
-                {
                     Show("يبدو ان البيانات مشغولة في مكان اخر حاول لاحقا", false);
-                }
+
             }
             
 
@@ -291,15 +282,9 @@ namespace K_M_S_PROGRAM.GlobalClasses
             if (DateNow != clsGeneric.ReturnLastDateOfOpen("select DateOfGetAccountsData from DateOpen"))
             {
                 if (clsEmployeesAccounts.GetMonthlyAccountData())
-                {
                     Show("تم إضافة الرواتب بنجاح");  
-                    clsGeneric.Reset("DateOfGetAccountsData", DateNow);
-
-                }
                 else
-                {
                     Show("يبدو ان البيانات مشغولة في مكان اخر حاول لاحقا", false);
-                }
 
             }
            
@@ -315,10 +300,7 @@ namespace K_M_S_PROGRAM.GlobalClasses
             {
                 clsEvaluations.ResetDally();
                 if (clsEvaluations.GetWinnerKids())
-                {
                     Show("تم إنهاء التقيم الشهر وإرسال بيانت الأطفال الفائزين");
-                    clsGeneric.Reset("DeteOfResetEvaluation", Month);
-                }
                 else
                     Show("يبدو أن هناك مشكل حاول مرة اخري أو تواصل مع مشرفي البرنامج", false);
             }

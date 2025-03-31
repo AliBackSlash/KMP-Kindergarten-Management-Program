@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using LiveCharts.WinForms;
 using System.Drawing;
 using K_M_S_PROGRAM.Kids_sFile.AddChaild;
+using K_M_S_PROGRAM.GlobalClasses;
 namespace K_M_S_PROGRAM.Resources
 {
     public partial class Kids_s_Subscriptions : Form
@@ -57,7 +58,16 @@ namespace K_M_S_PROGRAM.Resources
         private void كتابةملاحظةToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Notes frm = new Notes(dgvSubscripDetails.CurrentRow.Cells["Code"].Value.ToString(),'C');
+            frm.Get += SaveNote;
             frm.ShowDialog();
+        }
+
+        private void SaveNote(string note)
+        {
+            if (clsNotes.AddNotes((int)dgvSubscripDetails.CurrentRow.Cells[1].Value, note, 'C'))
+                clsUtil.Show("تم حفظ الملاحظة");
+            else
+                clsUtil.Show("لم يتم حفظ الملاحظة", false);
         }
 
         private void تعديلtoolStripMenuItem1_Click(object sender, EventArgs e)
