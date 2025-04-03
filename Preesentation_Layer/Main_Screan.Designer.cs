@@ -203,6 +203,7 @@
             this.timStopHideAndShow = new System.Windows.Forms.Timer(this.components);
             this.sEllipse1 = new Sipaa.Framework.SEllipse();
             this.sataDragControl1 = new SATAUiFramework.Controls.SATADragControl();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.pnList.SuspendLayout();
             this.panMenue.SuspendLayout();
             this.pnSettingsList.SuspendLayout();
@@ -2764,6 +2765,11 @@
             // 
             this.sataDragControl1.SelectControl = this.lbDayDate;
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "KMP";
+            // 
             // Main_Screan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2783,6 +2789,7 @@
             this.Text = "Main_Screan";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_Screan_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Main_Screan_FormClosed);
             this.Load += new System.EventHandler(this.Main_Screan_Load);
             this.pnList.ResumeLayout(false);
             this.panMenue.ResumeLayout(false);
@@ -3065,5 +3072,6 @@
         private System.Windows.Forms.Label lb2;
         private System.Windows.Forms.Label lb1;
         private System.Windows.Forms.Label lb15;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }

@@ -911,10 +911,10 @@
             // Code1
             // 
             this.Code1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Code1.HeaderText = "كود الطالب";
+            this.Code1.HeaderText = "الكود ";
             this.Code1.Name = "Code1";
             this.Code1.ReadOnly = true;
-            this.Code1.Width = 99;
+            this.Code1.Width = 69;
             // 
             // Name
             // 
@@ -923,10 +923,10 @@
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
             this.Name.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Name.HeaderText = "إسم الطالب";
+            this.Name.HeaderText = "الاسم ";
             this.Name.Name = "Name";
             this.Name.ReadOnly = true;
-            this.Name.Width = 99;
+            this.Name.Width = 70;
             // 
             // Column1
             // 

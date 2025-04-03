@@ -461,7 +461,7 @@ namespace K_M_S_PROGRAM.Resources
         private void انهاءفترةدراسةالطفلToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (clsChild.AddToGraduationsTable((int)dgvKidsMenue.CurrentRow.Cells["Code"].Value))
-                clsUtil.Show("تم انهاء فترة الدراسة والاحتفاظ بتذكار لهذا الطفل في شاشة الاطفال المتخرجين");
+               { clsUtil.Show("تم انهاء فترة الدراسة والاحتفاظ بتذكار لهذا الطفل في شاشة الاطفال المتخرجين"); this.Refrish1(); }
             else
                 clsUtil.Show("حدث خطأ", false);
         }

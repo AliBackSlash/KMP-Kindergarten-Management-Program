@@ -116,23 +116,15 @@ namespace K_M_S_PROGRAM.Resources
                 RestAllTexBoxes();
                 FillCmWorkersWithName();
                 OpenAndCloseforTeacherAndWorker(false);
-               
-                string st = clsGeneric.ReturnLastID("select top 1 Code+1 from WorkerInfo order by code desc");
-                if (st != null && txCode.Text == "")
-                    txCode.Text = st;
-                else
-                    txCode.Text = "50";
+
+                getCode(false);
             }
             else if(rdTeacher.Checked)
             {
                 RestAllTexBoxes();
                 FillCmEmployeesWithName();
                 OpenAndCloseforTeacherAndWorker(true);
-                string st = clsGeneric.ReturnLastID("select top 1 Code+1 from TeachersInfo order by code desc");
-                if (st != null && txCode.Text == "")
-                    txCode.Text = st;
-                else
-                    txCode.Text = "1";
+                getCode(true);
             }
         }
 
@@ -351,8 +343,28 @@ namespace K_M_S_PROGRAM.Resources
             cmSocialStutas.Items.Add("طبقة متوسطة");
             cmSocialStutas.Items.Add("طبقة فقيرة");
             FillCmClasesAndLevelsNameWithNames();
+           
         }
 
+        void getCode(bool teacher)
+        {
+            if(teacher)
+            {
+                string st = clsGeneric.ReturnLastID("select top 1 Code+1 from TeachersInfo order by code desc");
+                if (st != null && txCode.Text == "")
+                    txCode.Text = st;
+                else
+                    txCode.Text = "1";
+            }
+            else
+            {
+                string st = clsGeneric.ReturnLastID("select top 1 Code+1 from WorkerInfo order by code desc");
+                if (st != null && txCode.Text == "")
+                    txCode.Text = st;
+                else
+                    txCode.Text = "50";
+            }
+        }
         private void btAdd_Click(object sender, EventArgs e)
         {
             if(rdTeacher.Checked)
@@ -366,6 +378,7 @@ namespace K_M_S_PROGRAM.Resources
                     RestAllTexBoxes();
                     FillCmEmployeesWithName();
                     _employee = new clsEmployee();
+                    getCode(true);
                 }
                 else
                 {
@@ -381,6 +394,7 @@ namespace K_M_S_PROGRAM.Resources
                     RestAllTexBoxes();
                     FillCmWorkersWithName();
                     _worker = new clsWorker();
+                    getCode(false);
                 }
                 else
                 {
@@ -396,11 +410,7 @@ namespace K_M_S_PROGRAM.Resources
 
         private void Add_Employees_Load(object sender, EventArgs e)
         {
-            string st = clsGeneric.ReturnLastID("select top 1 Code+1 from TeachersInfo order by code desc");
-            if (st != null && txCode.Text == "")
-                txCode.Text = st;
-            else
-                txCode.Text = "1";
+            getCode(true);
 
             txDataOfBirth.MaxDate = DateTime.Now.AddYears(-15);
             FillCmClasesAndLevelsNameWithNames();

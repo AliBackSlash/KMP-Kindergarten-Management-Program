@@ -51,5 +51,36 @@ namespace K_M_S_PROGRAM.GlobalClasses
             }
 
         }
+
+        public static bool CheckFristOpenToRestoreDatabaseFile()
+        {
+
+            try
+            {
+                return Registry.GetValue("HKEY_CURRENT_USER\\SOFTWARE\\KMP_FIRSTOPEN", "FirstOpen", null) as string != null;
+
+            }
+            catch (Exception ex)
+            {
+
+                clsUtil.Show($"An error occurred: {ex.Message}", false);
+                return false;
+            }
+        }
+
+        public static bool setFristOpenToBeClose()
+        {
+            try
+            {
+                Registry.SetValue("HKEY_CURRENT_USER\\SOFTWARE\\KMP_FIRSTOPEN", "FirstOpen", "1", RegistryValueKind.String);
+                return true;
+            }
+            catch (Exception ex)
+            {
+
+                clsUtil.Show($"An error occurred: {ex.Message}", false);
+                return false;
+            }
+        }
     }
 }

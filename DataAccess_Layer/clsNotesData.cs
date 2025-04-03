@@ -169,9 +169,7 @@ namespace MyDataAccessLayer
                     try
                     {
                         connection.Open();
-                        object res = command.ExecuteScalar();
-                        if (res != null)
-                            success = true;
+                        return command.ExecuteNonQuery() != 0;
                     }
                     catch (Exception)
                     {

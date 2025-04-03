@@ -151,7 +151,9 @@ namespace MyDataAccessLayer
             using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
             {
 
-                using (SqlCommand command = new SqlCommand("delete FROM WorkerInfo where Code = @ID", connection))
+                using (SqlCommand command = new SqlCommand(@"DELETE FROM WorkersAccounts where Code = @ID
+                                                             DELETE FROM EmployeesAccountsHistory WHERE ID = @ID and Kind = 'W';
+                                                             DELETE FROM WorkerInfo where Code = @ID", connection))
                 {
                     command.Parameters.AddWithValue("@ID", ID);
 

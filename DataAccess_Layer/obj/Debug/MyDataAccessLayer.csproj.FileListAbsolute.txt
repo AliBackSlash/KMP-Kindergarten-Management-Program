@@ -28,12 +28,6 @@ D:\Projects\KMP project\After\KMP\DataAccess_Layer\obj\Debug\MyDataAccessLayer.c
 D:\Projects\KMP project\After\KMP\DataAccess_Layer\obj\Debug\MyDataAccessLayer.csproj.CoreCompileInputs.cache
 D:\Projects\KMP project\After\KMP\DataAccess_Layer\obj\Debug\MyDataAccessLayer.dll
 D:\Projects\KMP project\After\KMP\DataAccess_Layer\obj\Debug\MyDataAccessLayer.pdb
-D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\MyDataAccessLayer.dll
-D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\MyDataAccessLayer.pdb
-D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAccessLayer.csproj.AssemblyReference.cache
-D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAccessLayer.csproj.CoreCompileInputs.cache
-D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAccessLayer.dll
-D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAccessLayer.pdb
 D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\MyDataAccessLayer.dll.config
 D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\MyDataAccessLayer.dll
 D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\MyDataAccessLayer.pdb
@@ -54,3 +48,23 @@ D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\M
 D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAc.96FF54B6.Up2Date
 D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAccessLayer.dll
 D:\GitHub Repos\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAccessLayer.pdb
+D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\MyDataAccessLayer.dll.config
+D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\MyDataAccessLayer.dll
+D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\MyDataAccessLayer.pdb
+D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\SixLabors.ImageSharp.dll
+D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\System.Buffers.dll
+D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\System.Memory.dll
+D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\System.Numerics.Vectors.dll
+D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\System.Text.Encoding.CodePages.dll
+D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\SixLabors.ImageSharp.xml
+D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\System.Buffers.xml
+D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\System.Memory.xml
+D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\System.Numerics.Vectors.xml
+D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\bin\Debug\System.Text.Encoding.CodePages.xml
+D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAccessLayer.csproj.AssemblyReference.cache
+D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAccessLayer.csproj.CoreCompileInputs.cache
+D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAc.96FF54B6.Up2Date
+D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAccessLayer.dll
+D:\KMP-Kindergarten-Management-Program\DataAccess_Layer\obj\Debug\MyDataAccessLayer.pdb

@@ -14,17 +14,19 @@ namespace MyDataAccessLayer
 
         public static bool RestoreData(string Path)
         {
-            string query = @"use master
-                 if exists( select * from sys.databases where name='KMP') 
-                begin
-                 drop database KMP end;
-                restore database KMP
-                from disk = '@Path'";
+            string query = $@"use master
+                             if exists( select * from sys.databases where name='KMP') 
+                             begin
+                            	alter database KMP set single_user with rollback immediate;
+                            	drop database KMP
+                             end;
+                             
+                             restore database KMP
+                             from disk = '{Path}'";
 
-            using (SqlConnection connection = new SqlConnection(ConnectionString.Connectionstring))
+            using (SqlConnection connection = new SqlConnection("Server=.;Database=master;User Id=sa;Password=sa123456;"))
             using (SqlCommand command = new SqlCommand(query, connection))
             {
-                command.Parameters.AddWithValue("@Path", Path);
                 try
                 {
                     connection.Open();

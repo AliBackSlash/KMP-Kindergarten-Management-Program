@@ -27,10 +27,11 @@ namespace K_M_S_PROGRAM.TreasuryFiles
             dgvTreasuryHistory.Rows.Clear();
             foreach (DataRow row in data.Rows)
             {
-                dgvTreasuryHistory.Rows.Add(row["TotalExpenses"], row["TotalRevenue"],row["Total"], row["Month"]);
+                dgvTreasuryHistory.Rows.Add(row["TotalExpenses"], row["TotalRevenue"],row["Total"], row["MONTH"]);
             }
             fillChaaaart(data);
-            lbTotal.Text = data.Compute("SUM(Total)", string.Empty).ToString();
+            if (data.Rows.Count > 0)
+                lbTotal.Text = data.Compute("SUM(Total)", string.Empty).ToString();
         }
 
         void fillChaaaart(DataTable data)

@@ -78,7 +78,7 @@ namespace K_M_S_PROGRAM.Resources
                 txLastEnterTimePM.Text = clsGlobal.Settings.LasttimeEnterPM;
                 txLasttimeLeavePM.Text = clsGlobal.Settings.LasttimeLeavePM;
 
-                SavePath = clsGlobal.Settings.PackupPath;
+                SavePath = clsGlobal.Settings.BackupPath;
 
                 txNotefayKidsAbsence.Text = clsGlobal.Settings.NotefayKidsLate;
                 
@@ -98,7 +98,7 @@ namespace K_M_S_PROGRAM.Resources
                 txEmpAge.Text = clsGlobal.Settings.EmpAge;
                 txOrgName.Text = clsGlobal.Settings.OrgName;
                 txManagerName.Text = clsGlobal.Settings.ManagerName;
-                txSavePath.Text = clsGlobal.Settings.PackupPath;
+                txSavePath.Text = clsGlobal.Settings.BackupPath;
                 txSMSNumber.Text = clsGlobal.Settings.SMSNumber;
                 txWhatsAppNumber.Text = clsGlobal.Settings.WhatsAppNumber;
                 txOrgEmail.Text = clsGlobal.Settings.OrgEmail;

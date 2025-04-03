@@ -43,15 +43,6 @@ D:\Projects\KMP project\After\KMP\Business_Layer\obj\Debug\MyBusinessLayer.cspro
 D:\Projects\KMP project\After\KMP\Business_Layer\obj\Debug\MyBusine.7BB17094.Up2Date
 D:\Projects\KMP project\After\KMP\Business_Layer\obj\Debug\MyBusinessLayer.dll
 D:\Projects\KMP project\After\KMP\Business_Layer\obj\Debug\MyBusinessLayer.pdb
-D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyBusinessLayer.dll
-D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyBusinessLayer.pdb
-D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyDataAccessLayer.dll
-D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyDataAccessLayer.pdb
-D:\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.csproj.AssemblyReference.cache
-D:\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.csproj.CoreCompileInputs.cache
-D:\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusine.7BB17094.Up2Date
-D:\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.dll
-D:\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.pdb
 D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyBusinessLayer.dll.config
 D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyBusinessLayer.dll
 D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyBusinessLayer.pdb
@@ -75,3 +66,26 @@ D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyB
 D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusine.7BB17094.Up2Date
 D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.dll
 D:\GitHub Repos\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.pdb
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyBusinessLayer.dll.config
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyBusinessLayer.dll
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyBusinessLayer.pdb
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyDataAccessLayer.dll
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\SixLabors.ImageSharp.dll
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\System.Buffers.dll
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\System.Memory.dll
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\System.Numerics.Vectors.dll
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\System.Text.Encoding.CodePages.dll
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyDataAccessLayer.pdb
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\MyDataAccessLayer.dll.config
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\SixLabors.ImageSharp.xml
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\System.Buffers.xml
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\System.Memory.xml
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\System.Numerics.Vectors.xml
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\KMP-Kindergarten-Management-Program\Business_Layer\bin\Debug\System.Text.Encoding.CodePages.xml
+D:\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.csproj.AssemblyReference.cache
+D:\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.csproj.CoreCompileInputs.cache
+D:\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusine.7BB17094.Up2Date
+D:\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.dll
+D:\KMP-Kindergarten-Management-Program\Business_Layer\obj\Debug\MyBusinessLayer.pdb

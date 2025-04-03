@@ -176,14 +176,14 @@ namespace K_M_S_PROGRAM.Resources
         {
             try
             {
-                DataTable inputTable = clsGeneric.ReturnGroupOfDataIWant("select Month, TotalExpenses,TotalRevenue,TotalRevenue-TotalExpenses Remender from TreasuryHistory");
+                DataTable inputTable = clsTreasury.GetHistory();
                 SeriesCollection seriesCollection = new SeriesCollection();
                 List<string> labels = new List<string>(); // قائمة لتخزين أسماء الأشهر
 
                 // إنشاء قوائم لتخزين القيم
                 ChartValues<int> revenueValues = new ChartValues<int>();
                 ChartValues<int> expenseValues = new ChartValues<int>();
-                ChartValues<int> remender = new ChartValues<int>();
+                ChartValues<int> TOTAL = new ChartValues<int>();
 
                 foreach (DataRow row in inputTable.Rows)
                 {
@@ -193,7 +193,7 @@ namespace K_M_S_PROGRAM.Resources
                     // إضافة القيم إلى القوائم
                     revenueValues.Add(Convert.ToInt32(row["TotalRevenue"]));
                     expenseValues.Add(Convert.ToInt32(row["TotalExpenses"]));
-                    remender.Add(Convert.ToInt32(row["Remender"]));
+                    TOTAL.Add(Convert.ToInt32(row["Total"]));
                 }
 
                 // إضافة السلسلتين إلى المجموعة بعد جمع كل القيم
@@ -210,11 +210,11 @@ namespace K_M_S_PROGRAM.Resources
                     Values = expenseValues,
                     DataLabels = true
                 });
-               
+
                 seriesCollection.Add(new ColumnSeries
                 {
                     Title = "اجمالي الربح",
-                    Values = remender,
+                    Values = TOTAL,
                     DataLabels = true
                 });
 

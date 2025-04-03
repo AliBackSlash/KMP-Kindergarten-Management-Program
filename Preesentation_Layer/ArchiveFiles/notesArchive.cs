@@ -122,13 +122,17 @@ namespace K_M_S_PROGRAM.Resources
             if (MessageBox.Show("هل متأكد من انك تريد حذف كل السجل ", "تنبيه", MessageBoxButtons.OKCancel, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)==DialogResult.OK)
             {
                 if (clsNotes.DeleteAllRecordsInTableNotes())
-                    clsUtil.Show("تم مسح كل السجل");
+                    { clsUtil.Show("تم مسح كل السجل"); FillMenueWithResult(); }
                 else
                     clsUtil.Show("السجل بالفعل لا يحتوي علي اي بيانات", false);
             }
 
         }
 
-       
+        private void NotesArchive_Load(object sender, EventArgs e)
+        {
+            kind = enKind.Kids;
+            FillMenueWithResult();
+        }
     }
 }

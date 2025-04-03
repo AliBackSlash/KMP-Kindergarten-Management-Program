@@ -230,21 +230,18 @@ namespace MyDataAccessLayer
             SqlCommand command = new SqlCommand(query, connection);
 
             string date = "";
-            bool Saccess = false;
             try
             {
                 connection.Open();
                 object date1 = command.ExecuteScalar();
-                if (date1 != null)
-                    date = date1.ToString();
+                return date = date1?.ToString();
             }
             catch (Exception)
             {
-                Saccess = false;
+                return null;
             }
             finally { connection.Close(); }
 
-            return date;
         }
     }
 }

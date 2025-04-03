@@ -369,6 +369,7 @@
             this.RightToLeftLayout = true;
             this.Tag = "4194304";
             this.Text = "Employees_Notes";
+            this.Load += new System.EventHandler(this.NotesArchive_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNotesArchive)).EndInit();
             this.sataPanel1.ResumeLayout(false);

@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using K_M_S_PROGRAM.GlobalClasses;
 using MyBusinessLayer;
 using System.Collections.Generic;
-using System.Threading.Tasks;
+using K_M_S_PROGRAM.Resources;
 using SixLabors.ImageSharp.ColorSpaces.Conversion;
 using K_M_S_PROGRAM.UsersFiles;
 using K_M_S_PROGRAM.TreasuryFiles;
@@ -14,7 +14,7 @@ namespace K_M_S_PROGRAM.Resources
 {
     public partial class Main_Screan : Form
     {
-      
+
         public Main_Screan(clsUser login)
         {
             InitializeComponent();
@@ -23,7 +23,7 @@ namespace K_M_S_PROGRAM.Resources
             ImagePath = login.ImagePath;
             clsGlobal.main_Screan = this;
             clsGlobal.CurrentUser = login;
-            
+
 
         }
 
@@ -37,7 +37,7 @@ namespace K_M_S_PROGRAM.Resources
         AccesesDeined acceses = new AccesesDeined();
         private void ShowUserNameAndUserImage()
         {
-            if(clsGlobal.CurrentUser.Code==1)
+            if (clsGlobal.CurrentUser.Code == 1)
             {
                 picUserImage.Image = Properties.Resources.My_logo;
                 lbUserName.Text = UserName;
@@ -50,13 +50,9 @@ namespace K_M_S_PROGRAM.Resources
             else
                 picUserImage.Image = Properties.Resources.Logo__7_;
 
-            
+
         }
 
-        public Main_Screan()
-        {
-            InitializeComponent();
-        }
         byte ListHeight = 35;
 
         void CloseAllLists()
@@ -110,16 +106,16 @@ namespace K_M_S_PROGRAM.Resources
 
         private void btEmploInfo_Click(object sender, EventArgs e)
         {
-           
+
             if (pnEmploInfo.Size.Height == ListHeight)
             {
                 CloseAllLists();
                 // btEmploInfo.Image = Properties.Resources.down;
-                pnEmploInfo.Height= 130;
+                pnEmploInfo.Height = 130;
             }
             else
             {
-               // btEmploInfo.Image = Properties.Resources.less_than;
+                // btEmploInfo.Image = Properties.Resources.less_than;
                 pnEmploInfo.Height = ListHeight;
             }
         }
@@ -128,8 +124,8 @@ namespace K_M_S_PROGRAM.Resources
         {
             if (pnSubscripList.Size.Height == ListHeight)
             {
-            CloseAllLists();
-               // btSubscripIList.Image = Properties.Resources.down;
+                CloseAllLists();
+                // btSubscripIList.Image = Properties.Resources.down;
                 pnSubscripList.Height = 141;
             }
             else
@@ -143,13 +139,13 @@ namespace K_M_S_PROGRAM.Resources
         {
             if (pnAccountsList.Size.Height == ListHeight)
             {
-            CloseAllLists();
+                CloseAllLists();
                 //btAccountsList.Image = Properties.Resources.down;
                 pnAccountsList.Height = 103;
             }
             else
             {
-               // btAccountsList.Image = Properties.Resources.less_than;
+                // btAccountsList.Image = Properties.Resources.less_than;
                 pnAccountsList.Height = ListHeight;
             }
         }
@@ -158,13 +154,13 @@ namespace K_M_S_PROGRAM.Resources
         {
             if (pnUsersList.Size.Height == ListHeight)
             {
-            CloseAllLists();
+                CloseAllLists();
                 //btSettingsList.Image = Properties.Resources.down;
                 pnUsersList.Height = 97;
             }
             else
             {
-               // btSettingsList.Image = Properties.Resources.less_than;
+                // btSettingsList.Image = Properties.Resources.less_than;
                 pnUsersList.Height = ListHeight;
             }
         }
@@ -173,8 +169,8 @@ namespace K_M_S_PROGRAM.Resources
         {
             if (pnTreasury.Size.Height == ListHeight)
             {
-            CloseAllLists();
-               // btBusList.Image = Properties.Resources.down;
+                CloseAllLists();
+                // btBusList.Image = Properties.Resources.down;
                 pnTreasury.Height = 130;
             }
             else
@@ -188,8 +184,8 @@ namespace K_M_S_PROGRAM.Resources
         {
             if (pnMessageList.Size.Height == ListHeight)
             {
-            CloseAllLists();
-               // btMessageList.Image = Properties.Resources.down;
+                CloseAllLists();
+                // btMessageList.Image = Properties.Resources.down;
                 pnMessageList.Height = 66;
             }
             else
@@ -203,8 +199,8 @@ namespace K_M_S_PROGRAM.Resources
         {
             if (pnAbsenceList.Size.Height == ListHeight)
             {
-            CloseAllLists();
-               // btAbsenceList.Image = Properties.Resources.down;
+                CloseAllLists();
+                // btAbsenceList.Image = Properties.Resources.down;
                 pnAbsenceList.Height = 135;
             }
             else
@@ -218,13 +214,13 @@ namespace K_M_S_PROGRAM.Resources
         {
             if (pnEvaluationList.Size.Height == ListHeight)
             {
-            CloseAllLists();
-               // btEvaluationList.Image = Properties.Resources.down;
+                CloseAllLists();
+                // btEvaluationList.Image = Properties.Resources.down;
                 pnEvaluationList.Height = 127;
             }
             else
             {
-               // btEvaluationList.Image = Properties.Resources.less_than;
+                // btEvaluationList.Image = Properties.Resources.less_than;
                 pnEvaluationList.Height = ListHeight;
             }
         }
@@ -233,10 +229,10 @@ namespace K_M_S_PROGRAM.Resources
         {
             if (pnEvaluation.Size.Height == ListHeight)
             {
-            CloseAllLists();
+                CloseAllLists();
                 //btStoreList.Image = Properties.Resources.down;
                 pnEvaluation.Height = 80;
-               
+
             }
             else
             {
@@ -249,13 +245,13 @@ namespace K_M_S_PROGRAM.Resources
         {
             if (pnClassesList.Size.Height == ListHeight)
             {
-            CloseAllLists();
+                CloseAllLists();
                 //btClassesList.Image = Properties.Resources.down;
                 pnClassesList.Height = 75;
             }
             else
             {
-               // btClassesList.Image = Properties.Resources.less_than;
+                // btClassesList.Image = Properties.Resources.less_than;
                 pnClassesList.Height = ListHeight;
             }
         }
@@ -264,7 +260,7 @@ namespace K_M_S_PROGRAM.Resources
         {
             if (pnNotesList.Size.Height == ListHeight)
             {
-            CloseAllLists();
+                CloseAllLists();
                 //btNotesList.Image = Properties.Resources.down;
                 pnNotesList.Height = 67;
             }
@@ -279,7 +275,7 @@ namespace K_M_S_PROGRAM.Resources
         {
             if (pnLevelsList.Size.Height == ListHeight)
             {
-            CloseAllLists();
+                CloseAllLists();
                 //btLevelsList.Image = Properties.Resources.down;
                 pnLevelsList.Height = 75;
             }
@@ -294,7 +290,7 @@ namespace K_M_S_PROGRAM.Resources
         {
             if (pnSettingsList.Size.Height == ListHeight)
             {
-            CloseAllLists();
+                CloseAllLists();
                 //btSettingsList.Image = Properties.Resources.down;
                 pnSettingsList.Height = 130;
             }
@@ -353,7 +349,7 @@ namespace K_M_S_PROGRAM.Resources
         {
             WhiteColorLabel((Label)sender);
         }
-     
+
         //------Kids-------//
 
         Main_Menue mainMenu = new Main_Menue();
@@ -369,7 +365,7 @@ namespace K_M_S_PROGRAM.Resources
         {
 
 
-            
+
             pnShow.Controls.Clear();
             form.TopLevel = false;
             pnShow.Controls.Add(form);
@@ -380,14 +376,14 @@ namespace K_M_S_PROGRAM.Resources
                 form.BackColor = Color.Gainsboro;
 
             form.Show();
-           
+
             return;
         }
         private void ShowSubForm(Form form)
         {
-            if ((Permission & Convert.ToInt32(form.Tag)) == Convert.ToInt32(form.Tag)|| Permission==-1)
+            if ((Permission & Convert.ToInt32(form.Tag)) == Convert.ToInt32(form.Tag) || Permission == -1)
             {
-               
+
                 pnShow.Controls.Clear();
                 form.TopLevel = false;
                 pnShow.Controls.Add(form);
@@ -398,7 +394,7 @@ namespace K_M_S_PROGRAM.Resources
                     form.BackColor = Color.Gainsboro;
 
                 form.Show();
-               
+
                 return;
             }
             else
@@ -433,7 +429,7 @@ namespace K_M_S_PROGRAM.Resources
             lb10.ForeColor = ForeColor;
             lbNotesArchive.ForeColor = ForeColor;
             lb11.ForeColor = ForeColor;
-            lbLevels.ForeColor = ForeColor;  
+            lbLevels.ForeColor = ForeColor;
             lb12.ForeColor = ForeColor;
             lbClases.ForeColor = ForeColor;
             lb13.ForeColor = ForeColor;
@@ -468,7 +464,7 @@ namespace K_M_S_PROGRAM.Resources
             btEmploeesAccountsHistory.ForeColor = ForeColor;
             btEmploeesAccounts.ForeColor = ForeColor;
             btSubscription.ForeColor = ForeColor;
-            btPayment_ٍSubscriptions .ForeColor = ForeColor;
+            btPayment_ٍSubscriptions.ForeColor = ForeColor;
             bSubscription_Details.ForeColor = ForeColor;
             btAddEmp.ForeColor = ForeColor;
             btEmpData.ForeColor = ForeColor;
@@ -478,7 +474,7 @@ namespace K_M_S_PROGRAM.Resources
             btAddNewChild.ForeColor = ForeColor;
             btSubKidsInfo.ForeColor = ForeColor;
             btSubKidsMenue.ForeColor = ForeColor;
-            btSubMainMenue.ForeColor= ForeColor;
+            btSubMainMenue.ForeColor = ForeColor;
         }
         private void btSubMainMenue_Click(object sender, EventArgs e)
         {
@@ -489,26 +485,26 @@ namespace K_M_S_PROGRAM.Resources
 
         private void btSubKidsMenue_Click(object sender, EventArgs e)
         {
-            
+
             if (kids_Menue.Visible)
                 kids_Menue.Refrish1();
             ShowSubForm(kids_Menue);
         }
 
         //Move this form//
-         bool move;
-         int moveX,moveY;
+        bool move;
+        int moveX, moveY;
         private void panel2_MouseDown(object sender, MouseEventArgs e)
         {
             move = true;
-            moveX=e.X;
-            moveY=e.Y;
+            moveX = e.X;
+            moveY = e.Y;
         }
         private void panel2_MouseMove(object sender, MouseEventArgs e)
         {
-            if(move)
+            if (move)
             {
-                this.SetDesktopLocation(MousePosition.X-moveX,MousePosition.Y-moveY);
+                this.SetDesktopLocation(MousePosition.X - moveX, MousePosition.Y - moveY);
             }
         }
         private void panel2_MouseUp(object sender, MouseEventArgs e)
@@ -527,7 +523,7 @@ namespace K_M_S_PROGRAM.Resources
             }
             else
             {
-                
+
                 this.WindowState = FormWindowState.Maximized;
                 isMamimize = true;
                 mainMenu.Refresh();
@@ -546,20 +542,20 @@ namespace K_M_S_PROGRAM.Resources
             {
                 this.WindowState = FormWindowState.Minimized;
             }
-            
+
         }
         //--------//
         private void btSubKidsInfo_Click(object sender, EventArgs e)
         {
             if (kids_SData.Visible)
-                kids_SData.Kids_Menue_Load(null,null);
+                kids_SData.Kids_Menue_Load(null, null);
             ShowSubForm(kids_SData);
         }
 
         private void btAddNewChild_Click(object sender, EventArgs e)
         {
-            if(add_Child.Visible)
-                add_Child.btRefreash_Click(null,null);
+            if (add_Child.Visible)
+                add_Child.btRefreash_Click(null, null);
             ShowSubForm(add_Child);
         }
 
@@ -572,7 +568,7 @@ namespace K_M_S_PROGRAM.Resources
 
         private void btKids_Reports_Click(object sender, EventArgs e)
         {
-            if(kids_S_Repports.Visible)
+            if (kids_S_Repports.Visible)
                 kids_S_Repports.Kids_s_Repports_Load(null, null);
             ShowSubForm(kids_S_Repports);
         }
@@ -598,7 +594,7 @@ namespace K_M_S_PROGRAM.Resources
             ShowSubForm(Add_Employees);
         }
 
-       
+
         //--------Subscription----------//
         Kids_s_Subscriptions kids_S_Subscriptions = new Kids_s_Subscriptions();
         Subscription_History subscription_History = new Subscription_History();
@@ -625,14 +621,14 @@ namespace K_M_S_PROGRAM.Resources
         }
         //----------Treasury-----------//
         EmploeesAccounts accounts = new EmploeesAccounts();
-        EmploeesAccountsHistory accountsHistory =new EmploeesAccountsHistory();
+        EmploeesAccountsHistory accountsHistory = new EmploeesAccountsHistory();
         private void btAccounts_Click(object sender, EventArgs e)
         {
             if (accounts.Visible)
                 accounts.Refreash1();
             ShowSubForm(accounts);
         }
-        
+
         private void btAccountsHistory_Click(object sender, EventArgs e)
         {
             if (accountsHistory.Visible)
@@ -645,7 +641,7 @@ namespace K_M_S_PROGRAM.Resources
         private void btActivity_Evaluation_Click(object sender, EventArgs e)
         {
             if (activity_Evaluation.Visible)
-                activity_Evaluation.btSave_Click(null,null);
+                activity_Evaluation.btSave_Click(null, null);
             ShowSubForm(activity_Evaluation);
 
         }
@@ -653,7 +649,7 @@ namespace K_M_S_PROGRAM.Resources
         private void button2_Click(object sender, EventArgs e)
         {
             if (archive.Visible)
-                archive.WinnerArchive_Load(null,null);
+                archive.WinnerArchive_Load(null, null);
             ShowSubForm(archive);
         }
         private void btWinKids_Click(object sender, EventArgs e)
@@ -671,7 +667,7 @@ namespace K_M_S_PROGRAM.Resources
         {
             if (add_Absence.Visible)
                 add_Absence.Add_Absence_Load(null, null);
-            
+
             ShowSubForm(add_Absence);
 
         }
@@ -696,13 +692,13 @@ namespace K_M_S_PROGRAM.Resources
 
         //-----Notes--------//
 
-        NotesArchive  notesArchive = new NotesArchive();
+        NotesArchive notesArchive = new NotesArchive();
         private void btKids_Notes_Click(object sender, EventArgs e)
         {
             if (notesArchive.Visible)
                 notesArchive.FillMenueWithResult();
-            
-             ShowSubForm(notesArchive);
+
+            ShowSubForm(notesArchive);
 
         }
 
@@ -753,7 +749,7 @@ namespace K_M_S_PROGRAM.Resources
                 absenceHistory.ShowAbsenceDataWithOrder();
             ShowSubForm(absenceHistory);
         }
-       
+
         public delegate void Call(bool Peroid);
         public void ComputeTheCammingDate()
         {
@@ -772,12 +768,12 @@ namespace K_M_S_PROGRAM.Resources
             }
             else
             {
-                var timesAndMessages = new List<(string query, string message, Call call,bool Peroid)>
+                var timesAndMessages = new List<(string query, string message, Call call, bool Peroid)>
                 {
                ("select top 1 timeEnter from ProgramSetting", "وقت متبقي لبداية اليوم",null,true),
                ("select top 1 LasttimeEnter from ProgramSetting", "وقت متبقي لأخذ غياب لمن لم يحضر",null,true),
                ("select top 1 timeLeave from ProgramSetting", "وقت متبقي لتسجيل الإنصراف",clsUtil.btAbsenceRemander_Click,true),
-               
+
                ("select top 1 timeEnterPM from ProgramSetting", "وقت متبقي لبداية الفترة المسائية",null,false),
                ("select top 1 LasttimeEnterPM from ProgramSetting", "وقت متبقي لأخذ غياب لمن لم يحضر(الفترة المسائية)",null,false),
                ("select top 1 timeLeavePM from ProgramSetting", "وقت متبقي لتسجيل الإنصراف(الفترة المسائية)",clsUtil.btAbsenceRemander_Click,false),
@@ -792,6 +788,11 @@ namespace K_M_S_PROGRAM.Resources
                         lbTimeTittle.Text = message;
                         lbTimeTittle.Visible = true;
                         call?.Invoke(Peroid);
+                        if (message == "وقت متبقي لإغلاق اليوم")
+                        {
+                            clsSettings.BackUPDataBase(clsGlobal.Settings.BackupPath);
+                            Application.Exit();
+                        }
                         break;
                     }
                 }
@@ -826,14 +827,14 @@ namespace K_M_S_PROGRAM.Resources
             lbDayDate.Text = DateTime.Now.ToLongDateString();
             clsGlobal.Settings = clsSettings.GetSetting();
             if (!clsGlobal.Settings.Mode)
-                ChangeLabelsColor(Color.Black,Color.Gainsboro);
-            
+                ChangeLabelsColor(Color.Black, Color.Gainsboro);
+
 
             ComputeTheCammingDate();
 
             ShowUserNameAndUserImage();
             timChek.Start();
-            
+
         }
         Sendmessagefrm not = new Sendmessagefrm();
         Levels levels = new Levels();
@@ -844,7 +845,7 @@ namespace K_M_S_PROGRAM.Resources
             ShowSubForm(levels);
 
         }
-        
+
         private void btAdd_Users_Click(object sender, EventArgs e)
         {
             if (add_Users.Visible)
@@ -860,7 +861,7 @@ namespace K_M_S_PROGRAM.Resources
         TreasuryYearly treasuryYearly = new TreasuryYearly();
         private void btTreasuryData_Click_1(object sender, EventArgs e)
         {
-            if(treasury.Visible)
+            if (treasury.Visible)
                 treasury.FillData();
             ShowSubForm(treasury);
         }
@@ -891,7 +892,7 @@ namespace K_M_S_PROGRAM.Resources
         //-------------------//
 
         private bool FillBrothers()
-        {           
+        {
             DataTable dateOfBirthForBro = clsGeneric.ReturnGroupOfDataIWant("select BrotherInfo.DateOfBirth From BrotherInfo inner join KidsPersonalInfo on KidsPersonalInfo.Code=BrotherInfo.ChildID ");
 
             foreach (DataRow row in dateOfBirthForBro.Rows)
@@ -906,7 +907,7 @@ namespace K_M_S_PROGRAM.Resources
 
         private bool FillSubLate()
         {
-           
+
             if (Convert.ToByte(DateTime.Now.Day) >= clsGlobal.Settings.DaysLateToPay)
             {
                 DataTable SubLate = clsGeneric.ReturnGroupOfDataIWant("select top 1 1 from SubscraitionPayment");
@@ -918,12 +919,12 @@ namespace K_M_S_PROGRAM.Resources
 
         private bool FillKidsAbsence()
         {
-           
+
             DataTable KidsAbsence = clsGeneric.ReturnGroupOfDataIWant($"select top 1 K.Name,count(A.ID) as times  from AbsenceHistory A inner join KidsPersonalInfo K on A.ID = K.Code where A.DateMonthForAbsnce = {DateTime.Now.ToString("MM-yyyy")} group by K.Name  having COUNT(A.id)>={clsGlobal.Settings.DaysKindsAbsence}");
 
             if (KidsAbsence.Rows.Count > 0)
                 return true;
-        
+
             return false;
         }
 
@@ -942,16 +943,16 @@ namespace K_M_S_PROGRAM.Resources
 
         private void timChek_Tick(object sender, EventArgs e)
         {
-            
+
             TestNotifications();
             timChek.Stop();
             clsUtil.GetSubscaition();
             clsUtil.GetEmpSalary();
             clsUtil.RestMonthly();
             if (clsTreasury.ResetTreasury())
-                 clsUtil.Show("تم ننقل بيانات الخزينة الي الارشيف ");
+                clsUtil.Show("تم ننقل بيانات الخزينة الي الارشيف ");
 
-            
+
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -960,16 +961,13 @@ namespace K_M_S_PROGRAM.Resources
 
 
         }
-        
+
         private void Main_Screan_FormClosing(object sender, FormClosingEventArgs e)
         {
-
-            if (clsGlobal.Settings.PackupPath != "")
-                clsSettings.BackUPDataBase(clsGlobal.Settings.PackupPath);
-                   
-
+            e.Cancel = true;
+            this.Hide();
+            notifyIcon1.Visible = true;
             clsRegistersAndOperation.AddRegister(clsGlobal.CurrentUser.Code, false);
-
 
         }
 
@@ -980,12 +978,22 @@ namespace K_M_S_PROGRAM.Resources
             bool SubLate = FillSubLate();
             bool KidsAbsence = FillKidsAbsence();
 
-            if (Birth||Brothers||SubLate||KidsAbsence)
-                btNoteyfay.Visible= true;
+            if (Birth || Brothers || SubLate || KidsAbsence)
+                btNoteyfay.Visible = true;
 
         }
 
-       
+        private void notifyIcon1_DoubleClick(object sender, EventArgs e)
+        {
+            this.Show();
+            notifyIcon1.Visible = false;
+        }
+
+        private void Main_Screan_FormClosed(object sender, FormClosedEventArgs e)
+        {
+           // clsRegistersAndOperation.AddRegister(clsGlobal.CurrentUser.Code, false);
+
+        }
 
         private void timStopHideAndShow_Tick(object sender, EventArgs e)
         {
@@ -1000,7 +1008,7 @@ namespace K_M_S_PROGRAM.Resources
             pnHeader2.BackColor = Color.DarkTurquoise;
             lbTimeTittle.ForeColor = Color.Black;
 
-            
+
             ComputeTheCammingDate();
 
 
@@ -1008,7 +1016,7 @@ namespace K_M_S_PROGRAM.Resources
 
         private void timHideAndShow_Tick(object sender, EventArgs e)
         {
-            if(_Hide)
+            if (_Hide)
             {
                 lbHours.ForeColor = Color.DarkTurquoise;
                 lbMunites.ForeColor = Color.DarkTurquoise;
@@ -1041,11 +1049,11 @@ namespace K_M_S_PROGRAM.Resources
             if (!(seconds == 0))
                 seconds--;
 
-            if(seconds == 0)
+            if (seconds == 0)
             {
-                
+
                 if (minutes > 0)
-                   { minutes--; seconds = 59; }
+                { minutes--; seconds = 59; }
 
             }
             if (minutes == 0)
@@ -1054,14 +1062,14 @@ namespace K_M_S_PROGRAM.Resources
                     hours--;
 
                 if (hours > 0)
-                { 
-                    minutes = 59; 
+                {
+                    minutes = 59;
                     seconds = 59;
                 }
 
 
             }
-            if (minutes < 5 && hours == 0) 
+            if (minutes < 5 && hours == 0)
             {
                 lbHours.ForeColor = Color.DarkRed;
                 lbMunites.ForeColor = Color.DarkRed;
@@ -1071,10 +1079,10 @@ namespace K_M_S_PROGRAM.Resources
             }
             lbSeconds.Text = seconds < 10 ? "0" + seconds.ToString() : seconds.ToString();
             lbMunites.Text = minutes < 10 ? "0" + minutes.ToString() : minutes.ToString();
-            lbHours.Text  = hours < 10 ? "0" + hours.ToString() : hours.ToString();
+            lbHours.Text = hours < 10 ? "0" + hours.ToString() : hours.ToString();
             if (hours == 0 && minutes == 0 && seconds == 0)
             {
-                timRemander.Stop();               
+                timRemander.Stop();
                 timHideAndShow.Start();
                 timStopHideAndShow.Start();
             }
@@ -1084,4 +1092,3 @@ namespace K_M_S_PROGRAM.Resources
 
 
 }
-    

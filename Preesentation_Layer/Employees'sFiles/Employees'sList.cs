@@ -265,7 +265,7 @@ namespace K_M_S_PROGRAM.Resources
             if (MessageBox.Show("هل انت متأكد من ازالة هذا الموظف ", "تأكيد", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
                 return;
             bool sccess = false;
-            if (btWhatsApp.Enabled)
+            if (rdTeacher.Checked)
             {
                 sccess = DeleteTeacher(Convert.ToInt16(dgvEmployeesMenue.CurrentRow.Cells["Code"].Value));
                 dgvEmployeesMenue.Rows.Clear();

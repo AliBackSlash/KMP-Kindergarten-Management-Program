@@ -41,7 +41,7 @@ namespace MyBusinessLayer
         public string DaysOfStaudyInMonth { get; }
         public byte Vication1 { get; }
         public byte Vication2 { get; }
-        public string PackupPath { get; }
+        public string BackupPath { get; }
         public string OrgName { get; }
         public string ManagerName { get; }
         public bool SmallPaper { get; }
@@ -95,7 +95,7 @@ namespace MyBusinessLayer
             this.DaysOfStaudyInMonth = DayOfStaudyInMonth;
             this.Vication1 = Vication1;
             this.Vication2 = Vication2;
-            PackupPath = packupPath;
+            BackupPath = packupPath;
             this.OrgName = OrgName;
             this.ManagerName = ManagerName;
             this.SmallPaper = SmaolPaper;
