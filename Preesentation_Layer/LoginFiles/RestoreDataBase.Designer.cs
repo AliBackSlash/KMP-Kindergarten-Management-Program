@@ -62,7 +62,7 @@
             this.txSavePath.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txSavePath.HoverState.Parent = this.txSavePath;
             this.txSavePath.IconRightSize = new System.Drawing.Size(30, 30);
-            this.txSavePath.Location = new System.Drawing.Point(13, 278);
+            this.txSavePath.Location = new System.Drawing.Point(13, 297);
             this.txSavePath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txSavePath.Name = "txSavePath";
             this.txSavePath.PasswordChar = '\0';
@@ -93,7 +93,7 @@
             this.btSavePackup.HoverState.FillColor = System.Drawing.Color.White;
             this.btSavePackup.HoverState.ForeColor = System.Drawing.Color.Indigo;
             this.btSavePackup.HoverState.Parent = this.btSavePackup;
-            this.btSavePackup.Location = new System.Drawing.Point(643, 283);
+            this.btSavePackup.Location = new System.Drawing.Point(643, 302);
             this.btSavePackup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btSavePackup.Name = "btSavePackup";
             this.btSavePackup.ShadowDecoration.Parent = this.btSavePackup;
@@ -109,7 +109,7 @@
             this.lbIntro.ForeColor = System.Drawing.Color.Blue;
             this.lbIntro.Location = new System.Drawing.Point(0, 0);
             this.lbIntro.Name = "lbIntro";
-            this.lbIntro.Size = new System.Drawing.Size(699, 274);
+            this.lbIntro.Size = new System.Drawing.Size(699, 293);
             this.lbIntro.TabIndex = 101;
             // 
             // btRestore
@@ -128,7 +128,7 @@
             this.btRestore.HoverState.FillColor = System.Drawing.Color.White;
             this.btRestore.HoverState.ForeColor = System.Drawing.Color.Indigo;
             this.btRestore.HoverState.Parent = this.btRestore;
-            this.btRestore.Location = new System.Drawing.Point(295, 335);
+            this.btRestore.Location = new System.Drawing.Point(295, 354);
             this.btRestore.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btRestore.Name = "btRestore";
             this.btRestore.ShadowDecoration.Parent = this.btRestore;
@@ -166,7 +166,7 @@
             // 
             this.waitControl.BackColor = System.Drawing.Color.Transparent;
             this.waitControl.CircleSize = 2F;
-            this.waitControl.Location = new System.Drawing.Point(318, 324);
+            this.waitControl.Location = new System.Drawing.Point(318, 343);
             this.waitControl.Name = "waitControl";
             this.waitControl.ProgressColor = System.Drawing.Color.BlueViolet;
             this.waitControl.Size = new System.Drawing.Size(62, 62);
