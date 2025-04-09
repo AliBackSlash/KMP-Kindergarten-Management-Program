@@ -57,7 +57,7 @@ namespace K_M_S_PROGRAM.GlobalClasses
 
             try
             {
-                return Registry.GetValue("HKEY_CURRENT_USER\\SOFTWARE\\KMP_FIRSTOPEN", "FirstOpen", null) as string != null;
+                return Registry.GetValue("HKEY_CURRENT_USER\\SOFTWARE\\KMP_FIRSTOPEN", "FirstOpen", null) as string == null;
 
             }
             catch (Exception ex)
