@@ -146,6 +146,8 @@ namespace K_M_S_PROGRAM.Resources
 
         private void cnTask_Opening(object sender, CancelEventArgs e)
         {
+            if (dgvPaymentHistory.Rows.Count >= 0)
+                return;
             if(Convert.ToSingle(dgvPaymentHistory.CurrentRow.Cells["Remender1"].Value)==0)
                 دفعالباقيoolStripMenuItem.Enabled = false;
             else

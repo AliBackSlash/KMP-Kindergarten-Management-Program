@@ -228,6 +228,8 @@ namespace K_M_S_PROGRAM.Resources
 
         private void cnTask_Opening(object sender, CancelEventArgs e)
         {
+            if (dgvKidsMenue.Rows.Count >= 0)
+                return;
             int PerantID = 0;
             if (dgvKidsMenue.CurrentRow.Cells["PerantID"].Value != System.DBNull.Value)
                 PerantID = (int)dgvKidsMenue.CurrentRow.Cells["PerantID"].Value;

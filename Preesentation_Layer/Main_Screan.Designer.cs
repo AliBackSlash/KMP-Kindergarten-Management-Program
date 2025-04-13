@@ -179,7 +179,6 @@
             this.lbUserName = new System.Windows.Forms.Label();
             this.picUserImage = new SATAUiFramework.Controls.SATAPictureBox();
             this.pnHeader2 = new System.Windows.Forms.Panel();
-            this.progTimeTrack = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.lbMunites = new System.Windows.Forms.Label();
             this.progTimeTrack2 = new System.Windows.Forms.ProgressBar();
             this.lbSeconds = new System.Windows.Forms.Label();
@@ -204,6 +203,7 @@
             this.sEllipse1 = new Sipaa.Framework.SEllipse();
             this.sataDragControl1 = new SATAUiFramework.Controls.SATADragControl();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.progTimeTrack = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.pnList.SuspendLayout();
             this.panMenue.SuspendLayout();
             this.pnSettingsList.SuspendLayout();
@@ -2491,17 +2491,6 @@
             this.pnHeader2.Size = new System.Drawing.Size(220, 52);
             this.pnHeader2.TabIndex = 0;
             // 
-            // progTimeTrack
-            // 
-            this.progTimeTrack.Location = new System.Drawing.Point(177, 4);
-            this.progTimeTrack.Name = "progTimeTrack";
-            this.progTimeTrack.ProgressColor = System.Drawing.Color.Red;
-            this.progTimeTrack.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progTimeTrack.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.progTimeTrack.ShadowDecoration.Parent = this.progTimeTrack;
-            this.progTimeTrack.Size = new System.Drawing.Size(34, 36);
-            this.progTimeTrack.TabIndex = 42;
-            // 
             // lbMunites
             // 
             this.lbMunites.AutoSize = true;
@@ -2769,6 +2758,17 @@
             // 
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
             this.notifyIcon1.Text = "KMP";
+            // 
+            // progTimeTrack
+            // 
+            this.progTimeTrack.Location = new System.Drawing.Point(177, 4);
+            this.progTimeTrack.Name = "progTimeTrack";
+            this.progTimeTrack.ProgressColor = System.Drawing.Color.Red;
+            this.progTimeTrack.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.progTimeTrack.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.progTimeTrack.ShadowDecoration.Parent = this.progTimeTrack;
+            this.progTimeTrack.Size = new System.Drawing.Size(34, 36);
+            this.progTimeTrack.TabIndex = 42;
             // 
             // Main_Screan
             // 
@@ -3052,7 +3052,6 @@
         private System.Windows.Forms.PictureBox pictureBox33;
         private System.Windows.Forms.Button btTreasuryHistory;
         private System.Windows.Forms.Label label16;
-        private Guna.UI2.WinForms.Guna2CircleProgressBar progTimeTrack;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Sipaa.Framework.SEllipse sEllipse1;
         private System.Windows.Forms.PictureBox pictureBox34;
@@ -3073,5 +3072,6 @@
         private System.Windows.Forms.Label lb1;
         private System.Windows.Forms.Label lb15;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private Guna.UI2.WinForms.Guna2CircleProgressBar progTimeTrack;
     }
 }
