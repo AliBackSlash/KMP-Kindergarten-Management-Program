@@ -179,6 +179,7 @@
             this.lbUserName = new System.Windows.Forms.Label();
             this.picUserImage = new SATAUiFramework.Controls.SATAPictureBox();
             this.pnHeader2 = new System.Windows.Forms.Panel();
+            this.progTimeTrack = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.lbMunites = new System.Windows.Forms.Label();
             this.progTimeTrack2 = new System.Windows.Forms.ProgressBar();
             this.lbSeconds = new System.Windows.Forms.Label();
@@ -188,10 +189,10 @@
             this.label16 = new System.Windows.Forms.Label();
             this.timChek = new System.Windows.Forms.Timer(this.components);
             this.pnHeader = new System.Windows.Forms.Panel();
-            this.lbDayDate = new System.Windows.Forms.Label();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btMaxmize = new System.Windows.Forms.Button();
+            this.lbDayDate = new System.Windows.Forms.Label();
             this.lbTimeTittle = new System.Windows.Forms.Label();
             this.lbMyAccount = new System.Windows.Forms.LinkLabel();
             this.pnShow = new System.Windows.Forms.Panel();
@@ -203,7 +204,6 @@
             this.sEllipse1 = new Sipaa.Framework.SEllipse();
             this.sataDragControl1 = new SATAUiFramework.Controls.SATADragControl();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.progTimeTrack = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.pnList.SuspendLayout();
             this.panMenue.SuspendLayout();
             this.pnSettingsList.SuspendLayout();
@@ -2416,6 +2416,7 @@
             this.lbMain.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lbMain.Size = new System.Drawing.Size(80, 32);
             this.lbMain.TabIndex = 29;
+            this.lbMain.Tag = "";
             this.lbMain.Text = "الرئيسية   ";
             this.lbMain.Click += new System.EventHandler(this.btMenueInfo_Click);
             this.lbMain.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
@@ -2490,6 +2491,17 @@
             this.pnHeader2.Name = "pnHeader2";
             this.pnHeader2.Size = new System.Drawing.Size(220, 52);
             this.pnHeader2.TabIndex = 0;
+            // 
+            // progTimeTrack
+            // 
+            this.progTimeTrack.Location = new System.Drawing.Point(177, 4);
+            this.progTimeTrack.Name = "progTimeTrack";
+            this.progTimeTrack.ProgressColor = System.Drawing.Color.Red;
+            this.progTimeTrack.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.progTimeTrack.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.progTimeTrack.ShadowDecoration.Parent = this.progTimeTrack;
+            this.progTimeTrack.Size = new System.Drawing.Size(34, 36);
+            this.progTimeTrack.TabIndex = 42;
             // 
             // lbMunites
             // 
@@ -2582,30 +2594,16 @@
             // pnHeader
             // 
             this.pnHeader.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pnHeader.Controls.Add(this.lbDayDate);
             this.pnHeader.Controls.Add(this.guna2ControlBox1);
             this.pnHeader.Controls.Add(this.button1);
             this.pnHeader.Controls.Add(this.btMaxmize);
+            this.pnHeader.Controls.Add(this.lbDayDate);
             this.pnHeader.Controls.Add(this.lbTimeTittle);
             this.pnHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnHeader.Location = new System.Drawing.Point(220, 0);
             this.pnHeader.Name = "pnHeader";
             this.pnHeader.Size = new System.Drawing.Size(1072, 52);
             this.pnHeader.TabIndex = 1;
-            // 
-            // lbDayDate
-            // 
-            this.lbDayDate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbDayDate.BackColor = System.Drawing.Color.Transparent;
-            this.lbDayDate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbDayDate.Font = new System.Drawing.Font("Tw Cen MT Condensed", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDayDate.ForeColor = System.Drawing.Color.Black;
-            this.lbDayDate.Location = new System.Drawing.Point(377, 0);
-            this.lbDayDate.Name = "lbDayDate";
-            this.lbDayDate.Size = new System.Drawing.Size(318, 53);
-            this.lbDayDate.TabIndex = 40;
-            this.lbDayDate.Text = "00-00-0000";
-            this.lbDayDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2ControlBox1
             // 
@@ -2656,6 +2654,20 @@
             this.btMaxmize.TabIndex = 29;
             this.btMaxmize.UseVisualStyleBackColor = false;
             this.btMaxmize.Click += new System.EventHandler(this.btMaxMize_Click);
+            // 
+            // lbDayDate
+            // 
+            this.lbDayDate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbDayDate.BackColor = System.Drawing.Color.Transparent;
+            this.lbDayDate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbDayDate.Font = new System.Drawing.Font("Tw Cen MT Condensed", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDayDate.ForeColor = System.Drawing.Color.Black;
+            this.lbDayDate.Location = new System.Drawing.Point(377, 0);
+            this.lbDayDate.Name = "lbDayDate";
+            this.lbDayDate.Size = new System.Drawing.Size(318, 53);
+            this.lbDayDate.TabIndex = 40;
+            this.lbDayDate.Text = "00-00-0000";
+            this.lbDayDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbTimeTittle
             // 
@@ -2759,17 +2771,6 @@
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
             this.notifyIcon1.Text = "KMP";
             // 
-            // progTimeTrack
-            // 
-            this.progTimeTrack.Location = new System.Drawing.Point(177, 4);
-            this.progTimeTrack.Name = "progTimeTrack";
-            this.progTimeTrack.ProgressColor = System.Drawing.Color.Red;
-            this.progTimeTrack.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progTimeTrack.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.progTimeTrack.ShadowDecoration.Parent = this.progTimeTrack;
-            this.progTimeTrack.Size = new System.Drawing.Size(34, 36);
-            this.progTimeTrack.TabIndex = 42;
-            // 
             // Main_Screan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2789,7 +2790,6 @@
             this.Text = "Main_Screan";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_Screan_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Main_Screan_FormClosed);
             this.Load += new System.EventHandler(this.Main_Screan_Load);
             this.pnList.ResumeLayout(false);
             this.panMenue.ResumeLayout(false);
