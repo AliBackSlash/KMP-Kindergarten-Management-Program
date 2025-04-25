@@ -256,12 +256,6 @@
     <Compile Include="GlobalClasses\clsUtil.cs" />
     <Compile Include="GlobalClasses\clsValidatoin.cs" />
     <Compile Include="GlobalClasses\clsSend.cs" />
-    <Compile Include="ImportantForms\Wait.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ImportantForms\Wait.Designer.cs">
-      <DependentUpon>Wait.cs</DependentUpon>
-    </Compile>
     <Compile Include="Kids%27sFile\AddChaild\AddParsonCanTake.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -592,9 +586,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Evaluations%27sFiles\WinnerArchive.resx">
       <DependentUpon>WinnerArchive.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ImportantForms\Wait.resx">
-      <DependentUpon>Wait.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kids%27sFile\AddChaild\AddParsonCanTake.resx">
       <DependentUpon>AddParsonCanTake.cs</DependentUpon>
