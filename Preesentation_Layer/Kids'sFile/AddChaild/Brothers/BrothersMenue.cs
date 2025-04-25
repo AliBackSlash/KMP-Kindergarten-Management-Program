@@ -41,7 +41,6 @@ namespace K_M_S_PROGRAM.Kids_sFile.AddChaild.Brothers
             AddUpdate_brothers add_ = new AddUpdate_brothers((int)dgvBrothersMenue.CurrentRow.Cells["Code"].Value, true);
             add_.ShowDialog();
         }
-        clsBrother _brother;
         int ID;
         DataTable _BroMenue = null;
         public bool found = false;

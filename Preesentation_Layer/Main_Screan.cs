@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using K_M_S_PROGRAM.UsersFiles;
 using K_M_S_PROGRAM.TreasuryFiles;
 using K_M_S_PROGRAM.Evaluations_sFiles;
-using System.Threading.Tasks;
+
 namespace K_M_S_PROGRAM.Resources
 {
     public partial class Main_Screan : Form
@@ -119,7 +119,7 @@ namespace K_M_S_PROGRAM.Resources
             }
         }
 
-        private void btSubscripIList_Click(object sender, EventArgs e)
+        private void btSubscriptIList_Click(object sender, EventArgs e)
         {
             if (pnSubscripList.Size.Height == ListHeight)
             {
@@ -352,7 +352,7 @@ namespace K_M_S_PROGRAM.Resources
 
 
         //------------//
-        private void ShowAccessDenaid(Form form)
+        private void ShowAccessDanaid(Form form)
         {
 
             pnShow.Controls.Clear();
@@ -378,6 +378,7 @@ namespace K_M_S_PROGRAM.Resources
                 form.TopLevel = false;
                 pnShow.Controls.Add(form);
                 form.Dock = DockStyle.Fill;
+
                 if (clsGlobal.Settings.Mode)
                     form.BackColor = Color.Black;
                 else
@@ -389,7 +390,7 @@ namespace K_M_S_PROGRAM.Resources
             }
             else
             {
-                ShowAccessDenaid(acceses);
+                ShowAccessDanaid(acceses);
                 clsUtil.Show("للأسف ليس لديك وصول لهذه الشاشة من فضلك تواصل مع مدير المؤسسة!", false);
                 return;
             }
@@ -518,9 +519,10 @@ namespace K_M_S_PROGRAM.Resources
 
         }
 
+        
         //------Kids-------//
         Main_Menue mainMenu = null;
-        Kids_Menue kids_Menue = null;
+        Kids_Menue kids_Menu = null;
         Kids_sData kids_SData = null;
         Add_Child add_Child = null;
         Kids_s_Arshif kids_S_Arshif = null;
@@ -532,20 +534,22 @@ namespace K_M_S_PROGRAM.Resources
             {
                 mainMenu = new Main_Menue();
             }
+
             if (mainMenu.Visible)
                 mainMenu.Reafrsh1();
+
             ShowSubForm(mainMenu);
         }
 
         private void btSubKidsMenue_Click(object sender, EventArgs e)
         {
-            if (kids_Menue == null || kids_Menue.IsDisposed)
+            if (kids_Menu == null || kids_Menu.IsDisposed)
             {
-                kids_Menue = new Kids_Menue();
+                kids_Menu = new Kids_Menue();
             }
-            if (kids_Menue.Visible)
-                kids_Menue.Refrish1();
-            ShowSubForm(kids_Menue);
+            if (kids_Menu.Visible)
+                kids_Menu.Refrish1();
+            ShowSubForm(kids_Menu);
         }
 
         private void btSubKidsInfo_Click(object sender, EventArgs e)
@@ -971,7 +975,7 @@ namespace K_M_S_PROGRAM.Resources
             return false;
         }
 
-        private void timChek_Tick(object sender, EventArgs e)
+        private void timCheck_Tick(object sender, EventArgs e)
         {
 
             TestNotifications();
@@ -992,7 +996,7 @@ namespace K_M_S_PROGRAM.Resources
 
         }
 
-        private void Main_Screan_FormClosing(object sender, FormClosingEventArgs e)
+        private void Main_Screen_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = true;
             this.Hide();
@@ -1060,7 +1064,7 @@ namespace K_M_S_PROGRAM.Resources
             }
         }
 
-        private void timRemander_Tick(object sender, EventArgs e)
+        private void timRemender_Tick(object sender, EventArgs e)
         {
             progTimeTrack2.Value++;
             progTimeTrack.Value++;
@@ -1179,7 +1183,7 @@ namespace K_M_S_PROGRAM.Resources
             }
 
         }
-        private async void Main_Screan_Load(object sender, EventArgs e)
+        private void Main_Screen_Load(object sender, EventArgs e)
         {
 
             lbDayDate.Text = DateTime.Now.ToLongDateString();

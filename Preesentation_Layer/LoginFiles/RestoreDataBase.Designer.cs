@@ -104,6 +104,7 @@
             // 
             // lbIntro
             // 
+            this.lbIntro.BackColor = System.Drawing.Color.Transparent;
             this.lbIntro.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbIntro.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbIntro.ForeColor = System.Drawing.Color.Blue;
@@ -151,7 +152,7 @@
             this.lbMyAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbMyAccount.BackColor = System.Drawing.Color.Transparent;
             this.lbMyAccount.Font = new System.Drawing.Font("Sylfaen", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lbMyAccount.Location = new System.Drawing.Point(535, 382);
+            this.lbMyAccount.Location = new System.Drawing.Point(535, 385);
             this.lbMyAccount.Name = "lbMyAccount";
             this.lbMyAccount.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbMyAccount.Size = new System.Drawing.Size(161, 25);
@@ -177,13 +178,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(699, 408);
+            this.BackgroundImage = global::K_M_S_PROGRAM.Properties.Resources.loading;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(699, 411);
             this.Controls.Add(this.waitControl);
             this.Controls.Add(this.btRestore);
             this.Controls.Add(this.lbIntro);
             this.Controls.Add(this.txSavePath);
             this.Controls.Add(this.btSavePackup);
             this.Controls.Add(this.lbMyAccount);
+            this.DoubleBuffered = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "RestoreDataBase";

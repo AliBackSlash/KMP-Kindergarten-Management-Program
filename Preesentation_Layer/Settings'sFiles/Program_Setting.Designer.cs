@@ -145,6 +145,7 @@
             this.kk = new SATAUiFramework.SATAPanel();
             this.btDelete = new Guna.UI2.WinForms.Guna2Button();
             this.picLogo = new SATAUiFramework.Controls.SATAPictureBox();
+            this.gnWait = new Guna.UI2.WinForms.Guna2WinProgressIndicator();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.lbMyProfile.SuspendLayout();
@@ -1575,6 +1576,7 @@
             this.sataPanel1.BorderRadius = borderRadius3;
             this.sataPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sataPanel1.BorderThickness = 2;
+            this.sataPanel1.Controls.Add(this.gnWait);
             this.sataPanel1.Controls.Add(this.ckMode);
             this.sataPanel1.Controls.Add(this.label34);
             this.sataPanel1.Controls.Add(this.ckShowBeforPrint);
@@ -1705,7 +1707,7 @@
             this.txSavePath.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txSavePath.HoverState.Parent = this.txSavePath;
             this.txSavePath.IconRightSize = new System.Drawing.Size(30, 30);
-            this.txSavePath.Location = new System.Drawing.Point(74, 152);
+            this.txSavePath.Location = new System.Drawing.Point(74, 150);
             this.txSavePath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txSavePath.Name = "txSavePath";
             this.txSavePath.PasswordChar = '\0';
@@ -2092,6 +2094,16 @@
             this.picLogo.TabStop = false;
             this.picLogo.Click += new System.EventHandler(this.picLogo_Click);
             // 
+            // gnWait
+            // 
+            this.gnWait.CircleSize = 2F;
+            this.gnWait.Location = new System.Drawing.Point(7, 139);
+            this.gnWait.Name = "gnWait";
+            this.gnWait.ProgressColor = System.Drawing.Color.Indigo;
+            this.gnWait.Size = new System.Drawing.Size(60, 60);
+            this.gnWait.TabIndex = 107;
+            this.gnWait.Visible = false;
+            // 
             // Program_Setting
             // 
             this.AcceptButton = this.btSave;
@@ -2255,5 +2267,6 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Label label34;
         private Guna.UI2.WinForms.Guna2CustomCheckBox ckMode;
+        private Guna.UI2.WinForms.Guna2WinProgressIndicator gnWait;
     }
 }

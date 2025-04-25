@@ -73,6 +73,7 @@
             this.إضافةمستلمToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.تعديلبياناتالمستلمToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.طباعةالباركودToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.انهاءفترةدراسةالطفلToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sataPanel2 = new SATAUiFramework.SATAPanel();
             this.btStopSend = new Guna.UI2.WinForms.Guna2Button();
             this.ckCeekAll = new Guna.UI2.WinForms.Guna2CustomCheckBox();
@@ -94,9 +95,7 @@
             this.lbTotalRecords = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.sEllipse1 = new Sipaa.Framework.SEllipse();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.BGWorker = new System.ComponentModel.BackgroundWorker();
-            this.انهاءفترةدراسةالطفلToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKidsMenue)).BeginInit();
             this.cnTask.SuspendLayout();
@@ -310,7 +309,7 @@
             this.انهاءفترةدراسةالطفلToolStripMenuItem});
             this.cnTask.Name = "cnTask";
             this.cnTask.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cnTask.Size = new System.Drawing.Size(200, 266);
+            this.cnTask.Size = new System.Drawing.Size(200, 244);
             this.cnTask.Opening += new System.ComponentModel.CancelEventHandler(this.cnTask_Opening);
             // 
             // toolStripMenuItem2
@@ -483,6 +482,14 @@
             this.طباعةالباركودToolStripMenuItem.Size = new System.Drawing.Size(199, 24);
             this.طباعةالباركودToolStripMenuItem.Text = "طباعة الباركود";
             this.طباعةالباركودToolStripMenuItem.Click += new System.EventHandler(this.طباعةالباركودToolStripMenuItem_Click);
+            // 
+            // انهاءفترةدراسةالطفلToolStripMenuItem
+            // 
+            this.انهاءفترةدراسةالطفلToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.v3;
+            this.انهاءفترةدراسةالطفلToolStripMenuItem.Name = "انهاءفترةدراسةالطفلToolStripMenuItem";
+            this.انهاءفترةدراسةالطفلToolStripMenuItem.Size = new System.Drawing.Size(199, 24);
+            this.انهاءفترةدراسةالطفلToolStripMenuItem.Text = "انهاء فترة دراسة الطفل";
+            this.انهاءفترةدراسةالطفلToolStripMenuItem.Click += new System.EventHandler(this.انهاءفترةدراسةالطفلToolStripMenuItem_Click);
             // 
             // sataPanel2
             // 
@@ -921,14 +928,6 @@
             this.BGWorker.WorkerSupportsCancellation = true;
             this.BGWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BGWorker_DoWork);
             // 
-            // انهاءفترةدراسةالطفلToolStripMenuItem
-            // 
-            this.انهاءفترةدراسةالطفلToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.v3;
-            this.انهاءفترةدراسةالطفلToolStripMenuItem.Name = "انهاءفترةدراسةالطفلToolStripMenuItem";
-            this.انهاءفترةدراسةالطفلToolStripMenuItem.Size = new System.Drawing.Size(199, 24);
-            this.انهاءفترةدراسةالطفلToolStripMenuItem.Text = "انهاء فترة دراسة الطفل";
-            this.انهاءفترةدراسةالطفلToolStripMenuItem.Click += new System.EventHandler(this.انهاءفترةدراسةالطفلToolStripMenuItem_Click);
-            // 
             // Kids_Menue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1014,7 +1013,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn PerantID;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.ComponentModel.BackgroundWorker BGWorker;
         private Guna.UI2.WinForms.Guna2Button btStopSend;
         private System.Windows.Forms.ToolStripMenuItem انهاءفترةدراسةالطفلToolStripMenuItem;

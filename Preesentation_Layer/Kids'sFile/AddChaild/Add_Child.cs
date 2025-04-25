@@ -67,7 +67,6 @@ namespace K_M_S_PROGRAM.Resources
                 this.BackColor = Color.Gainsboro;
         }
         clsChild _addChild = null;
-        string CurrentID;
         private bool AddUpdateChild()
         {
 

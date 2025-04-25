@@ -42,7 +42,7 @@ namespace MyBusinessLayer
         }
 
 
-        public static bool DeleteTableData(string query)
+        public static bool PerformOperationAndReturnBoolean(string query)
         {
             return clsGenericData.DeleteTableData(query);
         }

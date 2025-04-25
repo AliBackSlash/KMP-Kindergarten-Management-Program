@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace K_M_S_PROGRAM.Resources
@@ -31,11 +32,11 @@ namespace K_M_S_PROGRAM.Resources
 
         }
 
-        private void SendWhatsAppMessageForOne(MetroGrid Grid, string Message, char Num)
+        private async void SendWhatsAppMessageForOne(MetroGrid Grid, string Message, char Num)
         {
             try
             {
-                if (clsSend.Send_Whats_App_Message_For_One(Grid.CurrentRow.Cells["Phone" + Num].Value.ToString(), Message))
+                if (await clsSend.Send_Whats_App_Message_For_One(Grid.CurrentRow.Cells["Phone" + Num].Value.ToString(), Message))
                 { clsUtil.Show("تم الإرسال"); clsMessageArchive.AddToMessage_Archive(Grid.CurrentRow.Cells[1].Value.ToString(), '1', Message, 'C'); }
                 else
                     clsUtil.Show("لم يتم الإرسال", false);
@@ -189,7 +190,7 @@ namespace K_M_S_PROGRAM.Resources
             }
         }
 
-        private void BGWorker_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
+        private async void BGWorker_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
            
             List<string> PNumbers = new List<string>();
@@ -207,7 +208,7 @@ namespace K_M_S_PROGRAM.Resources
                 List<string> failedNumbers = new List<string>();
 
 
-                failedNumbers = clsSend.Send_Whats_App_Message_For_Group(PNumbers, Names, 'C', Message, e, BGWorker);
+                failedNumbers = await clsSend.Send_Whats_App_Message_For_Group(PNumbers, Names, 'C', Message, e, BGWorker);
                 if (failedNumbers.Count >= 0)
                     clsUtil.Show("تم الإرسال بنجاح ");
                 else

@@ -22,7 +22,7 @@ namespace K_M_S_PROGRAM.Resources
         bool Peroid ;
         private void HeaderInfo()
         {
-            Peroid = clsUtil.GetPeroid();
+            Peroid = clsUtil.GetPeriod();
 
             lbTotalAmount.Text = clsMainMenue.TreasuryAmmount().ToString();
             lbCurrentTotalAmount.Text = clsMainMenue.CurrentTreasuryAmmount().ToString();
@@ -144,7 +144,7 @@ namespace K_M_S_PROGRAM.Resources
 
         private void Chart3Info()
         {
-            Peroid = clsUtil.GetPeroid();
+            Peroid = clsUtil.GetPeriod();
             try
             {
                 DataTable degrees = clsEvaluations.GetAVGOfEvaluation(Peroid);

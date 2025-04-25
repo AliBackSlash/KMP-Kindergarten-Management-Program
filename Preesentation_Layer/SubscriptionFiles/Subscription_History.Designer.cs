@@ -131,6 +131,7 @@
             this.dgvPaymentHistory.GridColor = System.Drawing.Color.White;
             this.dgvPaymentHistory.Location = new System.Drawing.Point(3, 98);
             this.dgvPaymentHistory.Name = "dgvPaymentHistory";
+            this.dgvPaymentHistory.ReadOnly = true;
             this.dgvPaymentHistory.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -155,6 +156,7 @@
             this.dataGridViewImageColumn2.HeaderText = "@";
             this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.ReadOnly = true;
             this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewImageColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dataGridViewImageColumn2.Width = 43;
@@ -163,6 +165,7 @@
             // 
             this.Code.HeaderText = "الكود";
             this.Code.Name = "Code";
+            this.Code.ReadOnly = true;
             this.Code.Width = 150;
             // 
             // Name
@@ -170,12 +173,14 @@
             this.Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Name.HeaderText = "إسم الطفل";
             this.Name.Name = "Name";
+            this.Name.ReadOnly = true;
             // 
             // DateOfPayment
             // 
             this.DateOfPayment.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.DateOfPayment.HeaderText = "تاريخ السداد";
             this.DateOfPayment.Name = "DateOfPayment";
+            this.DateOfPayment.ReadOnly = true;
             this.DateOfPayment.Width = 90;
             // 
             // Date
@@ -184,6 +189,7 @@
             this.Date.FillWeight = 60F;
             this.Date.HeaderText = "إشتراك شهر";
             this.Date.Name = "Date";
+            this.Date.ReadOnly = true;
             this.Date.Width = 90;
             // 
             // dataGridViewTextBoxColumn16
@@ -191,18 +197,21 @@
             this.dataGridViewTextBoxColumn16.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn16.HeaderText = "المستوي";
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn17
             // 
             this.dataGridViewTextBoxColumn17.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn17.HeaderText = "إسم الفصل";
             this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn18
             // 
             this.dataGridViewTextBoxColumn18.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.dataGridViewTextBoxColumn18.HeaderText = "الفترة";
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.ReadOnly = true;
             this.dataGridViewTextBoxColumn18.Width = 58;
             // 
             // totalAmount
@@ -214,6 +223,7 @@
             this.totalAmount.FillWeight = 80F;
             this.totalAmount.HeaderText = "قيمة المدفوعة";
             this.totalAmount.Name = "totalAmount";
+            this.totalAmount.ReadOnly = true;
             this.totalAmount.Width = 99;
             // 
             // Remender1
@@ -222,6 +232,7 @@
             this.Remender1.FillWeight = 50F;
             this.Remender1.HeaderText = "المبلغ المتبقي";
             this.Remender1.Name = "Remender1";
+            this.Remender1.ReadOnly = true;
             this.Remender1.Width = 98;
             // 
             // cnTask

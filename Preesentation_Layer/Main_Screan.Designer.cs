@@ -1920,7 +1920,7 @@
             this.lbSub.Size = new System.Drawing.Size(75, 32);
             this.lbSub.TabIndex = 29;
             this.lbSub.Text = "الإشتراكات";
-            this.lbSub.Click += new System.EventHandler(this.btSubscripIList_Click);
+            this.lbSub.Click += new System.EventHandler(this.btSubscriptIList_Click);
             this.lbSub.MouseEnter += new System.EventHandler(this.LabelTittle_MouseEnter);
             this.lbSub.MouseLeave += new System.EventHandler(this.LabelTittle_MouseLeave);
             // 
@@ -2589,7 +2589,7 @@
             // timChek
             // 
             this.timChek.Interval = 1000;
-            this.timChek.Tick += new System.EventHandler(this.timChek_Tick);
+            this.timChek.Tick += new System.EventHandler(this.timCheck_Tick);
             // 
             // pnHeader
             // 
@@ -2745,7 +2745,7 @@
             // timRemander
             // 
             this.timRemander.Interval = 1000;
-            this.timRemander.Tick += new System.EventHandler(this.timRemander_Tick);
+            this.timRemander.Tick += new System.EventHandler(this.timRemender_Tick);
             // 
             // timHideAndShow
             // 
@@ -2789,8 +2789,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main_Screan";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_Screan_FormClosing);
-            this.Load += new System.EventHandler(this.Main_Screan_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_Screen_FormClosing);
+            this.Load += new System.EventHandler(this.Main_Screen_Load);
             this.pnList.ResumeLayout(false);
             this.panMenue.ResumeLayout(false);
             this.pnSettingsList.ResumeLayout(false);

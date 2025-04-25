@@ -21,6 +21,15 @@ namespace K_M_S_PROGRAM.LoginFiles
         {
             InitializeComponent();
         }
+
+        public RestoreDataBase(bool NotFirst)
+        {
+            this.BackgroundImageLayout = ImageLayout.Zoom;
+            this.BackgroundImage = Properties.Resources.logo;
+            notFirst = NotFirst;
+            InitializeComponent();
+        }
+        bool notFirst = false;
         bool Restored = false;
         public delegate void IsRestored(bool Restored);
         public event IsRestored evRestored;
@@ -65,6 +74,8 @@ namespace K_M_S_PROGRAM.LoginFiles
                 waitControl.Visible = false;
                 btRestore.Visible = true;
                 lbIntro.Text = "";
+                if (notFirst)
+                    clsUtil.Show("تم");
                 timer1.Start();
                 clsGlobal.setFristOpenToBeClose();
 
@@ -83,8 +94,15 @@ namespace K_M_S_PROGRAM.LoginFiles
                             "❇️ النقر على زر \'Restore\' لبدء التجربة المجانية والاستمتاع بكامل المزايا. \n" +
                             "نتمنى لكم تجربة سلسة وفعّالة، ونرحّب بأي استفسارات أو ملاحظات.";
 
+            if (notFirst)
+            {
+                btRestore.Enabled = true;
+                btSavePackup.Enabled = true;
+                lbIntro.Visible = false;
 
-            timer1.Start();
+            }
+            else
+                timer1.Start();
 
         }
 

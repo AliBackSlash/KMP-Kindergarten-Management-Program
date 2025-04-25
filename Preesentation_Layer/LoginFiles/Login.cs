@@ -1,9 +1,11 @@
 ﻿using K_M_S_PROGRAM.GlobalClasses;
+using K_M_S_PROGRAM.LoginFiles;
 using K_M_S_PROGRAM.Resources;
 using MyBusinessLayer;
 using System;
 using System.Drawing;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace K_M_S_PROGRAM
@@ -42,10 +44,14 @@ namespace K_M_S_PROGRAM
      
         }
         byte TrailNumber = 3;
-        private void btLogin_Click(object sender, EventArgs e)
+        private async void btLogin_Click(object sender, EventArgs e)
         {
-            clsUser login = clsUser.Find(txUserName.Text.Trim(), clsUtil.Encrypt(TxPassword.Text.Trim()));
-
+            clsUser login = null;
+            btLogin.Visible = false;
+            gnWait.Start();
+            gnWait.Visible = true;
+            await Task.Run(() => {  login = clsUser.Find(txUserName.Text.Trim(), clsUtil.Encrypt(TxPassword.Text.Trim())); });
+           
             if (login != null)
             {
                 this.Hide();
@@ -55,9 +61,13 @@ namespace K_M_S_PROGRAM
                 else
                     clsGlobal.RememberUsernameAndPassword("", "");
 
-                Main_Screan main_Screan = new Main_Screan(login);
+                Main_Screan main_Screen = new Main_Screan(login);
                 //this.Hide();
-                main_Screan.ShowDialog();
+                gnWait.Stop();
+                gnWait.Visible = false;
+                btLogin.Visible = true;
+
+                main_Screen.ShowDialog();
                 this.Close();
 
 
@@ -65,6 +75,9 @@ namespace K_M_S_PROGRAM
             }
             else
             {
+                gnWait.Stop();
+                gnWait.Visible = false;
+                btLogin.Visible = true;
                 if (txUserName.Text == "" && TxPassword.Text == "")
                     lbError.ForeColor = Color.DarkRed;
                 else if (txUserName.Text == "")
@@ -110,7 +123,17 @@ namespace K_M_S_PROGRAM
             }
             else
                 ckRemember.Checked = false;
+
+            if (clsGeneric.PerformOperationAndReturnBoolean("SELECT name FROM sys.databases WHERE name = 'KMP'"))
+                linkLabel1.Visible = false;
+            else
+                linkLabel1.Visible = true;
         }
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            RestoreDataBase restoreDataBase = new RestoreDataBase(true);
+            restoreDataBase.ShowDialog();
+        }
     }
 }

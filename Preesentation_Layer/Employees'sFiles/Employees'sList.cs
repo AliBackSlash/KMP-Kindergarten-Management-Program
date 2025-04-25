@@ -333,18 +333,18 @@ namespace K_M_S_PROGRAM.Resources
 
         }
 
-        private void Send_Message(string Message)
+        private async void Send_Message(string Message)
         {
-            if (clsSend.Send_Whats_App_Message_For_One(dgvEmployeesMenue.CurrentRow.Cells["Phone"].Value.ToString(), Message))
+            if (await clsSend.Send_Whats_App_Message_For_One(dgvEmployeesMenue.CurrentRow.Cells["Phone"].Value.ToString(), Message))
             { clsUtil.Show("تم"); clsMessageArchive.AddToMessage_Archive(dgvEmployeesMenue.CurrentRow.Cells["Name"].Value.ToString(), '1', Message, rdTeacher.Checked ? 'T' : 'W'); }
             else
                 clsUtil.Show("لم تتم", false);
         }
 
-        private void BGWorker_DoWork(object sender, DoWorkEventArgs e)
+        private async void BGWorker_DoWork(object sender, DoWorkEventArgs e)
         {
             List<string> failedNumbers = new List<string>();
-            failedNumbers = clsSend.Send_Whats_App_Message_For_Group(PNumbers, Names, rdTeacher.Checked ? 'T' : 'W', Message,e,BGWorker);
+            failedNumbers = await clsSend.Send_Whats_App_Message_For_Group(PNumbers, Names, rdTeacher.Checked ? 'T' : 'W', Message,e,BGWorker);
             if (failedNumbers.Count >= 0)
                 clsUtil.Show("تم الإرسال بنجاح ");
             else

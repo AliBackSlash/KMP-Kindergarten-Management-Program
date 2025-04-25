@@ -414,7 +414,7 @@ namespace K_M_S_PROGRAM.Resources
 
         void ProgressValue()
         {
-            Peroid = clsUtil.GetPeroid();
+            Peroid = clsUtil.GetPeriod();
 
 
             NumOfStudebts = clsChild.NumberOfKids(Peroid);

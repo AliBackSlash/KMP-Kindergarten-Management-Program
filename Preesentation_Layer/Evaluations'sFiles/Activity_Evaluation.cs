@@ -26,7 +26,7 @@ namespace K_M_S_PROGRAM.Resources
        
         private void FillKidsEvaluation(string Code="")
         {
-            DataTable table = clsEvaluations.GetEvaluationInfo(clsClsases.GetClassID(cmClassName.Text),clsUtil.GetPeroid());
+            DataTable table = clsEvaluations.GetEvaluationInfo(clsClsases.GetClassID(cmClassName.Text),clsUtil.GetPeriod());
 
             Image image = null;
             if(Code!="")

@@ -39,6 +39,8 @@
             this.picShowIcon = new System.Windows.Forms.PictureBox();
             this.ckRemember = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.gnWait = new Guna.UI2.WinForms.Guna2WinProgressIndicator();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picShowIcon)).BeginInit();
             this.SuspendLayout();
@@ -52,7 +54,7 @@
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(568, 24);
             this.label1.TabIndex = 37;
-            this.label1.Text = "V 1.1.0";
+            this.label1.Text = "v1.1.0";
             // 
             // pictureBox1
             // 
@@ -231,6 +233,28 @@
             this.label15.TabIndex = 36;
             this.label15.Text = "Remember me";
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(2, 325);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(91, 13);
+            this.linkLabel1.TabIndex = 39;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Restore database";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // guna2WinProgressIndicator1
+            // 
+            this.gnWait.BackColor = System.Drawing.Color.Transparent;
+            this.gnWait.CircleSize = 2F;
+            this.gnWait.Location = new System.Drawing.Point(399, 257);
+            this.gnWait.Name = "guna2WinProgressIndicator1";
+            this.gnWait.ProgressColor = System.Drawing.Color.Blue;
+            this.gnWait.Size = new System.Drawing.Size(61, 61);
+            this.gnWait.TabIndex = 40;
+            this.gnWait.Visible = false;
+            // 
             // Login_Screen
             // 
             this.AcceptButton = this.btLogin;
@@ -239,6 +263,8 @@
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(568, 342);
+            this.Controls.Add(this.gnWait);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label15);
@@ -275,6 +301,8 @@
         private System.Windows.Forms.PictureBox picShowIcon;
         private Guna.UI2.WinForms.Guna2CustomCheckBox ckRemember;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private Guna.UI2.WinForms.Guna2WinProgressIndicator gnWait;
     }
 }
 

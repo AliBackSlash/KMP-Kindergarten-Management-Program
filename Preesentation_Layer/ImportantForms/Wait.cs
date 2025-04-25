@@ -8,13 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace K_M_S_PROGRAM.Settings_sFiles
+namespace K_M_S_PROGRAM.ImportantForms
 {
-    public partial class SettingInput : UserControl
+    public partial class Wait : Form
     {
-        public SettingInput()
+        public Wait()
         {
             InitializeComponent();
+          
+            this.ShowInTaskbar = false;
+
+        }
+
+       
+        private void Wait_Load(object sender, EventArgs e)
+        {
+            guWait.Start();
         }
     }
 }

@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace K_M_S_PROGRAM.ImportantForms
@@ -14,39 +15,49 @@ namespace K_M_S_PROGRAM.ImportantForms
     {
         [DllImport("user32.dll")]
         private static extern IntPtr GetForegroundWindow();
-        public static List<string> Send_Whats_App_Message_For_Group(List<string> PhoneNumbers,List<string> Names,char Kind, string message, DoWorkEventArgs e,BackgroundWorker BGWorker)
+        public static async Task<List<string>> Send_Whats_App_Message_For_Group(List<string> PhoneNumbers, List<string> Names, char Kind, string message, DoWorkEventArgs e, BackgroundWorker BGWorker)
         {
-
             string encodedMessage = Uri.EscapeDataString(message);
-            List<string> list = new List<string>();
-            int Counter = 0;
+            int Counter = -1;
+            List<string> FailedList = new List<string>();
             foreach (string Phone in PhoneNumbers)
             {
-                if (BGWorker.CancellationPending) // التحقق مما إذا تم طلب الإلغاء
+                Counter++;
+
+                if (BGWorker.CancellationPending)
                 {
                     e.Cancel = true;
-                    return list;
+
+                    break;
                 }
-                string whatsappUrl = $"whatsapp://send?phone={"2" + Phone}&text={encodedMessage}";
-                
+
+                string WhatsAppUrl = $"whatsapp://send?phone=2{Phone}&text={encodedMessage}";
+
                 try
                 {
-                    Process.Start(whatsappUrl);
+                    Process.Start(WhatsAppUrl);
 
-                    Thread.Sleep(1000);
+                    await Task.Delay(3000); 
 
                     SendKeys.SendWait("{ENTER}");
-                    clsMessageArchive.AddToMessage_Archive(Names[++Counter], '1', message, Kind);
+
+                    await Task.Delay(2000);
+
+                    clsMessageArchive.AddToMessage_Archive(Names[Counter], '1', message, Kind);
+                    
+                    
+                }
+                catch (Exception)
+                {
+                    FailedList.Add(Phone);
+                    return FailedList;
 
                 }
-                catch (Exception ex)
-                {
-                    list.Add(Phone);
-                }
             }
-            return list;
+                return FailedList;
         }
-        public static bool Send_Whats_App_Message_For_One(string PhoneNumbers, string message )
+
+        public async static Task<bool> Send_Whats_App_Message_For_One(string PhoneNumbers, string message )
         {
 
             string encodedMessage = Uri.EscapeDataString(message);
@@ -59,12 +70,16 @@ namespace K_M_S_PROGRAM.ImportantForms
 
                 Process.Start(whatsappUrl);
 
-                Thread.Sleep(1000);
+                await Task.Delay(3000);
+
+                SendKeys.SendWait("{ENTER}");
+
+                await Task.Delay(2000);
 
                 SendKeys.SendWait("{ENTER}");
                 SendKeys.SendWait("{ENTER}");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }

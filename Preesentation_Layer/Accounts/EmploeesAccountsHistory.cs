@@ -147,7 +147,7 @@ namespace K_M_S_PROGRAM.Resources
         {
             if (MessageBox.Show("هل متأكد من أنك تريد مسح جميع السجل ؟", "تنبيه", MessageBoxButtons.OKCancel, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign) == DialogResult.OK)
             {
-                if (clsGeneric.DeleteTableData("truncate table EmployeesAccountsHistory"))
+                if (clsGeneric.PerformOperationAndReturnBoolean("truncate table EmployeesAccountsHistory"))
                 {
                     message.lbTitale.Text = "تم مسح السجل";
                     message.pic.BackgroundImage = Properties.Resources.ok;

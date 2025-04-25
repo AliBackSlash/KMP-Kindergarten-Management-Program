@@ -163,21 +163,7 @@ namespace K_M_S_PROGRAM.GlobalClasses
 
         }
 
-        //public static string ComputeHash(string Value)
-        //{
-        //    using (SHA256 sha256 = SHA256.Create())
-        //    {
-        //        byte[] HashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(Value));
-        //        StringBuilder sd = new StringBuilder();
-        //        foreach (byte b in HashBytes)
-        //        {
-        //            sd.Append(b.ToString("x2"));
-        //        }
-        //        return sd.ToString();
-        //    }
-        //}
-        ////استبدال الهاش بيهم
-     
+       
         public static string Encrypt(string plainText)
         {
             using (Aes aesAlg = Aes.Create())
@@ -230,8 +216,6 @@ namespace K_M_S_PROGRAM.GlobalClasses
                 }
             }
         }
-
-       
 
         public static void btAbsenceRemander_Click(bool Peroid)
         {
@@ -377,7 +361,7 @@ namespace K_M_S_PROGRAM.GlobalClasses
             e.Graphics.DrawString($"نشكركم على حسن ثقتكم بنا طاب يومكم", BackFont, brush, new RectangleF(0, currentY, receiptWidth, lineHeight), format);
             currentY += 12;
 
-            e.Graphics.DrawString($"مدير المؤسسة أ/{ManagerName}", BackFont, brush, new RectangleF(0, currentY, receiptWidth, lineHeight), format);
+            e.Graphics.DrawString($"مدير المؤسسة {ManagerName}", BackFont, brush, new RectangleF(0, currentY, receiptWidth, lineHeight), format);
 
             if (SecondTime)
             {
@@ -455,7 +439,7 @@ namespace K_M_S_PROGRAM.GlobalClasses
             e.Graphics.DrawString($"نشكركم على حسن ثقتكم بنا طاب يومكم", BackFont, brush, new RectangleF(0, currentY, receiptWidth, lineHeight), format);
             currentY += 12;
 
-            e.Graphics.DrawString($"مدير المؤسسة أ/{ManagerName}", BackFont, brush, new RectangleF(0, currentY, receiptWidth, lineHeight), format);
+            e.Graphics.DrawString($"مدير المؤسسة {ManagerName}", BackFont, brush, new RectangleF(0, currentY, receiptWidth, lineHeight), format);
 
 
             if (SecondTime)
@@ -540,7 +524,7 @@ namespace K_M_S_PROGRAM.GlobalClasses
             e.Graphics.DrawString($"نشكركم على حسن ثقتكم بنا طاب يومكم", BackFont, brush, new RectangleF(0, currentY, receiptWidth, lineHeight), format);
             currentY += 12;
 
-            e.Graphics.DrawString($"مدير المؤسسة أ/{ManagerName}", BackFont, brush, new RectangleF(0, currentY, receiptWidth, lineHeight), format);
+            e.Graphics.DrawString($"مدير المؤسسة {ManagerName}", BackFont, brush, new RectangleF(0, currentY, receiptWidth, lineHeight), format);
 
             if (SecondTime)
             {
@@ -624,7 +608,7 @@ namespace K_M_S_PROGRAM.GlobalClasses
             e.Graphics.DrawString($"نشكركم على حسن ثقتكم بنا طاب يومكم", BackFont, brush, new RectangleF(0, currentY, receiptWidth, lineHeight), format);
             currentY += 12;
 
-            e.Graphics.DrawString($"مدير المؤسسة أ/{ManagerName}", BackFont, brush, new RectangleF(0, currentY, receiptWidth, lineHeight), format);
+            e.Graphics.DrawString($"مدير المؤسسة {ManagerName}", BackFont, brush, new RectangleF(0, currentY, receiptWidth, lineHeight), format);
 
             if (SecondTime)
             {
@@ -639,7 +623,7 @@ namespace K_M_S_PROGRAM.GlobalClasses
             return new Bitmap(imgToResize, new Size(width, height));
         }
 
-        public static bool GetPeroid()
+        public static bool GetPeriod()
         {
             return DateTime.Now.TimeOfDay < DateTime.ParseExact(clsGlobal.Settings.TimeEnterPM, "HH:mm:ss", null).TimeOfDay;
         }

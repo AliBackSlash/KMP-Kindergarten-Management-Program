@@ -1,4 +1,5 @@
 ﻿using K_M_S_PROGRAM.GlobalClasses;
+using K_M_S_PROGRAM.ImportantForms;
 using MyBusinessLayer;
 using System;
 using System.Collections.Generic;
@@ -300,9 +301,34 @@ namespace K_M_S_PROGRAM.Resources
            
         }
 
-        private void btRestore_Click(object sender, EventArgs e)
+        private async void btRestore_Click(object sender, EventArgs e)
         {
-            clsSettings.RestoreData(txSavePath.Text);
+            bool Restored = false;
+            if (File.Exists(txSavePath.Text))
+            {
+                gnWait.Start();
+                gnWait.Visible = true;
+                await Task.Run(() =>
+                {
+
+                    Restored = clsSettings.RestoreData(txSavePath.Text);
+
+                    gnWait.Stop();
+                    gnWait.Visible = false;
+
+                });
+
+                if (Restored)
+                { clsUtil.Show("تم"); }
+                else
+                { clsUtil.Show("يوجد مشكلة في ملف الداتا ", false); }
+
+            }
+            else
+                clsUtil.Show($"لا يوجد ملف داتا بيز في هذا المسار {txSavePath.Text}",false);
+
+            
+           
         }
 
        
@@ -311,7 +337,6 @@ namespace K_M_S_PROGRAM.Resources
             picLogo.ImageLocation = "";
             picLogo.Image = Properties.Resources.icons8_add_camera_60;
         }
-        byte numberOfCheckVigation = 0;
        
     }
 }

@@ -15,6 +15,8 @@ namespace K_M_S_PROGRAM.Resources
         public MyMessage()
         {
             InitializeComponent();
+            this.ShowInTaskbar = false;
+
            
         }
        

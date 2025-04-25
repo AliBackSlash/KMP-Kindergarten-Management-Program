@@ -66,6 +66,9 @@
   <PropertyGroup />
   <PropertyGroup />
   <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>Logo %287%29.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="CodeeloUI">
       <HintPath>Packages\CodeeloUI.1.1.1\lib\net472\CodeeloUI.dll</HintPath>
@@ -253,6 +256,12 @@
     <Compile Include="GlobalClasses\clsUtil.cs" />
     <Compile Include="GlobalClasses\clsValidatoin.cs" />
     <Compile Include="GlobalClasses\clsSend.cs" />
+    <Compile Include="ImportantForms\Wait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportantForms\Wait.Designer.cs">
+      <DependentUpon>Wait.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kids%27sFile\AddChaild\AddParsonCanTake.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -349,12 +358,6 @@
     </Compile>
     <Compile Include="Employees%27sFiles\Add_Employees.Designer.cs">
       <DependentUpon>Add_Employees.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Settings%27sFiles\SettingInput.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Settings%27sFiles\SettingInput.Designer.cs">
-      <DependentUpon>SettingInput.cs</DependentUpon>
     </Compile>
     <Compile Include="TreasuryFiles\AddToTreasury.cs">
       <SubType>Form</SubType>
@@ -590,6 +593,9 @@
     <EmbeddedResource Include="Evaluations%27sFiles\WinnerArchive.resx">
       <DependentUpon>WinnerArchive.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ImportantForms\Wait.resx">
+      <DependentUpon>Wait.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kids%27sFile\AddChaild\AddParsonCanTake.resx">
       <DependentUpon>AddParsonCanTake.cs</DependentUpon>
     </EmbeddedResource>
@@ -639,9 +645,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Employees%27sFiles\Add_Employees.resx">
       <DependentUpon>Add_Employees.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Settings%27sFiles\SettingInput.resx">
-      <DependentUpon>SettingInput.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TreasuryFiles\AddToTreasury.resx">
       <DependentUpon>AddToTreasury.cs</DependentUpon>
@@ -1027,6 +1030,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\404 error with person looking for-rafiki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo %287%29.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -89,7 +89,7 @@ namespace K_M_S_PROGRAM.Resources
         {
             if (MessageBox.Show("هل متأكد من أنك تريد مسح جميع السجل ؟", "تنبيه", MessageBoxButtons.OKCancel, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign) == DialogResult.OK)
             {
-                if (clsGeneric.DeleteTableData("Truncate table SubscriptionsHistory"))
+                if (clsGeneric.PerformOperationAndReturnBoolean("Truncate table SubscriptionsHistory"))
                 {
                     clsUtil.Show("تم مسح السجل");
                     dgvPaymentHistory.Rows.Clear();
@@ -138,9 +138,9 @@ namespace K_M_S_PROGRAM.Resources
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
             if (clsGlobal.Settings.SmallPaper)
-                clsUtil.printDocument_Small_Size_For_Kid(ref e, CurrentName, CurrentRowDate.ToString("MMMM yyyy"), DateTime.Now.ToString("yyyy-MM-dd"), Amount, Paid, Remender, false, clsGlobal.Settings.ManagerName);
+                clsUtil.printDocument_Small_Size_For_Kid(ref e, CurrentName, CurrentRowDate.ToString("MMMM yyyy"), DateTime.Now.ToString("yyyy-MM-dd"), Amount, Paid, Remender, true, clsGlobal.Settings.ManagerName);
             else
-                clsUtil.printDocument_Large_Size_For_Kid(ref e, CurrentName, CurrentRowDate.ToString("MMMM yyyy"), DateTime.Now.ToString("yyyy-MM-dd"), Amount, Paid, Remender, false, clsGlobal.Settings.ManagerName);
+                clsUtil.printDocument_Large_Size_For_Kid(ref e, CurrentName, CurrentRowDate.ToString("MMMM yyyy"), DateTime.Now.ToString("yyyy-MM-dd"), Amount, Paid, Remender, true, clsGlobal.Settings.ManagerName);
 
         }
 
