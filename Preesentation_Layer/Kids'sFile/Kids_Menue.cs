@@ -368,7 +368,7 @@ namespace K_M_S_PROGRAM.Resources
             }
         }
         List<string> PNumbers = new List<string>();
-        List<string> Names = new List<string>();
+        List<(string Name, string Phone)> Names = new List<(string Name, string Phone)>();
         private void btSendWhatsApp_Click(object sender, EventArgs e)
         {
             foreach (DataGridViewRow row in dgvKidsMenue.Rows)
@@ -376,7 +376,8 @@ namespace K_M_S_PROGRAM.Resources
                 if (Convert.ToBoolean(row.Cells[11].Value))
                 {
                     PNumbers.Add(row.Cells[9].Value.ToString());
-                    Names.Add(row.Cells[2].Value.ToString());
+                    var group = (Name: row.Cells[2].Value.ToString(), Phone: row.Cells[9].Value.ToString());
+                    Names.Add(group);
                 }
             }
 
@@ -396,7 +397,7 @@ namespace K_M_S_PROGRAM.Resources
                 BGWorker.RunWorkerAsync();
         }
 
-        private void txSearsh_TextChanged(object sender, EventArgs e)
+        private void txSearch_TextChanged(object sender, EventArgs e)
         {
             dgvKidsMenue.Rows.Clear();
             ShowKidsInfo(txSearsh.Text);

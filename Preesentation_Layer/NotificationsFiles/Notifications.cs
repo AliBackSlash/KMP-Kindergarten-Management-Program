@@ -194,13 +194,13 @@ namespace K_M_S_PROGRAM.Resources
         {
            
             List<string> PNumbers = new List<string>();
-            List<string> Names = new List<string>();
+            List<(string Name, string Phone)> Names = new List<(string Name, string Phone)>();
             foreach (DataGridViewRow row in Grid.Rows)
             {
 
                 PNumbers.Add(row.Cells["Phone" + Num].Value.ToString());
-                Names.Add(row.Cells[1].Value.ToString());
-
+                var group = (Name: row.Cells[1].Value.ToString(), Phone: row.Cells["Phone" + Num].Value.ToString());
+                Names.Add(group);
             }
 
             try

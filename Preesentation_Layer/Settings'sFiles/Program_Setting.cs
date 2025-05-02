@@ -177,8 +177,8 @@ namespace K_M_S_PROGRAM.Resources
 
         private char[] GetVication()
         {
-            char[] vacation = new char[2];
-           
+            char[] vacation = new char[] { '9', '9' };
+            
 
             byte i = 0;
            
@@ -203,9 +203,9 @@ namespace K_M_S_PROGRAM.Resources
             if (ch7.Checked && i < 2)
             { vacation[i] = '5'; i++; }
 
-            //because this is no day number 9 if user chose one vacation
-            if (i == 1 && i < 2)
-                vacation[i] = '9';
+            ////because there is no day number 9 if user chose one vacation
+            //if (i == 1 && i < 2)
+            //    vacation[i] = '9';
            
             return vacation;
         }
@@ -332,11 +332,19 @@ namespace K_M_S_PROGRAM.Resources
         }
 
        
-        private void btDalete_Click(object sender, EventArgs e)
+        private void btDelete_Click(object sender, EventArgs e)
         {
             picLogo.ImageLocation = "";
             picLogo.Image = Properties.Resources.icons8_add_camera_60;
         }
-       
+
+        private void ckMode_CheckedChanged(object sender, EventArgs e)
+        {
+            clsGlobal.Settings.Mode = ckMode.Checked;
+            if (clsGlobal.Settings.Mode)
+            { this.BackColor = Color.Black; clsGlobal.main_Screan.ChangeLabelsColor(Color.White, Color.Black); }
+            else
+            { this.BackColor = Color.Gainsboro; clsGlobal.main_Screan.ChangeLabelsColor(Color.Black, Color.Gainsboro); }
+        }
     }
 }

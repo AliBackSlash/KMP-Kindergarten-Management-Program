@@ -6,6 +6,7 @@ using K_M_S_PROGRAM.GlobalClasses;
 using System.IO;
 using K_M_S_PROGRAM.ImportantForms;
 using Xamarin.Forms;
+using System.Threading.Tasks;
 
 namespace K_M_S_PROGRAM.Resources
 {
@@ -74,7 +75,7 @@ namespace K_M_S_PROGRAM.Resources
                 { 
                     rdTeacher.Checked = true;
                     FillTeacherBoxesWithData();
-                    OpenAndCloseforTeacherAndWorker(true);
+                    OpenAndCloseForTeacherAndWorker(true);
                 }
                
             }
@@ -85,7 +86,7 @@ namespace K_M_S_PROGRAM.Resources
                 {   
                     rdWorker.Checked = true;
                     FillWorkerBoxesWithData();
-                    OpenAndCloseforTeacherAndWorker(false);
+                    OpenAndCloseForTeacherAndWorker(false);
                 }
             }
             btClose.Visible = true;
@@ -98,7 +99,7 @@ namespace K_M_S_PROGRAM.Resources
         clsEmployee _employee;
         clsWorker _worker;
 
-        void OpenAndCloseforTeacherAndWorker(bool Status)
+        void OpenAndCloseForTeacherAndWorker(bool Status)
         {
             txQualification.Enabled = Status;
             txSchool.Enabled = Status;
@@ -115,7 +116,7 @@ namespace K_M_S_PROGRAM.Resources
             {
                 RestAllTexBoxes();
                 FillCmWorkersWithName();
-                OpenAndCloseforTeacherAndWorker(false);
+                OpenAndCloseForTeacherAndWorker(false);
 
                 getCode(false);
             }
@@ -123,7 +124,7 @@ namespace K_M_S_PROGRAM.Resources
             {
                 RestAllTexBoxes();
                 FillCmEmployeesWithName();
-                OpenAndCloseforTeacherAndWorker(true);
+                OpenAndCloseForTeacherAndWorker(true);
                 getCode(true);
             }
         }
@@ -348,7 +349,9 @@ namespace K_M_S_PROGRAM.Resources
 
         void getCode(bool teacher)
         {
-            if(teacher)
+            if (txCode.Text != "")
+                return;
+            if (teacher)
             {
                 string st = clsGeneric.ReturnLastID("select top 1 Code+1 from TeachersInfo order by code desc");
                 if (st != null && txCode.Text == "")
@@ -367,7 +370,12 @@ namespace K_M_S_PROGRAM.Resources
         }
         private void btAdd_Click(object sender, EventArgs e)
         {
-            if(rdTeacher.Checked)
+            if (txPhone.TextLength != 11)
+            {
+                errorProvider1.SetError(txPhone, "يجب ان يكون الرقم لا يقل عن 11 رقم ");
+                return;
+            }
+            if (rdTeacher.Checked)
             {
                 if (AddAndUpdateTeacher())
                 {
@@ -528,15 +536,21 @@ namespace K_M_S_PROGRAM.Resources
 
         private void btTestMessageNumber_Click(object sender, EventArgs e)
         {
-            if (txPhone.Text.Length == 11)
-            {
-                clsSend.Send_Whats_App_Message_For_One(txPhone.Text, $"السلام عليكم,\n يجدر الاشارة انه سيتم استخدام هذا الرقم للمتابعة من قبل {clsGlobal.Settings.OrgName} ");
-            }
+            if (BGW.IsBusy)
+                clsUtil.Show("إنتظر حتي يتم الإنتهاء من الإرسال الحالي", false);
+            else
+                BGW.RunWorkerAsync();
         }
 
-        private void rdWorker_CheckedChanged(object sender, EventArgs e)
-        {
 
+        private async void BGW_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
+        
+        {
+            if (txPhone.Text.Length == 11)
+            {
+               await clsSend.Send_Whats_App_Message_For_One(txPhone.Text, $"السلام عليكم,\n يجدر الاشارة انه سيتم استخدام هذا الرقم للمتابعة من قبل {clsGlobal.Settings.OrgName} ");
+            }
+            BGW.CancelAsync();
         }
 
         private void btClose_Click(object sender, EventArgs e)

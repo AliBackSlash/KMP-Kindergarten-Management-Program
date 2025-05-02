@@ -2,6 +2,7 @@
 using System.Data;
 using System.Drawing;
 using System.IO;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using K_M_S_PROGRAM.GlobalClasses;
 using K_M_S_PROGRAM.ImportantForms;
@@ -127,10 +128,15 @@ namespace K_M_S_PROGRAM.Resources
 
         private void btAddChail_Click(object sender, EventArgs e)
         {
-             if (picPersonalImage.ImageLocation != null)
+            if (txMessageNumber.TextLength != 11)
+            {
+                errorProvider1.SetError(txMessageNumber, "يجب ان يكون الرقم لا يقل عن 11 رقم ");
+                return;
+            }
+
+            if (picPersonalImage.ImageLocation != null)
                 if (!_HandlePersonImage())
                     return;
-
 
             if (AddUpdateChild())
             {
@@ -168,6 +174,8 @@ namespace K_M_S_PROGRAM.Resources
 
         void GetLastCode()
         {
+            if (txCode.Text != "")
+                return;
             string st = clsGeneric.ReturnLastID("select top 1 Code+1 from KidsPersonalInfo order by code desc");
             if (st != null && txCode.Text=="")
                 txCode.Text = st;
@@ -181,8 +189,8 @@ namespace K_M_S_PROGRAM.Resources
             GetLastCode();
 
             txDataOfBirth.MaxDate = DateTime.Now.AddYears(-2);
-            txDataOfBirth.MinDate = DateTime.Now.AddYears(-4);
-            txDateOfJoin.MinDate = DateTime.Now.AddYears(-4);
+            txDataOfBirth.MinDate = DateTime.Now.AddYears(-10);
+            txDateOfJoin.MinDate = DateTime.Now.AddYears(-10);
             txDateOfJoin.MaxDate = DateTime.Now;
 
         }
@@ -340,10 +348,10 @@ namespace K_M_S_PROGRAM.Resources
 
         private void btTestMessageNumber_Click(object sender, EventArgs e)
         {
-            if(txMessageNumber.Text.Length==11)
-            {
-                clsSend.Send_Whats_App_Message_For_One(txMessageNumber.Text, $"السلام عليكم,\n يجدر الاشارة انه سيتم استخدام هذا الرقم لمتابعة حالة طفلكم من قبل {clsGlobal.Settings.OrgName} ");
-            }
+            if (BGW.IsBusy)
+                clsUtil.Show("إنتظر حتي يتم الإنتهاء من الإرسال الحالي", false);
+            else
+                BGW.RunWorkerAsync();
         }
 
         private void txSubAmount_KeyPress(object sender, KeyPressEventArgs e)
@@ -368,6 +376,14 @@ namespace K_M_S_PROGRAM.Resources
             { e.Handled = true; errorProvider1.SetError((TextBox)sender, "لا يمكنك إدخال ارقام في هذه الخانة"); }
             else
                 errorProvider1.Clear();
+        }
+
+        private async void BGW_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
+        {
+            if (txMessageNumber.Text.Length == 11)
+            {
+               await clsSend.Send_Whats_App_Message_For_One(txMessageNumber.Text, $"السلام عليكم,\n يجدر الاشارة انه سيتم استخدام هذا الرقم لمتابعة حالة طفلكم من قبل {clsGlobal.Settings.OrgName} ");
+            }
         }
 
         private void btClose_Click(object sender, EventArgs e)

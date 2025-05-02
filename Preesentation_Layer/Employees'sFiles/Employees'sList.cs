@@ -12,6 +12,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Documents;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using static System.Net.Mime.MediaTypeNames;
@@ -295,24 +296,22 @@ namespace K_M_S_PROGRAM.Resources
 
       
         List<string> PNumbers = new List<string>();
-        List<string> Names = new List<string>();
+        List<(string Name, string Phone)> Names = new List<(string Name, string Phone)>();
         private void btWhatsApp_Click(object sender, EventArgs e)
         {
-
             foreach (DataGridViewRow row in dgvEmployeesMenue.Rows)
             {
                 if (Convert.ToBoolean(row.Cells[11].Value))
                 {
                     PNumbers.Add(row.Cells[9].Value.ToString());
-                    Names.Add(row.Cells[2].Value.ToString());
+                    var group = (Name: row.Cells[2].Value.ToString(), Phone: row.Cells[9].Value.ToString());
+                    Names.Add(group);
                 }
             }
 
             Sendmessagefrm frm = new Sendmessagefrm();
             frm.Message += Send;
             frm.ShowDialog();
-
-
         }
         string Message = "";
         private void Send(string Message)
@@ -344,7 +343,7 @@ namespace K_M_S_PROGRAM.Resources
         private async void BGWorker_DoWork(object sender, DoWorkEventArgs e)
         {
             List<string> failedNumbers = new List<string>();
-            failedNumbers = await clsSend.Send_Whats_App_Message_For_Group(PNumbers, Names, rdTeacher.Checked ? 'T' : 'W', Message,e,BGWorker);
+            failedNumbers = await clsSend.Send_Whats_App_Message_For_Group(PNumbers, Names, rdTeacher.Checked ? 'T' : 'W', Message, e, BGWorker);
             if (failedNumbers.Count >= 0)
                 clsUtil.Show("تم الإرسال بنجاح ");
             else

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
@@ -15,11 +16,13 @@ namespace K_M_S_PROGRAM.ImportantForms
     {
         [DllImport("user32.dll")]
         private static extern IntPtr GetForegroundWindow();
-        public static async Task<List<string>> Send_Whats_App_Message_For_Group(List<string> PhoneNumbers, List<string> Names, char Kind, string message, DoWorkEventArgs e, BackgroundWorker BGWorker)
+        public static async Task<List<string>> Send_Whats_App_Message_For_Group(List<string> PhoneNumbers, List<(string Name,string Phone)> Names, char Kind, string message, DoWorkEventArgs e, BackgroundWorker BGWorker)
         {
             string encodedMessage = Uri.EscapeDataString(message);
             int Counter = -1;
             List<string> FailedList = new List<string>();
+            PhoneNumbers = new HashSet<string>(PhoneNumbers).ToList();
+            PhoneNumbers.RemoveAll(n => String.IsNullOrEmpty(n));
             foreach (string Phone in PhoneNumbers)
             {
                 Counter++;
@@ -37,24 +40,30 @@ namespace K_M_S_PROGRAM.ImportantForms
                 {
                     Process.Start(WhatsAppUrl);
 
-                    await Task.Delay(3000); 
+                    await Task.Delay(2000); 
 
                     SendKeys.SendWait("{ENTER}");
 
-                    await Task.Delay(2000);
+                    await Task.Delay(1000);
 
-                    clsMessageArchive.AddToMessage_Archive(Names[Counter], '1', message, Kind);
                     
                     
                 }
                 catch (Exception)
                 {
                     FailedList.Add(Phone);
-                    return FailedList;
+                    continue;
 
                 }
             }
-                return FailedList;
+
+            foreach (var item in Names)
+            {
+                if(PhoneNumbers.FindIndex(n => n == item.Phone) != -1)
+                    clsMessageArchive.AddToMessage_Archive(item.Name, '1', message, Kind);
+
+            }
+            return FailedList;
         }
 
         public async static Task<bool> Send_Whats_App_Message_For_One(string PhoneNumbers, string message )
@@ -76,8 +85,7 @@ namespace K_M_S_PROGRAM.ImportantForms
 
                 await Task.Delay(2000);
 
-                SendKeys.SendWait("{ENTER}");
-                SendKeys.SendWait("{ENTER}");
+          
             }
             catch (Exception)
             {

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            SATAUiFramework.BorderRadius borderRadius1 = new SATAUiFramework.BorderRadius();
-            SATAUiFramework.BorderRadius borderRadius2 = new SATAUiFramework.BorderRadius();
-            SATAUiFramework.BorderRadius borderRadius3 = new SATAUiFramework.BorderRadius();
+            SATAUiFramework.BorderRadius borderRadius7 = new SATAUiFramework.BorderRadius();
+            SATAUiFramework.BorderRadius borderRadius8 = new SATAUiFramework.BorderRadius();
+            SATAUiFramework.BorderRadius borderRadius9 = new SATAUiFramework.BorderRadius();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -50,14 +50,14 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.txPhone = new System.Windows.Forms.TextBox();
             this.cmSocialStutas = new System.Windows.Forms.ComboBox();
+            this.txPhone = new System.Windows.Forms.TextBox();
             this.txEmail = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btTestMessageNumber = new Guna.UI2.WinForms.Guna2Button();
             this.label33 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.txSchool = new System.Windows.Forms.TextBox();
@@ -102,6 +102,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.sEllipse1 = new Sipaa.Framework.SEllipse();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.BGW = new System.ComponentModel.BackgroundWorker();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -414,9 +415,9 @@
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel10.Controls.Add(this.txPhone, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.cmSocialStutas, 2, 0);
-            this.tableLayoutPanel10.Controls.Add(this.txEmail, 1, 0);
+            this.tableLayoutPanel10.Controls.Add(this.txPhone, 1, 0);
+            this.tableLayoutPanel10.Controls.Add(this.txEmail, 0, 0);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 219);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
@@ -424,22 +425,6 @@
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel10.Size = new System.Drawing.Size(792, 51);
             this.tableLayoutPanel10.TabIndex = 5;
-            // 
-            // txPhone
-            // 
-            this.txPhone.BackColor = System.Drawing.Color.White;
-            this.txPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txPhone.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txPhone.Font = new System.Drawing.Font("Simplified Arabic", 16F, System.Drawing.FontStyle.Bold);
-            this.txPhone.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.txPhone.Location = new System.Drawing.Point(479, 3);
-            this.txPhone.MaxLength = 11;
-            this.txPhone.Multiline = true;
-            this.txPhone.Name = "txPhone";
-            this.txPhone.Size = new System.Drawing.Size(310, 45);
-            this.txPhone.TabIndex = 7;
-            this.txPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txCode_KeyPress);
             // 
             // cmSocialStutas
             // 
@@ -457,6 +442,22 @@
             this.cmSocialStutas.Size = new System.Drawing.Size(233, 43);
             this.cmSocialStutas.TabIndex = 6;
             // 
+            // txPhone
+            // 
+            this.txPhone.BackColor = System.Drawing.Color.White;
+            this.txPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txPhone.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txPhone.Font = new System.Drawing.Font("Simplified Arabic", 16F, System.Drawing.FontStyle.Bold);
+            this.txPhone.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.txPhone.Location = new System.Drawing.Point(242, 3);
+            this.txPhone.MaxLength = 11;
+            this.txPhone.Multiline = true;
+            this.txPhone.Name = "txPhone";
+            this.txPhone.Size = new System.Drawing.Size(231, 45);
+            this.txPhone.TabIndex = 7;
+            this.txPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txCode_KeyPress);
+            // 
             // txEmail
             // 
             this.txEmail.BackColor = System.Drawing.Color.White;
@@ -464,12 +465,12 @@
             this.txEmail.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txEmail.Font = new System.Drawing.Font("Simplified Arabic", 16F, System.Drawing.FontStyle.Bold);
             this.txEmail.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.txEmail.Location = new System.Drawing.Point(242, 3);
+            this.txEmail.Location = new System.Drawing.Point(479, 3);
             this.txEmail.Margin = new System.Windows.Forms.Padding(8, 3, 3, 3);
             this.txEmail.MaxLength = 40;
             this.txEmail.Multiline = true;
             this.txEmail.Name = "txEmail";
-            this.txEmail.Size = new System.Drawing.Size(226, 45);
+            this.txEmail.Size = new System.Drawing.Size(305, 45);
             this.txEmail.TabIndex = 6;
             this.txEmail.TextChanged += new System.EventHandler(this.txEmail_TextChanged);
             // 
@@ -479,9 +480,9 @@
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel9.Controls.Add(this.panel4, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.label8, 2, 0);
-            this.tableLayoutPanel9.Controls.Add(this.label4, 1, 0);
+            this.tableLayoutPanel9.Controls.Add(this.panel4, 1, 0);
+            this.tableLayoutPanel9.Controls.Add(this.label4, 0, 0);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel9.Location = new System.Drawing.Point(3, 181);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
@@ -490,14 +491,27 @@
             this.tableLayoutPanel9.Size = new System.Drawing.Size(792, 32);
             this.tableLayoutPanel9.TabIndex = 4;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.Gray;
+            this.label8.Location = new System.Drawing.Point(105, 0);
+            this.label8.Name = "label8";
+            this.label8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label8.Size = new System.Drawing.Size(131, 32);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "الحالة الإجتماعية :";
+            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.btTestMessageNumber);
             this.panel4.Controls.Add(this.label33);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(479, 3);
+            this.panel4.Location = new System.Drawing.Point(242, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(310, 26);
+            this.panel4.Size = new System.Drawing.Size(231, 26);
             this.panel4.TabIndex = 24;
             // 
             // btTestMessageNumber
@@ -531,34 +545,20 @@
             this.label33.Dock = System.Windows.Forms.DockStyle.Right;
             this.label33.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
             this.label33.ForeColor = System.Drawing.Color.Gray;
-            this.label33.Location = new System.Drawing.Point(217, 0);
+            this.label33.Location = new System.Drawing.Point(138, 0);
             this.label33.Name = "label33";
             this.label33.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label33.Size = new System.Drawing.Size(93, 32);
             this.label33.TabIndex = 23;
             this.label33.Text = "رقم الرسائل :";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(105, 0);
-            this.label8.Name = "label8";
-            this.label8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label8.Size = new System.Drawing.Size(131, 32);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "الحالة الإجتماعية :";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Left;
             this.label4.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(407, 0);
+            this.label4.Location = new System.Drawing.Point(723, 0);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label4.Size = new System.Drawing.Size(66, 32);
@@ -801,11 +801,11 @@
             this.sataPanel2.BackColor = System.Drawing.Color.White;
             this.sataPanel2.BackColor2 = System.Drawing.Color.White;
             this.sataPanel2.BorderColor = System.Drawing.Color.Black;
-            borderRadius1.BottomLeft = 10;
-            borderRadius1.BottomRight = 10;
-            borderRadius1.TopLeft = 10;
-            borderRadius1.TopRight = 10;
-            this.sataPanel2.BorderRadius = borderRadius1;
+            borderRadius7.BottomLeft = 10;
+            borderRadius7.BottomRight = 10;
+            borderRadius7.TopLeft = 10;
+            borderRadius7.TopRight = 10;
+            this.sataPanel2.BorderRadius = borderRadius7;
             this.sataPanel2.BorderThickness = 0;
             this.sataPanel2.Controls.Add(this.btDelete);
             this.sataPanel2.Controls.Add(this.picEmpPhoto);
@@ -865,11 +865,11 @@
             this.sataPanel3.BackColor = System.Drawing.Color.White;
             this.sataPanel3.BackColor2 = System.Drawing.Color.White;
             this.sataPanel3.BorderColor = System.Drawing.Color.Black;
-            borderRadius2.BottomLeft = 10;
-            borderRadius2.BottomRight = 10;
-            borderRadius2.TopLeft = 10;
-            borderRadius2.TopRight = 10;
-            this.sataPanel3.BorderRadius = borderRadius2;
+            borderRadius8.BottomLeft = 10;
+            borderRadius8.BottomRight = 10;
+            borderRadius8.TopLeft = 10;
+            borderRadius8.TopRight = 10;
+            this.sataPanel3.BorderRadius = borderRadius8;
             this.sataPanel3.BorderThickness = 0;
             this.sataPanel3.Controls.Add(this.groupBox1);
             this.sataPanel3.Controls.Add(this.groupBox2);
@@ -1038,11 +1038,11 @@
             this.sataPanel1.BackColor = System.Drawing.Color.White;
             this.sataPanel1.BackColor2 = System.Drawing.Color.White;
             this.sataPanel1.BorderColor = System.Drawing.Color.Black;
-            borderRadius3.BottomLeft = 10;
-            borderRadius3.BottomRight = 10;
-            borderRadius3.TopLeft = 10;
-            borderRadius3.TopRight = 10;
-            this.sataPanel1.BorderRadius = borderRadius3;
+            borderRadius9.BottomLeft = 10;
+            borderRadius9.BottomRight = 10;
+            borderRadius9.TopLeft = 10;
+            borderRadius9.TopRight = 10;
+            this.sataPanel1.BorderRadius = borderRadius9;
             this.sataPanel1.BorderThickness = 0;
             this.sataPanel1.Controls.Add(this.btSave);
             this.sataPanel1.Controls.Add(this.cmEmpNames);
@@ -1147,7 +1147,6 @@
             this.rdWorker.Size = new System.Drawing.Size(25, 24);
             this.rdWorker.TabIndex = 18;
             this.rdWorker.UseVisualStyleBackColor = false;
-            this.rdWorker.CheckedChanged += new System.EventHandler(this.rdWorker_CheckedChanged);
             this.rdWorker.Click += new System.EventHandler(this.rdWhoAdded_Click);
             // 
             // label20
@@ -1256,6 +1255,10 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // BGW
+            // 
+            this.BGW.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BGW_DoWork);
             // 
             // Add_Employees
             // 
@@ -1386,5 +1389,6 @@
         private System.Windows.Forms.Panel panel4;
         private Guna.UI2.WinForms.Guna2Button btTestMessageNumber;
         private System.Windows.Forms.Label label33;
+        private System.ComponentModel.BackgroundWorker BGW;
     }
 }

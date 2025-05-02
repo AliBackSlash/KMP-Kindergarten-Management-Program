@@ -121,11 +121,9 @@
             this.txNotefayKidsAbsence = new System.Windows.Forms.MaskedTextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.sataPanel1 = new SATAUiFramework.SATAPanel();
-            this.ckMode = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.gnWait = new Guna.UI2.WinForms.Guna2WinProgressIndicator();
             this.label34 = new System.Windows.Forms.Label();
-            this.ckShowBeforPrint = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.ckAskBeforPrint = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.txSavePath = new Guna.UI2.WinForms.Guna2TextBox();
             this.btRestore = new Guna.UI2.WinForms.Guna2Button();
             this.btSavePackup = new Guna.UI2.WinForms.Guna2Button();
@@ -145,7 +143,9 @@
             this.kk = new SATAUiFramework.SATAPanel();
             this.btDelete = new Guna.UI2.WinForms.Guna2Button();
             this.picLogo = new SATAUiFramework.Controls.SATAPictureBox();
-            this.gnWait = new Guna.UI2.WinForms.Guna2WinProgressIndicator();
+            this.ckMode = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.ckShowBeforPrint = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.ckAskBeforPrint = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.lbMyProfile.SuspendLayout();
@@ -1576,12 +1576,12 @@
             this.sataPanel1.BorderRadius = borderRadius3;
             this.sataPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sataPanel1.BorderThickness = 2;
-            this.sataPanel1.Controls.Add(this.gnWait);
-            this.sataPanel1.Controls.Add(this.ckMode);
-            this.sataPanel1.Controls.Add(this.label34);
-            this.sataPanel1.Controls.Add(this.ckShowBeforPrint);
-            this.sataPanel1.Controls.Add(this.label9);
             this.sataPanel1.Controls.Add(this.ckAskBeforPrint);
+            this.sataPanel1.Controls.Add(this.ckShowBeforPrint);
+            this.sataPanel1.Controls.Add(this.ckMode);
+            this.sataPanel1.Controls.Add(this.gnWait);
+            this.sataPanel1.Controls.Add(this.label34);
+            this.sataPanel1.Controls.Add(this.label9);
             this.sataPanel1.Controls.Add(this.txSavePath);
             this.sataPanel1.Controls.Add(this.btRestore);
             this.sataPanel1.Controls.Add(this.btSavePackup);
@@ -1595,27 +1595,15 @@
             this.sataPanel1.Size = new System.Drawing.Size(211, 621);
             this.sataPanel1.TabIndex = 7;
             // 
-            // ckMode
+            // gnWait
             // 
-            this.ckMode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ckMode.Animated = true;
-            this.ckMode.Checked = true;
-            this.ckMode.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ckMode.CheckedState.BorderRadius = 2;
-            this.ckMode.CheckedState.BorderThickness = 0;
-            this.ckMode.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ckMode.CheckedState.Parent = this.ckMode;
-            this.ckMode.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ckMode.Location = new System.Drawing.Point(182, 342);
-            this.ckMode.Name = "ckMode";
-            this.ckMode.ShadowDecoration.Parent = this.ckMode;
-            this.ckMode.Size = new System.Drawing.Size(20, 20);
-            this.ckMode.TabIndex = 106;
-            this.ckMode.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.ckMode.UncheckedState.BorderRadius = 2;
-            this.ckMode.UncheckedState.BorderThickness = 0;
-            this.ckMode.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.ckMode.UncheckedState.Parent = this.ckMode;
+            this.gnWait.CircleSize = 2F;
+            this.gnWait.Location = new System.Drawing.Point(7, 139);
+            this.gnWait.Name = "gnWait";
+            this.gnWait.ProgressColor = System.Drawing.Color.Indigo;
+            this.gnWait.Size = new System.Drawing.Size(60, 60);
+            this.gnWait.TabIndex = 107;
+            this.gnWait.Visible = false;
             // 
             // label34
             // 
@@ -1623,7 +1611,7 @@
             this.label34.BackColor = System.Drawing.Color.Transparent;
             this.label34.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.ForeColor = System.Drawing.Color.Black;
-            this.label34.Location = new System.Drawing.Point(83, 342);
+            this.label34.Location = new System.Drawing.Point(74, 341);
             this.label34.Name = "label34";
             this.label34.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label34.Size = new System.Drawing.Size(97, 25);
@@ -1631,59 +1619,19 @@
             this.label34.Text = "الوضع اليلي";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // ckShowBeforPrint
-            // 
-            this.ckShowBeforPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ckShowBeforPrint.Animated = true;
-            this.ckShowBeforPrint.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ckShowBeforPrint.CheckedState.BorderRadius = 2;
-            this.ckShowBeforPrint.CheckedState.BorderThickness = 0;
-            this.ckShowBeforPrint.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ckShowBeforPrint.CheckedState.Parent = this.ckShowBeforPrint;
-            this.ckShowBeforPrint.Location = new System.Drawing.Point(182, 314);
-            this.ckShowBeforPrint.Name = "ckShowBeforPrint";
-            this.ckShowBeforPrint.ShadowDecoration.Parent = this.ckShowBeforPrint;
-            this.ckShowBeforPrint.Size = new System.Drawing.Size(20, 20);
-            this.ckShowBeforPrint.TabIndex = 103;
-            this.ckShowBeforPrint.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.ckShowBeforPrint.UncheckedState.BorderRadius = 2;
-            this.ckShowBeforPrint.UncheckedState.BorderThickness = 0;
-            this.ckShowBeforPrint.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.ckShowBeforPrint.UncheckedState.Parent = this.ckShowBeforPrint;
-            // 
             // label9
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(4, 314);
+            this.label9.Location = new System.Drawing.Point(-5, 315);
             this.label9.Name = "label9";
             this.label9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label9.Size = new System.Drawing.Size(176, 25);
             this.label9.TabIndex = 102;
-            this.label9.Text = "إظهار الوصل قبل الطباعة";
+            this.label9.Text = "إظهار ا قبل الطباعة";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // ckAskBeforPrint
-            // 
-            this.ckAskBeforPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ckAskBeforPrint.Animated = true;
-            this.ckAskBeforPrint.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ckAskBeforPrint.CheckedState.BorderRadius = 2;
-            this.ckAskBeforPrint.CheckedState.BorderThickness = 0;
-            this.ckAskBeforPrint.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ckAskBeforPrint.CheckedState.Parent = this.ckAskBeforPrint;
-            this.ckAskBeforPrint.Location = new System.Drawing.Point(182, 289);
-            this.ckAskBeforPrint.Name = "ckAskBeforPrint";
-            this.ckAskBeforPrint.ShadowDecoration.Parent = this.ckAskBeforPrint;
-            this.ckAskBeforPrint.Size = new System.Drawing.Size(20, 20);
-            this.ckAskBeforPrint.TabIndex = 101;
-            this.ckAskBeforPrint.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.ckAskBeforPrint.UncheckedState.BorderRadius = 2;
-            this.ckAskBeforPrint.UncheckedState.BorderThickness = 0;
-            this.ckAskBeforPrint.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.ckAskBeforPrint.UncheckedState.Parent = this.ckAskBeforPrint;
             // 
             // txSavePath
             // 
@@ -1800,12 +1748,12 @@
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(16, 289);
+            this.label22.Location = new System.Drawing.Point(7, 289);
             this.label22.Name = "label22";
             this.label22.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label22.Size = new System.Drawing.Size(164, 25);
             this.label22.TabIndex = 94;
-            this.label22.Text = "تأكيد قبل طباعة الوصل";
+            this.label22.Text = "تأكيد قبل طباعة ";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // groupBox2
@@ -2094,15 +2042,66 @@
             this.picLogo.TabStop = false;
             this.picLogo.Click += new System.EventHandler(this.picLogo_Click);
             // 
-            // gnWait
+            // ckMode
             // 
-            this.gnWait.CircleSize = 2F;
-            this.gnWait.Location = new System.Drawing.Point(7, 139);
-            this.gnWait.Name = "gnWait";
-            this.gnWait.ProgressColor = System.Drawing.Color.Indigo;
-            this.gnWait.Size = new System.Drawing.Size(60, 60);
-            this.gnWait.TabIndex = 107;
-            this.gnWait.Visible = false;
+            this.ckMode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ckMode.Animated = true;
+            this.ckMode.CheckedState.BorderColor = System.Drawing.Color.Indigo;
+            this.ckMode.CheckedState.FillColor = System.Drawing.Color.Indigo;
+            this.ckMode.CheckedState.InnerBorderColor = System.Drawing.Color.Navy;
+            this.ckMode.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.ckMode.CheckedState.Parent = this.ckMode;
+            this.ckMode.Location = new System.Drawing.Point(169, 347);
+            this.ckMode.Name = "ckMode";
+            this.ckMode.ShadowDecoration.Parent = this.ckMode;
+            this.ckMode.Size = new System.Drawing.Size(35, 20);
+            this.ckMode.TabIndex = 108;
+            this.ckMode.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.ckMode.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.ckMode.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.ckMode.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.ckMode.UncheckedState.Parent = this.ckMode;
+            this.ckMode.CheckedChanged += new System.EventHandler(this.ckMode_CheckedChanged);
+            // 
+            // ckShowBeforPrint
+            // 
+            this.ckShowBeforPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ckShowBeforPrint.Animated = true;
+            this.ckShowBeforPrint.CheckedState.BorderColor = System.Drawing.Color.Indigo;
+            this.ckShowBeforPrint.CheckedState.FillColor = System.Drawing.Color.Indigo;
+            this.ckShowBeforPrint.CheckedState.InnerBorderColor = System.Drawing.Color.Navy;
+            this.ckShowBeforPrint.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.ckShowBeforPrint.CheckedState.Parent = this.ckShowBeforPrint;
+            this.ckShowBeforPrint.Location = new System.Drawing.Point(169, 318);
+            this.ckShowBeforPrint.Name = "ckShowBeforPrint";
+            this.ckShowBeforPrint.ShadowDecoration.Parent = this.ckShowBeforPrint;
+            this.ckShowBeforPrint.Size = new System.Drawing.Size(35, 20);
+            this.ckShowBeforPrint.TabIndex = 109;
+            this.ckShowBeforPrint.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.ckShowBeforPrint.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.ckShowBeforPrint.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.ckShowBeforPrint.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.ckShowBeforPrint.UncheckedState.Parent = this.ckShowBeforPrint;
+            // 
+            // ckAskBeforPrint
+            // 
+            this.ckAskBeforPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ckAskBeforPrint.Animated = true;
+            this.ckAskBeforPrint.CheckedState.BorderColor = System.Drawing.Color.Indigo;
+            this.ckAskBeforPrint.CheckedState.FillColor = System.Drawing.Color.Indigo;
+            this.ckAskBeforPrint.CheckedState.InnerBorderColor = System.Drawing.Color.Navy;
+            this.ckAskBeforPrint.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.ckAskBeforPrint.CheckedState.Parent = this.ckAskBeforPrint;
+            this.ckAskBeforPrint.Location = new System.Drawing.Point(169, 289);
+            this.ckAskBeforPrint.Name = "ckAskBeforPrint";
+            this.ckAskBeforPrint.ShadowDecoration.Parent = this.ckAskBeforPrint;
+            this.ckAskBeforPrint.Size = new System.Drawing.Size(35, 20);
+            this.ckAskBeforPrint.TabIndex = 110;
+            this.ckAskBeforPrint.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.ckAskBeforPrint.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.ckAskBeforPrint.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.ckAskBeforPrint.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.ckAskBeforPrint.UncheckedState.Parent = this.ckAskBeforPrint;
             // 
             // Program_Setting
             // 
@@ -2185,8 +2184,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txSavePath;
         private Guna.UI2.WinForms.Guna2TextBox txOrgName;
         private Guna.UI2.WinForms.Guna2TextBox txManagerName;
-        private Guna.UI2.WinForms.Guna2CustomCheckBox ckAskBeforPrint;
-        private Guna.UI2.WinForms.Guna2CustomCheckBox ckShowBeforPrint;
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2TextBox txOrgEmail;
         private Guna.UI2.WinForms.Guna2TextBox txWhatsAppNumber;
@@ -2266,7 +2263,9 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Label label34;
-        private Guna.UI2.WinForms.Guna2CustomCheckBox ckMode;
         private Guna.UI2.WinForms.Guna2WinProgressIndicator gnWait;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch ckMode;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch ckAskBeforPrint;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch ckShowBeforPrint;
     }
 }

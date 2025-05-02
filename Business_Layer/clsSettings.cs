@@ -57,7 +57,7 @@ namespace MyBusinessLayer
         public string BirthDayMessage { get; }
         public string EmpAge { get; }
         public bool IsPayInBegning { get; }
-        public bool Mode { get; }
+        public bool Mode { get; set; }
         public clsSettings(byte DaysLateToPay, byte DaysKindsAbsence, short KidsBratherAge,
            string KidsBratherAge2, string timeEnter, string lasttimeEnter, string lasttimeLeave, string timeLeave, string TimeLateForKids, string timeEnterPM, string lasttimeEnterPM,
            string lasttimeLeavePM, string timeLeavePM, string TimeLateForKidsPM, string NotefayKidsLate,
