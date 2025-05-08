@@ -186,7 +186,7 @@
             this.lbSeparate2 = new System.Windows.Forms.Label();
             this.lbHours = new System.Windows.Forms.Label();
             this.lbSeparate1 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lbMins = new System.Windows.Forms.Label();
             this.timChek = new System.Windows.Forms.Timer(this.components);
             this.pnHeader = new System.Windows.Forms.Panel();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -2485,7 +2485,7 @@
             this.pnHeader2.Controls.Add(this.lbSeparate2);
             this.pnHeader2.Controls.Add(this.lbHours);
             this.pnHeader2.Controls.Add(this.lbSeparate1);
-            this.pnHeader2.Controls.Add(this.label16);
+            this.pnHeader2.Controls.Add(this.lbMins);
             this.pnHeader2.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnHeader2.Location = new System.Drawing.Point(0, 0);
             this.pnHeader2.Name = "pnHeader2";
@@ -2574,17 +2574,17 @@
             this.lbSeparate1.TabIndex = 0;
             this.lbSeparate1.Text = ":";
             // 
-            // label16
+            // lbMins
             // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Arial Rounded MT Bold", 25F);
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(0, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(28, 39);
-            this.label16.TabIndex = 6;
-            this.label16.Text = "-";
+            this.lbMins.AutoSize = true;
+            this.lbMins.BackColor = System.Drawing.Color.Transparent;
+            this.lbMins.Font = new System.Drawing.Font("Arial Rounded MT Bold", 25F);
+            this.lbMins.ForeColor = System.Drawing.Color.White;
+            this.lbMins.Location = new System.Drawing.Point(0, 0);
+            this.lbMins.Name = "lbMins";
+            this.lbMins.Size = new System.Drawing.Size(28, 39);
+            this.lbMins.TabIndex = 6;
+            this.lbMins.Text = "-";
             // 
             // timChek
             // 
@@ -3051,7 +3051,7 @@
         private System.Windows.Forms.Button btAbout_this_Program;
         private System.Windows.Forms.PictureBox pictureBox33;
         private System.Windows.Forms.Button btTreasuryHistory;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lbMins;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Sipaa.Framework.SEllipse sEllipse1;
         private System.Windows.Forms.PictureBox pictureBox34;

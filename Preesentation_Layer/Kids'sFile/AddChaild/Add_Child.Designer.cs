@@ -451,7 +451,7 @@
             this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.92967F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.07033F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 656F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 660F));
             this.tableLayoutPanel7.Controls.Add(this.txCity, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.txAddress, 1, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -468,12 +468,12 @@
             // 
             this.txCity.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txCity.Font = new System.Drawing.Font("Simplified Arabic", 16F, System.Drawing.FontStyle.Bold);
-            this.txCity.Location = new System.Drawing.Point(1072, 3);
+            this.txCity.Location = new System.Drawing.Point(1073, 3);
             this.txCity.Margin = new System.Windows.Forms.Padding(8, 3, 3, 3);
             this.txCity.MaxLength = 30;
             this.txCity.Multiline = true;
             this.txCity.Name = "txCity";
-            this.txCity.Size = new System.Drawing.Size(141, 42);
+            this.txCity.Size = new System.Drawing.Size(140, 42);
             this.txCity.TabIndex = 5;
             this.txCity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txName_KeyPress);
             // 
@@ -481,11 +481,11 @@
             // 
             this.txAddress.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txAddress.Font = new System.Drawing.Font("Simplified Arabic", 16F, System.Drawing.FontStyle.Bold);
-            this.txAddress.Location = new System.Drawing.Point(660, 3);
+            this.txAddress.Location = new System.Drawing.Point(664, 3);
             this.txAddress.MaxLength = 30;
             this.txAddress.Multiline = true;
             this.txAddress.Name = "txAddress";
-            this.txAddress.Size = new System.Drawing.Size(406, 42);
+            this.txAddress.Size = new System.Drawing.Size(403, 42);
             this.txAddress.TabIndex = 6;
             // 
             // tableLayoutPanel6
@@ -493,7 +493,7 @@
             this.tableLayoutPanel6.ColumnCount = 3;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.15625F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.84375F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 610F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 614F));
             this.tableLayoutPanel6.Controls.Add(this.label13, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.label12, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -511,7 +511,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
             this.label13.ForeColor = System.Drawing.Color.DimGray;
-            this.label13.Location = new System.Drawing.Point(999, 0);
+            this.label13.Location = new System.Drawing.Point(1000, 0);
             this.label13.Name = "label13";
             this.label13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label13.Size = new System.Drawing.Size(66, 32);
@@ -535,7 +535,7 @@
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.41825F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.58175F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 728F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 732F));
             this.tableLayoutPanel5.Controls.Add(this.txCode, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.txName, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.txSubAmount, 2, 0);
@@ -555,12 +555,12 @@
             this.txCode.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txCode.Font = new System.Drawing.Font("Simplified Arabic", 15F, System.Drawing.FontStyle.Bold);
             this.txCode.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.txCode.Location = new System.Drawing.Point(1075, 3);
+            this.txCode.Location = new System.Drawing.Point(1076, 3);
             this.txCode.Margin = new System.Windows.Forms.Padding(8, 3, 3, 3);
             this.txCode.MaxLength = 10;
             this.txCode.Multiline = true;
             this.txCode.Name = "txCode";
-            this.txCode.Size = new System.Drawing.Size(138, 39);
+            this.txCode.Size = new System.Drawing.Size(137, 39);
             this.txCode.TabIndex = 4;
             this.txCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txSubAmount_KeyPress);
@@ -569,12 +569,12 @@
             // 
             this.txName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txName.Font = new System.Drawing.Font("Simplified Arabic", 16F, System.Drawing.FontStyle.Bold);
-            this.txName.Location = new System.Drawing.Point(732, 3);
+            this.txName.Location = new System.Drawing.Point(736, 3);
             this.txName.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
             this.txName.MaxLength = 50;
             this.txName.Multiline = true;
             this.txName.Name = "txName";
-            this.txName.Size = new System.Drawing.Size(335, 39);
+            this.txName.Size = new System.Drawing.Size(332, 39);
             this.txName.TabIndex = 5;
             this.txName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txName_KeyPress);
@@ -585,7 +585,7 @@
             this.txSubAmount.Dock = System.Windows.Forms.DockStyle.Left;
             this.txSubAmount.Font = new System.Drawing.Font("Simplified Arabic", 15F, System.Drawing.FontStyle.Bold);
             this.txSubAmount.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.txSubAmount.Location = new System.Drawing.Point(582, 3);
+            this.txSubAmount.Location = new System.Drawing.Point(586, 3);
             this.txSubAmount.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
             this.txSubAmount.MaxLength = 11;
             this.txSubAmount.Multiline = true;
@@ -600,7 +600,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.65134F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.34866F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 728F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 732F));
             this.tableLayoutPanel4.Controls.Add(this.label7, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.label10, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.label11, 1, 0);
@@ -619,7 +619,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.DimGray;
-            this.label7.Location = new System.Drawing.Point(652, 0);
+            this.label7.Location = new System.Drawing.Point(656, 0);
             this.label7.Name = "label7";
             this.label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label7.Size = new System.Drawing.Size(74, 30);
@@ -643,7 +643,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.DimGray;
-            this.label11.Location = new System.Drawing.Point(1009, 0);
+            this.label11.Location = new System.Drawing.Point(1011, 0);
             this.label11.Name = "label11";
             this.label11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label11.Size = new System.Drawing.Size(58, 30);

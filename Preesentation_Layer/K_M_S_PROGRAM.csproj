@@ -245,6 +245,12 @@
     <Compile Include="Employees%27sFiles\WorkerInfo.Designer.cs">
       <DependentUpon>WorkerInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Evaluations%27sFiles\EvaluationCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Evaluations%27sFiles\EvaluationCard.Designer.cs">
+      <DependentUpon>EvaluationCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Evaluations%27sFiles\WinnerArchive.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -284,6 +290,12 @@
     </Compile>
     <Compile Include="Kids%27sFile\AddChaild\ChildCardfrm.Designer.cs">
       <DependentUpon>ChildCardfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kids%27sFile\AddChaild\ChoicePerantsAndPersonCanTake.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kids%27sFile\AddChaild\ChoicePerantsAndPersonCanTake.Designer.cs">
+      <DependentUpon>ChoicePerantsAndPersonCanTake.cs</DependentUpon>
     </Compile>
     <Compile Include="Kids%27sFile\GraduationCard.cs">
       <SubType>UserControl</SubType>
@@ -583,6 +595,9 @@
     <EmbeddedResource Include="Employees%27sFiles\WorkerInfo.resx">
       <DependentUpon>WorkerInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Evaluations%27sFiles\EvaluationCard.resx">
+      <DependentUpon>EvaluationCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Evaluations%27sFiles\WinnerArchive.resx">
       <DependentUpon>WinnerArchive.cs</DependentUpon>
     </EmbeddedResource>
@@ -600,6 +615,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Kids%27sFile\AddChaild\ChildCardfrm.resx">
       <DependentUpon>ChildCardfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kids%27sFile\AddChaild\ChoicePerantsAndPersonCanTake.resx">
+      <DependentUpon>ChoicePerantsAndPersonCanTake.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kids%27sFile\GraduationCard.resx">
       <DependentUpon>GraduationCard.cs</DependentUpon>

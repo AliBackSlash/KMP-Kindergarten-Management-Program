@@ -128,7 +128,7 @@ namespace K_M_S_PROGRAM.Resources
 
         private void btAddChail_Click(object sender, EventArgs e)
         {
-            if (txMessageNumber.TextLength != 11)
+            if (txMessageNumber.TextLength != 11 && txMessageNumber.Text!= "")
             {
                 errorProvider1.SetError(txMessageNumber, "يجب ان يكون الرقم لا يقل عن 11 رقم ");
                 return;
@@ -189,8 +189,8 @@ namespace K_M_S_PROGRAM.Resources
             GetLastCode();
 
             txDataOfBirth.MaxDate = DateTime.Now.AddYears(-2);
-            txDataOfBirth.MinDate = DateTime.Now.AddYears(-10);
-            txDateOfJoin.MinDate = DateTime.Now.AddYears(-10);
+            txDataOfBirth.MinDate = DateTime.Now.AddYears(-11);
+            txDateOfJoin.MinDate = DateTime.Now.AddYears(-11);
             txDateOfJoin.MaxDate = DateTime.Now;
 
         }
@@ -382,7 +382,7 @@ namespace K_M_S_PROGRAM.Resources
         {
             if (txMessageNumber.Text.Length == 11)
             {
-               await clsSend.Send_Whats_App_Message_For_One(txMessageNumber.Text, $"السلام عليكم,\n يجدر الاشارة انه سيتم استخدام هذا الرقم لمتابعة حالة طفلكم من قبل {clsGlobal.Settings.OrgName} ");
+               await clsSend.Send_Whats_App_Message_For_One(txMessageNumber.Text, $"السلام عليكم,\n يجدر الاشارة انه سيتم استخدام هذا الرقم لمتابعة حالة طفلكم من قبل {clsGlobal.Settings.OrgName} " + "\n\nرابط جروب الواتساب \n" + clsGlobal.Settings.NotefayKidsLate);
             }
         }
 

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            SATAUiFramework.BorderRadius borderRadius7 = new SATAUiFramework.BorderRadius();
-            SATAUiFramework.BorderRadius borderRadius8 = new SATAUiFramework.BorderRadius();
-            SATAUiFramework.BorderRadius borderRadius9 = new SATAUiFramework.BorderRadius();
+            SATAUiFramework.BorderRadius borderRadius1 = new SATAUiFramework.BorderRadius();
+            SATAUiFramework.BorderRadius borderRadius2 = new SATAUiFramework.BorderRadius();
+            SATAUiFramework.BorderRadius borderRadius3 = new SATAUiFramework.BorderRadius();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -801,11 +801,11 @@
             this.sataPanel2.BackColor = System.Drawing.Color.White;
             this.sataPanel2.BackColor2 = System.Drawing.Color.White;
             this.sataPanel2.BorderColor = System.Drawing.Color.Black;
-            borderRadius7.BottomLeft = 10;
-            borderRadius7.BottomRight = 10;
-            borderRadius7.TopLeft = 10;
-            borderRadius7.TopRight = 10;
-            this.sataPanel2.BorderRadius = borderRadius7;
+            borderRadius1.BottomLeft = 10;
+            borderRadius1.BottomRight = 10;
+            borderRadius1.TopLeft = 10;
+            borderRadius1.TopRight = 10;
+            this.sataPanel2.BorderRadius = borderRadius1;
             this.sataPanel2.BorderThickness = 0;
             this.sataPanel2.Controls.Add(this.btDelete);
             this.sataPanel2.Controls.Add(this.picEmpPhoto);
@@ -865,11 +865,11 @@
             this.sataPanel3.BackColor = System.Drawing.Color.White;
             this.sataPanel3.BackColor2 = System.Drawing.Color.White;
             this.sataPanel3.BorderColor = System.Drawing.Color.Black;
-            borderRadius8.BottomLeft = 10;
-            borderRadius8.BottomRight = 10;
-            borderRadius8.TopLeft = 10;
-            borderRadius8.TopRight = 10;
-            this.sataPanel3.BorderRadius = borderRadius8;
+            borderRadius2.BottomLeft = 10;
+            borderRadius2.BottomRight = 10;
+            borderRadius2.TopLeft = 10;
+            borderRadius2.TopRight = 10;
+            this.sataPanel3.BorderRadius = borderRadius2;
             this.sataPanel3.BorderThickness = 0;
             this.sataPanel3.Controls.Add(this.groupBox1);
             this.sataPanel3.Controls.Add(this.groupBox2);
@@ -1038,11 +1038,11 @@
             this.sataPanel1.BackColor = System.Drawing.Color.White;
             this.sataPanel1.BackColor2 = System.Drawing.Color.White;
             this.sataPanel1.BorderColor = System.Drawing.Color.Black;
-            borderRadius9.BottomLeft = 10;
-            borderRadius9.BottomRight = 10;
-            borderRadius9.TopLeft = 10;
-            borderRadius9.TopRight = 10;
-            this.sataPanel1.BorderRadius = borderRadius9;
+            borderRadius3.BottomLeft = 10;
+            borderRadius3.BottomRight = 10;
+            borderRadius3.TopLeft = 10;
+            borderRadius3.TopRight = 10;
+            this.sataPanel1.BorderRadius = borderRadius3;
             this.sataPanel1.BorderThickness = 0;
             this.sataPanel1.Controls.Add(this.btSave);
             this.sataPanel1.Controls.Add(this.cmEmpNames);

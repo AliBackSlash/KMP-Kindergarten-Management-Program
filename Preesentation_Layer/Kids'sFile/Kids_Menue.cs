@@ -469,5 +469,16 @@ namespace K_M_S_PROGRAM.Resources
             else
                 clsUtil.Show("حدث خطأ", false);
         }
+
+        private void إخترابوينموجودينبالفعلToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChoicePerantsAndPersonCanTake frm = new ChoicePerantsAndPersonCanTake(true, (int)dgvKidsMenue.CurrentRow.Cells["Code"].Value);
+            frm.ShowDialog();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            clsUtil.Show("سوف يتم تنفيذ هذه الميزة قريبا",false);
+        }
     }
 }

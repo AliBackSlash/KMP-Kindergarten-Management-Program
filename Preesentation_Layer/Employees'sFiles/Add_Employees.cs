@@ -370,7 +370,7 @@ namespace K_M_S_PROGRAM.Resources
         }
         private void btAdd_Click(object sender, EventArgs e)
         {
-            if (txPhone.TextLength != 11)
+            if (txPhone.TextLength != 11 && txPhone.Text != "")
             {
                 errorProvider1.SetError(txPhone, "يجب ان يكون الرقم لا يقل عن 11 رقم ");
                 return;
@@ -548,7 +548,7 @@ namespace K_M_S_PROGRAM.Resources
         {
             if (txPhone.Text.Length == 11)
             {
-               await clsSend.Send_Whats_App_Message_For_One(txPhone.Text, $"السلام عليكم,\n يجدر الاشارة انه سيتم استخدام هذا الرقم للمتابعة من قبل {clsGlobal.Settings.OrgName} ");
+               await clsSend.Send_Whats_App_Message_For_One(txPhone.Text, $"السلام عليكم,\n يجدر الاشارة انه سيتم استخدام هذا الرقم للمتابعة من قبل {clsGlobal.Settings.OrgName} " + "\n\nرابط جروب الواتساب \n" + clsGlobal.Settings.NotefayKidsLate);
             }
             BGW.CancelAsync();
         }

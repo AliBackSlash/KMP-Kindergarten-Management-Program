@@ -33,12 +33,25 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            SATAUiFramework.BorderRadius borderRadius1 = new SATAUiFramework.BorderRadius();
-            SATAUiFramework.BorderRadius borderRadius2 = new SATAUiFramework.BorderRadius();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            SATAUiFramework.BorderRadius borderRadius1 = new SATAUiFramework.BorderRadius();
+            SATAUiFramework.BorderRadius borderRadius2 = new SATAUiFramework.BorderRadius();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvKidsMenue = new MetroFramework.Controls.MetroGrid();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.PerantID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cnTask = new MetroFramework.Controls.MetroContextMenu(this.components);
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.إظهاربياناتالطفلToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,6 +69,7 @@
             this.إضافةبياناتالأبوينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.إضافةبياناتالأبوينToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.تعديلبياناتالاباءToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.إخترابوينموجودينبالفعلToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.إضافةمستلمToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.إضافةمستلمToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.تعديلبياناتالمستلمToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -83,19 +97,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.sEllipse1 = new Sipaa.Framework.SEllipse();
             this.BGWorker = new System.ComponentModel.BackgroundWorker();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.PerantID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKidsMenue)).BeginInit();
             this.cnTask.SuspendLayout();
@@ -194,6 +196,109 @@
             this.dgvKidsMenue.Size = new System.Drawing.Size(1066, 599);
             this.dgvKidsMenue.TabIndex = 33;
             // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle2.NullValue = null;
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewImageColumn1.FillWeight = 200F;
+            this.dataGridViewImageColumn1.HeaderText = "....";
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewImageColumn1.Width = 61;
+            // 
+            // Code
+            // 
+            this.Code.HeaderText = "الكود";
+            this.Code.Name = "Code";
+            this.Code.Width = 57;
+            // 
+            // Name
+            // 
+            this.Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Name.HeaderText = "إسم الطفل";
+            this.Name.Name = "Name";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.FillWeight = 80F;
+            this.dataGridViewTextBoxColumn3.HeaderText = "المدينة";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn4.HeaderText = "العنوان";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 77;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn5.HeaderText = "تاريخ الميلاد";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn6.HeaderText = "المستوي";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 88;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn7.HeaderText = " الفصل";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.Width = 81;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn8.HeaderText = "الفترة";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.Width = 67;
+            // 
+            // Phone
+            // 
+            this.Phone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Phone.HeaderText = "الهاتف";
+            this.Phone.Name = "Phone";
+            this.Phone.Width = 77;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightBlue;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewTextBoxColumn10.FillWeight = 15F;
+            this.dataGridViewTextBoxColumn10.HeaderText = "النوع";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn10.Width = 60;
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewCheckBoxColumn1.FillWeight = 10F;
+            this.dataGridViewCheckBoxColumn1.HeaderText = "@";
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.Width = 50;
+            // 
+            // PerantID
+            // 
+            this.PerantID.HeaderText = "PerantID";
+            this.PerantID.Name = "PerantID";
+            this.PerantID.Visible = false;
+            // 
             // cnTask
             // 
             this.cnTask.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -210,7 +315,7 @@
             this.انهاءفترةدراسةالطفلToolStripMenuItem});
             this.cnTask.Name = "cnTask";
             this.cnTask.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cnTask.Size = new System.Drawing.Size(200, 244);
+            this.cnTask.Size = new System.Drawing.Size(200, 266);
             this.cnTask.Opening += new System.ComponentModel.CancelEventHandler(this.cnTask_Opening);
             // 
             // toolStripMenuItem2
@@ -328,7 +433,8 @@
             // 
             this.إضافةبياناتالأبوينToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.إضافةبياناتالأبوينToolStripMenuItem1,
-            this.تعديلبياناتالاباءToolStripMenuItem});
+            this.تعديلبياناتالاباءToolStripMenuItem,
+            this.إخترابوينموجودينبالفعلToolStripMenuItem});
             this.إضافةبياناتالأبوينToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.Treetog_Junior_User_group_72;
             this.إضافةبياناتالأبوينToolStripMenuItem.Name = "إضافةبياناتالأبوينToolStripMenuItem";
             this.إضافةبياناتالأبوينToolStripMenuItem.Size = new System.Drawing.Size(199, 24);
@@ -338,7 +444,7 @@
             // 
             this.إضافةبياناتالأبوينToolStripMenuItem1.Image = global::K_M_S_PROGRAM.Properties.Resources.Treetog_Junior_User_group_72;
             this.إضافةبياناتالأبوينToolStripMenuItem1.Name = "إضافةبياناتالأبوينToolStripMenuItem1";
-            this.إضافةبياناتالأبوينToolStripMenuItem1.Size = new System.Drawing.Size(184, 24);
+            this.إضافةبياناتالأبوينToolStripMenuItem1.Size = new System.Drawing.Size(218, 24);
             this.إضافةبياناتالأبوينToolStripMenuItem1.Text = "إضافة بيانات الأبوين";
             this.إضافةبياناتالأبوينToolStripMenuItem1.Click += new System.EventHandler(this.إضافةبياناتالأبوينToolStripMenuItem1_Click);
             // 
@@ -346,15 +452,24 @@
             // 
             this.تعديلبياناتالاباءToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.edit;
             this.تعديلبياناتالاباءToolStripMenuItem.Name = "تعديلبياناتالاباءToolStripMenuItem";
-            this.تعديلبياناتالاباءToolStripMenuItem.Size = new System.Drawing.Size(184, 24);
+            this.تعديلبياناتالاباءToolStripMenuItem.Size = new System.Drawing.Size(218, 24);
             this.تعديلبياناتالاباءToolStripMenuItem.Text = "تعديل بيانات الاباء";
             this.تعديلبياناتالاباءToolStripMenuItem.Click += new System.EventHandler(this.تعديلبياناتالاباءToolStripMenuItem_Click);
+            // 
+            // إخترابوينموجودينبالفعلToolStripMenuItem
+            // 
+            this.إخترابوينموجودينبالفعلToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.division;
+            this.إخترابوينموجودينبالفعلToolStripMenuItem.Name = "إخترابوينموجودينبالفعلToolStripMenuItem";
+            this.إخترابوينموجودينبالفعلToolStripMenuItem.Size = new System.Drawing.Size(218, 24);
+            this.إخترابوينموجودينبالفعلToolStripMenuItem.Text = "اختر ابوين موجودين بالفعل";
+            this.إخترابوينموجودينبالفعلToolStripMenuItem.Click += new System.EventHandler(this.إخترابوينموجودينبالفعلToolStripMenuItem_Click);
             // 
             // إضافةمستلمToolStripMenuItem
             // 
             this.إضافةمستلمToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.إضافةمستلمToolStripMenuItem1,
-            this.تعديلبياناتالمستلمToolStripMenuItem});
+            this.تعديلبياناتالمستلمToolStripMenuItem,
+            this.toolStripMenuItem1});
             this.إضافةمستلمToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.man1;
             this.إضافةمستلمToolStripMenuItem.Name = "إضافةمستلمToolStripMenuItem";
             this.إضافةمستلمToolStripMenuItem.Size = new System.Drawing.Size(199, 24);
@@ -364,7 +479,7 @@
             // 
             this.إضافةمستلمToolStripMenuItem1.Image = global::K_M_S_PROGRAM.Properties.Resources.man1;
             this.إضافةمستلمToolStripMenuItem1.Name = "إضافةمستلمToolStripMenuItem1";
-            this.إضافةمستلمToolStripMenuItem1.Size = new System.Drawing.Size(181, 24);
+            this.إضافةمستلمToolStripMenuItem1.Size = new System.Drawing.Size(208, 24);
             this.إضافةمستلمToolStripMenuItem1.Text = "إضافة مستلم";
             this.إضافةمستلمToolStripMenuItem1.Click += new System.EventHandler(this.إضافةمستلمToolStripMenuItem1_Click);
             // 
@@ -372,7 +487,7 @@
             // 
             this.تعديلبياناتالمستلمToolStripMenuItem.Image = global::K_M_S_PROGRAM.Properties.Resources.edit;
             this.تعديلبياناتالمستلمToolStripMenuItem.Name = "تعديلبياناتالمستلمToolStripMenuItem";
-            this.تعديلبياناتالمستلمToolStripMenuItem.Size = new System.Drawing.Size(181, 24);
+            this.تعديلبياناتالمستلمToolStripMenuItem.Size = new System.Drawing.Size(208, 24);
             this.تعديلبياناتالمستلمToolStripMenuItem.Text = "تعديل بيانات المستلم";
             this.تعديلبياناتالمستلمToolStripMenuItem.Click += new System.EventHandler(this.تعديلبياناتالمستلمToolStripMenuItem_Click);
             // 
@@ -829,108 +944,13 @@
             this.BGWorker.WorkerSupportsCancellation = true;
             this.BGWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BGWorker_DoWork);
             // 
-            // dataGridViewImageColumn1
+            // toolStripMenuItem1
             // 
-            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle2.NullValue = null;
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewImageColumn1.FillWeight = 200F;
-            this.dataGridViewImageColumn1.HeaderText = "....";
-            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewImageColumn1.Width = 61;
-            // 
-            // Code
-            // 
-            this.Code.HeaderText = "الكود";
-            this.Code.Name = "Code";
-            this.Code.Width = 57;
-            // 
-            // Name
-            // 
-            this.Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Name.HeaderText = "إسم الطفل";
-            this.Name.Name = "Name";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn3.FillWeight = 80F;
-            this.dataGridViewTextBoxColumn3.HeaderText = "المدينة";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn4.HeaderText = "العنوان";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 77;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn5.HeaderText = "تاريخ الميلاد";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn6.HeaderText = "المستوي";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 88;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn7.HeaderText = " الفصل";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 81;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn8.HeaderText = "الفترة";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 67;
-            // 
-            // Phone
-            // 
-            this.Phone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Phone.HeaderText = "الهاتف";
-            this.Phone.Name = "Phone";
-            this.Phone.Width = 77;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightBlue;
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridViewTextBoxColumn10.FillWeight = 15F;
-            this.dataGridViewTextBoxColumn10.HeaderText = "النوع";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn10.Width = 60;
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewCheckBoxColumn1.FillWeight = 10F;
-            this.dataGridViewCheckBoxColumn1.HeaderText = "@";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            this.dataGridViewCheckBoxColumn1.Width = 50;
-            // 
-            // PerantID
-            // 
-            this.PerantID.HeaderText = "PerantID";
-            this.PerantID.Name = "PerantID";
-            this.PerantID.Visible = false;
+            this.toolStripMenuItem1.Image = global::K_M_S_PROGRAM.Properties.Resources.division;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(208, 24);
+            this.toolStripMenuItem1.Text = "اختر مستلم موجود بالفعل";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // Kids_Menue
             // 
@@ -1020,5 +1040,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn PerantID;
+        private System.Windows.Forms.ToolStripMenuItem إخترابوينموجودينبالفعلToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }

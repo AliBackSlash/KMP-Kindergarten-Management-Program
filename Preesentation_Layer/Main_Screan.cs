@@ -71,7 +71,7 @@ namespace K_M_S_PROGRAM.Resources
             pnUsersList.Height = ListHeight;
             pnSettingsList.Height = ListHeight;
         }
-       
+
         private void btKidsInfo_Click(object sender, EventArgs e)
         {
             if (pnKidsInfo.Size.Height == ListHeight)
@@ -370,7 +370,7 @@ namespace K_M_S_PROGRAM.Resources
         }
         private void ShowSubForm(Form form)
         {
-            
+
             if ((Permission & Convert.ToInt32(form.Tag)) == Convert.ToInt32(form.Tag) || Permission == -1)
             {
 
@@ -394,7 +394,7 @@ namespace K_M_S_PROGRAM.Resources
                 clsUtil.Show("للأسف ليس لديك وصول لهذه الشاشة من فضلك تواصل مع مدير المؤسسة!", false);
                 return;
             }
-            
+
         }
 
         public void ChangeLabelsColor(Color ForeColor, Color BackColor)
@@ -519,7 +519,7 @@ namespace K_M_S_PROGRAM.Resources
 
         }
 
-        
+
         //------Kids-------//
         Main_Menue mainMenu = null;
         Kids_Menue kids_Menu = null;

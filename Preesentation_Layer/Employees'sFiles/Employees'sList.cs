@@ -143,48 +143,58 @@ namespace K_M_S_PROGRAM.Resources
         {
             return clsEmployee.DeleteTeacher(ID);
         }
-        private void btDalete_Click(object sender, EventArgs e)
+        private void btDelete_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("هل انت متأكد من ازالة هذا الموظف ", "تأكيد",MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if (dgvEmployeesMenue.Rows.Count > 0)
             {
-                bool sccess = false;
-                foreach (DataGridViewRow row in dgvEmployeesMenue.Rows)
+                if (MessageBox.Show("هل انت متأكد من ازالة هذا الموظف ", "تأكيد", MessageBoxButtons.OKCancel) == DialogResult.OK)
                 {
-
-                    if (btWhatsApp.Enabled)
+                    bool sccess = false;
+                    foreach (DataGridViewRow row in dgvEmployeesMenue.Rows)
                     {
-                        sccess = DeleteTeacher((int)dgvEmployeesMenue.CurrentRow.Cells["Code"].Value);
-                        dgvEmployeesMenue.Rows.Clear();
-                        ShowTeacherInfo();
-                        break;
+
+                        if (btWhatsApp.Enabled)
+                        {
+                            sccess = DeleteTeacher((int)dgvEmployeesMenue.CurrentRow.Cells["Code"].Value);
+                            dgvEmployeesMenue.Rows.Clear();
+                            ShowTeacherInfo();
+                            break;
+                        }
+                        else
+                        {
+                            sccess = DeleteWorker((int)dgvEmployeesMenue.CurrentRow.Cells["Code"].Value);
+                            dgvEmployeesMenue.Rows.Clear();
+                            ShowWorkerInfo();
+                            break;
+                        }
+
+
                     }
+
+                    if (sccess)
+                        clsUtil.Show("عملية إزالة ناجحة");
                     else
-                    {
-                        sccess = DeleteWorker((int)dgvEmployeesMenue.CurrentRow.Cells["Code"].Value);
-                        dgvEmployeesMenue.Rows.Clear();
-                        ShowWorkerInfo();
-                        break;
-                    }
-
+                        clsUtil.Show("هذا الموظف لديه بيانات متعلقة به من بيانات في قائمة الرواتب الشهرية وغيره لذا لا يمكن حذفه", false);
 
                 }
-
-                if (sccess)
-                    clsUtil.Show("عملية إزالة ناجحة");
                 else
-                    clsUtil.Show("هذا الموظف لديه بيانات متعلقة به من بيانات في قائمة الرواتب الشهرية وغيره لذا لا يمكن حذفه", false);
-
+                    return;
             }
             else
-                return;
+                clsUtil.Show("لا يوجد محتوي", false);
 
         }
 
         private void btNotes_Click(object sender, EventArgs e)
         {
-            Notes notes = new Notes();
-            notes.Get += Save_Notes;
-            notes.ShowDialog();
+            if (dgvEmployeesMenue.Rows.Count > 0)
+            {
+                Notes notes = new Notes();
+                notes.Get += Save_Notes;
+                notes.ShowDialog();
+            }
+            else
+                clsUtil.Show("لا يوجد محتوي", false);
         }
 
         private void Save_Notes(string Note)
@@ -220,34 +230,49 @@ namespace K_M_S_PROGRAM.Resources
 
         private void btShowInfo_Click(object sender, EventArgs e)
         {
-            if(rdTeacher.Checked)
+            if (dgvEmployeesMenue.Rows.Count > 0)
             {
-                EmpInfo frm = new EmpInfo(Convert.ToInt16(dgvEmployeesMenue.CurrentRow.Cells["Code"].Value));
-                frm.CallUpdate += btRefreash_Click;
-                frm.ShowDialog();
+                if (rdTeacher.Checked)
+                {
+                    EmpInfo frm = new EmpInfo(Convert.ToInt16(dgvEmployeesMenue.CurrentRow.Cells["Code"].Value));
+                    frm.CallUpdate += btRefreash_Click;
+                    frm.ShowDialog();
+                }
+                else
+                {
+                    WorkerInfo frm = new WorkerInfo(Convert.ToInt16(dgvEmployeesMenue.CurrentRow.Cells["Code"].Value));
+                    frm.CallUpdate += btRefreash_Click;
+                    frm.ShowDialog();
+
+                }
             }
             else
-            {
-                WorkerInfo frm = new WorkerInfo (Convert.ToInt16(dgvEmployeesMenue.CurrentRow.Cells["Code"].Value));
-                frm.CallUpdate += btRefreash_Click;
-                frm.ShowDialog();
-
-            }
+                clsUtil.Show("لا يوجد محتوي",false);
         }
 
        
 
         private void تعديلبياناتالطفلToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Add_Employees frm = new Add_Employees(Convert.ToInt16(dgvEmployeesMenue.CurrentRow.Cells["Code"].Value),rdTeacher.Checked);
-            frm.ShowDialog();
+            if (dgvEmployeesMenue.Rows.Count > 0)
+            {
+                Add_Employees frm = new Add_Employees(Convert.ToInt16(dgvEmployeesMenue.CurrentRow.Cells["Code"].Value), rdTeacher.Checked);
+                frm.ShowDialog();
+            }
+            else
+                clsUtil.Show("لا يوجد محتوي", false);
         }
 
         private void كتابةملاحظةToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Notes notes = new Notes();
-            notes.Get += SaveNotes; ;
-            notes.ShowDialog();
+            if (dgvEmployeesMenue.Rows.Count > 0)
+            {
+                Notes notes = new Notes();
+                notes.Get += SaveNotes; ;
+                notes.ShowDialog();
+            }
+            else
+                clsUtil.Show("لا يوجد محتوي", false);
 
         }
 
@@ -263,35 +288,40 @@ namespace K_M_S_PROGRAM.Resources
 
         private void حذفToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("هل انت متأكد من ازالة هذا الموظف ", "تأكيد", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
-                return;
-            bool sccess = false;
-            if (rdTeacher.Checked)
+            if (dgvEmployeesMenue.Rows.Count > 0)
             {
-                sccess = DeleteTeacher(Convert.ToInt16(dgvEmployeesMenue.CurrentRow.Cells["Code"].Value));
-                dgvEmployeesMenue.Rows.Clear();
-                ShowTeacherInfo();
-              
+                if (MessageBox.Show("هل انت متأكد من ازالة هذا الموظف ", "تأكيد", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
+                    return;
+                bool sccess = false;
+                if (rdTeacher.Checked)
+                {
+                    sccess = DeleteTeacher(Convert.ToInt16(dgvEmployeesMenue.CurrentRow.Cells["Code"].Value));
+                    dgvEmployeesMenue.Rows.Clear();
+                    ShowTeacherInfo();
+
+                }
+                else
+                {
+                    sccess = DeleteWorker(Convert.ToInt16(dgvEmployeesMenue.CurrentRow.Cells["Code"].Value));
+                    dgvEmployeesMenue.Rows.Clear();
+                    ShowWorkerInfo();
+
+                }
+
+
+
+                if (sccess)
+                    clsUtil.Show("عملية إزالة ناجحة");
+                else
+                    clsUtil.Show("هذا الموظف لديه بيانات متعلقة به من بيانات في قائمة الرواتب الشهرية وغيره لذا لا يمكن حذفه تأكد من انهائها اولا", false);
             }
             else
-            {
-                sccess = DeleteWorker(Convert.ToInt16(dgvEmployeesMenue.CurrentRow.Cells["Code"].Value));
-                dgvEmployeesMenue.Rows.Clear();
-                ShowWorkerInfo();
-              
-            }
-
-
-
-            if (sccess)
-                clsUtil.Show("عملية إزالة ناجحة");
-            else
-                clsUtil.Show("هذا الموظف لديه بيانات متعلقة به من بيانات في قائمة الرواتب الشهرية وغيره لذا لا يمكن حذفه تأكد من انهائها اولا", false);
+                clsUtil.Show("لا يوجد محتوي", false);
         }
 
         private void btSMS_Click(object sender, EventArgs e)
         {
-            clsUtil.Show("سوف يتم تنفيذ هذه الخدمة قريبا");
+            clsUtil.Show("سوف يتم تنفيذ هذه الخدمة قريبا",false);
         }
 
       
@@ -299,19 +329,24 @@ namespace K_M_S_PROGRAM.Resources
         List<(string Name, string Phone)> Names = new List<(string Name, string Phone)>();
         private void btWhatsApp_Click(object sender, EventArgs e)
         {
-            foreach (DataGridViewRow row in dgvEmployeesMenue.Rows)
+            if (dgvEmployeesMenue.Rows.Count > 0)
             {
-                if (Convert.ToBoolean(row.Cells[11].Value))
+                foreach (DataGridViewRow row in dgvEmployeesMenue.Rows)
                 {
-                    PNumbers.Add(row.Cells[9].Value.ToString());
-                    var group = (Name: row.Cells[2].Value.ToString(), Phone: row.Cells[9].Value.ToString());
-                    Names.Add(group);
+                    if (Convert.ToBoolean(row.Cells[11].Value))
+                    {
+                        PNumbers.Add(row.Cells[9].Value.ToString());
+                        var group = (Name: row.Cells[2].Value.ToString(), Phone: row.Cells[9].Value.ToString());
+                        Names.Add(group);
+                    }
                 }
-            }
 
-            Sendmessagefrm frm = new Sendmessagefrm();
-            frm.Message += Send;
-            frm.ShowDialog();
+                Sendmessagefrm frm = new Sendmessagefrm();
+                frm.Message += Send;
+                frm.ShowDialog();
+            }
+            else
+                clsUtil.Show("لا يوجد محتوي", false);
         }
         string Message = "";
         private void Send(string Message)
@@ -326,9 +361,14 @@ namespace K_M_S_PROGRAM.Resources
 
         private void واتسابToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Sendmessagefrm frm = new Sendmessagefrm();
-            frm.Message += Send_Message;
-            frm.ShowDialog();
+            if (dgvEmployeesMenue.Rows.Count > 0)
+            {
+                Sendmessagefrm frm = new Sendmessagefrm();
+                frm.Message += Send_Message;
+                frm.ShowDialog();
+            }
+            else
+                clsUtil.Show("لا يوجد محتوي", false);
 
         }
 

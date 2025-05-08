@@ -8,23 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace K_M_S_PROGRAM.UsersFiles
+namespace K_M_S_PROGRAM.Evaluations_sFiles
 {
-    public partial class Show_User_info : Form
+    public partial class EvaluationCard : UserControl
     {
-     
-        int Code = 0;
-        public Show_User_info(int Code)
+        public EvaluationCard()
         {
             InitializeComponent();
-            this.Code = Code;
         }
 
-
-        private void Show_User_info_Load(object sender, EventArgs e)
+        private void CkToChenageColor_CheckedChanged(object sender, EventArgs e)
         {
-            user_Info_Card1.FillInfo(Code);
+            
         }
-
     }
 }

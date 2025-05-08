@@ -147,6 +147,7 @@
             this.dgvKidsEvaluation.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvKidsEvaluation.Size = new System.Drawing.Size(1066, 654);
             this.dgvKidsEvaluation.TabIndex = 11;
+            this.dgvKidsEvaluation.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKidsEvaluation_CellClick);
             // 
             // dataGridViewImageColumn1
             // 

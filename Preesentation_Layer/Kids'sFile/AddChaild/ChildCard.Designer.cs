@@ -752,7 +752,7 @@
             this.btDelete.HoverState.ForeColor = System.Drawing.Color.Blue;
             this.btDelete.HoverState.Parent = this.btDelete;
             this.btDelete.Image = global::K_M_S_PROGRAM.Properties.Resources.Setting;
-            this.btDelete.Location = new System.Drawing.Point(25, 409);
+            this.btDelete.Location = new System.Drawing.Point(12, 409);
             this.btDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btDelete.Name = "btDelete";
             this.btDelete.ShadowDecoration.Parent = this.btDelete;

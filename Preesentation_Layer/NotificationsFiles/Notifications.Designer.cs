@@ -34,13 +34,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -56,9 +55,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             SATAUiFramework.BorderRadius borderRadius1 = new SATAUiFramework.BorderRadius();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.sEllipse1 = new Sipaa.Framework.SEllipse();
             this.dgvBrothers = new MetroFramework.Controls.MetroGrid();
+            this.Code1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Phone1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.conBrothers = new MetroFramework.Controls.MetroContextMenu(this.components);
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem15 = new System.Windows.Forms.ToolStripMenuItem();
@@ -69,10 +73,6 @@
             this.حذفالأخToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sEllipse2 = new Sipaa.Framework.SEllipse();
             this.dgvChildAbsence = new MetroFramework.Controls.MetroGrid();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Phone4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.conAbsence = new MetroFramework.Controls.MetroContextMenu(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
@@ -115,10 +115,10 @@
             this.sataPictureBox1 = new SATAUiFramework.Controls.SATAPictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.BGWorker = new System.ComponentModel.BackgroundWorker();
-            this.Code1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Phone1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Phone4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBrothers)).BeginInit();
             this.conBrothers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChildAbsence)).BeginInit();
@@ -203,6 +203,40 @@
             this.dgvBrothers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBrothers.Size = new System.Drawing.Size(554, 308);
             this.dgvBrothers.TabIndex = 2;
+            // 
+            // Code1
+            // 
+            this.Code1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Code1.HeaderText = "الكود ";
+            this.Code1.Name = "Code1";
+            this.Code1.ReadOnly = true;
+            this.Code1.Width = 64;
+            // 
+            // Name
+            // 
+            this.Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            this.Name.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Name.HeaderText = "الاسم ";
+            this.Name.Name = "Name";
+            this.Name.ReadOnly = true;
+            this.Name.Width = 70;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.HeaderText = "إسم الأخ الذي وصل سن الإلتحاق";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Phone1
+            // 
+            this.Phone1.HeaderText = "Column4";
+            this.Phone1.Name = "Phone1";
+            this.Phone1.ReadOnly = true;
+            this.Phone1.Visible = false;
             // 
             // conBrothers
             // 
@@ -345,40 +379,6 @@
             this.dgvChildAbsence.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvChildAbsence.Size = new System.Drawing.Size(554, 309);
             this.dgvChildAbsence.TabIndex = 4;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "الكود";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            // 
-            // Name4
-            // 
-            this.Name4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            this.Name4.DefaultCellStyle = dataGridViewCellStyle9;
-            this.Name4.HeaderText = "الإسم";
-            this.Name4.Name = "Name4";
-            this.Name4.ReadOnly = true;
-            this.Name4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle10;
-            this.dataGridViewTextBoxColumn8.HeaderText = "مرات الغياب";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            // 
-            // Phone4
-            // 
-            this.Phone4.HeaderText = "Column4";
-            this.Phone4.Name = "Phone4";
-            this.Phone4.ReadOnly = true;
-            this.Phone4.Visible = false;
             // 
             // conAbsence
             // 
@@ -908,39 +908,39 @@
             this.BGWorker.WorkerSupportsCancellation = true;
             this.BGWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BGWorker_DoWork);
             // 
-            // Code1
+            // ID
             // 
-            this.Code1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Code1.HeaderText = "الكود ";
-            this.Code1.Name = "Code1";
-            this.Code1.ReadOnly = true;
-            this.Code1.Width = 69;
+            this.ID.HeaderText = "الكود";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
             // 
-            // Name
+            // Name4
             // 
-            this.Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.Name.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Name.HeaderText = "الاسم ";
-            this.Name.Name = "Name";
-            this.Name.ReadOnly = true;
-            this.Name.Width = 70;
+            this.Name4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            this.Name4.DefaultCellStyle = dataGridViewCellStyle9;
+            this.Name4.HeaderText = "الإسم";
+            this.Name4.Name = "Name4";
+            this.Name4.ReadOnly = true;
+            this.Name4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
-            // Column1
+            // dataGridViewTextBoxColumn8
             // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.HeaderText = "إسم الأخ الذي وصل سن الإلتحاق";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridViewTextBoxColumn8.HeaderText = "مرات الغياب";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
-            // Phone1
+            // Phone4
             // 
-            this.Phone1.HeaderText = "Column4";
-            this.Phone1.Name = "Phone1";
-            this.Phone1.ReadOnly = true;
-            this.Phone1.Visible = false;
+            this.Phone4.HeaderText = "Column4";
+            this.Phone4.Name = "Phone4";
+            this.Phone4.ReadOnly = true;
+            this.Phone4.Visible = false;
             // 
             // Notifications
             // 
@@ -1012,10 +1012,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem12;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem13;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Phone4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Code;
         private System.Windows.Forms.DataGridViewTextBoxColumn Name2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
@@ -1033,5 +1029,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Phone1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Name4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Phone4;
     }
 }

@@ -101,20 +101,30 @@ namespace K_M_S_PROGRAM.Resources
             DateTime date = DateTime.Now;
             DateTime SettingEnterTime ;
             DateTime LastSettingEnterTime ;
-
-            if(date.TimeOfDay >= DateTime.ParseExact(clsGlobal.Settings.TimeEnterPM, "HH:mm:ss", null).TimeOfDay)
+            DateTime SettingEnterTimeForKids;
+            DateTime SettingEnterTimeForTeacher;
+            DateTime SettingEnterTimeForWorker;
+            if (date.TimeOfDay >= DateTime.ParseExact(clsGlobal.Settings.TimeEnterPM, "HH:mm:ss", null).TimeOfDay)
             {
                 SettingEnterTime = Convert.ToDateTime(clsGlobal.Settings.TimeEnterPM);
                 LastSettingEnterTime = Convert.ToDateTime(clsGlobal.Settings.LasttimeEnterPM);
+                SettingEnterTimeForKids = Convert.ToDateTime(clsGlobal.Settings.TimeLateForKidsPM);
+                SettingEnterTimeForTeacher = Convert.ToDateTime(clsGlobal.Settings.TimeLateForTeachersPM);
+                SettingEnterTimeForWorker = Convert.ToDateTime(clsGlobal.Settings.TimeLateForWorkersPM);
+
             }
             else
             {
                 SettingEnterTime = Convert.ToDateTime(clsGlobal.Settings.TimeEnter);
                 LastSettingEnterTime = Convert.ToDateTime(clsGlobal.Settings.LasttimeEnter);
+                SettingEnterTimeForKids = Convert.ToDateTime(clsGlobal.Settings.TimeLateForKids);
+                SettingEnterTimeForTeacher = Convert.ToDateTime(clsGlobal.Settings.TimeLateForTeachers);
+                SettingEnterTimeForWorker = Convert.ToDateTime(clsGlobal.Settings.TimeLateForWorkers);
+
             }
 
-           
-          
+
+
             DateTime TimeNow = DateTime.Now;
             int Code = Convert.ToInt32(txSearsh.Text);
 
@@ -133,7 +143,6 @@ namespace K_M_S_PROGRAM.Resources
                             else
                             {
                                 
-                                DateTime SettingEnterTimeForKids = Convert.ToDateTime(clsGlobal.Settings.TimeLateForKids);
                                 short late = 0;
                                 if (TimeNow.TimeOfDay > SettingEnterTimeForKids.TimeOfDay)
                                 {
@@ -161,7 +170,6 @@ namespace K_M_S_PROGRAM.Resources
                                 { clsUtil.Show("تم تحضير هذا الموظف بالفعل", false); }
                             else
                             {
-                                DateTime SettingEnterTimeForTeacher = Convert.ToDateTime(clsGlobal.Settings.TimeLateForTeachers);
                                 short late = 0;
                                 if (TimeNow.TimeOfDay > SettingEnterTimeForTeacher.TimeOfDay)
                                 {
@@ -188,11 +196,10 @@ namespace K_M_S_PROGRAM.Resources
                                { clsUtil.Show("تم تحضير هذا الموظف بالفعل", false);  }
                             else
                             {
-                                DateTime SettingEnterTimeForTeacher = Convert.ToDateTime(clsGlobal.Settings.TimeLateForWorkers);
                                 short late = 0;
-                                if (TimeNow.TimeOfDay > SettingEnterTimeForTeacher.TimeOfDay)
+                                if (TimeNow.TimeOfDay > SettingEnterTimeForWorker.TimeOfDay)
                                 {
-                                    late = (short)(TimeNow - SettingEnterTimeForTeacher).TotalMinutes;
+                                    late = (short)(TimeNow - SettingEnterTimeForWorker).TotalMinutes;
 
                                 }
 

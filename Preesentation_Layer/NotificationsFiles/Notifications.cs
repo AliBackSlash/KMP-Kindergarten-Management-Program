@@ -34,17 +34,26 @@ namespace K_M_S_PROGRAM.Resources
 
         private async void SendWhatsAppMessageForOne(MetroGrid Grid, string Message, char Num)
         {
-            try
-            {
-                if (await clsSend.Send_Whats_App_Message_For_One(Grid.CurrentRow.Cells["Phone" + Num].Value.ToString(), Message))
-                { clsUtil.Show("تم الإرسال"); clsMessageArchive.AddToMessage_Archive(Grid.CurrentRow.Cells[1].Value.ToString(), '1', Message, 'C'); }
-                else
-                    clsUtil.Show("لم يتم الإرسال", false);
-            }
-            catch (Exception)
-            {
+            string MessageNumber = Grid.CurrentRow.Cells["Phone" + Num].Value.ToString();
+            if(MessageNumber.Length > 0) 
+                if (Grid.Rows.Count > 0)
+                {
+                    try
+                    {
+                        if (await clsSend.Send_Whats_App_Message_For_One(MessageNumber, Message))
+                        { clsUtil.Show("تم الإرسال"); clsMessageArchive.AddToMessage_Archive(Grid.CurrentRow.Cells[1].Value.ToString(), '1', Message, 'C'); }
+                        else
+                            clsUtil.Show("لم يتم الإرسال", false);
+                    }
+                    catch (Exception)
+                    {
 
-            }
+                    }
+                }
+                else
+                    clsUtil.Show("لا يوجد محتوي", false);
+            else
+                clsUtil.Show("ليس له رقم الإرسال", false);
         }
 
 
@@ -108,12 +117,12 @@ namespace K_M_S_PROGRAM.Resources
 
         private void FillKidsAbsence()
         {
-
+            dgvChildAbsence.Rows.Clear ();
             DataTable SubLate = clsAbsences.ReturnKidsThatAbsenceMoreInThisMonth(clsGlobal.Settings.DaysKindsAbsence);
 
             foreach (DataRow row in SubLate.Rows)
             {
-                dgvChildAbsence.Rows.Add(row["ID"],row["Name"], row["times"]);
+                dgvChildAbsence.Rows.Add(row["ID"],row["Name"], row["times"], row["MessageNumber"]);
             }
         }
 
@@ -140,7 +149,7 @@ namespace K_M_S_PROGRAM.Resources
 
         private void Brothers_whatsApp_Click(object sender, EventArgs e)
         {
-            SendWhatsAppMessageForOne(dgvBrothers, clsGlobal.Settings.BrothersAgeMessage, '1');
+            SendWhatsAppMessageForOne(dgvBrothers, clsGlobal.Settings.BrothersAgeMessage , '1');
         }
 
         private void ChildBrithDay_whatsApp_Click(object sender, EventArgs e)
@@ -160,7 +169,7 @@ namespace K_M_S_PROGRAM.Resources
 
         private void إرسالتنبيهاليالكلToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SendWhatsAppMessageForAll(dgvChildBrithDay, clsGlobal.Settings.BirthDayMessage, '2');
+            SendWhatsAppMessageForAll(dgvChildBrithDay, clsGlobal.Settings.BirthDayMessage  , '2');
         }
 
         private void toolStripMenuItem19_Click(object sender, EventArgs e)
@@ -192,34 +201,39 @@ namespace K_M_S_PROGRAM.Resources
 
         private async void BGWorker_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
-           
-            List<string> PNumbers = new List<string>();
-            List<(string Name, string Phone)> Names = new List<(string Name, string Phone)>();
-            foreach (DataGridViewRow row in Grid.Rows)
+           if(Grid.Rows.Count > 0)
             {
 
-                PNumbers.Add(row.Cells["Phone" + Num].Value.ToString());
-                var group = (Name: row.Cells[1].Value.ToString(), Phone: row.Cells["Phone" + Num].Value.ToString());
-                Names.Add(group);
+                List<string> PNumbers = new List<string>();
+                List<(string Name, string Phone)> Names = new List<(string Name, string Phone)>();
+                foreach (DataGridViewRow row in Grid.Rows)
+                {
+
+                    PNumbers.Add(row.Cells["Phone" + Num].Value.ToString());
+                    var group = (Name: row.Cells[1].Value.ToString(), Phone: row.Cells["Phone" + Num].Value.ToString());
+                    Names.Add(group);
+                }
+
+                try
+                {
+                    List<string> failedNumbers = new List<string>();
+
+
+                    failedNumbers = await clsSend.Send_Whats_App_Message_For_Group(PNumbers, Names, 'C', Message, e, BGWorker);
+                    if (failedNumbers.Count >= 0)
+                        clsUtil.Show("تم الإرسال بنجاح ");
+                    else
+                        clsUtil.Show($"هناك مايقرب من {failedNumbers.Count} لم يتم الارسال لهم", false);
+
+                    PNumbers.Clear();
+                    Names.Clear();
+                }
+                catch (Exception)
+                {
+                }
             }
-
-            try
-            {
-                List<string> failedNumbers = new List<string>();
-
-
-                failedNumbers = await clsSend.Send_Whats_App_Message_For_Group(PNumbers, Names, 'C', Message, e, BGWorker);
-                if (failedNumbers.Count >= 0)
-                    clsUtil.Show("تم الإرسال بنجاح ");
-                else
-                    clsUtil.Show($"هناك مايقرب من {failedNumbers.Count} لم يتم الارسال لهم", false);
-
-                PNumbers.Clear();
-                Names.Clear();
-            }
-            catch (Exception)
-            {
-            }
+           else
+                clsUtil.Show("لا يوجد محتوي", false);
 
             this.Grid = null;
             this.Message = "";

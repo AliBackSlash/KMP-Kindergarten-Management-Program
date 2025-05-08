@@ -81,7 +81,7 @@ namespace K_M_S_PROGRAM.Resources
 
                 SavePath = clsGlobal.Settings.BackupPath;
 
-                txNotefayKidsAbsence.Text = clsGlobal.Settings.NotefayKidsLate;
+                txGroupLink.Text = clsGlobal.Settings.NotefayKidsLate;
                 
                 txTimeEnterForTeacher.Text = clsGlobal.Settings.TimeEnterForTeacher;
                 txTimeLateForTeachers.Text = clsGlobal.Settings.TimeLateForTeachers;
@@ -268,7 +268,7 @@ namespace K_M_S_PROGRAM.Resources
                 return false;
 
             return clsSettings.UpdateSetting(txDaysLateToPay.Text, txDaysKindsAbsence.Text, days.ToString(),txKidsBratherAge.Text,
-            txtimeEnter.Text,  txLastEnterTime.Text, txLasttimeLeave.Text,txtimeLeave.Text, txTimeLateForKids.Text, txtimeEnterPM.Text, txLastEnterTimePM.Text, txLasttimeLeavePM.Text, txtimeLeavePM.Text, txTimeLateForKidsPM.Text, txNotefayKidsAbsence.Text,
+            txtimeEnter.Text,  txLastEnterTime.Text, txLasttimeLeave.Text,txtimeLeave.Text, txTimeLateForKids.Text, txtimeEnterPM.Text, txLastEnterTimePM.Text, txLasttimeLeavePM.Text, txtimeLeavePM.Text, txTimeLateForKidsPM.Text, txGroupLink.Text,
             txTimeEnterForTeacher.Text, txTimeLateForTeachers.Text, txTimeEnterForWorker.Text, txTimeLateForWorker.Text, txTimeEnterForTeacherPM.Text, txTimeLateForTeachersPM.Text, txTimeEnterForWorkerPM.Text, txTimeLateForWorkerPM.Text,
             txLateDiscount.Text, txAbsenceLate.Text, txDayOfStaudyInMonth.Text, vacation[1], vacation[0] , SavePath,
            txOrgName.Text, txManagerName.Text,rdSmaolPaper.Checked, picLogo.ImageLocation, ckAskBeforPrint.Checked, ckShowBeforPrint.Checked,txSMSNumber.Text,txWhatsAppNumber.Text,txOrgEmail.Text,txAbsenceMessage.Text
@@ -346,5 +346,6 @@ namespace K_M_S_PROGRAM.Resources
             else
             { this.BackColor = Color.Gainsboro; clsGlobal.main_Screan.ChangeLabelsColor(Color.Black, Color.Gainsboro); }
         }
+
     }
 }

@@ -186,7 +186,6 @@ namespace K_M_S_PROGRAM.GlobalClasses
                         swEncrypt.Write(plainText);
                     }
 
-
                     // Return the encrypted data as a Base64-encoded string
                     return Convert.ToBase64String(msEncrypt.ToArray());
                 }
